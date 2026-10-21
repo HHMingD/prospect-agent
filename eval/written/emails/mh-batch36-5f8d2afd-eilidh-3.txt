@@ -1,0 +1,86 @@
+To: Eilidh MacLeod (Founder of Heather & Pine, a two-product skincare microbrand in Glasgow. Solo operator most days; sister helps on weekends. Reads on iPhone first while on the bus or in the workshop; opens laptop late evening for decisions. Pragmatic, frugal, a bit sceptical of agencies but open if shown specifics and quick tests.)
+Judge: 25/25 (specific 5, useful 5, voice 5, fits 5, reply 5) INVENTED 1
+Worst: It recommends the 'Most start here' microcopy without evidence, which risks making a claim you can't yet substantiate.
+! 'Most start here' label for 30ml (no data provided that most Heather & Pine buyers start with 30ml)
+
+Subject: Paste‑ready: size‑selector copy, pinned TikTok comment + UTMs (quick reviews note for TikTok)
+
+Eilidh —
+
+You’re set. Here are paste‑ready bits so the build goes faster.
+
+When 15ml is back — size selector microcopy (paste)
+- Label: Choose your size
+- 30ml — £24 (Most start here)  [preselected]
+- 15ml — £14 (For trying it out)
+- Small line under selector: Both in stock — choose your size.
+If 15ml is OOS: grey it out and swap the small line to: 15ml back in ~2 weeks.
+
+Notify‑me (if OOS)
+- Button/label: Email me when 15ml is back
+- Field placeholder: your@email.com
+- Microtext: One‑time email. No spam.
+
+Above‑the‑fold proof (paste)
+- As seen by 2M+ on TikTok • No fragrance • Free UK delivery over £40
+
+TikTok congruence (paste)
+- Set bio link to the fast URL
+- Pinned comment text: Link in bio — Buy 30ml — £24. No fragrance. Hand‑poured in Glasgow.
+- Reply video caption: Buy 30ml — £24 (link in bio)
+
+UTM strings (paste)
+- Hero A: https://heatherandpine.example/p/serum-fast?utm_source=tiktok&utm_medium=social&utm_campaign=serum_fast_oct&utm_content=heroA
+- Hero B: https://heatherandpine.example/p/serum-fast?utm_source=tiktok&utm_medium=social&utm_campaign=serum_fast_oct&utm_content=heroB
+
+Quick reviews note (new)
+- Bazaarvoice: 96% of TikTok Shop buyers say verified reviews make them more likely to purchase.
+- Action: once you have even 1–2 real reviews, bring the Reviews block back above FAQs and show rating stars; if you have TikTok Shop, surface its “verified” badge. Until then, keep it hidden.
+
+Context signal
+- UK retail footfall −2.9% YoY in Sept (BRC) — softer offline, more gifting intent online. Beauty’s big boxes (Boots/Sephora/Ulta) leaned into TikTok Shop this month for the same reason.
+
+30‑second QA (mobile)
+- Price and “Buy 30ml — £24” visible on load
+- Sticky Add to Cart appears after scroll and doesn’t cover the main CTA
+- Apple Pay/PayPal work on a real phone
+- 30ml stays selected through checkout
+
+Anything missing for this build?
+
+Fieldwork Studio
+
+==== Sent before (24/25 (specific 5, useful 4, voice 5, fits 5, reply 5) INVENTED 2 PROMISES 1)
+Subject: One fast trust lift for your TikTok page (10‑minute add)
+
+Eilidh —
+
+Your plan is tight. One add that reliably moves TikTok traffic: seed visible, real reviews under the primary CTA so the first scroll shows trust.
+
+Why now
+- A 2026 Bazaarvoice study found 96% of TikTok Shop buyers are more likely to purchase with verified reviews. On impulse traffic, two credible proofs beat a whole reviews tab.
+
+Do this (10–20 minutes)
+- Hide the empty Reviews block.
+- Directly under the Buy 30ml — £24 button, insert a tiny “What buyers say” row (2 tiles):
+  - Tile 1: a real TikTok comment screenshot (include the handle). Label “From TikTok”.
+  - Tile 2: a one‑liner from a recent buyer (first name, city). Only tag “Verified purchase” if you can verify it.
+- Keep both tiles tappable to a lightbox so the screenshots are legible; no star icons unless you have a real rating.
+- If you have TikTok Shop reviews, swap the screenshots for 1–2 “Verified TikTok Shop review” snippets in the same spot.
+
+Placement
+- Above “How to use,” same line as your TikTok/social proof. First screen if possible; otherwise the first scroll.
+
+Copy you can paste
+- Heading: What buyers say
+- Sub: Real comments from TikTok and first‑time customers.
+
+Optional (for the viral post)
+- Use two short links with utm_content=comment vs utm_content=bio so you can see which placement drives more first orders without touching the ads.
+
+When 15ml returns
+- Keep 30ml preselected. Size microcopy: “Most start with 30ml; 15ml is for trying it out.” Success line for the waitlist: “We’ll email you when 15ml is back. No spam.”
+
+Reply if you want a one‑liner review tile mock (I can send a PNG you can drop in).
+
+Fieldwork Studio

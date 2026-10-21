@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Alknoma/minutehand/integration-main/schemas/scenario.schema.json
+# Priya does the marketing for a small restaurant group. She asks the agent to roast her site from the home page,
+# then browses work and services while it reads. Times between steps drawn per seed.
+name: restaurant_marketer_asks_for_a_roast
+starts_at: 2026-10-15T10:30:00Z
+runs_for: P21D
+max_wakes: 200
+people:
+  - key: priya
+    name: Priya Shah
+    email: priya@ostrogroup.example
+    profile: >-
+      Marketing manager at Ostro, a group of four Italian restaurants in Manchester. Does everything herself, on a laptop at her desk.
+    facts:
+      - Ostro runs four Italian restaurants in Manchester; its website is ostrogroup.example.
+      - Bookings come mostly from Instagram and Google; the booking page loses people on mobile.
+      - She has about £3,000 a month for outside help and needs her director's yes for anything more.
+      - She wants the website fixed before the Christmas party season.
+    working_hours: {timezone: Europe/London, opens: "09:00", closes: "18:00"}
+    reply_within: {min: PT3H, max: P2D}
+    reply: {kind: answers}
+  - key: newsroom
+    name: The trade press
+    email: newsroom@press.example
+    profile: Not a visitor. Reports what happens in marketing; never on the site and never writes to the agent.
+happenings:
+  - {kind: uses, person: newsroom, inbox: world, use: publishes, after: P2D,
+     inputs: {fact: "Last Christmas, data from The Oxford Partnership found consumers stayed longer in hospitality venues than at any other point in 2025, with average dwell time reaching 150 minutes, occupancy rising to 63.9% and average spend per head rising to £26.53.",
+              source: "https://www.restaurantonline.co.uk/Article/2026/10/06/14-tips-to-ensure-a-merry-and-profitable-christmas-at-your-restaurant/",
+              published: "2026-10-06", topic: "go-to-market news: what consumer brands are doing, a shift in how people buy, a season's numbers"}}
+  - {kind: uses, person: priya, inbox: site, use: views, after: PT0S, inputs: {page: /, title: Home}}
+  - {kind: uses, person: priya, inbox: site, use: asks, gap: {min: PT20S, max: PT1M}, inputs: {page: /, label: Roast my site, text: ostrogroup.example}}
+  - {kind: uses, person: priya, inbox: site, use: views, gap: {min: PT5S, max: PT20S}, inputs: {page: /work, title: Work}}
+  - {kind: uses, person: priya, inbox: site, use: picks, gap: {min: PT5S, max: PT20S}, inputs: {page: /work, question: show me work for, answer: Retail}}
+  - {kind: uses, person: priya, inbox: site, use: views, gap: {min: PT20S, max: PT1M}, inputs: {page: /services, title: Services}}
+  - {kind: uses, person: priya, inbox: site, use: reads, gap: {min: PT1M, max: PT3M}, inputs: {page: /services, how: "about two minutes, scrolled 80%"}}
+  - {kind: uses, person: priya, inbox: site, use: views, gap: {min: PT1S, max: PT3S}, inputs: {page: /pricing, title: Pricing}}
+  - {kind: uses, person: priya, inbox: site, use: leaves, gap: {min: PT1M, max: PT4M}, inputs: {page: /pricing}}

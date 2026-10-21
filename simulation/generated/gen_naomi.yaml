@@ -1,0 +1,174 @@
+name: gen_naomi
+starts_at: '2026-10-12T09:00:00Z'
+runs_for: P21D
+max_wakes: 200
+people:
+- key: naomi
+  name: Naomi Fletcher
+  email: naomi@nooksleep.example
+  profile: CFO at a UK DTC mattress brand. Reviewing agencies on behalf of the CEO. Laptop reader with 12 tabs open, numbers-first,
+    brief, sceptical about agency promises, expects immediate evidence and clear commercials.
+  facts:
+  - "We sell hybrid mattresses plus toppers and pillows; AOV ~\xA3520 and 60% of purchases include at least one add\u2011\
+    on."
+  - "TTM revenue \xA314.7m; paid media ~\xA3280k/month; team of 27 on Shopify Plus."
+  - "Our issue in my words: Meta CAC rose from \xA3126 to \xA3182 in 7 months; blended MER slipped to 2.3; quiz drop\u2011\
+    off 68%; mobile PDP add\u2011to\u2011cart 2.4%."
+  - "For a 90\u2011day test we can allocate \xA3300k\u2013\xA3350k media and up to \xA345k in fees tied to a plan; won\u2019\
+    t sign >90 days or >30\u2011day notice."
+  - "I\u2019ll share my email for a numbers\u2011first teardown with 2\u20133 draft landers + forecast; I won\u2019t for a\
+    \ newsletter, ebook, or generic \u2018audit\u2019."
+  - Stack is Shopify + GA4 + Triple Whale; I need weekly channel P&L and asset ownership spelled out.
+  - Their business's website is nooksleep.example; whenever asked for it they give exactly nooksleep.example.
+  working_hours:
+    timezone: Europe/London
+    opens: 08:00
+    closes: '22:00'
+  reply_within:
+    min: PT3H
+    max: P2D
+  reply:
+    kind: answers
+- key: newsroom
+  name: The trade press
+  email: newsroom@press.example
+  profile: Not a visitor. Reports what happens in marketing; never on the site and never writes to the agent.
+happenings:
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P2D
+  inputs:
+    fact: Google Ads introduced new channel prioritization and budget allocation controls that let advertisers mark channels
+      as high/low priority and cap the share of budget to secondary channels; Google notes that starting in February 2027,
+      Search campaigns with the Display Network enabled will lose the current allocation setup unless adjusted. Announced
+      Oct 14, 2026.
+    source: https://blog.google/products/ads-commerce/channel-prioritization-budget-allocation/?ref=noticemesenpai.com
+    published: '2026-10-14'
+    topic: 'a change on a platform brands buy or build on: Meta, Google, TikTok, Pinterest, Shopify, Klaviyo'
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P5D
+  inputs:
+    fact: "Pinterest unveiled Visual Search Ads, a new lower\u2011funnel format that places ads in Pinterest search results\
+      \ and Pin close\u2011ups; it\u2019s rolling out in beta to eligible advertisers in all Pinterest ad markets in the coming\
+      \ weeks and works with Pinterest Performance+. Announced Sept 17, 2026."
+    source: https://newsroom.pinterest.com/news/new-pinterest-visual-search-performance-ads/
+    published: '2026-09-17'
+    topic: 'a change on a platform brands buy or build on: Meta, Google, TikTok, Pinterest, Shopify, Klaviyo'
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P8D
+  inputs:
+    fact: "The UK Advertising Standards Authority listed Nectar Sleep Ltd as non\u2011compliant on Sept 15, 2026 for making\
+      \ misleading savings claims and failing to make the basis of its savings claims clear on its website nectarsleep.co.uk."
+    source: https://www.asa.org.uk/non-compliant/nectar-sleep-ltd.html
+    published: '2026-09-15'
+    topic: 'go-to-market news: what consumer brands are doing, a shift in how people buy, a season''s numbers'
+- kind: uses
+  person: naomi
+  inbox: site
+  use: views
+  inputs:
+    page: /
+    title: Home
+  after: PT0S
+- kind: uses
+  person: naomi
+  inbox: site
+  use: picks
+  inputs:
+    page: /
+    question: biggest headache
+    answer: Can't tell what's working
+  gap:
+    min: PT3S
+    max: PT12S
+- kind: uses
+  person: naomi
+  inbox: site
+  use: asks
+  inputs:
+    page: /
+    label: Roast my site
+    text: nooksleep.example
+  gap:
+    min: PT4S
+    max: PT16S
+- kind: uses
+  person: naomi
+  inbox: site
+  use: views
+  inputs:
+    page: /work
+    title: Work
+  gap:
+    min: PT5S
+    max: PT20S
+- kind: uses
+  person: naomi
+  inbox: site
+  use: picks
+  inputs:
+    page: /work
+    question: show me work for
+    answer: DTC
+  gap:
+    min: PT2S
+    max: PT10S
+- kind: uses
+  person: naomi
+  inbox: site
+  use: reads
+  inputs:
+    page: /work/glow-theory
+    how: about 90 seconds, scrolled ~70% looking for hard numbers
+  gap:
+    min: PT4S
+    max: PT18S
+- kind: uses
+  person: naomi
+  inbox: site
+  use: reads
+  inputs:
+    page: /pricing
+    how: "about 45 seconds, scanned fee examples and the 90\u2011day note"
+  gap:
+    min: PT10S
+    max: PT40S
+- kind: uses
+  person: naomi
+  inbox: site
+  use: picks
+  inputs:
+    page: /pricing
+    question: pricing toggle
+    answer: Project
+  gap:
+    min: PT3S
+    max: PT12S
+- kind: uses
+  person: naomi
+  inbox: site
+  use: writes
+  inputs:
+    text: "Reality check: if we spend ~\xA3300k over 90 days across Meta+Search, what would your fee be? We have in\u2011\
+      house video. Need weekly GA4/MER reporting, not vanity ROAS. 90\u2011day only, no lock\u2011ins. Can you build/host\
+      \ test LPs and work with Triple Whale? CFO here."
+  gap:
+    min: PT9S
+    max: PT36S
+- kind: uses
+  person: naomi
+  inbox: site
+  use: leaves
+  inputs:
+    page: /
+  gap:
+    min: PT12S
+    max: PT50S

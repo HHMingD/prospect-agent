@@ -1,0 +1,81 @@
+To: Nina Petrovic (Only marketer at a 18-person B2B cybersecurity startup in London. Title: Growth & Marketing Lead. She’s on a MacBook Pro with way too many tabs, often on coffee shop Wi‑Fi. Analytical, skeptical, impatient with fluff; polite but direct. She has to convince two technical founders and a sales lead, fast.)
+Judge: 11/25 (specific 2, useful 2, voice 3, fits 2, reply 2) PROMISES 1
+Worst: It misidentifies your company and builds the whole note around a K–12 Orlando booth‑demo funnel that isn’t your product or audience, so the advice feels off‑target.
+! If you send the correct URL, they’ll take a quick look at the demo path you’re using.
+
+Subject: Nina — 10‑minute GEM checklist + a booth‑demo funnel you can ship today
+
+Hi Nina —
+
+Thanks for introducing yourself just now and for filtering to B2B/“traffic but no sales.” Quick heads‑up: I couldn’t open layerlock.example. If that’s the live URL, could you check the address?
+
+Noticed LayerLock is taking BlackBox to the National School Safety Conference in Orlando with live demos for K–12. That’s the highest‑leverage moment to turn attention into qualified demos. Below is something you can paste today so paid and event traffic doesn’t leak.
+
+Booth‑demo landing page (paste‑ready skeleton)
+- URL: /demo (add UTM: utm_source=meta&utm_medium=paid&utm_campaign=ncsc_orlando)
+- H1: Book a 10‑minute BlackBox demo at Booth [#]
+- Subhead: Reserve a slot for a live walk‑through at the show
+- Above‑the‑fold bullets (keep visitor‑centric):
+  • Who it’s for: K–12 safety, IT, and operations teams
+  • What you’ll get in 10 minutes: [3 plain‑English outcomes]
+  • What happens next: [how follow‑up works]
+- Primary CTA: Reserve a booth demo
+- Form (only what you need): Name, Work email, District/School, Role, Preferred day/time
+- Secondary path: Can’t make Orlando? Request a virtual walk‑through
+- Proof band: logos/quotes (small, scannable). If none yet, use a neutral “Trusted by K–12 teams evaluating campus safety.”
+
+Why send paid traffic here (not your homepage)
+- Most homepages lose half of paid traffic in five seconds.
+- Oatside Kitchen cut cost per first order 38% by sending paid to focused offer pages instead of their homepage. Same principle applies here: one job per page (book a demo), nothing else.
+
+GEM (Meta Generative Ads Model) — 10‑minute setup checklist
+Meta just unified optimization across Feed, Reels, and Stories under GEM, reporting up to 18.9% more conversions and 12% higher CTR.
+- Objective + event: Optimize for your on‑site “Book Demo” event (not page views). Fire it on successful form submit or calendar slot set.
+- Placements: Keep all placements on; let GEM distribute across Facebook, Instagram, Reels, Stories.
+- Creatives: Ship 3–5 distinct concepts (not variants of one layout). At least: face‑to‑camera invite, product‑in‑context screen tour, 15‑sec motion cut, and a static with clear “Book a booth demo.”
+- Copy: Three tiers ready to rotate — short hook (under 60 chars), one‑liner value prop, and a proof fragment.
+- Audience: Start broad. If you must constrain, do it lightly; resist stacking interests. Layer in warm audiences (site visitors, engaged video viewers) once traffic lands.
+- Routing: All paid goes to /demo, never your homepage. Tag with the UTM set above.
+- Measurement: Custom column for “Book Demo” conversions; track CTR, CPC, cost per booked demo. Hold a simple pre/post check once GEM has 50+ conversions.
+
+Demo‑page rewrite check that moves B2B needles
+- First screen answers the exact question prospects bring to the booth (in their words), then shows the next action. No feature lists up top.
+- Form friction low; reiterate what they get immediately after submitting.
+- Borrowed lesson: Ledgerly halved cost per demo by cutting LinkedIn targeting from eleven audiences to two, and by rewriting their demo page around the question finance leads actually asked on calls. Honest: the rewrite took seven tries, not one.
+
+If you forward one thing to your team today, forward this:
+- “Point all Orlando/paid clicks to /demo with the copy above. Turn on GEM with 3–5 distinct creatives. Measure cost per booked demo, not clicks.”
+
+One pick‑one question for you
+- If we could only change one item before Orlando, which unlocks the most qualified demos? A) the first two lines on /demo, B) the form (fields/CTA), or C) the ad creative (the first 3 seconds).
+
+If you intended a different URL than layerlock.example, send the correct one and I’ll take a quick look at the demo path you’re using.
+
+Fieldwork Studio
+
+==== Sent before (13/25 (specific 3, useful 3, voice 2, fits 2, reply 3) PROMISES 1)
+Subject: Two quick fixes to turn paid clicks into booked demos at LayerLock (+ 10‑min GEM checklist)
+
+Nina —
+
+If clicks aren’t turning into booked demos, it’s usually two levers: the opener on the demo page and over‑segmented ads fighting learning. Here’s the fastest pass at both.
+
+10‑minute Meta GEM checklist
+- Optimise to one thing: Booked demo. Make sure that event fires on the thank‑you state, not just “lead submitted.”
+- Let GEM learn: run placements across Feed/Stories/Reels/IG and avoid splitting into many ad sets.
+- Feed it concepts in threes: (1) 20–30s product‑in‑use clip, (2) quick founder phone demo, (3) proof‑first graphic. Kill any variant after ~3 weeks of falling CTR.
+- Exclude existing customers/recent submitters; keep retargeting separate.
+- UTMs that label concept + variant, so you can see which creative actually books demos.
+
+Demo‑page mini‑fix (the change that helped halve cost per demo at Ledgerly)
+- Lead with the first question prospects ask on calls. Put the direct answer in the first screen, then 3 short proofs (e.g., compliance/security, time to deploy, who uses it daily).
+- One action only: “Book a 15‑min demo.” Form: Name, Work email, Role, Organisation. Anything else moves below the fold.
+- Add one trust element above the fold (logo, short quote, or stat). Keep the rest for below.
+
+LinkedIn in 15 minutes
+- Two audiences only: Core (relevant job titles/functions) and Warm (site visitors/video viewers). Move budget to whichever books demos this week.
+- One concept, three variants. Replace only when CTR slides for ~3 weeks.
+
+Side note: I couldn’t open layerlock.example just now — could you share the correct URL or a working link to your demo page? I’ll point out the first five fixes and how to lay out a one‑screen version you can ship fast.
+
+Fieldwork Studio

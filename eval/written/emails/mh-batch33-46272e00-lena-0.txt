@@ -1,0 +1,87 @@
+To: Lena Duarte (Solo founder and maker at Salt & Strand Jewellery in Brighton. Splits time between the bench and packing orders; checks marketing on her phone between tasks and on a laptop at night. Careful with cash, blunt, a bit burned by a previous freelancer. Pragmatic, quick skimmer, screenshots things to revisit.)
+Judge: 18/25 (specific 4, useful 4, voice 4, fits 3, reply 3)
+Worst: It doesn’t tackle the pricing/fit she’s literally viewing or put expected numbers/targets on the 90‑day plan, so the value case feels unproven and easy to park.
+
+Subject: Salt & Strand: 3 quick wins to lift conversion from paid (plus a 90‑day gifting plan)
+
+Hi Lena —
+
+You said ads got expensive. After looking at Salt & Strand and the Tallow & Thyme gifting case you read, here’s the teardown I promised myself I’d send you — tight, forwardable, and usable today.
+
+TL;DR
+Your clicks pay for a story (handmade, Brighton, 4.8/5 over 180+) but not a reason to act now. The three biggest gaps: no clear bestseller/gifting hook above the fold, PDPs miss USP bullets and low‑stock/trending cues, and cart/checkout hides delivery cut‑offs/trust.
+
+What to change this afternoon (paste‑ready)
+1) Hero above the fold
+- Headline: Brighton‑made recycled silver jewellery
+- Subhead: 4.8/5 from 180+ reviews. Free UK shipping over £75.
+- CTAs: Gifts under £150  |  Shop Bestsellers
+
+2) Product pages
+Add a 4‑bullet USP block directly under price:
+- Recycled silver
+- Handmade in Brighton
+- 4.8/5 from 180+ reviews
+- Free UK shipping over £75
+Then add lightweight urgency cues: “Bestseller” on high‑velocity SKUs and a “Low in stock” flag when inventory is low.
+
+3) Cart and checkout reassurance
+- Surface a single reassurance row at cart: Free UK shipping over £75 • 4.8/5 from 180+ reviews • Secure checkout
+- Put delivery info in‑line (don’t make me click away). Add a simple seasonal note when you have it: “Order by [date] for Christmas delivery.”
+- Remind returning visitors about any welcome code at cart rather than only via the email pop‑up.
+
+Gift discovery (what worked elsewhere)
+In a similar “too many choices” moment, we turned a 60‑candle grid into a three‑question flow for Tallow & Thyme that converted at 4.8% vs 1.9% for the grid. For jewellery, the same pattern applies. A minimal gift finder can be:
+- Q1: Who’s it for? (Her • Him • A friend • Me)
+- Q2: Occasion? (Birthday • Christmas • Anniversary • Just because)
+- Q3: Budget? (Under £75 • Under £150 • Over £150)
+Output: 6–12 curated SKUs with “Most‑gifted” labels and an add‑to‑cart from the results.
+
+Pages to publish this month
+Jewellery retail experts recommend launching gifting landing pages in October segmented by recipient, price and occasion. For Salt & Strand, start with:
+- Gifts under £150
+- For your best friend
+- Personalised
+- Bridesmaid gifts
+
+90‑day test plan (simple, comp‑friendly)
+- Weeks 1–2: A/B the hero — “Gifts under £150” vs “Shop Bestsellers.” Success = higher PDP views per session and conversion rate.
+- Weeks 2–4: Ship PDP USP bullets and “Bestseller/Low in stock” flags; track add‑to‑cart rate by template.
+- Weeks 3–6: Launch a minimal 3‑question gift finder. Measure flow CVR vs your collection grid.
+- Weeks 5–8: Add cart reassurance row and in‑line delivery/returns. Expect lower checkout drop‑off.
+- Weeks 6–12: Point paid and email to the new gifting pages; keep “New In” for existing customers.
+
+Why now
+- Your shop is fast and clean; these are thin, high‑leverage changes.
+- UK retail footfall fell 2.9% YoY in September — online has to carry more of Q4. Better discovery and clearer reassurance protect CAC when ads are pricier.
+- If you’re on Shopify, Canvas (October 2026) makes quick hero and section variants easier without a developer.
+
+If you only do one thing this week
+Swap the hero to a gifting or bestseller hook and publish “Gifts under £150.” It creates an immediate path for paid traffic and gives you a clear A/B test to run.
+
+One question for you
+Which hook should lead your hero for the next two weeks: “Gifts under £150” or “Shop Bestsellers”?
+
+PS: If influencer is part of your mix, IMK London is a half‑day, Central London event on 28 Oct focused on influencer marketing — useful when ads are expensive.
+
+— Fieldwork Studio
+
+==== Sent before (22/25 (specific 4, useful 5, voice 5, fits 4, reply 4) PROMISES 1)
+Subject: Salt & Strand: Q4 gifting fixes you can ship this week
+
+Lena—
+
+Your ethos is clear; the path to “this is the gift” is hidden. Here’s what to change for Q4, in the order we’d do it:
+
+1) Homepage hero: make gifting the job. Example: “Handmade Brighton gifts under £100” → single CTA to a curated page.
+2) Three gifting pages: For Her • Under £100 • Personalised. First screen: (a) one‑line promise, (b) 3 top picks with star ratings and price, (c) delivery/returns strip.
+3) Nav and cards: add Gifts to top nav (Oct–Dec); add “Most Gifted”/“Under £100” badges on product tiles.
+4) PDP first screen: add bullets above the fold—Recycled sterling silver; Handmade in Brighton; 4.8/5 from 180+ reviews; Free UK shipping over £75; Gift box/returns if offered. Keep Add to Cart visible on mobile.
+5) Cart reassurance: repeat shipping threshold, delivery cut‑offs (when final), and returns in‑cart. Add “You’re £X from free shipping” message; surface payment marks. Consider showing the welcome 10% code in‑cart for new visitors.
+6) Ads and landing pages: run 3 concepts × 3 variants—(a) hand‑worn close‑ups in sunlight, (b) gift unboxing, (c) maker‑at‑bench. Send each to its matching gifting page; retire any asset after three weeks of falling CTR.
+
+Measure simply: tag links to each gifting page, route ~50% of paid traffic there for a clean read, and compare conversion rate and cost per first order against your current paths.
+
+If you want, I can turn this into a simple wireframe for the hero and one gifting page.
+
+Fieldwork Studio

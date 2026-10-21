@@ -1,0 +1,140 @@
+To: Amrita Shah (Founder of Sprout & Stitch, a UK kids’ clothing brand. She splits time between the studio and a small warehouse. Skims on her iPhone first, opens laptop only if it’s worth it. Direct, impatient with fluff, numbers-first but creative-savvy. Skeptical of long retainers; likes clear experiments and visible outputs.)
+Judge: 25/25 (specific 5, useful 5, voice 5, fits 5, reply 5) PROMISES 1
+Worst: A touch long for an iPhone skim; the Shopify/Meta notes feel slightly extra versus the core teardown.
+! If you reply with 1/2/3 on the first worry to test, I’ll tune the notes around that first.
+
+Subject: Mud wins: proof-led page + 3 ad concepts you can test at Sprout & Stitch
+
+Hi Amrita —
+
+You asked: for kidswear, is “mud‑wins” best shown with photo proof, video, or just copy? And do we have kidswear‑specific CPA lifts? Short answers:
+- Format: motion first for ads (a tight, 5–7s loop that shows the proof), then a still on the landing page that repeats the same proof in one line. If motion isn’t ready, a clean before/after still works. Copy‑only is the weakest scroll‑stopper; use it as reinforcement, not the opener.
+- Proof: we don’t have kidswear CPA results. The closest is DTC food: moving ads off the homepage onto promise‑matched offer pages dropped cost per first order by 38% (Oatside Kitchen). The principle holds for kidswear because the parent worry is singular in‑moment. Match ad promise to page, put the proof first.
+
+A fast, proof‑led teardown for Sprout & Stitch
+
+What’s working
+- “Reinforced knees and seams” and GOTS‑certified organic cotton are strong, specific proof points on your site.
+- The Summer Lookbook has the energy your ads need (real play, Leeds playgrounds, colour + movement). Use this vibe as the ad thumb‑stopper and the page hero.
+
+What to change first (copy you can paste today)
+1) Homepage hero → make the proof the point
+Headline: Playproof, not precious.
+Sub: Reinforced knees and seams. GOTS‑certified organic cotton. Built to be handed down.
+CTA: Shop Playproof
+
+2) Product cards → reduce friction at a glance
+- Add a small badge on relevant SKUs: Reinforced knees + seams
+- Add a one‑line fit cue under sizes: Age‑based sizes. True to size.
+- Where you have them, surface care/returns near “Add to bag”: Free UK returns • Order by 2pm for same‑day dispatch • Pay later with Klarna
+
+3) Move your “Why Sprout & Stitch” into the first screen of any landing page and collection pages (not just the home). Keep it to those three bullets you already use.
+
+Three promise pages (one worry per page)
+1) Rain Day Ready
+- Hero line: Rain doesn’t end play.
+- Sub: Bright layers + Splash Raincoat. GOTS‑certified. Free UK returns.
+- Proof module: 3–5s loop from a puddle‑stomp in the Lookbook; first frame is the coat detail.
+- Product picks: Splash Raincoat, Stripe Play Set, Rainbow Leggings.
+- Reassurance strip: Order by 2pm for same‑day dispatch • UK delivery 2–4 days • EU 5–7 days
+
+2) Rough‑and‑Tumble (Mud Wins)
+- Hero line: Knees survive the playground.
+- Sub: Reinforced knees and seams. Built to be handed down.
+- Proof module: side‑by‑side close‑ups of knee panels; carousel of climbing/slide shots from the Lookbook.
+- Product picks: Rainbow Leggings, Dino Tee, Splash Raincoat (layered looks).
+- Reassurance strip: Free UK returns • GOTS‑certified organic cotton
+
+3) Party‑Proof Brights
+- Hero line: Party hard. Hand down later.
+- Sub: Soft organic cotton in colours that stay loud.
+- Proof module: Lookbook studio shots with spill/cake moments if you have them; otherwise a tight crop on fabric/finish.
+- Product picks: Kite Dress, Stripe Play Set, Dino Tee.
+- Reassurance strip: Pay later with Klarna • UK delivery 2–4 days
+
+Three ad concepts pulled from your Lookbook (with first‑frame hooks)
+A) Mud Wins (Reel/Story + Carousel)
+- First 2s: slide into mud; on‑screen: “Mud wins. Knees do too.”
+- Beat 2: close‑up of knee panel; supers: “Reinforced knees + seams”
+- End slate: “Bright, tough, planet‑kind. Shop Playproof.”
+
+B) Rain Day (Reel/Story + Static)
+- First 2s: puddle stomp; on‑screen: “Rain doesn’t end play.”
+- Beat 2: coat detail + smile; supers: “GOTS‑certified organic cotton”
+- End slate: “UK delivery 2–4 days • Free returns”
+
+C) Hand‑Me‑Down Challenge (Reel + Carousel)
+- First 2s: quick pass‑along between siblings/friends; on‑screen: “Built to be handed down.”
+- Beat 2: fabric/finish close‑up; supers: “Bright, tough, planet‑kind”
+- End slate: “Shop Playproof”
+
+Lightweight test plan (kept to what moves CPA)
+- Structure: 1 concept per ad set, 3 creatives per concept (motion vs still; hook line variant; first‑frame choice: outdoor Lookbook vs studio vs product close‑up). Send each ad to its matching promise page, not the homepage.
+- What to read: CPA to first order and hold‑out click‑through; watch first‑frame hold for 3s as a sanity check.
+- Why this mirrors past lift: the 38% improvement at Oatside Kitchen came from 1:1 promise‑to‑page alignment, not a design overhaul.
+
+Two quick operational notes you can use
+- Shopify Canvas (introduced Oct 1, 2026) lets you spin these promise pages fast with prompts—handy if dev time is tight.
+- Meta is introducing a unified Generative Ads Model (GEM) in October 2026 that optimises creative and placements across Facebook, Instagram, Reels, and Stories; fresh variants like the above tend to benefit from that kind of optimisation.
+
+One question to pick the first test
+If you had to choose one parent worry to own this month, which is it?
+1) Rain Day  2) Rough‑and‑Tumble  3) Party‑Proof
+
+Reply with 1/2/3 and any constraints (assets, channels). I’ll tune the notes around that first.
+
+Fieldwork Studio
+
+==== Sent before (23/25 (specific 5, useful 4, voice 5, fits 4, reply 5) PROMISES 1)
+Subject: Sprout & Stitch teardown: 3 proof‑driven tests to cut CPA
+
+Amrita —
+
+Thanks for the straight ask. Here’s the teardown plus a 2‑week test you can run now.
+
+Angle on “mud‑wins”
+- Lead with motion if you can: a tight 3–5s clip of muddy knees vs. reinforced stitching, or water beading on Splash Raincoat.
+- If video isn’t ready, use a macro static (stitching/knee panels) with a blunt line: “Reinforced knees. Free UK returns.”
+- Run both: one video variant, one macro static, one carousel close‑up; let the account tell you.
+
+What’s strong (use more)
+- Reinforced knees and seams; GOTS organic; 30‑day free returns.
+- The Leeds Lookbook shots feel real and colourful—great ad and hero fodder.
+
+What to change this week
+- Lead with a proof‑first hero and put one reassurance (returns/delivery) in the first screen.
+- Add a simple fit cue on product cards (e.g., “true to size”) and a quick height/cm hint alongside ages.
+- Pull Lookbook frames into the first screen of key pages, not just the Lookbook.
+
+Three promise pages (one ad, one promise, one page)
+1) Rain (Splash Raincoat + rainwear)
+- Hero: water beading test; headline “Dry kids = longer play.”
+- Proof bullets: construction detail; one parent quote.
+- CTA: “Get the Splash Raincoat.”
+
+2) Rough‑and‑Tumble (playproof bottoms)
+- Hero: knees in action; “Reinforced knees. Playground ready.”
+- Size/height microcopy; one durability line.
+- CTA: “Shop playproof bottoms.”
+
+3) Party (bright sets/dresses)
+- Hero: twirl/colour pop; “Party‑bright, play‑ready.”
+- Care note; simple fit cue.
+- CTA: “Party‑ready outfits.”
+
+Three ad concepts (ship each in 3 variants)
+A) Mud Wins — video, macro static, carousel of post‑play close‑ups.
+B) Rain Test — hose/squirt‑gun clip; shake‑dry moment; product under running water.
+C) Hand‑Me‑Down — sibling handoff; year‑1/2/3 stack; short parent quote on longevity + planet‑kind.
+
+How to measure
+- Route each ad only to its matching promise page; keep a small homepage holdout for benchmark.
+- Count cost per first order from each page and retire any creative after three weeks of falling click‑through; keep anything still climbing.
+
+Evidence we can stand behind
+- We don’t have kidswear‑specific CPA lifts to cite yet.
+- Closest quantified result: for Oatside Kitchen (DTC food), moving ads from homepage to offer‑specific pages cut cost per first order by 38%. Same principle here: one ad, one promise, one page.
+
+If helpful, I can send quick wireframe templates for the three pages.
+
+Fieldwork Studio

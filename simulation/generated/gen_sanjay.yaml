@@ -1,0 +1,174 @@
+name: gen_sanjay
+starts_at: '2026-10-12T09:00:00Z'
+runs_for: P21D
+max_wakes: 200
+people:
+- key: sanjay
+  name: sanjay
+  email: sanjay@brunosbowl.example
+  profile: "Founder-CEO of Bruno\u2019s Bowl, a UK fresh dog food subscription. Mostly browses on his iPhone 14 Pro between\
+    \ warehouse runs; opens laptop late evening for deeper reads. Blunt, numbers-first, impatient with fluff, sceptical of\
+    \ agencies but open to tight 90\u2011day tests."
+  facts:
+  - "We sell gently cooked fresh dog meals via subscription; 80% of signups come from Meta ads to a \xA312 trial box."
+  - "~\xA3400k/month revenue; ~11,500 active subs; 58% cancel before the second box within 30 days. CPA for the trial averages\
+    \ \xA338."
+  - I think churn is sticker shock on full price, freezer space/delivery issues, and portions feeling off vs what we promise
+    on the trial page.
+  - "Stack: Shopify + Recharge + Klaviyo; attribution murky post\u2011iOS; hard to join ad clicks to Recharge cancels without\
+    \ manual exports."
+  - "Budget up to \xA325k for a 90\u2011day sprint focused on expectation-setting creative and LP tests to reduce post\u2011\
+    trial cancels. No long retainers."
+  - "I\u2019d give my email for a specific teardown of /meals/trial with a 90\u2011day test matrix and projected impact; not\
+    \ for generic newsletters or ebooks."
+  - Their business's website is brunosbowl.example; whenever asked for it they give exactly brunosbowl.example.
+  working_hours:
+    timezone: Europe/London
+    opens: 08:00
+    closes: '22:00'
+  reply_within:
+    min: PT3H
+    max: P2D
+  reply:
+    kind: answers
+- key: newsroom
+  name: The trade press
+  email: newsroom@press.example
+  profile: Not a visitor. Reports what happens in marketing; never on the site and never writes to the agent.
+happenings:
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P2D
+  inputs:
+    fact: "Shopify\u2019s 2026-10 API (latest stable as of Oct 1) adds SubscriptionContractCalculation to replace the old\
+      \ SubscriptionDraft workflow and introduces paymentInstrumentSendAddEmail so apps can email customers a secure link\
+      \ to add a payment method to a specific subscription contract via Shopify Checkout."
+    source: https://shopify.dev/changelog/release-notes/2026-10
+    published: '2026-10-15'
+    topic: 'a change on a platform brands buy or build on: Meta, Google, TikTok, Pinterest, Shopify, Klaviyo'
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P5D
+  inputs:
+    fact: The Communication Workers Union says about 400 Royal Mail staff are leaving each week following rollout of the DM26
+      delivery model, warning of worsening delivery performance heading into the Christmas peak.
+    source: https://www.bbc.co.uk/news/articles/cm5ynp0vz3p7o?at_medium=RSS&at_campaign=rss
+    published: '2026-10-13'
+    topic: 'go-to-market news: what consumer brands are doing, a shift in how people buy, a season''s numbers'
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P8D
+  inputs:
+    fact: "The UK\u2019s new \u2018anti-subscription-trap\u2019 rules under the DMCCA have been brought forward to January\
+      \ 2027, requiring clearer pre-contract information, reminder notices before trial-to-paid and renewals, and friction-free\
+      \ \u2018click-to-cancel\u2019 processes."
+    source: https://www.twobirds.com/en/insights/2026/uk/consumer-law-reform-understanding-subscription-contracts,-fake-reviews-and-drip-pricing
+    published: '2026-10-02'
+    topic: 'go-to-market news: what consumer brands are doing, a shift in how people buy, a season''s numbers'
+- kind: uses
+  person: sanjay
+  inbox: site
+  use: views
+  inputs:
+    page: /
+    title: Home
+  after: PT0S
+- kind: uses
+  person: sanjay
+  inbox: site
+  use: picks
+  inputs:
+    page: /
+    question: biggest headache
+    answer: Can't tell what's working
+  gap:
+    min: PT3S
+    max: PT12S
+- kind: uses
+  person: sanjay
+  inbox: site
+  use: asks
+  inputs:
+    page: /
+    label: Roast my site
+    text: brunosbowl.example
+  gap:
+    min: PT2S
+    max: PT8S
+- kind: uses
+  person: sanjay
+  inbox: site
+  use: views
+  inputs:
+    page: /work
+    title: Work
+  gap:
+    min: PT5S
+    max: PT20S
+- kind: uses
+  person: sanjay
+  inbox: site
+  use: picks
+  inputs:
+    page: /work
+    question: show me work for
+    answer: DTC
+  gap:
+    min: PT1S
+    max: PT6S
+- kind: uses
+  person: sanjay
+  inbox: site
+  use: reads
+  inputs:
+    page: /journal/landing-pages-not-homepages
+    how: about one minute, scrolled 75%
+  gap:
+    min: PT25S
+    max: PT100S
+- kind: uses
+  person: sanjay
+  inbox: site
+  use: views
+  inputs:
+    page: /pricing
+    title: Pricing
+  gap:
+    min: PT6S
+    max: PT24S
+- kind: uses
+  person: sanjay
+  inbox: site
+  use: picks
+  inputs:
+    page: /pricing
+    question: pricing toggle
+    answer: Project
+  gap:
+    min: PT2S
+    max: PT10S
+- kind: uses
+  person: sanjay
+  inbox: site
+  use: writes
+  inputs:
+    text: "We get loads of \xA312 trials but >50% cancel before the second box. Do you actually fix post-trial churn or just\
+      \ top of funnel? Ballpark cost for a 90\u2011day sprint?"
+  gap:
+    min: PT16S
+    max: PT64S
+- kind: uses
+  person: sanjay
+  inbox: site
+  use: leaves
+  inputs:
+    page: /pricing
+  gap:
+    min: PT7S
+    max: PT30S

@@ -1,0 +1,122 @@
+To: Maya Bains (Solo UGC + ad-creative freelancer for small DTC brands. Uses a cracked iPhone 12 mini on 4G between shoots; opens laptop only at night. Fast, skeptical, frugal, hates fluff but hungry for practical tips. Juggles client work and prospecting; not a real buyer here—fishing for ideas she can DIY.)
+Judge: 23/25 (specific 4, useful 5, voice 5, fits 5, reply 4) INVENTED 1 PROMISES 1
+Worst: It mistakenly references ‘your chips (“What’s your biggest headache?”)’ as if they’re on Maya’s site, which they aren’t, slightly undermining the otherwise spot‑on specificity.
+! Says to “Use your chips (‘What’s your biggest headache?’) to pre‑fill Project goal” — those chips exist on Fieldwork’s site, not on Maya’s site.
+! If you reply with a primary CTA choice, the studio will tailor the rest of the copy around that action.
+
+Subject: Maya — your 10‑point teardown to turn visits into briefs today
+
+Maya,
+
+You asked for a roast. Here’s a focused teardown with changes you can ship today and a 7‑day test plan. The thread that runs through it: one path to one outcome. Right now you’ve got too many choices (two routes, multiple labels), asks that come too early (budget/deadline), a calendar that can dead‑end, and your best proof is shy mid‑page.
+
+What to fix first (highest impact, lowest lift)
+1) Make one primary CTA everywhere
+- Choose a single action and label it the same on Home and Packages. Recommendation: “Request an estimate.” Keep calls secondary.
+- Add microcopy under the button: “I reply within 48 hours, Mon–Fri.” (matches your promise).
+
+2) Surface proof above the fold
+- Directly under the hero, show three small video thumbs with captions you already have:
+  • Tea brand UGC: CTR 1.2% → 2.1%
+  • Serum demo: top cut hit 5.8% watch‑through
+  • Protein bar taste test: 4 hooks, 2 winners
+- Link each to Work.
+
+3) Simplify the first brief
+- On Home, replace the Quick Brief with 3 fields: Name, Email, Project goal (free text). Move Budget/Deadline to your follow‑up after you’ve replied.
+- Use your chips (“What’s your biggest headache?”) to pre‑fill Project goal when clicked.
+
+4) Calendar fallback (no dead‑ends)
+- On Packages, if no times show, replace the DM instruction with a button right there: “Request times by email.” It routes into the same estimate inbox. Keep calls as an option, never the only path.
+
+5) Align Packages CTAs
+- Starter UGC / Ad Testing Pack / Monthly UGC: make the primary button on all three “Request estimate.” If Monthly is waitlist‑only, keep “Join waitlist” as a secondary link but do not change the primary action.
+
+6) Put price + turnaround where they help, not hide
+- Add this line under the hero subhead on Home: “From £300/video. Turnaround 7–10 days.” (you already state both lower down). Reduces back‑and‑forth and builds trust.
+
+7) Tighten copy to outcomes
+- Hero today is solid; add a subline that ties to buying intent: “Creator‑shot verticals for CPG/beauty/food. Edited fast. Built to test hooks.”
+
+8) Add visual trust
+- Use native video thumbs or stills with a play icon instead of text‑only “Recent work.” Thumbs + the three captions above is enough.
+
+9) Remove friction words on first touch
+- Swap “Enquire” for “Request estimate.” “Upload brief” becomes optional (“Paste a link is fine”). Keep “I reply within 48 hours” right under the button.
+
+10) Squash tiny trust leaks
+- There are a few encoding artefacts showing (e.g., Â and odd hyphens). Clean those—tiny thing, outsized signal.
+
+Copy you can paste this afternoon
+- Primary CTA (everywhere): “Request an estimate”
+  Microcopy under button: “I reply within 48 hours, Mon–Fri.”
+
+- Hero block (Home)
+  Headline: “Short‑form ads your customers actually watch.”
+  Subhead: “Creator‑shot verticals for CPG, beauty and food. From £300/video. Turnaround 7–10 days.”
+  Button: Request an estimate
+
+- Proof strip (Home, directly under hero)
+  [Thumb] Tea brand UGC — CTR 1.2% → 2.1%
+  [Thumb] Serum demo — top cut hit 5.8% watch‑through
+  [Thumb] Protein bar taste test — 4 hooks, 2 winners
+
+- Quick Brief (first touch)
+  Fields: Name, Email, Project goal
+  Helper text: “Tell me the goal in one line (e.g. ‘new hooks for serum launch’). Budget/deadline come after I reply.”
+  Submit: Request an estimate
+  Footnote: “I reply within 48 hours, Mon–Fri.”
+
+- Packages (per card)
+  Button: Request estimate
+  Subtext: “I reply within 48 hours with a simple estimate and next steps.”
+  Secondary (Monthly only): Join waitlist
+
+- Calendar module (fallback)
+  If no times show: “No times available? Request times by email instead.” [button → estimate form]
+
+A 7‑day test plan (measures, not vibes)
+- Goal: lift “estimate requests per 100 visits” on Home and Packages.
+- Baseline today: record one day of current numbers.
+- Test A (Home): Dual CTA vs single primary (Request estimate). Success = +20–30% clicks on primary without drop in total contacts.
+- Test B (Home): Proof above fold vs proof mid‑page. Success = higher form starts and completions.
+- Test C (Packages): Calendar visible vs hidden behind secondary toggle, with primary “Request estimate.” Success = fewer abandons on Packages.
+- Instrument: track clicks on primary CTA, form starts, form submits, and where users exit (calendar vs enquiry).
+
+Optional but timely
+- If you’re nearby on Wed 28 Oct: IMK London (influencer marketing, half‑day, Central London). Given your niche, it’s a useful room. https://www.influencermarketingklub.com/event/imk-london
+
+One question to move this forward today
+- For the next 7 days, which primary CTA do you want to run site‑wide: “Request an estimate” or “Start a brief”? Reply with your pick and I’ll tailor the rest of the copy around that action.
+
+Fieldwork Studio
+
+==== Sent before (24/25 (specific 5, useful 5, voice 4, fits 5, reply 5) PROMISES 1)
+Subject: Teardown for mayabainscreative.example: 10 fixes to turn clicks into briefs
+
+Maya,
+
+What’s costing you leads: two doors (Book a call vs Enquire/Quick Brief) plus early asks (deadline/budget). When the calendar shows no times, high‑intent visitors stall. Your wins and metrics are strong—use them earlier to earn the click.
+
+Do these first:
+1) One primary CTA site‑wide: “Get a cost + start date.” Route hero and packages to one slim form.
+2) Slim form: email + brand URL + goal (e.g., “4 UGC videos to test 6 hooks”). Ask budget/deadline after you reply.
+3) Swap the calendar gate for “Request times.” Keep calls, but propose two slots by email when asked.
+
+Then tighten:
+4) Put three work thumbnails with your own metrics (e.g., “CTR 1.2%→2.1%,” “5.8% watch‑through,” “4 hooks, 2 winners”) in the first screen; link to Work.
+5) Make package CTAs consistent: “Get this package,” prefilled in the slim form.
+6) Put usage/rights as a single line by the price; keep the detail in FAQs.
+7) Rename packages to outcomes where possible (e.g., “Test 6 hooks in 10–14 days”).
+8) Keep the Free UGC Brief Template as a secondary path; don’t split the hero’s job.
+9) Add a visible fallback under the primary CTA: “Prefer a call? Request times—no calendar.”
+10) Echo your 48‑hour reply promise beside the main CTA and on submit.
+
+Quick tests for this week:
+- Hero CTA: “Get a cost + start date” vs current. Measure form completions.
+- Proof placement: hero thumbnails vs current. Measure form starts.
+- Form friction: slim form vs Quick Brief. Measure completion rate and 48‑hour replies sent.
+
+If useful, I can send paste‑in hero copy and the slim form fields.
+
+Fieldwork Studio

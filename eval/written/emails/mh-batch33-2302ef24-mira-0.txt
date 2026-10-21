@@ -1,0 +1,167 @@
+To: Mira Patel (Growth Lead at SproutBox Meals (vegan meal kits). Browses on a 13" laptop, trackpad-only, 12 tabs open. Time-poor, analytical, skeptical of agency fluff, wants numbers and fast experiments. Pragmatic: can ship tests without pulling her full dev team.)
+Judge: 23/25 (specific 4, useful 5, voice 4, fits 5, reply 5) PROMISES 2
+Worst: It never ties the plan to your known numbers (e.g., 88% mobile drop‑off, £74 CPA vs £45 target) or expected lift by test, so parts still read like a sharp template rather than your exact leak map.
+! We’ll map your quiz, builder, and checkout the moment you share the URL.
+! We’ll tune these five tests to your exact flow once you send the quiz entry URL (and any shipping threshold gotchas).
+
+Subject: Mira — five sharp tests for your quiz → box → checkout (with matched Meta ad angles)
+
+Hi Mira,
+
+You said it plainly: 2–3 truly fresh concepts/week, best ads 4+ months old, CAC up ~60% YoY. Here’s a blunt, specific plan you can drop into your testing doc today. If someone else owns quiz/builder UX or paid, feel free to forward this as-is.
+
+What we’ll map the moment you share the URL
+- Quiz: Q1 friction (what’s asked vs what’s promised), branching logic, progress/state UI, email gate timing.
+- Builder: choice architecture (visible set vs “show all”), defaults/presets, price/benefit anchoring, “fast build” vs browse mode.
+- Checkout: fees/threshold visibility, delivery clarity, trust cues and payment confidence.
+
+Five prioritized tests (ranked)
+1) Reframe Q1 and add a no-pressure out
+   Hypothesis: First-question anxiety is your biggest silent leak. A benefit-led Q1 plus a “Not sure yet?” path lifts Quiz Step 1 → Step 2 continues.
+   Make this change:
+   - Replace a feature-led Q1 with “What matters most right now?” options (Speed • Diet-fit • Budget • Variety • Surprise me).
+   - Add a subtle “Skip for now”/“Help me decide” link.
+   - Show progress clearly (Step 1) without advertising total length up front.
+   Measure: continue rate from Q1→Q2 by traffic source; time-to-Q2.
+   Pasteable UI copy: “Let’s build your box. First, what matters most?” CTA: “Continue”. Helper link: “Not sure yet? I’ll choose for you.”
+
+2) Auto‑build a starter box from quiz answers
+   Hypothesis: Landing in an empty builder forces work; a prefilled “Starter Box” reduces decision load and increases Add-to-Basket.
+   Make this change:
+   - After results, arrive on builder with a prefilled set and a banner: “We prebuilt your box from your answers — edit anything.”
+   - 1‑click “Lock this in” above the fold.
+   - Keep an obvious “Start from scratch”.
+   Measure: add-to-basket rate, time-to-first-add, builder completion; compare quiz vs non‑quiz traffic.
+   Pasteable UI copy: Banner title “Your Starter Box is ready.” Sub “Tweak anything — you’re in control.” CTA “Lock this in”.
+
+3) Reduce visible choice and introduce a Fast Build
+   Hypothesis: Fewer visible SKUs at once improves scanning and progress; a Fast Build preset gives satisficers a path.
+   Make this change:
+   - Collapse categories; show top 6 per category with “Show all”.
+   - Add a toggle: “Fast Build (recommended)” vs “Browse everything”.
+   - Keep a sticky summary (items added, current est. total).
+   Measure: builder step CTRs, dwell time, exit rate, completion.
+   Pasteable UI copy: Toggle label “Fast Build — finish in a few taps”. Category footer “Show all options”.
+
+4) Bring all‑in price and delivery forward
+   Hypothesis: Late shipping/fees surprises depress checkout starts; an upfront all‑in estimate and delivery window calms price worry.
+   Make this change:
+   - Persistent mini‑cart shows “Estimated total incl. delivery” and next available delivery window.
+   - If there’s a shipping threshold, surface it in the builder (“£ away from cheaper delivery”) — if you use thresholds.
+   - Show any first‑order perk where decisions happen, not just at checkout.
+   Measure: add-to-checkout rate, checkout start → shipping step progression, discount/threshold utilization.
+   Pasteable UI copy: “Current box: [X items] • Est. total incl. delivery shown” and a small link “See how we calculate this”.
+
+5) Reorder checkout for confidence and speed
+   Hypothesis: Trust signals and fewer fields above the fold lift pay conversion.
+   Make this change:
+   - Put express options first (if available), then delivery, then payment.
+   - Add a single‑line reassurance near the pay button (freshness/quality standard, delivery reliability, or support response — whichever you actually offer).
+   - Show recognizable payment marks and a friendly failure path (“Try another way”).
+   Measure: checkout step conversion, payment failures, time on payment step.
+   Pasteable UI copy: “Secure checkout • Fast delivery • Friendly support” near the CTA; microcopy under email “We only use this for your order.”
+
+Matched Meta ad concepts (angles > variants)
+Your note about creative fatigue tracks with what’s working now: distinct angles beat endless minor crops. Meta’s new Generative Ads Model (GEM) is optimizing creative across placements in October 2026, so give it clearly different hypotheses to learn from.
+
+Stage 1 — Send to Quiz
+- Outcome-first: Primary “Build dinners around you — start with a quick quiz.” Headline “Your box, your rules.”
+- Diet-fit: Primary “High‑protein? Plant‑based? We’ll fit the plan to you.” Headline “No more one‑size‑fits‑all.”
+- Time‑starved: Primary “Busy week? We’ll plan it for you.” Headline “Decisions: done.”
+
+Stage 2 — Retarget Quiz finishers who didn’t build
+- Starter Box: Primary “We prebuilt your box from your answers — tweak in seconds.” Headline “Your picks are waiting.”
+- Social proof: Primary “Join others choosing [Speed/Diet/Budget] as priority — see your box.” Headline “Popular this week.”
+
+Stage 3 — Retarget builder abandoners
+- Price clarity: Primary “See your all‑in total (delivery included) before checkout.” Headline “No surprises.”
+- Low effort: Primary “Three taps and you’re done.” Headline “Fast checkout.”
+
+Stage 4 — Recover checkout drops
+- Reassurance: Primary “Secure checkout, reliable delivery, friendly support.” Headline “Finish your order.”
+- Nudge: Primary “Your box is saved — pick your delivery window.” Headline “Resume where you left off.”
+
+Creative cadence idea (fits your 2–3/wk reality)
+- Ship 2 net‑new angles weekly (not variants), each with 3 on‑message edits for primary text. Kill losers fast; let one winner farm variants only after it proves lift.
+- Map each angle to a funnel stage to keep learnings clean.
+
+Relevant market signal
+- The Chefees frozen meal‑kit brand expanded to Ocado in August 2026 while keeping DTC as its main engine — and they lean on flexible meal‑box building rather than fixed boxes. That’s the direction the category is rewarding: less friction, smarter defaults.
+
+One question to pressure‑test our plan
+- What URL kicks off your quiz, and do you currently land quiz finishers on an empty builder or a prefilled one?
+
+If you want logistics or anything coordinated, Priya Nair at Fieldwork Studio can answer it. Otherwise, reply with the quiz entry URL (and any gotchas like shipping thresholds), and we’ll tune these five tests to your exact flow.
+
+Fieldwork Studio
+
+P.S. If “ads got expensive” is front of mind, IMK London is running a half‑day influencer marketing workshop/panel on 28 Oct in Central London — worth a look for fresh creator angles: influencermarketingklub.com/event/imk-london.
+P.P.S. For inspiration: Oatside Kitchen’s plainest offer page — a product shot, a price, no frills — beat the fancier ones and cut cost per first order by 38% on our side. Less can be more when the offer is clear.
+
+==== Sent before (18/25 (specific 3, useful 4, voice 4, fits 4, reply 3) PROMISES 1)
+Subject: Sproutbox quiz→box→checkout: 5 ranked tests + ad angles
+
+Mira—
+
+Here’s the blunt version you asked for: five ranked tests for your quiz→box builder→checkout, each with example Meta angles to ship in parallel. No fluff.
+
+Track these checkpoints as you test
+- quiz_start, quiz_complete, builder_start, first_add, box_complete, checkout_start, purchase.
+
+1) Q1 start friction and promise clarity
+Hypothesis: people hesitate at the first screen when the value isn’t concrete and the effort looks long.
+Try:
+- Keep the ad’s promise in the headline; add a short expectation line (“Takes a minute”).
+- Show progress (“Step 1 of 4”).
+- Move any email gate to after a results preview.
+Measure: starts→completes; lift to builder_start.
+Ad angles (ship 3): UGC “I answered 3 questions and it built my week” demo; founder explainer to camera; progress‑bar motion graphic.
+
+2) Quiz sequencing and scope—lead with taste, compress to essentials
+Hypothesis: early commitment/lifestyle questions create drop; taste/diet is the hook.
+Try:
+- Lead with taste/diet; keep to 3–4 essentials; move non‑essentials into the builder.
+- Show a live “building your picks” strip beneath the quiz as answers are made.
+- Email gate only after a results preview with 3 suggestions visible.
+Measure: completion rate; CTR from results to builder_start.
+Ad angles: “Pick your tastes. We’ll do the rest.” fast‑tap cuts; diet‑specific cuts (Vegetarian / High‑Protein / Family); “See your picks before you decide” demo.
+
+3) Builder choice architecture—defaults, anchoring, fewer first choices
+Hypothesis: blank‑slate builders stall; equal‑weight grids overload.
+Try:
+- Pre‑fill a Starter Box from the quiz with a clear “Swap” path.
+- Offer 2–3 presets (Fast Start, Family, High‑Protein) alongside “Build from scratch.”
+- Sticky tally with items, total and per‑meal price; limit initial visible choices to 6–8; use tabs (Quick / Kids / Protein).
+- Nudge: “You’re 1 item away from a complete box.”
+Measure: first_add rate; box_complete; AOV.
+Ad angles: real‑time “watch me build a box” screen‑record; carousel of the 3 presets; persona UGC building their box.
+
+4) Pricing and delivery clarity—surface early
+Hypothesis: late price/delivery info creates leaks at checkout.
+Try:
+- Show an all‑in estimated total on the builder that updates live.
+- If you use a free‑delivery threshold, show progress toward it in the sticky bar.
+- Let people pick delivery day earlier (end of builder or first checkout step).
+- Compact trust cluster near totals (security icons, simple skip/returns promise).
+Measure: builder→checkout_start; checkout_start→purchase.
+Ad angles: “No surprises at checkout” overlay on builder; “Choose your delivery day” cut; static close‑up with “Price you see is the price you pay.”
+
+5) Checkout friction—remove the pauses
+Hypothesis: extra fields and code hunting kill momentum.
+Try:
+- Offer express checkout options above the fold.
+- Address autocomplete; postcode first.
+- Move discount code behind a link; one clear order summary with thumbnails.
+- Reassurance microcopy next to the final CTA (dispatch timing, skip/cancel policy if applicable).
+Measure: checkout_start→purchase; median checkout duration.
+Ad angles: “From box to checkout in one screen” demo; clean order‑summary static with “No faff.”
+
+Creative cadence while you run the tests
+- For the top two tests, ship three variants per concept this week; same next week for the next two tests. Our three‑week rule: retire creative after ~three weeks of falling click‑through; every concept ships in at least three variants so the account can learn.
+
+Competitive signal (context for speed/clarity)
+- The Chefees frozen meal‑kit brand expanded to Ocado in Aug ’26 but kept DTC as its main engine—using flexible meal box building rather than fixed boxes: https://www.thegrocer.co.uk/news/frozen-meal-kit-dtc-brand-chefees-makes-retail-debut-on-ocado/722896.article
+
+If you want the annotated, screen‑by‑screen version next, say the word.
+
+Fieldwork Studio

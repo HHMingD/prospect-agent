@@ -1,0 +1,83 @@
+To: Nina (Marketing Manager at Fenmoor & Vale Estate Agents (6-branch regional agency). She works on a 13" work laptop with too many tabs open. Pragmatic, sceptical of agencies, KPI-first, short on time, and under pressure from the sales director about lead quality.)
+Judge: 23/25 (specific 5, useful 5, voice 5, fits 4, reply 4)
+Worst: It ignores the lead-quality and CRM handoff pain (filters, dedupe, consent, branch-ready leads), so it optimises the page but doesn’t show how the enquiries will be better or easier for the teams to work.
+
+Subject: Nina — three fast fixes for Fenmoor & Vale’s instant valuation (paste-ready)
+
+Hi Nina,
+
+You picked “Traffic but no sales.” I took a close look at your two key pages — Home and Free Valuation — where most of that traffic is supposed to turn into enquiries. Your whole funnel depends on the instant guide price in ~60 seconds plus a quick human follow‑up. When that feels slow, unclear, or too nosy too soon, people drop.
+
+Below are three fixes you can ship today (with copy you can paste), plus two quick checks to confirm if the page — not the traffic — is the leak.
+
+1) Say exactly what happens and when (remove uncertainty)
+What’s on the page now mixes “instant,” “60 seconds,” “we’ll email,” and “we’ll call within 24 hours/one working day.” That reads fast-but-vague. Make the path explicit and consistent across Home and Free Valuation.
+
+Paste-ready copy
+- Headline: Get your instant guide price in about 60 seconds
+- Subhead: We’ll show your price range on‑screen and email a copy. No obligation.
+- CTA (primary): Get my instant valuation
+- What happens next (3 bullets, directly under the button):
+  • Enter your postcode and property details
+  • We run local comps and give you a guide price in ~60 seconds
+  • We’ll email the details; we’ll only call if we need more info or you request a call
+- Trust line (move this right under the CTA): Trusted by 3,200+ local sellers and landlords • 4.7★ Reviews
+- Consent microcopy (beside the checkbox): We’ll email your guide price and a short follow‑up about your move. You can opt out anytime. (Keep your Privacy and Terms links visible; your ICO number is already in the footer.)
+
+If the tool can’t show the guide price on‑screen, replace the subhead with: We’ll email your guide price in ~60 seconds and confirm by phone only if needed. The key is to pick one promise and use it everywhere (Home, Free Valuation, callback form).
+
+2) Reduce “work before reward” (make it a 2‑step)
+Right now you ask for full contact details before any payoff. Split the flow:
+- Step 1 (Your property): Postcode, property type, bedrooms, intent (Sell/Let), timeframe
+- Step 2 (About you): First name, last name, email, mobile (optional), consent
+Add a small progress label (“Step 1 of 2”) and auto‑advance. This lowers perceived effort and keeps people moving. If the valuation tool needs contact details to generate, still show a fast “Calculating your guide price…” screen so it feels instant.
+
+3) Remove perceived slowness
+“Loading valuation tool…” signals wait time at the exact moment you want action. Reserve the space, show a skeleton, and let people start with the postcode field immediately. Target a snappy first input under ~2 seconds and a visible result (or clear confirmation of when it arrives) in ~60 seconds.
+
+Quick checks to run today
+- Five‑second test in your analytics: Look at paid sessions landing on /free‑valuation. If roughly half leave within 5 seconds, it’s the page, not the audience. Then ship the copy + 2‑step.
+- Secret shop on mobile (your real funnel):
+  • Time to first input (should feel instant)
+  • Time to “price” (on‑screen or email receipt) — is it actually ~60 seconds?
+  • Do you say “within 24 hours” in one place and “within one working day” in another? Pick one.
+  • Do you place the “Trusted by 3,200+… • 4.7★ Reviews” line right by the CTA on the valuation page (not just the home page)?
+
+Small but high‑leverage tweaks
+- Match the ad/query in the headline for paid traffic: “Leamington Spa house valuation in 60 seconds” / “Warwick” / “Kenilworth.”
+- Keep “mobile” optional on Step 2; it’s often the top abandonment field in this kind of form.
+- If you keep a callback option, make it explicit opt‑in (“Request a call within one working day”) instead of implied.
+
+If it helps, forward this to whoever edits your site — it’s a copy‑paste and a simple step split.
+
+One question that helps me point you at the right variant: where do most valuation starts come from right now — Google Ads, organic search, or social?
+
+Fieldwork Studio
+
+==== Sent before (25/25 (specific 5, useful 5, voice 5, fits 5, reply 5) PROMISES 1)
+Subject: Three quick fixes for your valuation page
+
+Nina —
+
+I mystery‑shopped fenmoorvale.example’s valuation flow. You promise “instant in 60 seconds” but then say you’ll email it; that mismatch is a common drop‑off point.
+
+Three fixes to ship this week:
+
+1) Keep the promise on‑page
+- Show the guide price on the next screen immediately after address/type/bedrooms.
+- Gate the fuller details and bookings behind email/phone.
+- Change the explainer to: “Your guide price appears on the next screen.”
+
+2) Reduce friction and uncertainty
+- Make it two clear steps with a progress label (“Step 1 of 2: Your property”).
+- Replace the visible reCAPTCHA with an invisible version or move it to submit.
+- Move consent next to the phone field with plain language (“Tick if you’d like a call”).
+
+3) Match the CTA and proof to intent
+- Rename the button to “See your guide price now”.
+- Put “Trusted by 3,200+ local sellers and landlords • 4.7★ Reviews” directly under the button.
+- Add a secondary option beside the form: “Prefer to talk? 01926 555 210” and a simple “Choose a time today” link for call‑backs.
+
+Measure what matters: starts → on‑page price shown → booked appraisal. If “price shown” doesn’t jump after these changes, reply and we’ll point you at the next bottleneck.
+
+Fieldwork Studio

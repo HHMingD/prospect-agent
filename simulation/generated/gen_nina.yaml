@@ -1,0 +1,173 @@
+name: gen_nina
+starts_at: '2026-10-12T09:00:00Z'
+runs_for: P21D
+max_wakes: 200
+people:
+- key: nina
+  name: Nina
+  email: nina@fenmoorvale.example
+  profile: Marketing Manager at Fenmoor & Vale Estate Agents (6-branch regional agency). She works on a 13" work laptop with
+    too many tabs open. Pragmatic, sceptical of agencies, KPI-first, short on time, and under pressure from the sales director
+    about lead quality.
+  facts:
+  - "We cover residential sales and lettings across South Warwickshire; ~60 staff, last year\u2019s gross fee income about\
+    \ \xA35.9m."
+  - "Meta ads drive ~300 leads/month at \xA37\u2013\xA310 CPL, but only 2\u20134% pick up and ~0.5% turn into booked valuations."
+  - "Biggest headache: Meta leads are junk\u2014out-of-area postcodes, fake mobiles, landlord tyre-kickers; negotiators say\
+    \ they waste hours."
+  - We use PropertyBase CRM; leads come in via Zapier; duplicate checking and consent wording are touchy with compliance.
+  - "I can free \xA312k\u2013\xA318k for a 90\u2011day test if we can prove better lead quality and a cleaner handoff to the\
+    \ branch teams."
+  - "I\u2019d give my email for a pointed teardown of our valuation funnel with example creative and a measurement plan; I\
+    \ won\u2019t for generic newsletters or gated ebooks."
+  - Their business's website is fenmoorvale.example; whenever asked for it they give exactly fenmoorvale.example.
+  working_hours:
+    timezone: Europe/London
+    opens: 08:00
+    closes: '22:00'
+  reply_within:
+    min: PT3H
+    max: P2D
+  reply:
+    kind: answers
+- key: newsroom
+  name: The trade press
+  email: newsroom@press.example
+  profile: Not a visitor. Reports what happens in marketing; never on the site and never writes to the agent.
+happenings:
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P2D
+  inputs:
+    fact: "Meta used Advertising Week New York to announce new AI capabilities in Ads Manager on October 6, 2026, including\
+      \ AI\u2011powered audience discovery that lets advertisers describe their ideal customer in natural language to guide\
+      \ campaign targeting."
+    source: https://about.fb.com/br/news/2026/10/advertising-week-new-york-2026-novas-capacidades-de-ia-para-guiar-campanhas-e-alcancar-clientes/
+    published: '2026-10-06'
+    topic: 'a change on a platform brands buy or build on: Meta, Google, TikTok, Pinterest, Shopify, Klaviyo'
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P5D
+  inputs:
+    fact: "Zoopla\u2019s latest data shows affordability has improved even as higher mortgage rates suppress activity: 51%\
+      \ of two- and three\u2011bed houses are now affordable to an average\u2011income household, but sales agreed are 9%\
+      \ below last year and stock is 5% higher (report covered October 15, 2026)."
+    source: https://propertyindustryeye.com/housing-affordability-improves-but-higher-mortgage-rates-hit-sales/
+    published: '2026-10-15'
+    topic: 'go-to-market news: what consumer brands are doing, a shift in how people buy, a season''s numbers'
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P8D
+  inputs:
+    fact: "HomeLet\u2019s September 2026 Rental Index shows UK average rent hit a record \xA31,387 per month, up 0.4% month\u2011\
+      on\u2011month and 3.3% year\u2011on\u2011year; London averaged \xA32,272."
+    source: https://www.landlordtoday.co.uk/breaking-news/2026/10/rents-reach-another-record-high
+    published: '2026-10-14'
+    topic: 'go-to-market news: what consumer brands are doing, a shift in how people buy, a season''s numbers'
+- kind: uses
+  person: nina
+  inbox: site
+  use: views
+  inputs:
+    page: /
+    title: Home
+  after: PT0S
+- kind: uses
+  person: nina
+  inbox: site
+  use: picks
+  inputs:
+    page: /
+    question: biggest headache
+    answer: Traffic but no sales
+  gap:
+    min: PT2S
+    max: PT10S
+- kind: uses
+  person: nina
+  inbox: site
+  use: reads
+  inputs:
+    page: /journal/landing-pages-not-homepages
+    how: about two minutes, scrolled 85%
+  gap:
+    min: PT8S
+    max: PT34S
+- kind: uses
+  person: nina
+  inbox: site
+  use: views
+  inputs:
+    page: /work
+    title: Work
+  gap:
+    min: PT4S
+    max: PT18S
+- kind: uses
+  person: nina
+  inbox: site
+  use: picks
+  inputs:
+    page: /work
+    question: show me work for
+    answer: Retail
+  gap:
+    min: PT3S
+    max: PT12S
+- kind: uses
+  person: nina
+  inbox: site
+  use: views
+  inputs:
+    page: /work/ledgerly
+    title: Ledgerly case study
+  gap:
+    min: PT4S
+    max: PT16S
+- kind: uses
+  person: nina
+  inbox: site
+  use: views
+  inputs:
+    page: /pricing
+    title: Pricing
+  gap:
+    min: PT9S
+    max: PT38S
+- kind: uses
+  person: nina
+  inbox: site
+  use: picks
+  inputs:
+    page: /pricing
+    question: pricing toggle
+    answer: Project
+  gap:
+    min: PT3S
+    max: PT14S
+- kind: uses
+  person: nina
+  inbox: site
+  use: asks
+  inputs:
+    page: /
+    label: Roast my site
+    text: fenmoorvale.example
+  gap:
+    min: PT12S
+    max: PT48S
+- kind: uses
+  person: nina
+  inbox: site
+  use: leaves
+  inputs:
+    page: /
+  gap:
+    min: PT3S
+    max: PT12S

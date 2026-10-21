@@ -1,0 +1,159 @@
+To: Maya Bains (Solo UGC + ad-creative freelancer for small DTC brands. Uses a cracked iPhone 12 mini on 4G between shoots; opens laptop only at night. Fast, skeptical, frugal, hates fluff but hungry for practical tips. Juggles client work and prospecting; not a real buyer here—fishing for ideas she can DIY.)
+Judge: 25/25 (specific 5, useful 5, voice 5, fits 5, reply 5) PROMISES 1
+Worst: The GEM bit stays mostly a line and a stat—one concrete Ads Manager setup step (e.g., which toggles to use or how to group variants) would make it instantly actionable.
+! If you reply with which turnaround you’re choosing, I’ll tighten these lines around it.
+
+Subject: Paste‑ready copy: hero, Ad Testing Pack, proof‑at‑click + GEM asset map
+
+Maya —
+
+Here are the paste‑ready blocks you asked for. They make the homepage one path, put proof at the click, and keep the timing/rights language consistent. Set the single variable below once, then paste.
+
+Set once
+- {TURNAROUND} = choose “7–10 days” or “10–14 days” (use the same wording everywhere)
+
+Homepage hero
+- Headline: Ads your algorithm can learn from.
+- Subhead: Ad Testing Pack — 4 scripts, 6 hooks, 3 edits (9:16). £1,200. Turnaround: {TURNAROUND}.
+- Support line (small): From £300/video available for simple UGC. Rush +25% if a slot’s open.
+- Primary button: Ad Testing Pack — £1,200
+- Click action label (beneath button): Start with a 2‑field brief
+
+Optional hero variants
+- Beauty‑leaning headline: Real‑skin demos that convert.
+- Food/CPG‑leaning headline: Scroll‑stopping taste tests.
+
+Proof‑at‑click block (place right beside the primary button)
+- Title: Proof, not promises
+- Pick one outcome line you already show:
+  • Tea brand: CTR 1.2% → 2.1%
+  • Serum demo: top cut hit 5.8% watch‑through
+- 20s best clip thumbnail with play
+
+Ad Testing Pack section (below the fold or on Packages)
+- Section title: Ad Testing Pack — built for rapid variant sprints
+- What you get:
+  • 4 scripts
+  • 6 hooks
+  • 3 edits each (9:16)
+  • 2× alt captions
+- Delivery: {TURNAROUND}
+- Add‑ons: Whitelisting +£200. Rush +25% if a slot’s open.
+- CTA button: Start Ad Testing Pack
+- Price lockup (print right beside the CTA): £1,200 · {TURNAROUND}
+- Small reassurance: You’ll see call slots and upload your brief right after the 2‑field start.
+
+Two‑field brief (step 1 on click)
+- Form title: Start with a 2‑field brief
+- Fields: Name · Email
+- Button: Continue
+- Microcopy under button: Next you’ll add brand, site and needs — and see live call slots. I reply within 48 hours, Mon–Fri.
+
+After continue (step 2)
+- Headline: Add the basics
+- Fields: Brand · Website · Deliverables · Deadline · Budget (Under £1k / £1k–£3k / £3k+)
+- Button: Send brief
+- Confirmation line: Got it — I’ll confirm timing and send a simple estimate.
+
+FAQ (use the same wording across Home, Packages and confirmations)
+- Timing: Turnaround: {TURNAROUND}. Rush +25% if a slot’s open.
+- Payment: 50% to book, 50% on delivery.
+- Usage: Organic + paid social for 30 days (extendable).
+- Files: Raw files not included by default.
+- Product: You provide product; return shipping billed.
+
+Packages page tweaks
+- Make Ad Testing Pack the default tab with a small “Most chosen” tag.
+- Primary CTA on the page: Start Ad Testing Pack
+- Print price + timing beside every primary CTA: £1,200 · {TURNAROUND}
+- Keep Starter UGC and Monthly UGC as secondary options.
+
+Free UGC Brief Template (move to exit or thank‑you)
+- Exit offer: Grab the free UGC Brief Template?
+- Sub: I’ll send the PDF and 1–2 practical tips a month.
+- Field + button: Email · Get the template
+
+One‑liner to anchor the GEM angle
+- Built for Meta’s new GEM: we ship a learning set, not one hero cut.
+- (Context if you want a “Why this works” tooltip/FAQ): Meta reports GEM optimises across Facebook, Instagram, Reels and Stories, with up to 18.9% more conversions and 12% higher CTR.
+
+GEM asset‑map + naming template (paste into your Notion/Drive and Ads Manager)
+- Folder tree
+  • /GEM/Ad‑Testing‑Pack/[Brand]/[YYYY‑MM]/
+    – 01_Scripts
+    – 02_Raw
+    – 03_Edits_9x16
+    – 04_Alt‑Captions
+    – 05_Thumbnails
+    – 06_Proof (screens + one‑line outcomes)
+
+- Naming key
+  • S = Script (1–4)  • H = Hook (1–6)  • E = Edit (1–3)
+  • CTA = Call‑to‑action (A/B)  • CAP = Alt caption (1–2)  • LEN = Length (e.g., 20s)
+
+- Ad name format (example)
+  • GEM_ATPack_[Brand]_S1_H3_E2_CTA‑A_CAP‑1_20s_9x16
+
+- UTM content (example)
+  • utm_source=meta&utm_medium=paid&utm_campaign=gem_atpack_[brand]_[mmYY]&utm_content=s1_h3_e2_ctaa_cap1
+
+Quick ship checklist (today)
+- Swap the hero to the one‑path version and print £1,200 · {TURNAROUND} beside the main button.
+- Replace “See Packages” + “Book a call” with one CTA: Ad Testing Pack — £1,200 (2‑field brief on click).
+- Put the proof block and your best 20s clip right next to that button.
+- Move the free template to exit/thank‑you.
+- Mirror the same timing/rights lines in Packages and FAQ.
+
+If you set {TURNAROUND}, everything else stays consistent. If you want, reply with which one you’re choosing and I’ll tighten these lines around it.
+
+Fieldwork Studio
+
+==== Sent before (25/25 (specific 5, useful 5, voice 5, fits 5, reply 5))
+Subject: Maya Bains Creative — paste‑ready hero + pack copy
+
+Maya —
+
+As asked, here are paste‑ready blocks to drop in and tune for tone.
+
+1) Homepage hero (one path)
+Headline
+- Short‑form ads your customers actually watch.
+Subhead
+- Ad Testing Pack — 4 scripts, 6 hooks, 3 edits. £1,200. Turnaround: 7–10 days.  
+  (Alt: Turnaround: 10–14 days. Pick one and use it everywhere.)
+Primary CTA
+- Start Ad Testing Pack
+Small line under CTA
+- Fast start: 2‑field brief
+
+2) Proof at the click (beside the primary button)
+- One 20s top clip
+- Proof line (pick one)
+  - Tea brand CTR 1.2% → 2.1%.
+  - Top cut hit 5.8% watch‑through.
+
+3) Ad Testing Pack module
+What you get
+- 4 scripts, 6 hooks, 3 edits each (9:16), 2× alt captions. Delivery in 7–10 days. Optional whitelisting +£200.
+CTA
+- Start Ad Testing Pack
+
+4) Timing, rights and files (unified wording across pages)
+- Delivery: 7–10 days. Rush +25% if slots open.
+- Usage: Organic + paid social for 30 days. Extend usage available on request.
+- Files: Raw files not included by default.
+
+5) Contact flow microcopy
+- Button: Start with a 2‑field brief
+- After submit: Thanks — next we’ll grab brand, site, deliverables and budget. If a call helps, live slots appear after this step.
+
+6) Variant‑sprint labels (simple template)
+- Naming pattern: CLIENT/Concept/Hook/Format/Cut/Version
+- Example: TEA/TasteTest/PriceDrop/9x16/A/v1
+- Sheet columns: Concept, Hook, Format, Caption A/B, Outcome (3s, ThruPlay, CTR), Winner
+
+7) Small CRO notes
+- Put price and turnaround near the primary CTA wherever it appears.
+- Keep the Free UGC Brief Template on exit/thank‑you, not near the hero.
+
+Fieldwork Studio

@@ -1,0 +1,152 @@
+To: sanjay (Founder-CEO of Bruno’s Bowl, a UK fresh dog food subscription. Mostly browses on his iPhone 14 Pro between warehouse runs; opens laptop late evening for deeper reads. Blunt, numbers-first, impatient with fluff, sceptical of agencies but open to tight 90‑day tests.)
+Judge: 25/25 (specific 5, useful 5, voice 5, fits 5, reply 5)
+Worst: It leans on ops-dependent tests (e.g., changing first-renewal timing) that may take engineering/Recharge work, which could slow a 90‑day sprint if those switches aren’t feasible quickly.
+
+Subject: Bruno’s Bowl trial teardown + 90‑day retention test plan (impact math inside)
+
+Sanjay —
+
+You asked for a teardown of /meals/trial and a 90‑day retention test plan focused on reducing post‑trial cancels, with projected impact. Here it is.
+
+What I’d change on /meals/trial (specific, shippable)
+1) Put post‑trial price and first‑renewal visibility in the hero
+   - Current: Price range is in body/FAQ; renewal timing sits in FAQs.
+   - Change: Directly under “Start trial for £12” add: “Most plans are £49–£89/month after your trial. Your first renewal date will be shown at checkout and in your confirmation.”
+   - Why: Sets expectation early, reduces buyer’s remorse, and aligns with the UK’s updated subscription rules requiring prominent post‑trial pricing and clear renewal info.
+
+2) Reconsider the “Ends tonight” urgency badge
+   - Current: “New customer offer • Ends tonight.”
+   - Change: If evergreen, remove the countdown. If genuinely time‑bound, make the rule explicit (e.g., “This week only for new customers”).
+   - Why: Perception of fake urgency drives regret cancels; compliance risk under the new UK rules around misleading urgency.
+
+3) Fix the schedule mismatch driving early cancels
+   - Current: “Your next box is generated 7 days after delivery” for a two‑week box.
+   - Change: Default first renewal at day 12–14 post‑delivery (with a visible option to delay if they’re still working through the box). Reflect this in the hero note and checkout.
+   - Why: 7‑day re‑charge on a two‑week supply creates “still have food” cancels and support tickets.
+
+4) Make the pre‑renewal reminder explicit on the page
+   - Current: “Pause/cancel anytime in your account.” No mention of proactive reminder.
+   - Change: Add: “We’ll email you 48 hours before any renewal with options to delay, switch recipes, or cancel in one click.”
+   - Why: Trust + legal clarity (UK update requires clear, pre‑trial renewal reminders and frictionless online cancellation). Also reduces angry cancels and chargebacks.
+
+5) Bring social proof into the fold, above the CTA
+   - Current: The trial page lacks the trust block you already use on Home.
+   - Change: Add “4.8★ Trustpilot • 12,000+ dogs fed” above/below the primary CTA.
+   - Why: Familiar proof right when they commit.
+
+6) Clarify storage expectations
+   - Current: “Make sure you have freezer space.”
+   - Change: Add an estimate of volume (e.g., “Typically 1–2 freezer drawers for a medium dog”).
+   - Why: Pre‑empts the top “didn’t fit” excuse for early cancels. If exact volume varies, say “we’ll show your exact volume at checkout.”
+
+Copy you can paste today (hero block)
+“Start trial for £12 — two weeks of freshly cooked meals. Most plans are £49–£89/month after your trial. We’ll show your exact first renewal date at checkout and email you 48 hours before any renewal with options to delay, switch recipes, or cancel in one click.”
+
+90‑day retention test matrix (focused on post‑trial cancels)
+Impact math cheat sheet (so you can weigh tests fast)
+- Per 1,000 trial starts, every +1 percentage point improvement in first‑renewal survival ≈ +10 additional renewals.
+- At £49–£89/month, that’s roughly +£490 to +£890 in first‑month revenue per pp gained. Scale linearly with your trial volume.
+
+Assumptions here are for modeling only; replace with your real rates. The aim is to show deltas, not claim absolutes.
+
+Sprint 1 (Weeks 1–4): Trust, clarity, and schedule
+A) Trial page transparency A/B
+   - Variant: Add hero copy from above and remove/clarify urgency badge.
+   - Measure: First‑renewal survival (not just trial CTR).
+   - Projected impact: +2 to +5 pp to first‑renewal survival (offsetting any small dip in trial take‑up).
+
+B) First‑renewal timing default
+   - Variant: Shift first renewal from day 7 → day 12 post‑delivery, with self‑serve “delay 3/7/14 days” quick‑actions.
+   - Measure: Pre‑first‑renewal cancel rate; share of users hitting “delay” vs “cancel.”
+   - Projected impact: +5 to +10 pp to first‑renewal survival; some orders shift later rather than cancel.
+
+C) 48‑hour renewal reminder with in‑message controls
+   - Variant: Email/SMS: “Your next Bruno’s Bowl ships in 48h. Want to delay, switch recipes, or cancel? One tap.”
+   - Measure: Cancels vs delays; NPS on reminder; chargebacks.
+   - Projected impact: +2 to +6 pp to first‑renewal survival; fewer angry cancels, more orderly delays.
+
+Sprint 2 (Weeks 5–8): Onboarding that prevents the top 3 cancel reasons
+D) Day‑0/2/5/9/11 onboarding sequence
+   - Content: thawing/portioning, mixing tips, freezer management, stool timeline, day‑9 check‑in (“How’s pace? Want to push your next box?”), day‑11 prompt to set cadence.
+   - Measure: Replies, link clicks on “push next box,” first‑renewal survival.
+   - Projected impact: +2 to +4 pp.
+
+E) Recipe engagement early
+   - Variant: Day‑3 prompt to pick/switch recipes for box 2.
+   - Measure: Recipe change rate vs cancel; “taste” cancel reasons.
+   - Projected impact: +1 to +2 pp.
+
+F) Portion‑size self‑serve
+   - Variant: Simple slider in account to size down for next box; surface it in the day‑9 email.
+   - Measure: Portion downsizes saved vs cancels; AOV impact.
+   - Projected impact: +1 to +3 pp to survival; may reduce box value but beats a cancel.
+
+Sprint 3 (Weeks 9–12): Plan flexibility and save flows
+G) “Starter cadence” at checkout
+   - Variant: Offer a gentler cadence (e.g., first renewal at 14 days, then a longer cycle) as an option.
+   - Measure: Take‑rate; cancels among selectors vs default.
+   - Projected impact: +2 to +5 pp for selectors.
+
+H) Cancel‑intercept with targeted alternatives
+   - Variant: When canceling, show one‑click alternatives based on reason: “Too much food?” → delay 14 days or reduce portion; “Too expensive?” → smaller plan; “Freezer space?” → longer cadence.
+   - Measure: Save rate; time‑to‑next‑order.
+   - Projected impact: Save 10–20% of attempted cancels at the intercept (varies by mix of reasons).
+
+I) Trust block on trial and order confirmation
+   - Variant: Add “4.8★ Trustpilot • 12,000+ dogs fed” to trial hero and confirmation page.
+   - Measure: First‑order chargebacks/returns; first‑renewal survival.
+   - Projected impact: Small on its own; acts as a multiplier to other tests.
+
+Compliance and trust (why this matters now)
+- The UK’s 2026 update requires prominent post‑trial pricing, clear pre‑trial renewal reminders, and easy online cancellation. Your trial page mentions the price range and automatic continuation, but the first‑renewal timing lives in FAQs and there’s no explicit pre‑renewal reminder. Bringing those elements into the hero and confirmation closes risk and, more importantly, reduces distrust‑driven churn.
+
+What I’d love a quick yes/no on today
+- Can you move the first renewal from day 7 post‑delivery to day 12 by default for a clean A/B? If not, is a 48‑hour pre‑renewal reminder with delay/switch options feasible right away?
+
+PS — Not a tracking lecture, but I didn’t see any mention of UTM parameter persistence through signup/checkout. If UTMs drop, it will be harder to read these tests cleanly; worth a quiet check while you ship the above.
+
+Fieldwork Studio
+
+==== Sent before (22/25 (specific 5, useful 4, voice 5, fits 4, reply 4) PROMISES 1)
+Subject: Bruno’s Bowl trial teardown + 90‑day retention test matrix
+
+Sanjay —
+
+Goal: reduce post‑trial cancels without denting trial CVR. Here’s a focused teardown and a 90‑day retention test plan you can run with ops.
+
+Trial page teardown: what to change this week
+- Make post‑trial price and first‑renewal timing unmissable in the hero. Bring “Most plans are £49–£89/month after your trial” up front and add a plain line about when the first renewal happens (right now that lives in the FAQ as “7 days after delivery”). Make it visible before the CTA.
+- Replace evergreen “Ends tonight.” If it’s not truly expiring, it erodes trust. Swap for proof (“4.8★ Trustpilot • 12,000+ dogs fed”) or a real limiter only if you actually cap volume.
+- Match expectations to the two‑week trial. Test keeping the default first renewal on/just after two weeks versus the current “7 days after delivery,” and let customers pick a different date at checkout.
+- Promise the pre‑renewal reminder on the page: “We’ll email you before the first renewal with one‑click options to delay, switch recipes, or pause,” and follow through.
+- Keep messaging consistent on pause/cancel timing. The homepage says “pause/cancel 48h before your renewal”; echo that on the trial page near the CTA.
+- Post‑checkout confirmation: show the actual renewal date, the expected plan price (use the £49–£89 guidance), a direct “Manage your plan” link, and an “Add to calendar” button. If the account email may take up to 10 minutes, say it there.
+
+90‑day retention test matrix
+Primary metric: trial→first‑renewal retention by cohort.
+Secondary: pre‑renewal cancel rate, delay rate, support contacts re: timing/portioning, first‑90‑day revenue per acquired customer.
+
+Days 0–30: setup + fast A/Bs
+- A/B: Hero clarity (with price + timing) vs control. Measure: trial CVR, pre‑renewal cancels, first‑renewal retention.
+- A/B: Urgency treatment. Control = “Ends tonight.” Variant = remove/replace with proof. Measure as above.
+- Policy test: Default first renewal on/just after two weeks vs current “7 days after delivery,” with choice at checkout. Measure: first‑renewal retention; “renewed too soon” contacts.
+- Reminder test: Add a 48‑hour pre‑renewal email with three buttons: Delay 1 week, Switch recipes, Pause. Control = current flow. Measure: first‑renewal retention; delay→keep vs delay→cancel.
+- Onboarding nudge: Day‑3 check‑in asking “Is the portion right?” with 1‑click adjust. Control = none. Measure: adjustments; cancels before renewal.
+
+Days 31–60: step‑downs and expectation shaping
+- Plan step‑down at reminder: Offer lower‑frequency or smaller box for price‑sensitive customers. Measure: saves vs ARPU over 60 days.
+- Recipe rotation default: Default “chef’s rotation” on vs off. Hypothesis: reduces taste‑fatigue cancels. Measure: taste‑related cancels; retention.
+- Social proof placement: Add the Trustpilot strip directly under the CTA on the trial page. Measure: trial CVR and knock‑on retention for that cohort.
+
+Days 61–90: loyalty and save flows (cancellation still one click and simple)
+- Cancel‑flow save step: Before confirmation, offer “Pause 2 weeks” or “Step down plan” as a one‑click alternative. Keep the final cancel button clearly available. Measure: saves that remain active 30 days later.
+- Second‑box nudge: Small loyalty nudge after a successful first renewal (e.g., thank‑you credit or free add‑on). Measure: retention to third box.
+
+How to project impact (plug your numbers into this)
+- Track weekly by cohort: trials started (T), trial CVR, pre‑renewal cancels (C0), first‑renewal retention (R1), second‑renewal retention (R2), average box values (B1 trial, B2, B3), plus CAC if you want payback.
+- 90‑day revenue per acquired customer ≈ (B1/T) + R1×(B2/T) + (R1×R2)×(B3/T). Compare variant vs control.
+- Decision rule: ship the variant when lift in 90‑day revenue per acquired customer outweighs any CAC change from trial‑page tests.
+
+If useful, I can drop this into a simple sheet you can clone and hand to ops.
+
+Fieldwork Studio

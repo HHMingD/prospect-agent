@@ -1,0 +1,81 @@
+To: Miles Carter (Owner-operator of River City Cycles, a brick-and-mortar bike shop in Bristol with a Shopify store. Reads on a 13-inch laptop in the back office; checks things on his phone between customers. Pragmatic, margin-conscious, allergic to fluff, asks blunt questions and moves on fast.)
+Judge: 20/25 (specific 4, useful 4, voice 4, fits 4, reply 4)
+Worst: It dodges your “what ROAS would you expect?” ask with a formula instead of real non‑brand vs brand benchmarks for UK bike retailers (and it underplays the known feed clean‑up you’re wrestling with).
+
+Subject: Miles — your ROAS line for bikes, and the PMAX fixes to stop brand cannibalising
+
+Hi Miles —
+
+Short answer to your question: Shopping/PMAX can work for a low‑margin bike shop if you hold it to a contribution‑based ROAS line and ring‑fence your brand. With ~20–25% bike margin and £35 shipping, the line matters.
+
+Your 60‑second ROAS line (fill in your numbers):
+- Break‑even ROAS = Price / (Price × Margin% − Shipping & fulfilment per order)
+- Example bike: if Price £1,000, Margin 22.5%, Shipping £35 → contribution £190 → break‑even ≈ 5.3x ROAS.
+- Example accessory: if Price £40, Margin 40%, Shipping £3 → contribution £13 → break‑even ≈ 3.1x ROAS.
+- Notes: click & collect (no courier cost) lowers the line; repairs should be a separate goal with their own value.
+
+PMAX/Shopping cannibalisation triage (do this in order):
+1) Count the right things first:
+   - Split ecommerce “Purchase” from “Repair booking” as separate conversions with values.
+   - Deduplicate Purchase (thank‑you page only; include server‑side where you can).
+   - UTM hygiene: consistent source/medium/campaign; add a custom param like brand=1/0.
+2) Protect brand:
+   - Keep a tight, capped brand Search setup to capture your name on the cheap.
+   - Add brand exclusions in PMAX/Shopping so non‑brand performance is real, not cannibalised.
+   - Watch query/insights for leakage; adjust weekly.
+3) Structure for contribution, not just clicks:
+   - Asset groups and listing groups split by category (bikes / e‑bikes / accessories) and by margin band using feed custom labels.
+   - Bid and budget toward higher‑contribution groups (often accessories and essentials). 
+   - Route ads to specific in‑stock model pages (not generic grids). Put “Click & Collect Bristol” and “Local assembly” in the first screen.
+4) Geography & fulfilment:
+   - Run a local PMAX for Bristol (leaning on click & collect and assembly) and a separate setup for nationwide shippable SKUs.
+5) Reporting you can trust:
+   - Weekly brand vs non‑brand ROAS readout (use that brand=1/0 param and consistent naming).
+   - Capture on‑site search (model codes, sizes) to spot demand you’re missing in feed titles.
+
+What I’d change first this week:
+- Set the contribution math for one flagship bike and one accessory — that gives you hard ROAS guardrails.
+- Split and dedupe conversions (web sales vs repairs) so PMAX optimises to the right outcome.
+- Ring‑fence brand and launch/reshape a non‑brand PMAX with brand exclusions and category/margin splits.
+- Point Shopping to model pages with local benefits called out (Click & Collect Bristol + Local assembly) and exclude out‑of‑stock.
+
+If you forward this to whoever runs your feed/Ads: ask them to add margin/shipping bands as feed custom labels and to confirm brand exclusions are in place; then sanity‑check the ROAS line using the formula above for a bike and an accessory.
+
+One question for you: for your best‑seller, what’s the typical out‑the‑door price and gross margin, and do most orders go courier or click & collect? The answer sets your real ROAS line.
+
+Fieldwork Studio
+
+==== Sent before (24/25 (specific 5, useful 4, voice 5, fits 5, reply 5) PROMISES 2)
+Subject: PMAX/Shopping for River City Cycles: ROAS line, cannibalisation check, first fixes
+
+Miles —
+
+Short answer: PMAX/Shopping can work for a bike shop if you defend margin and stop rebuying your own brand.
+
+ROAS to aim for (bikes): with 20–25% gross margin, break‑even ROAS on revenue is ~5.0–4.0 before shipping/fees. With £35 shipping and payment costs, a viable target on bikes is typically 5–6+. (Accessories may differ based on their contribution.)
+
+60‑second ROAS line
+1) For a product with price R and gross margin m, max ad spend A = (m × R) − variable costs (shipping, payments, assembly, returns).
+2) Minimum target ROAS = R ÷ A. If A ≤ 0, don’t advertise that SKU for delivery; push click‑and‑collect.
+
+Cannibalisation quick test (30 minutes)
+- Split brand vs non‑brand: keep an exact‑match brand Search campaign and exclude brand terms in PMAX so Shopping isn’t rebuying brand clicks.
+- Run a 48‑hour brand blackout in PMAX and watch if branded Search/direct recover the drop. If they do, cut PMAX brand and keep non‑brand/product‑led.
+
+Fix first (order matters)
+1) Count profit, not just revenue: pass net margin as conversion value for online sales; separate ‘purchase’ from ‘repair booking’; turn off/store‑weight low‑signal goals like ‘directions’ or generic ‘page view’ so PMAX optimises for sales, not noise.
+2) Feed hygiene for bikes: clean titles (Brand + Model + Size), GTINs, availability, shipping time; custom labels for margin bands, new vs clearance, and C&C‑only SKUs. Build separate campaigns by margin band and stock status.
+3) Landing: send Shopping clicks to model pages (PDPs), not home/category. Keep one promise per page and surface C&C availability immediately.
+4) Brand control: cap brand with exact Search; exclude brand from PMAX so budget goes to discovery.
+5) Local first where margin wins: enable Local Inventory Ads with store pickup; use value rules to give a lift to C&C vs shipped orders.
+6) Budget split: if accessories carry better contribution than bikes, give them their own PMAX with a lower ROAS target; ring‑fence bike budget so accessories don’t soak it up.
+
+Attribution/analytics triage for mixed e‑comm + repairs
+- Fire ‘Purchase’ only on thank‑you (dedup server‑/browser‑side); separate ‘Repair booking’ as its own conversion.
+- Keep UTM hygiene tight (email vs paid vs organic).
+- Track C&C vs shipped (and pass fulfilment type in analytics).
+- Capture site search queries (many ‘what size/part’ searches turn into high‑intent journeys).
+
+If you want, I’ll turn this into a one‑page calculator with your numbers and a PMAX audit checklist tuned for River City Cycles.
+
+Fieldwork Studio

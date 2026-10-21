@@ -1,0 +1,28 @@
+[project]
+name = "prospect-agent"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28.1",
+    "minutehand>=0.0.7",
+    "playwright>=1.63.0",
+    "pydantic-ai-slim[openai]>=1.60.0",
+    "starlette>=1.7.0",
+    "uvicorn>=0.54.0",
+]
+
+[dependency-groups]
+dev = [
+    "pyright>=1.1.414",
+    "pytest>=9.1.1",
+    "ruff>=0.17.0",
+]
+
+[tool.ruff]
+line-length = 120
+
+[tool.pyright]
+include = ["agent", "tests"]
+
+[tool.uv.sources]
+minutehand = { path = "../minutehand-input", editable = true }

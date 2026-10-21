@@ -1,0 +1,109 @@
+To: Gavin Kerr (Co-owner at Bruntsfield Wine Co., a neighbourhood wine merchant in Edinburgh. Handles corporate accounts and seasonal marketing. Browses on a 13" MacBook in the shop office; checks links on his iPhone on the tram. Pragmatic, time-poor, wary of agency fluff, wants specifics and dates.)
+Judge: 23/25 (specific 5, useful 5, voice 5, fits 4, reply 4)
+Worst: It doesn’t give a ballpark price or a fixed early‑November go‑live plan, which he needs before he’ll engage.
+
+Subject: Gavin — cheaper Q4 clicks with one promise + a 3‑question gift picker
+
+Gavin,
+
+Thanks for introducing yourself. You tapped “Ads got expensive,” so here’s a quick teardown and two copy blocks you can paste today to pull CPAs down on Q4 gifting.
+
+Why this will work for you right now
+- Demand is there: UK consumers say they’ll spend more on wine this Christmas (27% “significantly more,” 39.8% “slightly more”; 43.8% expect to buy more bottles). That supports pushing premium gifts, not cheap clicks for the sake of it.
+- Your strongest paid promises are already on your site. They just need to be the first thing people see from an ad: “From £12 per bottle,” “Delivery windows 1 Nov–20 Dec,” and “Multi‑address via spreadsheet.”
+- Meta just introduced their Generative Ads Model (GEM) in October 2026. It optimises creative and placement across Facebook, Instagram, Reels and Stories; Meta reports up to 18.9% more conversions and 12% higher CTR. Give GEM a tight, single‑promise lander and it will do more with the same budget.
+
+1) Corporate gifting lander: one promise, no header
+What to change on paid landers:
+- Strip the global header/nav; keep your logo. Remove any links that don’t advance the conversion.
+- Lead with price + logistics. Keep the rest below the fold.
+- Swap the long “Enquire” form for a 3‑question “Get a price” picker. You can still offer the brochure as a safety‑valve link.
+
+Paste‑ready hero (top of page)
+- Headline: Corporate Christmas wine gifts, delivered UK‑wide
+- Subhead: From £12 per bottle. Delivery windows 1 Nov – 20 Dec. Multi‑address via spreadsheet.
+- Trust bullets:
+  • Bottles £12–£38; mixed cases from £65
+  • Branded note cards included; custom sleeves POA
+  • Minimum order 20 gifts • Lead time 5–10 working days after payment
+- Primary CTA: Get a price (3 questions)
+- Secondary CTA: Download brochure (PDF)
+
+3‑question picker (modal or inline)
+- How many recipients? (Minimum 20)
+- Budget per gift (£)
+- Preferred delivery window (between 1 Nov and 20 Dec)
+Then collect name, company and work email after those answers. Offer spreadsheet upload after submit.
+
+2) Mixed‑case lander for DTC: one promise, social proof
+If you’re running mixed‑case prospecting alongside B2B, give it its own single‑promise lander too.
+
+Paste‑ready hero
+- Headline: Mixed wine cases from £65
+- Subhead: Thoughtful bottles from small producers. UK‑wide delivery.
+- Trust bullets:
+  • Seasonal mixed cases and subscriptions
+  • Free local delivery over £50
+  • “Bruntsfield always pick winners.” — Anna, Edinburgh
+- Primary CTA: Shop mixed cases
+
+3) Q4 paid test plan (one week to confidence)
+- Campaigns: split Corporate Gifts vs Mixed Cases. One lander each, matched 1:1 to ad promise.
+- Creative: 3 lightweight variants per campaign (square + vertical):
+  • Corporate v1 static: “From £12/bottle • 1 Nov–20 Dec delivery • Multi‑address in one go.”
+  • Corporate v2 carousel: “Bottles £12–£38 • Mixed cases from £65 • Branded notes included.”
+  • Mixed‑case v1 static: “Mixed cases from £65 • Thoughtful bottles • UK‑wide delivery.”
+- Copy seeds for GEM (drop these into Primary Text/Headlines):
+  • Primary text options:
+    – “Say thank you with wine. From £12/bottle. Delivery 1 Nov–20 Dec. Multi‑address via spreadsheet.”
+    – “Corporate Christmas wine, UK‑wide. Bottles £12–£38. Branded note cards included.”
+    – “Mixed cases from £65. Thoughtful bottles from small producers. UK‑wide delivery.”
+  • Headlines:
+    – “From £12/bottle • 1 Nov–20 Dec delivery”
+    – “Mixed cases from £65”
+- GEM setup notes: use a conversions objective; let GEM optimise across Facebook, Instagram, Reels and Stories; feed it multiple text/headline/image variants; keep the first three seconds of every asset on the same single promise as the lander.
+- Measurement: judge by cost per qualified enquiry (Corporate) and cost per checkout start (Mixed), not just CPC. If CPCs stay high but CPA drops, you’re winning.
+
+Micro‑teardown of your current Corporate Gifting page
+- The essentials are there (price ranges, delivery window, multi‑address, lead time), but they’re diluted by the full nav and a long form. Paid traffic will leak.
+- Moving those four promises to the top and asking three questions first will improve conversion without changing your offer.
+
+One quick question so I can tune the headlines: is your corporate sweet spot closer to £20, £30 or £40 per gift? A single number decides which promise we lead with.
+
+Fieldwork Studio
+
+==== Sent before (19/25 (specific 5, useful 4, voice 4, fits 3, reply 3))
+Subject: Bruntsfield Wine — teardown + Q4 gifting test plan
+
+Gavin —
+
+Here’s the teardown and the Q4 paid test plan, aimed at cheaper clicks for gifting and faster B2B conversions.
+
+What to change on-page now (Corporate Gifting)
+- First screen, no header: lead with “From £12/bottle”, “Delivery windows 1 Nov–20 Dec”, “Multi‑address via spreadsheet upload”. Keep “Prices exclude VAT and courier” visible.
+- Primary CTA: “Get a price”. Secondary: “Download brochure (PDF)”. Add a “Download CSV template” link beside the CTA.
+- Replace the long form start with a 3‑question quick start: (1) Number of recipients, (2) Budget per gift, (3) Delivery window. Output 2–3 package options; “Start your order” opens the full form with fields prefilled and CSV link.
+- Keep the phone line prominent. If you can, swap “We aim to reply within 2–3 working days” for “We reply next business day.”
+
+Wireframes (text outline)
+- Mixed cases lander (paid‑social)
+  Hero: “Mixed cases from £65, delivered UK‑wide.”
+  Sub: “Thoughtful bottles from small producers.”
+  Bullets: “Pick red, white or mixed” · “Free local delivery over £50 (Edinburgh)” · “No subscription required”.
+  CTA: “Shop mixed cases”. Below: three case tiles (from‑price + 3 bullets), one short customer quote, delivery terms. No site header; slim footer.
+
+- Corporate gifts lander (paid‑social/B2B)
+  Hero: “Corporate wine gifts from £12/bottle.”
+  Sub: “1 Nov–20 Dec delivery · UK‑wide · Multi‑address in one upload.”
+  CTA: “Get a price” (opens the picker). Secondary: “Download brochure (PDF)”.
+  Modules: 3‑question picker → options; “What’s included”; “How it works” (your 5 steps); FAQs; contact line.
+
+Ads and testing
+- For each lander: ship 3 concepts × 3 variants (product shot, case stack with ribbon, note‑card close‑up with price/dates in text). Retire any ad after ~3 weeks of falling click‑through; keep a fresh variant queued.
+- If you use Meta, GEM (rolling out this week) is built for multi‑asset creative across Feed/Reels/Stories; keep price and delivery window in the first two lines. Add simple site‑visitor retargeting.
+- Measure the thing you want: for cases = first order; for corporate = “Get a price started” + “Proposal submitted”. Give every variant distinct UTM content.
+
+Why push now
+- UK consumers say they’ll spend more on wine this Christmas (27% “significantly more”, 39.8% “slightly more”; 43.8% expect to buy more bottles). Source: Harpers, 12 Oct 2026.
+
+Fieldwork Studio

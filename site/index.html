@@ -1,0 +1,15 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Home — Fieldwork Studio</title><link rel="stylesheet" href="/style.css"></head><body>
+<header><a class="logo" href="/">Fieldwork</a><nav><a href="/services">Services</a><a href="/work">Work</a><a href="/pricing">Pricing</a><a href="/journal">Journal</a><a href="/about">About</a></nav></header>
+<main><h1>Ads that learn.<br>Pages that convert.</h1>
+<p class="lede">A 14-person London studio for consumer brands doing £1m–£30m a year. Paid social, search, creative made to be tested, and the pages those ads land on.</p>
+<p class="sans" style="color:#8a8275">Glow Theory · Tallow &amp; Thyme · Oatside Kitchen · Ledgerly</p>
+<h2>What's your biggest headache right now?</h2>
+<div class="chips" id="pains">
+<button class="chip">Ads got expensive</button><button class="chip">Creative feels stale</button><button class="chip">Traffic but no sales</button><button class="chip">Can't tell what's working</button><button class="chip">Big launch coming</button></div>
+<h2>Roast my site</h2><p class="sans">Paste your website. We'll be honest.</p>
+<form class="roast" id="roast"><input name="u" placeholder="yourbrand.com"><button class="go">Roast it</button></form>
+<script>
+document.querySelectorAll('#pains .chip').forEach(c=>c.onclick=()=>{c.classList.toggle('on');fwSignal('biggest headache',c.textContent)});
+document.getElementById('roast').onsubmit=e=>{e.preventDefault();const u=e.target.u.value.trim();if(u){fwAsk('Roast my site',u,u);e.target.innerHTML='<span class="sans">Got it, have a look around while we read it.</span>'}};
+</script></main><script src="/agent.js"></script></body></html>

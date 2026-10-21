@@ -1,0 +1,172 @@
+name: gen_ninao
+starts_at: '2026-10-12T09:00:00Z'
+runs_for: P21D
+max_wakes: 200
+people:
+- key: ninao
+  name: Nina Petrovic
+  email: ninao@layerlock.example
+  profile: "Only marketer at a 18-person B2B cybersecurity startup in London. Title: Growth & Marketing Lead. She\u2019s on\
+    \ a MacBook Pro with way too many tabs, often on coffee shop Wi\u2011Fi. Analytical, skeptical, impatient with fluff;\
+    \ polite but direct. She has to convince two technical founders and a sales lead, fast."
+  facts:
+  - 'Product: LayerLock is an agentless cloud security and compliance platform for AWS/GCP/Azure; flags misconfig, maps data
+    flows, auto-fixes with guardrails.'
+  - "Size/Revenue: ~\xA31.3m ARR, seed-funded; 18 people; 3 AEs, 1 SDR. Paid spend ~\xA318k/month across Search/LinkedIn."
+  - "Problem (her words): \u201CSince our July redesign, demo requests are down ~38% with similar traffic. Form completion\
+    \ tanked, bounce up on mobile, UTMs look off, and speed feels slower.\u201D"
+  - "Budget/urgency: Can free \xA315k\u2013\xA325k for a 90\u2011day sprint if it shows a path to +30% demos by Q4 board."
+  - "Will give email for: a specific teardown of /request-demo with 2\u20133 tests to run next week, or a Loom showing creative\
+    \ + LP hypotheses."
+  - "Will not: sit through generic discovery, gated \u2018ultimate\u2019 guides, or talk if pricing is vague."
+  - Their business's website is layerlock.example; whenever asked for it they give exactly layerlock.example.
+  working_hours:
+    timezone: Europe/London
+    opens: 08:00
+    closes: '22:00'
+  reply_within:
+    min: PT3H
+    max: P2D
+  reply:
+    kind: answers
+- key: newsroom
+  name: The trade press
+  email: newsroom@press.example
+  profile: Not a visitor. Reports what happens in marketing; never on the site and never writes to the agent.
+happenings:
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P2D
+  inputs:
+    fact: "Oct 14, 2026: Google Ads rolled out new channel prioritization and budget allocation controls so advertisers can\
+      \ rank networks by priority and cap spend to lower\u2011priority channels across Search, Shopping, Performance Max and\
+      \ Demand Gen to test them safely."
+    source: https://blog.google/products/ads-commerce/channel-prioritization-budget-allocation/?ref=noticemesenpai.com
+    published: '2026-10-14'
+    topic: 'a change on a platform brands buy or build on: Meta, Google, TikTok, Pinterest, Shopify, Klaviyo'
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P5D
+  inputs:
+    fact: "Sep 23, 2026: Google announced new AI Max features, expanding AI Brief to more languages (Dutch, French, German,\
+      \ Italian, Japanese, Portuguese, Spanish) and introducing an AI Max reporting view that connects the triggering search\
+      \ term, the creative asset shown and the landing page to assess AI\u2011driven performance."
+    source: https://blog.google/products/ads-commerce/ai-max-language-reporting-features/
+    published: '2026-09-23'
+    topic: 'a change on a platform brands buy or build on: Meta, Google, TikTok, Pinterest, Shopify, Klaviyo'
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P8D
+  inputs:
+    fact: "AWS re:Invent 2026 runs Nov 30\u2013Dec 4 in Las Vegas; the event page notes reserved seating is now open and attendees\
+      \ can use the AWS Events app to find, favorite and secure session seats."
+    source: https://aws.amazon.com/events/reinvent/?nc2=h_reinvent
+    published: '2026-09-30'
+    topic: 'an event a brand''s founder or marketer could go to: a conference, meetup, workshop or webinar'
+- kind: uses
+  person: ninao
+  inbox: site
+  use: views
+  inputs:
+    page: /
+    title: Home
+  after: PT0S
+- kind: uses
+  person: ninao
+  inbox: site
+  use: picks
+  inputs:
+    page: /
+    question: biggest headache
+    answer: Traffic but no sales
+  gap:
+    min: PT6S
+    max: PT24S
+- kind: uses
+  person: ninao
+  inbox: site
+  use: reads
+  inputs:
+    page: /work
+    how: about a minute, scrolled 60%
+  gap:
+    min: PT32S
+    max: PT128S
+- kind: uses
+  person: ninao
+  inbox: site
+  use: picks
+  inputs:
+    page: /work
+    question: show me work for
+    answer: B2B
+  gap:
+    min: PT3S
+    max: PT14S
+- kind: uses
+  person: ninao
+  inbox: site
+  use: reads
+  inputs:
+    page: /work/ledgerly
+    how: about 90 seconds, scrolled 75%
+  gap:
+    min: PT47S
+    max: PT190S
+- kind: uses
+  person: ninao
+  inbox: site
+  use: reads
+  inputs:
+    page: /journal/landing-pages-not-homepages
+    how: about two minutes, scrolled 80%
+  gap:
+    min: PT65S
+    max: PT262S
+- kind: uses
+  person: ninao
+  inbox: site
+  use: reads
+  inputs:
+    page: /pricing
+    how: about 40 seconds, scrolled 50%
+  gap:
+    min: PT23S
+    max: PT92S
+- kind: uses
+  person: ninao
+  inbox: site
+  use: writes
+  inputs:
+    text: "Hey \u2014 we redesigned our site in July and demo requests are down ~40% with roughly the same traffic. Could\
+      \ use a 90\u2011day push to diagnose and test LPs + paid. Do you do much B2B SaaS lead gen? We\u2019re ~\xA31.3m ARR,\
+      \ selling cloud security. Need to show lift by end of quarter."
+  gap:
+    min: PT9S
+    max: PT36S
+- kind: uses
+  person: ninao
+  inbox: site
+  use: asks
+  inputs:
+    page: /
+    label: Roast my site
+    text: layerlock.example
+  gap:
+    min: PT17S
+    max: PT68S
+- kind: uses
+  person: ninao
+  inbox: site
+  use: leaves
+  inputs:
+    page: /
+  gap:
+    min: PT3S
+    max: PT12S

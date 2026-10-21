@@ -1,0 +1,172 @@
+name: gen_lena
+starts_at: '2026-10-12T09:00:00Z'
+runs_for: P21D
+max_wakes: 200
+people:
+- key: lena
+  name: Lena Duarte
+  email: lena@saltandstrand.example
+  profile: Solo founder and maker at Salt & Strand Jewellery in Brighton. Splits time between the bench and packing orders;
+    checks marketing on her phone between tasks and on a laptop at night. Careful with cash, blunt, a bit burned by a previous
+    freelancer. Pragmatic, quick skimmer, screenshots things to revisit.
+  facts:
+  - "I hand-make recycled silver and gold vermeil pieces; AOV ~\xA358, post-shipping margin ~55%."
+  - "Last 12 months ~\xA3180k revenue; Meta CPC up from \xA30.45 to \xA31.20, MER dropped from ~3.2 to ~1.6."
+  - "I\u2019ve been sending ads to my homepage and a rings collection; traffic\u2019s up, purchases flat, I can\u2019t tell\
+    \ which ad or page actually worked."
+  - "Budget: I could stretch to a \xA34\u20135k 90\u2011day project if I see a plan; monthly I\u2019m comfy under \xA32.5k,\
+    \ no long lock-ins."
+  - "I\u2019d give my email for a specific teardown video of my site or a 90\u2011day action plan with numbers; won\u2019\
+    t for generic ebooks or \u2018newsletter\u2019."
+  - "Summer \u2018Seafoam\u2019 drop in ~6 weeks; goal: 300 units first month; sizing questions and 7\u201310 day lead times\
+    \ cause hesitations."
+  - Their business's website is saltandstrand.example; whenever asked for it they give exactly saltandstrand.example.
+  working_hours:
+    timezone: Europe/London
+    opens: 08:00
+    closes: '22:00'
+  reply_within:
+    min: PT3H
+    max: P2D
+  reply:
+    kind: answers
+- key: newsroom
+  name: The trade press
+  email: newsroom@press.example
+  profile: Not a visitor. Reports what happens in marketing; never on the site and never writes to the agent.
+happenings:
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P2D
+  inputs:
+    fact: "Google Ads added channel prioritization and budget-allocation controls to Performance Max on Oct 14, 2026, letting\
+      \ advertisers give \u201CGoogle channels\u201D higher priority and cap spend on low\u2011priority channels; rollout\
+      \ is global over the coming months."
+    source: https://blog.google/products/ads-commerce/channel-prioritization-budget-allocation/
+    published: '2026-10-14'
+    topic: 'a change on a platform brands buy or build on: Meta, Google, TikTok, Pinterest, Shopify, Klaviyo'
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P5D
+  inputs:
+    fact: Shopify announced new peak-season fulfillment features on Oct 1, 2026, including market-based shipping rates, package-dimensioned
+      rate accuracy, and options to show split shipments and their costs at checkout (broader enablement continues into 2027).
+    source: https://www.shopify.com/blog/fulfillment-on-shopify-2026
+    published: '2026-10-01'
+    topic: 'a change on a platform brands buy or build on: Meta, Google, TikTok, Pinterest, Shopify, Klaviyo'
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P8D
+  inputs:
+    fact: "UK shoppers kept a lid on spending in September as fuel costs bit, with surveys showing more outlay on petrol and\
+      \ weaker demand in categories like clothing\u2014signalling a cautious run\u2011in to Christmas."
+    source: http://rmb.reuters.com/rmd/rss/item/tag:reuters.com,2026:newsml_KBN3VS274?channel=FBi345
+    published: '2026-10-13'
+    topic: 'go-to-market news: what consumer brands are doing, a shift in how people buy, a season''s numbers'
+- kind: uses
+  person: lena
+  inbox: site
+  use: views
+  inputs:
+    page: /
+    title: Home
+  after: PT0S
+- kind: uses
+  person: lena
+  inbox: site
+  use: picks
+  inputs:
+    page: /
+    question: biggest headache
+    answer: Ads got expensive
+  gap:
+    min: PT3S
+    max: PT12S
+- kind: uses
+  person: lena
+  inbox: site
+  use: asks
+  inputs:
+    page: /
+    label: Roast my site
+    text: saltandstrand.example
+  gap:
+    min: PT4S
+    max: PT18S
+- kind: uses
+  person: lena
+  inbox: site
+  use: reads
+  inputs:
+    page: /work
+    how: about 20 seconds, scrolled 40%
+  gap:
+    min: PT4S
+    max: PT16S
+- kind: uses
+  person: lena
+  inbox: site
+  use: picks
+  inputs:
+    page: /work
+    question: show me work for
+    answer: DTC
+  gap:
+    min: PT1S
+    max: PT6S
+- kind: uses
+  person: lena
+  inbox: site
+  use: reads
+  inputs:
+    page: /work/tallow-and-thyme
+    how: about two minutes, scrolled 80%
+  gap:
+    min: PT2S
+    max: PT8S
+- kind: uses
+  person: lena
+  inbox: site
+  use: views
+  inputs:
+    page: /pricing
+    title: Pricing
+  gap:
+    min: PT3S
+    max: PT12S
+- kind: uses
+  person: lena
+  inbox: site
+  use: picks
+  inputs:
+    page: /pricing
+    question: pricing toggle
+    answer: Project
+  gap:
+    min: PT2S
+    max: PT10S
+- kind: uses
+  person: lena
+  inbox: site
+  use: reads
+  inputs:
+    page: /journal/why-your-meta-costs-went-up
+    how: about two minutes, scrolled 70%
+  gap:
+    min: PT5S
+    max: PT20S
+- kind: uses
+  person: lena
+  inbox: site
+  use: leaves
+  inputs:
+    page: /
+  gap:
+    min: PT2S
+    max: PT10S

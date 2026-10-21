@@ -1,0 +1,185 @@
+name: gen_eilidh
+starts_at: '2026-10-12T09:00:00Z'
+runs_for: P21D
+max_wakes: 200
+people:
+- key: eilidh
+  name: Eilidh MacLeod
+  email: eilidh@heatherandpine.example
+  profile: Founder of Heather & Pine, a two-product skincare microbrand in Glasgow. Solo operator most days; sister helps
+    on weekends. Reads on iPhone first while on the bus or in the workshop; opens laptop late evening for decisions. Pragmatic,
+    frugal, a bit sceptical of agencies but open if shown specifics and quick tests.
+  facts:
+  - "Sells a Sea Buckthorn Glow Serum (\xA324/30ml; \xA314/15ml) and an Oat Cleansing Bar (\xA39), hand-poured in small batches\
+    \ in Glasgow."
+  - "Last 12 months revenue ~\xA322k; ~310 lifetime orders; TikTok following 18k after one viral video."
+  - "Viral TikTok (2.3M views) drove ~3,100 sessions in 48 hours to the homepage but only 44 orders (AOV ~\xA322). 15ml serum\
+    \ variant went out of stock mid-spike; shipping is only revealed at checkout; PDP has no visible reviews on mobile."
+  - "Budget \xA32\u20133k for a 90-day project if it includes testing a TikTok-specific landing page and 3\u20135 new creatives\
+    \ tied to it; cannot commit to long retainers."
+  - Would trade her email for a blunt, mobile-first teardown of her serum PDP with 3 testable fixes and expected impact, or
+    a before/after example for a similar DTC beauty brand.
+  - "Won\u2019t give email for generic eBooks, webinars, or fluffy \u2018brand audits\u2019; hates long discovery decks without\
+    \ numbers."
+  - Their business's website is heatherandpine.example; whenever asked for it they give exactly heatherandpine.example.
+  working_hours:
+    timezone: Europe/London
+    opens: 08:00
+    closes: '22:00'
+  reply_within:
+    min: PT3H
+    max: P2D
+  reply:
+    kind: answers
+- key: newsroom
+  name: The trade press
+  email: newsroom@press.example
+  profile: Not a visitor. Reports what happens in marketing; never on the site and never writes to the agent.
+happenings:
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P2D
+  inputs:
+    fact: TikTok unveiled AI-powered updates for advertisers on 5 Oct 2026, including Smart+ automation for Search Ads, agentic
+      planning/execution tools, and TopReach (combining TopView and Top Feed). TikTok also announced a U.S.-only TikTok Ad
+      Network to extend reach beyond the app.
+    source: https://newsroom.tiktok.com/tiktok-unveils-ai-powered-updates-for-advertisers-driving-discovery-action-and-measurable-business-outcomes?lang=en
+    published: '2026-10-05'
+    topic: 'a change on a platform brands buy or build on: Meta, Google, TikTok, Pinterest, Shopify, Klaviyo'
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P5D
+  inputs:
+    fact: Health & beauty recorded its strongest month of 2026 in September, as UK retail sales grew just 1.3% year-on-year
+      overall; shoppers prioritized smaller purchases, lifting pharmacy, health and beauty spend 4% YoY (BRC-KPMG Retail Sales
+      Monitor).
+    source: https://theindustry.beauty/health-and-beauty-sales-hold-up-as-uk-retail-growth-slows/
+    published: '2026-10-13'
+    topic: 'go-to-market news: what consumer brands are doing, a shift in how people buy, a season''s numbers'
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P8D
+  inputs:
+    fact: "Retail Supply Chain & Logistics Expo returns to ExCeL London on 11\u201312 Nov 2026, bringing 200+ exhibitors and\
+      \ sessions on fulfillment, speed and visibility\u2014positioned as a key meet-up for ecommerce brands ahead of peak\
+      \ season."
+    source: https://www.globaltrademag.com/retail-supply-chain-logistics-expo-returns-to-london-as-industry-faces-a-new-era-of-fulfillment/
+    published: '2026-09-29'
+    topic: 'an event a brand''s founder or marketer could go to: a conference, meetup, workshop or webinar'
+- kind: uses
+  person: eilidh
+  inbox: site
+  use: views
+  inputs:
+    page: /
+    title: Home
+  after: PT0S
+- kind: uses
+  person: eilidh
+  inbox: site
+  use: picks
+  inputs:
+    page: /
+    question: biggest headache
+    answer: Traffic but no sales
+  gap:
+    min: PT3S
+    max: PT14S
+- kind: uses
+  person: eilidh
+  inbox: site
+  use: reads
+  inputs:
+    page: /journal/landing-pages-not-homepages
+    how: about two minutes, scrolled 80%
+  gap:
+    min: PT47S
+    max: PT190S
+- kind: uses
+  person: eilidh
+  inbox: site
+  use: views
+  inputs:
+    page: /work
+    title: Work
+  gap:
+    min: PT9S
+    max: PT36S
+- kind: uses
+  person: eilidh
+  inbox: site
+  use: picks
+  inputs:
+    page: /work
+    question: show me work for
+    answer: DTC
+  gap:
+    min: PT3S
+    max: PT12S
+- kind: uses
+  person: eilidh
+  inbox: site
+  use: reads
+  inputs:
+    page: /work/glow-theory
+    how: about 90 seconds, skimmed creative and results, checked mobile screenshots
+  gap:
+    min: PT44S
+    max: PT176S
+- kind: uses
+  person: eilidh
+  inbox: site
+  use: views
+  inputs:
+    page: /pricing
+    title: Pricing
+  gap:
+    min: PT7S
+    max: PT28S
+- kind: uses
+  person: eilidh
+  inbox: site
+  use: picks
+  inputs:
+    page: /pricing
+    question: pricing toggle
+    answer: Project
+  gap:
+    min: PT4S
+    max: PT18S
+- kind: uses
+  person: eilidh
+  inbox: site
+  use: asks
+  inputs:
+    page: /
+    label: Roast my site
+    text: heatherandpine.example
+  gap:
+    min: PT16S
+    max: PT64S
+- kind: uses
+  person: eilidh
+  inbox: site
+  use: writes
+  inputs:
+    text: Had a TikTok hit (2.3M views) but only 44 orders from ~3.1k site visits. I sent traffic to my homepage by mistake
+      and my 15ml is OOS. If you were me, what would the first test be for a TikTok landing page? Mobile first pls.
+  gap:
+    min: PT11S
+    max: PT44S
+- kind: uses
+  person: eilidh
+  inbox: site
+  use: leaves
+  inputs:
+    page: /
+  gap:
+    min: PT2S
+    max: PT10S

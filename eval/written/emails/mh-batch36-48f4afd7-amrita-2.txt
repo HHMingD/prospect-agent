@@ -1,0 +1,101 @@
+To: Amrita Shah (Founder of Sprout & Stitch, a UK kids’ clothing brand. She splits time between the studio and a small warehouse. Skims on her iPhone first, opens laptop only if it’s worth it. Direct, impatient with fluff, numbers-first but creative-savvy. Skeptical of long retainers; likes clear experiments and visible outputs.)
+Judge: 25/25 (specific 5, useful 5, voice 5, fits 5, reply 5) PROMISES 1
+Worst: It assumes Shopify Canvas/Sidekick is enabled and doesn’t include a quick fallback if Canvas isn’t available yet.
+! If you send a preview link, we’ll mark it up (a second‑pair‑of‑eyes review).
+
+Subject: Canvas prompts + a clean GEM‑era test plan (Rain, Rough‑and‑Tumble, Party)
+
+Amrita —
+
+Love that you’re moving on “mud wins” and the rain test. Here’s a tight, forwardable pack so the build + readout stay clean.
+
+Launch checklist for a clean GEM‑era test
+- Keep one ad → one promise page. Hold out ~10% of spend to homepage for a benchmark.
+- Ship all three aspect ratios per concept (9:16, 4:5, 1:1) so the system can explore Facebook/Instagram/Reels/Stories.
+- First screen rule on pages: proof hero + one reassurance (30‑day free returns). No carousels above the fold.
+- Fit help: add a height hint alongside age and a simple cue (“true to size” or “size up for room‑to‑grow”—use what your returns/support data suggests).
+- Naming that reads at a glance: Concept_Format_Ratio_Version (e.g., MudWins_Video_9x16_V1).
+- UTM template (paste it once and swap tokens):
+  utm_source=meta&utm_medium=paid_social&utm_campaign={{concept}}&utm_content={{format}}_{{ratio}}_{{version}}&utm_term={{page}}
+- Reporting view to watch daily: CTR by creative type and CPA by landing page vs the homepage holdout.
+
+Canvas prompt pack (paste into Sidekick)
+— Prompt 1: Rain (Splash Raincoat + rainwear)
+“Create a focused landing page called ‘Rain’. Above the fold: macro hero of water beading on fabric, headline ‘Dry kids = longer play.’ Subhead: ‘GOTS organic cotton. 30‑day free returns.’ Primary CTA: ‘Get the Splash Raincoat.’ Section 2: proof—short bullets on seam/zip guard construction and a parent quote about staying dry. Section 3: pre‑filtered grid of rainwear only. Show size + height hint on cards. Section 4: brief FAQ (care, fit, returns). Keep it bright, minimal, and mobile‑first. Use Lookbook frames where relevant.”
+
+— Prompt 2: Rough‑and‑Tumble (playproof bottoms)
+“Create a focused landing page called ‘Rough‑and‑Tumble’. Above the fold: macro of reinforced knee panel, headline ‘Reinforced knees. Playground ready.’ Subhead: ‘GOTS organic cotton. 30‑day free returns.’ Primary CTA: ‘Shop playproof bottoms.’ Section 2: proof—close‑up callouts (stitching, double layer) and an optional short loop clip. Section 3: grid of bottoms only, pre‑filtered to in‑stock sizes; show a height hint on cards. Section 4: two short parent quotes. Section 5: FAQ on durability, care, returns.”
+
+— Prompt 3: Party (bright sets/dresses)
+“Create a focused landing page called ‘Party’. Above the fold: energetic hero (twirl/colour pop), headline ‘Party‑bright, play‑ready.’ Subhead: ‘GOTS organic cotton. 30‑day free returns.’ Primary CTA: ‘Party‑ready outfits.’ Section 2: proof—simple care/colourfast note and a fit cue. Section 3: grid of party pieces. Section 4: brief FAQ (fit, delivery, returns). Keep the colour energy from the Lookbook.”
+
+Copy you can paste this afternoon
+- Rain hero: “Dry kids = longer play.”
+  Sub: “GOTS organic cotton. 30‑day free returns.”
+  CTA: “Get the Splash Raincoat”
+
+- Rough‑and‑Tumble hero: “Reinforced knees. Playground ready.”
+  Sub: “Built to be handed down. 30‑day free returns.”
+  CTA: “Shop playproof bottoms”
+
+- Party hero: “Party‑bright, play‑ready.”
+  Sub: “Soft, GOTS organic. 30‑day free returns.”
+  CTA: “Party‑ready outfits”
+
+- Fit/height microcopy pattern (use your own numbers): “Age X–Y • height ~___ cm • true to size” or “Age X–Y • height ~___ cm • size up for room‑to‑grow”
+
+What to watch Days 3–7
+- By concept/page: CTR trend and CPA vs the homepage holdout. Rising CTR with stable/lower CPA → lean in. Three‑day CTR decline → park or refresh the hook/visual.
+- By format: note whether video, macro static, or carousel leads on CTR; mirror the winner across the other ratios.
+- First‑screen impact: if macro proof outperforms Lookbook hero on CTR, swap the page hero to macro; if Lookbook wins, keep macro as the secondary proof block.
+
+Week‑2 swaps to pre‑plan
+- Rain: if the static macro beats the clip, clone it into 9:16 and 1:1; keep the beading shot as page hero.
+- Rough‑and‑Tumble: if “Reinforced knees” headlines underperform, try the line “Mud’s fine. These survive.” on the hero and ad hooks.
+- Party: if CPA lags the other two, pause Party and reallocate to Rain + Rough‑and‑Tumble until you have a stronger proof angle.
+
+Tiny QA before launch
+- Each ad URL maps to the matching promise page (no stray links).
+- UTM strings resolve and carry through to checkout.
+- First screen shows one reassurance (returns/delivery) without scrolling.
+- Grids are filtered and only display in‑stock sizes; size/height hint visible on cards.
+
+If you want a second pair of eyes on the first builds or want the prompts tuned to specific SKUs, send a preview link and we’ll mark it up.
+
+Fieldwork Studio
+
+==== Sent before (25/25 (specific 5, useful 5, voice 5, fits 5, reply 5))
+Subject: Sprout & Stitch — launch‑week guardrails
+
+Amrita —
+
+Great to hear you’re building. A few launch‑week guardrails to keep the read clean and fast:
+
+Structure
+- 1 ad set per concept (Mud Wins, Rain Test), 3 creative variants each; even budget split; ~10% homepage holdout for baseline.
+- Placements: keep Facebook, Instagram, Reels and Stories in the same ad set rather than splitting by surface. Meta’s new unified GEM model optimizes across these surfaces; a single cross‑surface setup avoids boxing learning in.
+
+Naming + UTMs
+- Campaign: sns_2026q4_concept-{rain|mud}
+- Ad: var-{video|macro|carousel}-v1
+- UTM: utm_source=meta&utm_medium=paid-social&utm_campaign=concept-{rain|mud}&utm_content={video|macro|carousel}-v1&utm_term={page_slug}
+
+Early kill/keep rules
+- Day 3–5: pause any variant that’s bottom‑quartile on both CTR and first‑screen engagement (scroll or click to size selector).
+- End of week 2: keep the lowest CPA‑by‑page concept; swap in one fresh variant under it; retire anything with three weeks of falling CTR.
+
+Page first screen (copy‑paste checklist)
+- Proof visual; single‑line promise; one reassurance (returns/delivery); primary CTA.
+- Fit helper microcopy: “Age X–Y | ~H–H cm | True to size” (adjust to your chart).
+
+Two fresh micro‑tests
+- Wording: “Reinforced knees” vs “Double‑layer knees” in the hero.
+- Price overlay on carousel: on vs off.
+
+Housekeeping
+- Make sure “first order” is attributed by landing page (not collapsed into homepage by redirects).
+- For paid landers, hide the main nav to reduce leaks; add a compact “Back to shop” link under the hero.
+
+Meta announced GEM on 13 Oct; expect a little week‑one noise. Use relative gaps for the first cuts; let week‑two CPA decide the keepers.
+
+Fieldwork Studio

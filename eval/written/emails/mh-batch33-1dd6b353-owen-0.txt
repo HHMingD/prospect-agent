@@ -1,0 +1,91 @@
+To: owen (Ecommerce Manager at Harbour & Hearth, a Bristol-made furniture brand. Works from a 13" MacBook Pro with two noisy Slack channels open; checks things on an iPhone 13 on the train. Pragmatic, cost-conscious, allergic to fluff, wants dates and numbers. Not precious about creative but wary of agency slideware.)
+Judge: 24/25 (specific 5, useful 5, voice 5, fits 4, reply 5)
+Worst: It never commits to a timeline or measurement plan (e.g., Meta CAPI/Klaviyo specifics) or states it can be live before Black Friday—the deciding factor for Owen.
+
+Subject: Owen — paste this hero + Black Friday fix before lunch
+
+Owen — thanks for introducing yourself. I took a quick look at Harbour & Hearth this morning and wrote the pieces I’d ship today so your launch and Black Friday land cleaner.
+
+What I’d change first on your homepage
+- Lead with what the visitor cares about above the fold, then give them one action. Right now the value is there (free 2‑man delivery over £500, free fabric swatches, Klarna, nearly 2,000 reviews) but it isn’t doing the opening line’s job or pointing to a single next step.
+
+Paste this hero (value‑led, one CTA)
+- Headline: Bristol‑made solid wood furniture, built to order
+- Support line: Free 2‑man delivery over £500. Nearly 2,000 reviews. Free fabric swatches. Klarna available.
+- Primary CTA: Get free swatches
+- Optional secondary (desktop only): Shop best‑sellers
+
+Send paid clicks to a single‑offer page, not home
+- If any paid traffic is pointing to the homepage, switch it to a single‑offer landing flow so cold visitors see one product, one reason, one next step.
+- Fast wireframe for that page:
+  1) Hero: the product you want to win with this month + the same value bar as above
+  2) Social proof band: “Nearly 2,000 reviews” + 3 pull‑quotes with stars
+  3) Price + delivery: from £X, free 2‑man delivery over £500, Klarna available
+  4) Options: swatch CTA and two most‑picked finishes
+  5) UGC strip: 3 real homes using this piece
+  6) Sticky CTA: Get free swatches / Add to cart
+
+Black Friday quick wins (fix the highest‑friction spot)
+- Your early access gate currently asks for five fields and warns codes may take up to 15 minutes during peak times. That’s high friction at peak intent. Try email‑only with instant code on submit and repeat the offer on the confirmation page.
+
+Paste this capture + confirmation copy
+- Gate header: Early access to Black Friday
+- Sub: Be first to shop our limited Black Friday prices on Bristol‑made furniture.
+- Field: Your email
+- Button: Unlock your code
+- On submit (show immediately on page): Your code: BF‑XXXX
+- Note under code: It’s in your inbox too. Apply at checkout to redeem.
+- Confirmation page: You’re in. Your early access code is BF‑XXXX. Browse the collection now — free 2‑man delivery over £500, Klarna available, nearly 2,000 reviews.
+
+Canvas launch test pack (so you can build this fast without a dev)
+- Three section stacks to spin up in Shopify Canvas:
+  1) Value‑led stack: hero + value bar + 3 icon‑reasons (delivery, reviews, swatches)
+  2) Problem→solution stack: why made‑to‑order wood beats mass‑market, then the one product you’re featuring
+  3) Offer + UGC stack: early‑access or launch incentive + 3 customer photos + review carousel
+- 10‑point launch QA checklist:
+  1) Meta + Google pixels: page view, view content, add‑to‑cart, initiate checkout, purchase all fire
+  2) UTM hygiene: all paid links tagged; landing page titles match ad hooks
+  3) Klarna messaging visible on PDP and in-cart
+  4) Free 2‑man delivery threshold stated the same on hero, PDP, cart
+  5) Review widget loads above the fold on mobile; counts align with “~2,000” claim
+  6) Swatch request flow works on mobile; confirmation is clear
+  7) Discount code reveals instantly on capture; code applies at checkout
+  8) Sticky CTA present on mobile; scroll‑to‑buy is under 2 screens
+  9) Nav trimmed on landing pages (no leaks); logo click returns to offer
+  10) Speed: LCP under ~3s on 4G test, hero image <300kb if possible
+- The three‑week retire rule (why it keeps launches moving): Any creative or page variant that hasn’t earned its place gets rotated out within three weeks. That cadence keeps your pages and ads from going stale, forces a clear read on what’s working, and gives you a natural heartbeat for shipping new sections in Canvas.
+
+One truth to design around
+- We couldn’t find trade coverage for “Harbour & Hearth,” so most launch traffic will be cold with zero external cues. Your page has to create trust on its own — lead with the Bristol‑made proof, the review count, the delivery promise, and an easy first step (swatches).
+
+Noticed you were looking at Project on our Pricing page — that’s how most launches start on our side. If this note is useful, forward it to whoever owns Shopify and ads. If you’d rather sanity‑check the single product you’ll push first, hit reply with its name — that answer decides the landing flow, the review pulls, and the offer.
+
+Fieldwork Studio
+
+==== Sent before (18/25 (specific 4, useful 4, voice 4, fits 3, reply 3) INVENTED 1 PROMISES 1)
+Subject: Harbour & Hearth launch: fast homepage fix + Black Friday wins
+
+Owen —
+
+Short roast + the launch pack you asked for.
+
+What to change first
+- Above the fold, lead with a visitor‑centred line and one action. Suggestion: “Bristol‑made solid wood furniture.” Sub: “Free 2‑man delivery over £500. Nearly 2,000 reviews. Klarna available.” Primary CTA: pick one (Build yours or Get free swatches).
+
+Where to send paid traffic
+- One ad, one promise, one page. Build a single‑offer landing page per campaign; avoid sending ads to the homepage.
+
+Black Friday quick wins
+- Replace the 5‑field early‑access gate with email‑only. Show the code instantly on confirmation and keep it visible on the offer page and through checkout.
+
+Canvas launch test stacks (pasteable section orders)
+- Value‑led stack: value line + delivery/reviews → bestsellers → FAQs → CTA.
+- Problem–solution stack: flat‑pack pain → solid‑wood craft → workshop proof → reviews → CTA.
+- Offer + UGC stack: seasonal offer bar + hero → review tiles → workshop clip/photo → trust badges → CTA.
+
+The creative rule that keeps costs in check
+- Retire creative after about three weeks of falling click‑through; ship each concept in at least three variants so the account can learn.
+
+If you want this turned into a runnable launch test plan with page wires, say so and Priya Nair will be in touch.
+
+Fieldwork Studio

@@ -1,0 +1,92 @@
+To: Miles Carter (Owner-operator of River City Cycles, a brick-and-mortar bike shop in Bristol with a Shopify store. Reads on a 13-inch laptop in the back office; checks things on his phone between customers. Pragmatic, margin-conscious, allergic to fluff, asks blunt questions and moves on fast.)
+Judge: 21/25 (specific 4, useful 4, voice 5, fits 4, reply 4)
+Worst: It ignores his core Google Shopping/PMax and feed-quality problems (and the benchmarks/break-even CPC template he wants), so it may feel like half the plan.
+
+Subject: Miles — a 30‑day attribution fix you can forward today (events, tags, UTMs, one report)
+
+Hi Miles —
+
+Thanks for introducing yourself. You said your biggest headache is “Can’t tell what’s working.” From a quick pass over rivercitycycles.example, I couldn’t see visible analytics/attribution on home, product, checkout or service routes, which explains the fog. Below is a one‑page fix you can paste/forward to whoever runs your site or ads.
+
+30‑day attribution fix for River City Cycles
+
+1) Event map (what to track, where, and with what value)
+- purchase — fire on order confirmation. Params: value (GBP), currency, transaction_id, items [id/SKU, name, category, price, qty].
+- booking_confirmed — fire on successful service booking confirmation (or webhook). Params: value (price/estimate), currency, service_type, booking_id, preferred_date.
+- email_subscribe — fire on newsletter sign‑up success (footer). Params: form_location (footer/home), opt_in_method.
+- click_to_call — fire on tel:0117… link click (and mark connected if your call tool supports it). Params: phone, page, source/medium if available.
+
+2) Tag plan (mirror the same truth everywhere)
+- GA4: send purchase and booking_confirmed as ecommerce/conversions; mark both as key events.
+- Meta Pixel + CAPI: mirror purchase and booking_confirmed with value and currency so ads can optimise beyond clicks.
+- Google Ads conversions: create separate conversions for purchase and booking_confirmed; import to campaigns.
+- Dynamic Number Insertion (DNI): swap the 0117 line dynamically by source/medium; pass gclid/fbclid to call events so phone revenue isn’t “dark.”
+
+3) UTM naming (enforce consistency across every link)
+- Required: utm_source, utm_medium, utm_campaign. Optional: utm_content, utm_term.
+- Conventions (lowercase, underscores only):
+  • source: meta, google, pinterest, klaviyo, partnername
+  • medium: paid_social, cpc, email, referral, organic_social
+  • campaign: stream__offer__monthyear  e.g. ebikes__autumn_sale__oct2026
+  • content: creative_variant  e.g. video1_square_blue
+  • term: keyword for search
+
+4) Consent Mode v2 (keep analytics lawful and useful)
+- Enable in your CMP/GTM; map analytics_storage and ad_* signals for GA4/Google Ads; ensure Meta receives consent state via Pixel before firing events.
+
+5) Cross‑domain booking (if any booking tool sits off‑site)
+- Preserve UTMs/click IDs across domains with linker; after confirmation, send booking_confirmed back to GA4/Meta/Google Ads with original click IDs (server‑side if needed).
+
+6) One report to run everything (source/medium × revenue)
+- Columns: source/medium, sessions, add_to_cart, purchases, purchase_revenue (GBP), bookings, booking_revenue (GBP), click_to_call (count).
+- Build in GA4 Explore: dimension Session source/medium; metrics Purchases, Purchase revenue; add Event count filtered to booking_confirmed and click_to_call; mark booking_confirmed as a conversion so it appears alongside purchases.
+
+Three quick wins (with owner/effort)
+- Add DNI + click_to_call on the 0117 line — Owner: web/ads. Effort: S. Impact: exposes phone‑led bike/service revenue.
+- Enforce UTMs today with the convention above — Owner: whoever sends ads/email/social. Effort: S. Impact: cleans up your report overnight.
+- Tag the service booking confirmation with value — Owner: dev. Effort: M. Impact: ties workshop revenue back to spend.
+
+Why now for River City Cycles
+- A large e‑bike competitor (Uprise Bikes) opened near Bristol in March 2026 with click‑and‑collect and an in‑house workshop; measuring online‑to‑workshop flows (calls and bookings) keeps you competitive on the journey customers now expect.
+- UK cycling sales are rebounding (mechanical +6%, e‑bikes +2%, services +8% in 2025–26), so getting attribution right lets you lean into the channels actually driving that demand.
+- 84% of UK consumers can’t tell legal from illegal e‑bikes; if you use the new ‘E‑Bike Positive’ safety trustmark, track impressions/clicks on that message in‑site and ads—it builds trust and gives a clear conversion signal.
+
+If helpful, forward this to your developer and whoever runs Meta/Google. If you want a sanity check, reply with two answers:
+- Are your service bookings on the same domain as the shop?
+- Do most high‑ticket bike buyers call before they purchase?
+
+Your answers change where we put the effort first.
+
+Fieldwork Studio
+
+==== Sent before (15/25 (specific 2, useful 4, voice 2, fits 4, reply 3) PROMISES 1)
+Subject: River City Cycles — 1‑page attribution build sheet (purchases, bookings, calls)
+
+Miles —
+
+Here’s the 1‑pager you can hand to your dev/marketer today.
+
+Success signals
+- Fire once on the purchase thank‑you.
+- Fire once on the service‑booking confirmation.
+
+Source continuity
+- Keep the original source/campaign through checkout and the booking flow (carry UTMs across pages/domains).
+
+Calls
+- Show a swap‑in tracking number on paid/UTM sessions so calls get a source attached.
+
+Sanity test
+- Complete one test purchase and one test booking from search, social and email; each should appear once in your reporting with sensible values.
+
+Weekly report (template)
+- Columns: source | medium | purchases | purchase revenue | bookings | booking value | calls | total revenue | cost (if available).
+
+Quick wins
+- Unique confirmation page/event to avoid duplicates.
+- One shared UTM naming sheet for anyone buying media or sending email.
+- Tag clicks on finance info and any “legal & safe e‑bikes” explainer you add — both are high‑intent trust signals.
+
+If you want this packaged as a short checklist PDF, say and we’ll send it.
+
+Fieldwork Studio

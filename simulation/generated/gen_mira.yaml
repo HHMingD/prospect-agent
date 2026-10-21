@@ -1,0 +1,173 @@
+name: gen_mira
+starts_at: '2026-10-12T09:00:00Z'
+runs_for: P21D
+max_wakes: 200
+people:
+- key: mira
+  name: Mira Patel
+  email: mira@sproutbox.example
+  profile: 'Growth Lead at SproutBox Meals (vegan meal kits). Browses on a 13" laptop, trackpad-only, 12 tabs open. Time-poor,
+    analytical, skeptical of agency fluff, wants numbers and fast experiments. Pragmatic: can ship tests without pulling her
+    full dev team.'
+  facts:
+  - "We sell 100% vegan meal kits with 18 rotating weekly recipes; AOV ~\xA344 first box with intro, ~\xA362 after."
+  - "Revenue just over \xA39m this year; paid social is 60% of spend; team of 24."
+  - "CAC is up ~60% YoY (Meta first-box CPA ~\xA374 vs. target \xA345) while LTV hasn\u2019t moved; mobile drop-off between\
+    \ click and box-builder is ~88%."
+  - 'Creative fatigue: top performers are 4+ months old; unclear which angles win by audience due to patchy UTMs and post-purchase
+    survey logic.'
+  - "I can sign off ~\xA345k for a 90\u2011day project; could stretch to \xA370k if we see a credible path to sub-\xA355 CAC\
+    \ in-month."
+  - "I\u2019d give my email for a blunt teardown of our quiz\u2192box builder\u2192checkout with 5 prioritized tests and example\
+    \ ad concepts; I would not for a gated ebook, newsletter, or generic case study PDF."
+  - Their business's website is sproutbox.example; whenever asked for it they give exactly sproutbox.example.
+  working_hours:
+    timezone: Europe/London
+    opens: 08:00
+    closes: '22:00'
+  reply_within:
+    min: PT3H
+    max: P2D
+  reply:
+    kind: answers
+- key: newsroom
+  name: The trade press
+  email: newsroom@press.example
+  profile: Not a visitor. Reports what happens in marketing; never on the site and never writes to the agent.
+happenings:
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P2D
+  inputs:
+    fact: "Meta announced at Advertising Week New York (Oct 6, 2026) that Ads Creative Studio is expanding to more advertisers\
+      \ and that Advantage+ creative tools can auto\u2011generate videos from product images via Ads Manager/Commerce Manager\u2014\
+      aimed at faster creative iteration at scale."
+    source: https://about.fb.com/br/news/2026/10/advertising-week-new-york-2026-novas-capacidades-de-ia-para-guiar-campanhas-e-alcancar-clientes/amp/
+    published: '2026-10-06'
+    topic: 'a change on a platform brands buy or build on: Meta, Google, TikTok, Pinterest, Shopify, Klaviyo'
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P5D
+  inputs:
+    fact: "Adobe\u2019s UK e-commerce analysis shows online spending up 3.9% year to date in 2026, with June at \xA310.6bn\
+      \ (+16.9% YoY). UK retail-site traffic from AI sources rose 149% YoY in August, and conversion rates from AI traffic\
+      \ were 20% higher than non\u2011AI traffic."
+    source: https://retailtechinnovationhub.com/home/2026/9/23/adobe-research-shows-uk-consumers-increasingly-using-ai-as-part-of-their-online-shopping-journeys
+    published: '2026-09-23'
+    topic: 'go-to-market news: what consumer brands are doing, a shift in how people buy, a season''s numbers'
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P8D
+  inputs:
+    fact: "HelloFresh UK launched a new brand campaign on Oct 5, 2026\u2014\u201CThe Dinner Decree\u201D\u2014fronted by TV\
+      \ personality Paul C. Brunson, signalling continued UK investment in awareness and acquisition."
+    source: https://www.retailgazette.co.uk/blog/2026/10/hellofresh-campaign/
+    published: '2026-10-05'
+    topic: 'go-to-market news: what consumer brands are doing, a shift in how people buy, a season''s numbers'
+- kind: uses
+  person: mira
+  inbox: site
+  use: views
+  inputs:
+    page: /
+    title: Home
+  after: PT0S
+- kind: uses
+  person: mira
+  inbox: site
+  use: picks
+  inputs:
+    page: /
+    question: biggest headache
+    answer: Ads got expensive
+  gap:
+    min: PT3S
+    max: PT12S
+- kind: uses
+  person: mira
+  inbox: site
+  use: reads
+  inputs:
+    page: /journal/why-your-meta-costs-went-up
+    how: about three minutes, scrolled 75%
+  gap:
+    min: PT14S
+    max: PT56S
+- kind: uses
+  person: mira
+  inbox: site
+  use: views
+  inputs:
+    page: /work
+    title: Work
+  gap:
+    min: PT6S
+    max: PT24S
+- kind: uses
+  person: mira
+  inbox: site
+  use: picks
+  inputs:
+    page: /work
+    question: show me work for
+    answer: DTC
+  gap:
+    min: PT2S
+    max: PT10S
+- kind: uses
+  person: mira
+  inbox: site
+  use: reads
+  inputs:
+    page: /work/oatside-kitchen
+    how: about ninety seconds, scrolled 65%
+  gap:
+    min: PT7S
+    max: PT28S
+- kind: uses
+  person: mira
+  inbox: site
+  use: views
+  inputs:
+    page: /pricing
+    title: Pricing
+  gap:
+    min: PT5S
+    max: PT20S
+- kind: uses
+  person: mira
+  inbox: site
+  use: picks
+  inputs:
+    page: /pricing
+    question: pricing toggle
+    answer: Project
+  gap:
+    min: PT2S
+    max: PT8S
+- kind: uses
+  person: mira
+  inbox: site
+  use: asks
+  inputs:
+    page: /
+    label: Roast my site
+    text: sproutbox.example
+  gap:
+    min: PT8S
+    max: PT32S
+- kind: uses
+  person: mira
+  inbox: site
+  use: leaves
+  inputs:
+    page: /
+  gap:
+    min: PT1S
+    max: PT4S

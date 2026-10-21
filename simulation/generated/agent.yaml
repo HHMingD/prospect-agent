@@ -1,0 +1,1499 @@
+version: 1
+name: studio_site_agent
+wakes:
+- kind: reported
+  wake_url: http://127.0.0.1:{run.port}/wake
+  report_url: http://127.0.0.1:{run.port}/report
+  wake_timeout: PT10M
+outbound:
+- host: mail.fieldwork.example
+  name: mail
+  kind: acknowledge
+  answer:
+    status: 200
+    json_body:
+      ok: true
+  message:
+    recipients:
+    - to
+    text:
+    - text
+    subject:
+    - subject
+  replies:
+    url: http://127.0.0.1:{run.port}/inbound/email
+- host: crm.fieldwork.example
+  name: crm
+  kind: acknowledge
+  answer:
+    status: 201
+    json_body:
+      ok: true
+- host: api.apollo.io
+  name: apollo
+  kind: pass_through
+- host: api.perplexity.ai
+  name: perplexity
+  kind: pass_through
+- host: api.scraperapi.com
+  name: scraperapi
+  kind: pass_through
+- host: emberandwick.example
+  name: site_emberandwick
+  kind: acknowledge
+  answer:
+    status: 200
+    headers:
+      content-type: text/html; charset=utf-8
+    text: "<!doctype html><html><head><title>Ember &amp; Wick | Hand-poured soy candles</title><meta name=\"description\"\
+      \ content=\"Hand-poured soy candles and reed diffusers, made in Leeds.\"></head><body>\n<header><nav><a href=\"/shop\"\
+      >Shop all</a> <a href=\"/diffusers\">Diffusers</a> <a href=\"/story\">Our story</a> <a href=\"/basket\">Basket (0)</a></nav></header>\n\
+      <div class=\"banner\">Free UK delivery over \xA340</div>\n<h1>The Summer Citrus Collection</h1><p>Light, bright scents\
+      \ for long evenings: Lemon Verbena, Grapefruit &amp; Basil, Sea Salt Lime.</p><a href=\"/shop/summer\">Shop the collection</a>\n\
+      <h2>Bestsellers</h2>\n<ul><li>Fig &amp; Cedar, 220g, \xA328</li><li>Smoked Amber, 220g, \xA328</li><li>Lemon Verbena,\
+      \ 220g, \xA324</li><li>Wild Fig Diffuser, 100ml, \xA332</li><li>Sea Salt Lime, 220g, \xA324</li><li>Tobacco &amp; Oud,\
+      \ 300g, \xA338</li></ul>\n<a href=\"/shop\">See all 64 products</a>\n<h2>Why soy?</h2><p>Cleaner burn, longer life:\
+      \ up to 50 hours from every 220g candle. Hand-poured in small batches in our Leeds studio.</p>\n<p>\u2605 4.8 from 1,240\
+      \ reviews</p>\n<footer>Instagram @emberandwick \xB7 Wholesale \xB7 Contact</footer></body></html>"
+- host: ostrogroup.example
+  name: site_ostrogroup
+  kind: acknowledge
+  answer:
+    status: 200
+    headers:
+      content-type: text/html; charset=utf-8
+    text: "<!doctype html><html><head><title>Ostro | Italian kitchens in Manchester</title><meta name=\"description\" content=\"\
+      Four neighbourhood Italian restaurants in Manchester.\"></head><body>\n<header><nav><a href=\"/menus\">Menus</a> <a\
+      \ href=\"/locations\">Our restaurants</a> <a href=\"/about\">About</a> <a href=\"/book\">Book a table</a></nav></header>\n\
+      <div class=\"hero-video\">(autoplaying video of pasta being made, 14MB)</div>\n<h1>Pasta, made every morning. Four kitchens\
+      \ across Manchester.</h1>\n<h2>Our restaurants</h2><ul><li>Ancoats</li><li>Didsbury</li><li>Chorlton</li><li>Northern\
+      \ Quarter</li></ul>\n<h2>From our kitchen</h2><p>Instagram: 18.2k followers. Our cacio e pepe was named one of Manchester's\
+      \ best bowls of pasta in 2025.</p>\n<h2>Gift vouchers</h2><p>Give the gift of pasta. From \xA325.</p>\n<p><small>Christmas\
+      \ parties 2026: now taking enquiries. <a href=\"/book\">Enquire here</a></small></p>\n<footer>\xA9 Ostro Group Ltd</footer></body></html>"
+  routes:
+  - path: /book*
+    answer:
+      status: 200
+      headers:
+        content-type: text/html; charset=utf-8
+      text: "<!doctype html><html><head><title>Book | Ostro</title></head><body>\n<h1>Booking enquiry</h1><p>Fill in the form\
+        \ and our team will confirm your booking by email within 48 hours.</p>\n<form>Full name* \xB7 Email* \xB7 Phone* \xB7\
+        \ Restaurant* (Ancoats / Didsbury / Chorlton / Northern Quarter) \xB7 Date* \xB7 Time* \xB7 Number of guests* \xB7\
+        \ Occasion \xB7 Dietary requirements \xB7 How did you hear about us? \xB7 Sign me up to the newsletter [ ] <button>Send\
+        \ enquiry</button></form>\n<p>Parties of 8 or more: please call the restaurant.</p></body></html>"
+- host: quillstack.example
+  name: site_quillstack
+  kind: acknowledge
+  answer:
+    status: 200
+    headers:
+      content-type: text/html; charset=utf-8
+    text: "<!doctype html><html><head><title>Quillstack | Invoicing, reimagined</title><meta name=\"description\" content=\"\
+      The modern invoicing platform for modern firms.\"></head><body>\n<header><nav><a href=\"/product\">Product</a> <a href=\"\
+      /pricing\">Pricing</a> <a href=\"/blog\">Blog</a> <a href=\"/login\">Log in</a> <a href=\"/signup\">Start free trial</a></nav></header>\n\
+      <h1>Invoicing, reimagined.</h1><p>The modern platform for modern firms. Automate, integrate, accelerate.</p><a href=\"\
+      /signup\">Start your free trial</a>\n<h2>Everything you need</h2><ul><li>Recurring invoices</li><li>Client portal</li><li>Xero\
+      \ and QuickBooks sync</li><li>Payment reminders</li><li>Multi-currency</li><li>Open API</li></ul>\n<p>Trusted by 300+\
+      \ practices.</p>\n<h2>Pricing</h2><p>From \xA329 per user per month.</p>\n<footer>Book a demo \xB7 Careers \xB7 Security\
+      \ \xB7 \xA9 Quillstack Ltd</footer></body></html>"
+  routes:
+  - path: /demo*
+    answer:
+      status: 200
+      headers:
+        content-type: text/html; charset=utf-8
+      text: "<!doctype html><html><head><title>Book a demo | Quillstack</title></head><body>\n<h1>See Quillstack in action</h1>\n\
+        <form>First name \xB7 Last name \xB7 Work email \xB7 Phone \xB7 Company \xB7 Job title \xB7 Number of employees \xB7\
+        \ Current invoicing tool \xB7 Monthly invoice volume \xB7 How did you hear about us? <button>Request demo</button></form>\n\
+        <p>A member of our sales team will be in touch within 2 working days.</p></body></html>"
+- host: brightdermis.example
+  name: site_brightdermis
+  kind: acknowledge
+  answer:
+    status: 200
+    headers:
+      content-type: text/html; charset=utf-8
+    text: "<!doctype html><html><head><title>Bright Dermis | Clinical skincare, made in London</title><meta name=\"description\"\
+      \ content=\"Clinical-strength serums and moisturisers.\"></head><body>\n<div class=\"popup\">15% off your first order.\
+      \ Sign up.</div>\n<header><nav><a href=\"/shop\">Shop</a> <a href=\"/science\">The science</a> <a href=\"/reviews\"\
+      >Reviews</a> <a href=\"/basket\">Basket</a></nav></header>\n<h1>Science you can see.</h1><p>Clinical-strength actives,\
+      \ developed with a consultant dermatologist.</p><a href=\"/shop\">Shop now</a>\n<h2>The range</h2><ul><li>Niacinamide\
+      \ 10% Serum, 30ml, \xA334</li><li>Vitamin C 15% Serum, 30ml, \xA338</li><li>Peptide Barrier Moisturiser, 50ml, \xA3\
+      42</li></ul>\n<p>\u2605 4.6 from 380 reviews</p>\n<p>Delivery in 3 to 5 working days. Free over \xA350.</p>\n<footer>Instagram\
+      \ @brightdermis \xB7 Stockists \xB7 Contact</footer></body></html>"
+- host: brunosbowl.example
+  name: site_sanjay
+  kind: acknowledge
+  answer:
+    status: 200
+    headers:
+      content-type: text/html; charset=utf-8
+    text: "<!doctype html><html><head><title>Bruno\u2019s Bowl \u2014 Fresh dog meals, delivered</title><meta name=\"viewport\"\
+      \ content=\"width=device-width,initial-scale=1\"></head><body><header><a href=\"/\">Bruno\u2019s Bowl</a><nav><a href=\"\
+      /meals\">Meals</a><a href=\"/how-it-works\">How it Works</a><a href=\"/pricing\">Pricing</a><a href=\"/reviews\">Reviews</a><a\
+      \ href=\"/blog\">Blog</a><a href=\"/account/login\">Log in</a></nav></header><main><section class=\"hero\"><h1>Fresh,\
+      \ gently cooked meals for your dog</h1><p>From \xA31.89/day. Get your first box for \xA312 today.</p><button onclick=\"\
+      location.href='/meals/trial'\">Start for \xA312</button><div class=\"trust\">4.8\u2605 Trustpilot \u2022 12,000+ dogs\
+      \ fed</div></section><section class=\"quiz\"><h2>Build your plan</h2><form action=\"/meals/plan\" method=\"get\"><label>Dog\
+      \ name<input name=\"dog_name\" type=\"text\" required></label><label>Age<select name=\"age\"><option>Puppy</option><option>Adult</option><option>Senior</option></select></label><label>Weight\
+      \ (kg)<input name=\"weight\" type=\"number\" min=\"1\" step=\"0.5\" required></label><label>Breed (optional)<input name=\"\
+      breed\" type=\"text\"></label><label>Email<input name=\"email\" type=\"email\" required></label><label>Postcode<input\
+      \ name=\"postcode\" type=\"text\" required></label><small>Takes ~60 seconds. We\u2019ll show portions and your price.</small><button\
+      \ type=\"submit\">Build my plan</button></form></section><section class=\"how\"><h2>How it works</h2><ol><li>Tell us\
+      \ about your dog</li><li>We cook and deliver on ice</li><li>Pause or cancel anytime</li></ol></section><section class=\"\
+      pricing\"><h2>Pricing</h2><p>Most plans land between \xA349\u2013\xA389/month after your trial, depending on weight\
+      \ and activity.</p></section><section class=\"reviews\"><h2>Real owners, real results</h2><p>\u201CHe actually licks\
+      \ the bowl clean.\u201D \u2014 Amy, Leeds</p></section></main><footer><p>DPD Next Day delivery Tue\u2013Thu. Please\
+      \ freeze on arrival.</p><p>Your \xA312 trial renews automatically to your plan to avoid gaps in feeding. Manage in your\
+      \ account. We prep weekly; pause/cancel 48h before your renewal.</p><p>Support: hello@brunosbowl.example \u2022 020\
+      \ 0000 0000 (10am\u20133pm)</p><small>Account is created after checkout; password email may take up to 10 minutes.</small></footer></body></html>"
+  routes:
+  - path: /meals/trial*
+    answer:
+      status: 200
+      headers:
+        content-type: text/html; charset=utf-8
+      text: "<!doctype html><html><head><title>Trial Box \xA312 | Bruno\u2019s Bowl</title><meta name=\"viewport\" content=\"\
+        width=device-width,initial-scale=1\"></head><body><header><a href=\"/\">Bruno\u2019s Bowl</a><nav><a href=\"/meals\"\
+        >Meals</a><a href=\"/how-it-works\">How it Works</a><a href=\"/pricing\">Pricing</a><a href=\"/reviews\">Reviews</a></nav></header><main><h1>Try\
+        \ Bruno\u2019s Bowl for \xA312</h1><p>Two weeks of freshly cooked meals. Free delivery. Cancel anytime.</p><div class=\"\
+        badge\">New customer offer \u2022 Ends tonight</div><ul><li>Vet-approved recipes</li><li>Personalised portions</li><li>No\
+        \ nasties</li></ul><form action=\"/checkout\" method=\"post\"><label>Dog name<input name=\"dog_name\" type=\"text\"\
+        \ required></label><label>Weight (kg)<input name=\"weight\" type=\"number\" step=\"0.5\" required></label><label>Email<input\
+        \ name=\"email\" type=\"email\" required></label><button type=\"submit\">Start trial for \xA312</button><small>By\
+        \ starting, you agree your plan continues automatically after your trial at your custom price. Most plans are \xA3\
+        49\u2013\xA389/month. Pause/cancel anytime in your account.</small></form><section class=\"delivery\"><h2>Delivery\
+        \ & storage</h2><p>We deliver Tue\u2013Thu on ice packs. Meals are frozen; if slightly soft on arrival they\u2019\
+        re safe to refreeze. Make sure you have freezer space.</p></section><section class=\"faq\"><h2>FAQs</h2><p><strong>How\
+        \ much after the trial?</strong> It depends on your dog. Most customers pay between \xA349 and \xA389 per month.</p><p><strong>When\
+        \ is the next charge?</strong> Your next box is generated 7 days after delivery to keep you on schedule. You can pause\
+        \ in your account.</p><p><strong>Can I choose recipes?</strong> Yes, you can switch any time.</p></section><section\
+        \ class=\"social\"><h2>Seen on</h2><p>Instagram \u2022 TikTok \u2022 BBC Radio Leeds</p></section></main><footer><p>Support\
+        \ weekdays 10\u20133. hello@brunosbowl.example</p></footer></body></html>"
+- host: emberyoga.example
+  name: site_priya
+  kind: acknowledge
+  answer:
+    status: 200
+    headers:
+      content-type: text/html; charset=utf-8
+    text: "<!doctype html><html lang=\"en\"><head><title>Ember Yoga | Find your calm in the city</title><meta name=\"viewport\"\
+      \ content=\"width=device-width,initial-scale=1\"></head><body><header><div class=\"topbar\">5 studios across London\
+      \ \u2022 Open 6am\u201310pm</div><nav><a href=\"/\">Home</a><a href=\"/book\">Timetable & Book</a><a href=\"/studios\"\
+      >Studios</a><a href=\"/prices\">Prices</a><a href=\"/intro-offer\">Intro Offer</a><a href=\"/shop\">Shop</a><a href=\"\
+      /blog\">Blog</a><a href=\"/account\">Log in</a></nav></header><main><section class=\"hero\"><h1>Find your calm in the\
+      \ city</h1><p>Hot, Vinyasa, Yin and Beginner yoga across Shoreditch, Hackney, Battersea, Camden and Peckham.</p><a class=\"\
+      cta\" href=\"/book\">Book a class</a></section><section class=\"intro-offer\"><h2>New here?</h2><p>30 days of classes\
+      \ for \xA339. Start anytime.</p><small>Valid for new clients only. Excludes workshops and courses. One per person. Activates\
+      \ on first visit.</small><a href=\"/intro-offer\" class=\"btn\">Claim offer</a></section><section class=\"why-ember\"\
+      ><h2>Why Ember</h2><ul><li>Small classes, expert teachers</li><li>Showers, towels, mats available (mat hire \xA32)</li><li>Classes\
+      \ from 6am to 10pm</li></ul></section><section class=\"reviews\"><h2>What our members say</h2><blockquote>\u201CBest\
+      \ hot studio in London.\u201D \u2014 Alex</blockquote><blockquote>\u201CBooked my lunch break class in 2 minutes.\u201D\
+      \ \u2014 Pri</blockquote></section><section class=\"newsletter\"><h3>Get studio updates</h3><form action=\"/api/newsletter\"\
+      \ method=\"post\"><label>First name<input type=\"text\" name=\"first_name\" required></label><label>Email<input type=\"\
+      email\" name=\"email\" required></label><fieldset><legend>Studios you\u2019re interested in</legend><label><input type=\"\
+      checkbox\" name=\"studios\" value=\"shoreditch\">Shoreditch</label><label><input type=\"checkbox\" name=\"studios\"\
+      \ value=\"hackney\">Hackney</label><label><input type=\"checkbox\" name=\"studios\" value=\"battersea\">Battersea</label><label><input\
+      \ type=\"checkbox\" name=\"studios\" value=\"camden\">Camden</label><label><input type=\"checkbox\" name=\"studios\"\
+      \ value=\"peckham\">Peckham</label></fieldset><label><input type=\"checkbox\" name=\"consent\" required>I agree to receive\
+      \ emails and accept the privacy policy</label><button type=\"submit\">Subscribe</button><p class=\"form-note\">You\u2019\
+      ll get a confirmation email within a few minutes.</p></form></section></main><footer><p>We accept ClassPass and Drop-ins.\
+      \ Gift cards available.</p><p>Questions? hello@emberyoga.example \u2022 020 0000 0000</p></footer></body></html>"
+  routes:
+  - path: /book*
+    answer:
+      status: 200
+      headers:
+        content-type: text/html; charset=utf-8
+      text: "<!doctype html><html lang=\"en\"><head><title>Ember Yoga | Timetable & Book</title><meta name=\"viewport\" content=\"\
+        width=device-width,initial-scale=1\"></head><body><header><nav><a href=\"/\">Home</a><a href=\"/book\" aria-current=\"\
+        page\">Timetable & Book</a><a href=\"/prices\">Prices</a><a href=\"/studios\">Studios</a><a href=\"/account\">Log\
+        \ in</a></nav></header><main><h1>Timetable & Book</h1><form id=\"filter\"><label>Location<select name=\"location\"\
+        ><option>All studios</option><option>Shoreditch</option><option>Hackney</option><option>Battersea</option><option>Camden</option><option>Peckham</option></select></label><label>Date<input\
+        \ type=\"date\" name=\"date\"></label><fieldset><legend>Class type</legend><label><input type=\"checkbox\" name=\"\
+        type\" value=\"hot\">Hot</label><label><input type=\"checkbox\" name=\"type\" value=\"vinyasa\">Vinyasa</label><label><input\
+        \ type=\"checkbox\" name=\"type\" value=\"yin\">Yin</label><label><input type=\"checkbox\" name=\"type\" value=\"\
+        beginner\">Beginner</label></fieldset><button type=\"submit\">Find classes</button></form><div class=\"results\"><article><h3>Hot\
+        \ Yoga 60</h3><p>Shoreditch \u2022 Today 18:30 \u2022 60 mins \u2022 6 spots left</p><button class=\"book\" data-class=\"\
+        1234\">Book</button></article><article><h3>Vinyasa Open</h3><p>Hackney \u2022 Today 19:15 \u2022 60 mins \u2022 3\
+        \ spots left</p><button class=\"book\" data-class=\"1235\">Book</button></article></div><section class=\"prices\"\
+        ><h2>Prices</h2><ul><li>Single class \xA318</li><li>10-class pack \xA3140</li><li>Intro Offer 30 days \xA339 (new\
+        \ clients only)</li></ul><small>Prices shown and applied at checkout. Some classes excluded from Intro Offer.</small></section><section\
+        \ class=\"how\"><h2>How booking works</h2><ol><li>Select a class and hit Book. Booking opens in a new tab on secure.mindbodyonline.com.</li><li>Log\
+        \ in or create an account. You can save your card for next time.</li><li>Choose a pass or pay-as-you-go. Discount\
+        \ codes can be entered at checkout.</li></ol><div class=\"modal\" id=\"login\" hidden><h3>Log in</h3><form><label>Email<input\
+        \ type=\"email\" name=\"email\" required></label><label>Password<input type=\"password\" name=\"password\" required></label><button\
+        \ type=\"submit\">Continue</button><p><a href=\"#\">Forgot password?</a></p></form><hr><h3>New to Ember? Create an\
+        \ account</h3><form><label>First name<input type=\"text\" name=\"first_name\" required></label><label>Last name<input\
+        \ type=\"text\" name=\"last_name\" required></label><label>Mobile<input type=\"tel\" name=\"mobile\" placeholder=\"\
+        07\u2026\" required></label><label>Email<input type=\"email\" name=\"email\" required></label><label>Password<input\
+        \ type=\"password\" name=\"pw\" required></label><label>Confirm password<input type=\"password\" name=\"pw2\" required></label><label><input\
+        \ type=\"checkbox\" name=\"terms\" required>I accept the Terms & Privacy</label><label><input type=\"checkbox\" name=\"\
+        marketing\">Email me studio news</label><label><input type=\"checkbox\" name=\"sms_optin\">SMS reminders</label><button\
+        \ type=\"submit\">Create account</button><p class=\"note\">We\u2019ll text you a verification code (can take up to\
+        \ 60 seconds). Your spot is held for up to 10 minutes.</p></form></div><div class=\"checkout\" hidden><h3>Checkout</h3><form><label>Card\
+        \ number<input type=\"text\" name=\"card\" inputmode=\"numeric\" placeholder=\"4242 4242 4242 4242\" required></label><label>Expiry<input\
+        \ type=\"text\" name=\"exp\" placeholder=\"MM/YY\" required></label><label>CVC<input type=\"text\" name=\"cvc\" required></label><label>Billing\
+        \ postcode<input type=\"text\" name=\"postcode\" required></label><label>Discount code<input type=\"text\" name=\"\
+        discount\"></label><p>Processing fee \xA30.50 applies to card payments.</p><button type=\"submit\">Pay now</button><p\
+        \ class=\"policy\">Cancel up to 2 hours before class for credit return. Mat hire \xA32 at studio.</p></form></div></section></main><footer><p>Questions?\
+        \ hello@emberyoga.example</p></footer><script>// booking buttons open Mindbody in new tab</script></body></html>"
+- host: harbourandhearth.example
+  name: site_owen
+  kind: acknowledge
+  answer:
+    status: 200
+    headers:
+      content-type: text/html; charset=utf-8
+    text: "<!doctype html><html><head><title>Harbour & Hearth \u2014 Solid wood furniture from Bristol</title></head><body><header><nav><a\
+      \ href=\"/\">Home</a><a href=\"/sofas\">Sofas</a><a href=\"/tables\">Tables</a><a href=\"/storage\">Storage</a><a href=\"\
+      /black-friday\">Black Friday</a><a href=\"/about\">About</a><a href=\"/journal\">Journal</a><a href=\"/delivery\">Delivery</a><a\
+      \ href=\"/contact\">Contact</a></nav><div class=\"topbar\">Call 0117 555 0199 \xB7 Free 2\u2011man delivery over \xA3\
+      500 \xB7 Finance with Klarna</div></header><main><section class=\"hero\"><h1>Made-to-order sofas & tables, built in\
+      \ Bristol</h1><p>Order this week for delivery in 7\u201314 days. Free fabric swatches.</p><a href=\"/sofas\" class=\"\
+      btn\">Shop sofas</a> <a href=\"/tables\" class=\"btn\">Shop tables</a></section><section class=\"tiles\"><h2>Bestsellers</h2><ul><li><a\
+      \ href=\"/sofas/modulo\">Modulo Modular Sofa</a> from \xA3899</li><li><a href=\"/tables/oak-long\">Oak Long Dining Table</a>\
+      \ from \xA3749</li><li><a href=\"/storage/low\">Low Sideboard</a> from \xA3399</li></ul></section><section class=\"\
+      usp\"><ul><li>4.7/5 from 1,942 reviews</li><li>Free 2\u2011man delivery to most UK postcodes</li><li>30\u2011day returns\
+      \ (exclusions apply)</li></ul></section><section class=\"swatches\"><h2>Free fabric swatches</h2><form action=\"/swatches\"\
+      \ method=\"post\"><label>Full name<input name=\"name\" required></label><label>Email<input name=\"email\" type=\"email\"\
+      \ required></label><label>Address<input name=\"address\" required></label><button type=\"submit\">Send me swatches</button></form><p>We\
+      \ dispatch swatches in 2\u20133 working days.</p></section><section class=\"newsletter\"><h3>Join our list</h3><form\
+      \ action=\"/newsletter\" method=\"post\"><label>Email<input name=\"email\" type=\"email\" required></label><button>Join</button></form><p>We\
+      \ email 1\u20132 times a week. Unsubscribe anytime.</p></section></main><footer><p>Harbour & Hearth Ltd, St Philip's,\
+      \ Bristol. Mon\u2013Fri 9\u20135 chat. VAT GB123456789.</p><p>Payment: Visa, Amex, Klarna (subject to status). Delivery\
+      \ estimates shown at checkout.</p></footer></body></html>"
+  routes:
+  - path: /black-friday*
+    answer:
+      status: 200
+      headers:
+        content-type: text/html; charset=utf-8
+      text: "<!doctype html><html><head><title>Black Friday 2026 \u2014 Harbour & Hearth</title></head><body><header><nav><a\
+        \ href=\"/\">Home</a><a href=\"/sofas\">Sofas</a><a href=\"/tables\">Tables</a><a href=\"/storage\">Storage</a><a\
+        \ href=\"/black-friday\">Black Friday</a></nav></header><main><section class=\"hero\"><h1>Black Friday: Up to 20%\
+        \ off bestsellers</h1><p>Live 24\u201329 Nov. Early access at 8am Friday.</p><div class=\"video\">[autoplay muted\
+        \ video background]</div><div class=\"countdown\">Deal ends in: 04:12:36</div><a href=\"#grid\" class=\"btn\">Shop\
+        \ deals</a></section><section class=\"early\"><h2>Get early access</h2><p>We\u2019ll email your code before 8am Friday.\
+        \ No spam.</p><form action=\"/bf-early\" method=\"post\"><label>First name<input name=\"first\" required></label><label>Last\
+        \ name<input name=\"last\" required></label><label>Email<input name=\"email\" type=\"email\" required></label><label>Mobile\
+        \ (optional)<input name=\"phone\" type=\"tel\"></label><label>Postcode (for delivery estimate)<input name=\"pc\"></label><button\
+        \ type=\"submit\">Send my code</button></form><p>Codes sent within a few minutes. During peak it may take up to 15\
+        \ minutes.</p></section><section id=\"grid\"><h2>Deals</h2><ul><li>Modulo Modular Sofa \u2014 was \xA3999, now \xA3\
+        849 <a href=\"/sofas/modulo\">Shop</a></li><li>Oak Long Dining Table \u2014 was \xA3899, now \xA3749 <a href=\"/tables/oak-long\"\
+        >Shop</a></li><li>Low Sideboard \u2014 was \xA3449, now \xA3399 <a href=\"/storage/low\">Shop</a></li></ul><p>Stock\
+        \ is limited; some items show \u201COnly 6 left\u201D.</p></section><section class=\"delivery\"><h3>Delivery & lead\
+        \ times</h3><p>Typical lead time is 7\u201314 days; during sale it can extend to 3\u20134 weeks. Delivery estimator\
+        \ shown at checkout may take up to 10 seconds to load during peak.</p></section><section class=\"faq\"><h3>FAQ</h3><p>Discount\
+        \ is applied at checkout. Klarna available (subject to status). Returns within 30 days; custom sizes excluded.</p></section></main><footer><p>Questions?\
+        \ Chat Mon\u2013Fri 9\u20135 or email hello@harbourandhearth.example (reply in 24h).</p></footer></body></html>"
+- host: saltandstrand.example
+  name: site_lena
+  kind: acknowledge
+  answer:
+    status: 200
+    headers:
+      content-type: text/html; charset=utf-8
+    text: "<html><head><title>Salt & Strand Jewellery | Handmade in Brighton</title></head><body>\n<div class=\"announce\"\
+      >Free UK shipping over \xA375 \u2022 Orders ship in 3\u20135 days</div>\n<nav>\n <a href=\"/\">Home</a>\n <a href=\"\
+      /collections/all\">Shop</a>\n <a href=\"/collections/rings\">Rings</a>\n <a href=\"/collections/necklaces\">Necklaces</a>\n\
+      \ <a href=\"/pages/about\">About</a>\n <a href=\"/blog\">Journal</a>\n <a href=\"/pages/contact\">Contact</a>\n <a href=\"\
+      /cart\">Cart (0)</a>\n</nav>\n<header>\n <img src=\"/cdn/hero-large.jpg\" alt=\"Hands making a ring\" />\n <h1>Handmade\
+      \ jewellery from recycled silver</h1>\n <p>Small-batch pieces made in Brighton. Free resizing within 30 days.</p>\n\
+      \ <a href=\"/collections/new-in\" class=\"btn\">Shop New In</a>\n <a href=\"/pages/size-guide\" class=\"btn-secondary\"\
+      >Find Your Ring Size</a>\n</header>\n<section id=\"new-in\">\n <h2>New In</h2>\n <ul class=\"grid\">\n  <li><a href=\"\
+      /products/seafoam-stacking-ring\"><img src=\"/cdn/p1.jpg\" alt=\"Seafoam Stacking Ring\"/><h3>Seafoam Stacking Ring</h3><p>\xA3\
+      38</p></a></li>\n  <li><a href=\"/products/pebble-band\"><img src=\"/cdn/p2.jpg\" alt=\"Pebble Band\"/><h3>Pebble Band</h3><p>\xA3\
+      45</p></a></li>\n  <li><a href=\"/products/tide-hoops\"><img src=\"/cdn/p3.jpg\" alt=\"Tide Hoops\"/><h3>Tide Hoops</h3><p>\xA3\
+      62</p></a></li>\n  <li><a href=\"/products/luna-pendant\"><img src=\"/cdn/p4.jpg\" alt=\"Luna Pendant\"/><h3>Luna Pendant</h3><p>\xA3\
+      70</p></a></li>\n </ul>\n</section>\n<section id=\"why\">\n <h2>Made to wear every day</h2>\n <p>100% recycled sterling\
+      \ silver and gold vermeil. Hand-finished by Lena in Brighton. Most items dispatch in 3\u20135 working days; made-to-order\
+      \ rings take 7\u201310.</p>\n <p>Over 180 customer reviews, average 4.8/5.</p>\n</section>\n<section id=\"newsletter\"\
+      >\n <h3>Get 10% off your first order</h3>\n <form action=\"/subscribe\" method=\"post\">\n  <label>Email</label>\n \
+      \ <input type=\"email\" name=\"email\" placeholder=\"you@example.com\" required />\n  <button type=\"submit\">Subscribe</button>\n\
+      \  <small>No spam. Early access to drops.</small>\n </form>\n</section>\n<footer>\n <p>\xA9 Salt & Strand Jewellery</p>\n\
+      \ <p>Instagram @saltandstrand</p>\n <a href=\"/pages/shipping-returns\">Shipping & Returns</a>\n</footer>\n</body></html>"
+  routes:
+  - path: /collections/stacking-rings*
+    answer:
+      status: 200
+      headers:
+        content-type: text/html; charset=utf-8
+      text: "<html><head><title>Stacking Rings \u2013 Salt & Strand Jewellery</title></head><body>\n<nav>\n <a href=\"/\"\
+        >Home</a> / <a href=\"/collections/rings\">Rings</a> / Stacking Rings\n</nav>\n<header>\n <h1>Stacking Rings</h1>\n\
+        \ <p>Build your own set. 100% recycled silver, hand-finished in Brighton.</p>\n <div class=\"promo\">This week: code\
+        \ STACK10 for 10% off stacking rings.</div>\n <p class=\"lead\">Most rings dispatch in 7\u201310 working days. Free\
+        \ UK shipping over \xA375.</p>\n</header>\n<div class=\"controls\">\n <label>Filter by size</label>\n <select name=\"\
+        size\"><option>All</option><option>J</option><option>K</option><option>L</option><option>M</option><option>N</option></select>\n\
+        \ <label>Sort by</label>\n <select name=\"sort\"><option>Featured</option><option>Price: Low to High</option><option>Price:\
+        \ High to Low</option><option>Newest</option></select>\n <a href=\"#size-guide\" class=\"link\">Ring Size Guide</a>\n\
+        </div>\n<ul class=\"grid\">\n <li class=\"prod\"><a href=\"/products/seafoam-stacking-ring\"><img src=\"/cdn/p1.jpg\"\
+        \ alt=\"Seafoam Stacking Ring\"/></a><h3>Seafoam Stacking Ring</h3><p>\xA338</p><label>Size</label><select><option>Select</option><option>J</option><option>K</option><option>L</option></select><button\
+        \ disabled>Add to bag</button><small>Dispatch in 7\u201310 working days</small></li>\n <li class=\"prod\"><a href=\"\
+        /products/pebble-band\"><img src=\"/cdn/p2.jpg\" alt=\"Pebble Band\"/></a><h3>Pebble Band</h3><p>\xA345</p><label>Size</label><select><option>Select</option><option>M</option><option>N</option></select><button\
+        \ disabled>Add to bag</button><small>Free resizing within 30 days</small></li>\n <li class=\"prod\"><a href=\"/products/twist-midi\"\
+        ><img src=\"/cdn/p5.jpg\" alt=\"Twist Midi Ring\"/></a><h3>Twist Midi Ring</h3><p>\xA332</p><label>Size</label><select><option>Select</option></select><button\
+        \ disabled>Add to bag</button><small>Made to order</small></li>\n <li class=\"prod\"><a href=\"/products/tide-band\"\
+        ><img src=\"/cdn/p6.jpg\" alt=\"Tide Band\"/></a><h3>Tide Band</h3><p>\xA348</p><label>Size</label><select><option>Select</option><option>K</option><option>L</option></select><button\
+        \ disabled>Add to bag</button><small>Klarna available</small></li>\n <li class=\"prod\"><a href=\"/products/hammered-stack\"\
+        ><img src=\"/cdn/p7.jpg\" alt=\"Hammered Stack\"/></a><h3>Hammered Stack</h3><p>\xA358</p><label>Size</label><select><option>Select</option></select><button\
+        \ disabled>Add to bag</button><small>Handmade to order</small></li>\n <li class=\"prod\"><a href=\"/products/opal-dot\"\
+        ><img src=\"/cdn/p8.jpg\" alt=\"Opal Dot Ring\"/></a><h3>Opal Dot Ring</h3><p>\xA365</p><label>Size</label><select><option>Select</option></select><button\
+        \ disabled>Add to bag</button><small>Dispatch in 7\u201310 days</small></li>\n</ul>\n<div id=\"size-guide\">\n <h2>Find\
+        \ Your Ring Size</h2>\n <p>Measure inner circumference in mm and match to UK sizes.</p>\n <form action=\"/tools/size-convert\"\
+        \ method=\"post\">\n  <label>Inner circumference (mm)</label>\n  <input type=\"number\" name=\"mm\" />\n  <button\
+        \ type=\"submit\">Convert</button>\n </form>\n <p><a href=\"/pages/size-guide\">View full guide</a> or <a href=\"\
+        /pages/contact\">ask a question</a>.</p>\n</div>\n<footer>\n <p>Questions? Email hello@saltandstrand.example</p>\n\
+        </footer>\n</body></html>"
+- host: sparrowhr.example
+  name: site_samir
+  kind: acknowledge
+  answer:
+    status: 200
+    headers:
+      content-type: text/html; charset=utf-8
+    text: "<!doctype html><html lang=\"en\"><head><title>SparrowHR \u2014 HR people actually use</title><meta name=\"viewport\"\
+      \ content=\"width=device-width, initial-scale=1\"/></head><body><header><a href=\"/\">SparrowHR</a><nav><a href=\"/product\"\
+      >Product</a><a href=\"/pricing\">Pricing</a><a href=\"/customers\">Customers</a><a href=\"/resources\">Resources</a><a\
+      \ href=\"/signin\">Sign in</a><a href=\"/trial\" class=\"btn\">Start free trial</a></nav></header><main><section class=\"\
+      hero\"><h1>Onboarding, PTO, and Reviews in one place</h1><p>Set up your people ops in hours, not months.</p><div class=\"\
+      cta\"><a href=\"/trial\" class=\"btn\">Start free trial</a> <a href=\"/demo\" class=\"btn-secondary\">Request a demo</a><p\
+      \ class=\"tiny\">14-day free trial. No credit card. Cancel anytime.</p></div></section><section class=\"logos\"><p>Trusted\
+      \ by teams like Finchly, Aurora Labs, and North & Co.</p></section><section class=\"features\"><h2>Why SparrowHR</h2><ul><li>Guided\
+      \ onboarding with checklists for IT, HR, and managers</li><li>Time-off tracking that syncs to Google & Outlook</li><li>Performance\
+      \ reviews with templates and 1:1 notes</li></ul></section><section class=\"integrations\"><h3>Integrations</h3><p>Slack,\
+      \ Gusto, QuickBooks, Okta, Rippling*</p><p class=\"tiny\">*Beta by invite.</p></section><section class=\"how\"><h2>How\
+      \ it works</h2><ol><li>Create your workspace</li><li>Import employees from CSV or Gusto</li><li>Invite managers and\
+      \ publish your first review cycle</li></ol></section><section class=\"signup\"><h2>Start your 14\u2011day free trial</h2><form\
+      \ action=\"/trial\" method=\"post\"><label>Work email<input type=\"email\" name=\"email\" placeholder=\"you@company.com\"\
+      \ required></label><label>First name<input type=\"text\" name=\"first_name\" required></label><label>Last name<input\
+      \ type=\"text\" name=\"last_name\" required></label><label>Company name<input type=\"text\" name=\"company\" required></label><label>Password<input\
+      \ type=\"password\" name=\"password\" minlength=\"8\" placeholder=\"8+ characters\" required></label><label><input type=\"\
+      checkbox\" name=\"terms\" required> I agree to the Terms & Privacy</label><button type=\"submit\">Create account</button><p\
+      \ class=\"tiny\">By creating an account you agree to occasional product emails. You can unsubscribe any time.</p></form><p\
+      \ class=\"tiny\">Need help? Chat with us \u2014 typically replies in 2\u20133 hours.</p></section></main><footer><a\
+      \ href=\"/security\">Security</a> \xB7 <a href=\"/status\">Status</a> \xB7 <a href=\"/legal\">Legal</a> \xB7 \xA9 SparrowHR</footer></body></html>"
+  routes:
+  - path: /pricing*
+    answer:
+      status: 200
+      headers:
+        content-type: text/html; charset=utf-8
+      text: "<!doctype html><html lang=\"en\"><head><title>Pricing \u2014 SparrowHR</title><meta name=\"viewport\" content=\"\
+        width=device-width, initial-scale=1\"/></head><body><header><a href=\"/\">SparrowHR</a><nav><a href=\"/product\">Product</a><a\
+        \ href=\"/pricing\" aria-current=\"page\">Pricing</a><a href=\"/customers\">Customers</a><a href=\"/resources\">Resources</a><a\
+        \ href=\"/signin\">Sign in</a><a href=\"/trial\" class=\"btn\">Start free trial</a></nav></header><main><section class=\"\
+        headline\"><h1>Simple, per\u2011employee pricing</h1><p>No setup fees. Switch plans any time.</p><div class=\"toggle\"\
+        >Monthly | <strong>Annual (save 2 months)</strong></div></section><section class=\"plans\"><div class=\"plan\"><h3>Starter</h3><p\
+        \ class=\"price\">$3/employee/mo</p><ul><li>Core HR & PTO</li><li>Email support</li><li>CSV import</li></ul><a href=\"\
+        /trial\" class=\"btn\">Start 14\u2011day trial</a></div><div class=\"plan\"><h3>Growth</h3><p class=\"price\">$5.50/employee/mo</p><ul><li>All\
+        \ Starter</li><li>Slack & Gusto integrations</li><li>Reviews + 1:1s</li></ul><a href=\"/trial\" class=\"btn\">Start\
+        \ 14\u2011day trial</a></div><div class=\"plan\"><h3>Pro</h3><p class=\"price\">$8/employee/mo</p><ul><li>All Growth</li><li>SSO\
+        \ (Okta)</li><li>Custom roles & audit log</li></ul><a href=\"/demo\" class=\"btn-secondary\">Talk to sales</a></div><p\
+        \ class=\"tiny\">Annual plans billed upfront. Prices shown for monthly; taxes extra. Credit card required to activate\
+        \ after trial.</p></section><section class=\"form\"><h2>Prefer a walkthrough?</h2><form action=\"/demo\" method=\"\
+        post\"><label>Full name<input type=\"text\" name=\"name\" required></label><label>Work email<input type=\"email\"\
+        \ name=\"email\" required></label><label>Company name<input type=\"text\" name=\"company\" required></label><label>Company\
+        \ size<select name=\"size\"><option>10\u201319</option><option>20\u201349</option><option>50\u2013199</option><option>200\u2013\
+        500</option></select></label><label>Timeline<select name=\"timeline\"><option>Now</option><option>1\u20133 months</option><option>Just\
+        \ browsing</option></select></label><label>Message (optional)<textarea name=\"message\" placeholder=\"What are you\
+        \ solving?\"></textarea></label><button type=\"submit\">Request demo</button><p class=\"tiny\">We\u2019ll respond\
+        \ within 1\u20133 business days.</p></form></section><section class=\"faq\"><h2>FAQs</h2><details><summary>Do you\
+        \ charge for admins?</summary><p>No. Only billable employees count.</p></details><details><summary>Can I switch plans?</summary><p>Yes,\
+        \ at any time. Prorated on annual.</p></details><details><summary>Is implementation included?</summary><p>Starter\
+        \ and Growth are self\u2011serve. Pro includes a kickoff call.</p></details></section></main><footer><a href=\"/legal\"\
+        >Legal</a> \xB7 <a href=\"/dpa\">DPA</a> \xB7 <a href=\"/security\">Security</a> \xB7 \xA9 SparrowHR</footer></body></html>"
+- host: holbeckroasters.example
+  name: site_sophie
+  kind: acknowledge
+  answer:
+    status: 200
+    headers:
+      content-type: text/html; charset=utf-8
+    text: "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><title>Holbeck Roasters | Leeds Specialty Coffee</title><meta\
+      \ name=\"viewport\" content=\"width=device-width,initial-scale=1\"><link rel=\"stylesheet\" href=\"/theme.css\"></head><body><header><nav><a\
+      \ href=\"/\">Home</a><a href=\"/shop\">Shop</a><a href=\"/wholesale\">Wholesale</a><a href=\"/brew-guides\">Brew Guides</a><a\
+      \ href=\"/about\">About</a><a href=\"/contact\">Contact</a></nav></header><main><section class=\"hero\"><h1>Leeds\u2011\
+      roasted specialty coffee</h1><p>Traceable lots, roasted to order in Holbeck. Free local delivery Fridays.</p><a class=\"\
+      btn\" href=\"/shop\">Shop beans</a> <a class=\"btn alt\" href=\"/wholesale\">Wholesale</a></section><section class=\"\
+      products\"><h2>Fresh this week</h2><ul class=\"grid\"><li><img src=\"/img/kigali.jpg\" alt=\"Rwanda Kigali\"><h3>Rwanda\
+      \ Kigali</h3><p>Washed, red apple, caramel</p><p>\xA311.50 / 250g</p><a href=\"/products/rwanda-kigali\" class=\"btn\"\
+      >Add to cart</a></li><li><img src=\"/img/alto-verde.jpg\" alt=\"Brazil Alto Verde\"><h3>Brazil Alto Verde</h3><p>Natural,\
+      \ chocolate, hazelnut</p><p>\xA39.95 / 250g</p><a href=\"/products/brazil-alto-verde\" class=\"btn\">Add to cart</a></li><li><img\
+      \ src=\"/img/holbeck-espresso.jpg\" alt=\"Holbeck Espresso\"><h3>Holbeck Espresso</h3><p>House blend for milk drinks</p><p>\xA3\
+      10.50 / 250g</p><a href=\"/products/holbeck-espresso\" class=\"btn\">Add to cart</a></li></ul></section><section class=\"\
+      wholesale-cta\"><h2>For cafes & offices</h2><p>Consistent, dialed\u2011in espresso and training that sticks. Leeds &\
+      \ West Yorkshire.</p><a class=\"btn\" href=\"/wholesale\">Become a stockist</a></section><section class=\"newsletter\"\
+      ><h2>Join our list</h2><form method=\"post\" action=\"/subscribe\"><label>Email</label><input type=\"email\" name=\"\
+      email\" required placeholder=\"you@example.com\"><button type=\"submit\">Subscribe</button></form></section></main><footer><p>Holbeck\
+      \ Roasters Ltd, Unit 8, Canal Mills, Leeds LS11</p><p><a href=\"/privacy\">Privacy</a> \xB7 <a href=\"https://instagram.com/holbeckroasters\"\
+      >Instagram</a></p></footer></body></html>"
+  routes:
+  - path: /wholesale*
+    answer:
+      status: 200
+      headers:
+        content-type: text/html; charset=utf-8
+      text: "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><title>Wholesale Coffee for Cafes & Offices |\
+        \ Holbeck Roasters</title><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"></head><body><header><nav><a\
+        \ href=\"/\">Home</a><a href=\"/shop\">Shop</a><a href=\"/wholesale\" aria-current=\"page\">Wholesale</a><a href=\"\
+        /about\">About</a><a href=\"/contact\">Contact</a></nav></header><main><h1>Wholesale coffee</h1><p>Roasted in Leeds,\
+        \ delivered UK\u2011wide. We help cafes and offices serve better coffee with dependable supply, training and support.</p><ul><li>Roast\
+        \ to order Mon\u2013Thu; dispatch next working day</li><li>Free Friday delivery within LS postcodes</li><li>Dial\u2011\
+        in support and barista training</li><li>Equipment supply via our La Marzocco partner</li></ul><p>Trade pricing by\
+        \ request \u2014 tell us about your setup and we\u2019ll send our current list. Minimum order 6kg per shipment.</p><p><a\
+        \ href=\"/files/holbeck-trade-brochure.pdf\">Download wholesale brochure (PDF)</a></p><h2>Become a stockist</h2><form\
+        \ method=\"post\" action=\"/wholesale-enquiry\"><label>Business name*</label><input name=\"business\" required><label>Contact\
+        \ name</label><input name=\"name\"><label>Email*</label><input type=\"email\" name=\"email\" required><label>Phone</label><input\
+        \ type=\"tel\" name=\"phone\"><label>Postcode</label><input name=\"postcode\"><label>Monthly coffee volume</label><select\
+        \ name=\"volume\"><option value=\"\">Select\u2026</option><option>0\u201310kg</option><option>10\u201330kg</option><option>30\u2013\
+        60kg</option><option>60kg+</option></select><label>Machine on site?</label><select name=\"machine\"><option>Yes</option><option>No</option></select><fieldset><legend>Need\
+        \ equipment?</legend><label><input type=\"checkbox\" name=\"equip\" value=\"grinder\"> Grinder</label><label><input\
+        \ type=\"checkbox\" name=\"equip\" value=\"machine\"> Espresso machine</label><label><input type=\"checkbox\" name=\"\
+        equip\" value=\"water\"> Water filtration</label></fieldset><label>How did you hear about us?</label><input name=\"\
+        ref\"><label>Message</label><textarea name=\"message\" rows=\"5\" placeholder=\"Tell us about your bar and goals\"\
+        ></textarea><button type=\"submit\">Send enquiry</button><p class=\"small\">We aim to reply within 2\u20133 working\
+        \ days.</p></form><p>Questions? Call 0113 555 0198 or DM <a href=\"https://instagram.com/holbeckroasters\">@holbeckroasters</a>.</p></main><footer><p>Unit\
+        \ 8, Canal Mills, Leeds LS11</p></footer></body></html>"
+- host: threeoaksbooks.example
+  name: site_ruth
+  kind: acknowledge
+  answer:
+    status: 200
+    headers:
+      content-type: text/html; charset=utf-8
+    text: "<!doctype html><html lang=\"en\"><head><title>Three Oaks Books \u2014 Independent Bookshops in Devon</title><meta\
+      \ name=\"viewport\" content=\"width=device-width,initial-scale=1\"><link rel=\"stylesheet\" href=\"/assets/main.css\"\
+      ></head><body>\n<header>\n  <div class=\"top-bar\">Order by Mon 18 Dec for Christmas delivery. Free local delivery (3\
+      \ miles) over \xA330.</div>\n  <nav>\n    <a href=\"/\">Home</a>\n    <a href=\"/new\">New Releases</a>\n    <a href=\"\
+      /christmas\">Christmas</a>\n    <a href=\"/signed\">Signed Editions</a>\n    <a href=\"/events\">Events</a>\n    <a\
+      \ href=\"/blog\">Blog</a>\n    <a href=\"/stores\">Our Stores</a>\n    <a href=\"/basket\">Basket (0)</a>\n  </nav>\n\
+      \  <form action=\"/search\" method=\"get\" class=\"search\"><input type=\"search\" name=\"q\" placeholder=\"Search books,\
+      \ authors\u2026\"><button type=\"submit\">Search</button></form>\n</header>\n<main>\n  <section class=\"hero\">\n  \
+      \  <h1>Books for everyone on your list</h1>\n    <p>Click & Collect usually ready in 2 hours. Choose your store at checkout.</p>\n\
+      \    <a href=\"/christmas\" class=\"btn\">Shop Christmas</a>\n  </section>\n  <section class=\"tiles\">\n    <a href=\"\
+      /christmas\" class=\"tile\">Christmas Gifts</a>\n    <a href=\"/bestsellers\" class=\"tile\">Bestsellers</a>\n    <a\
+      \ href=\"/children\" class=\"tile\">Children\u2019s</a>\n    <a href=\"/preorders\" class=\"tile\">Pre-orders</a>\n\
+      \  </section>\n  <section class=\"promo\">\n    <h2>Signed First Editions</h2>\n    <p>Limited runs from local and national\
+      \ authors. While stocks last.</p>\n    <a href=\"/signed\" class=\"btn\">Browse signed</a>\n  </section>\n  <section\
+      \ class=\"usp\">\n    <ul>\n      <li>Free local delivery (3 miles) over \xA330</li>\n      <li>Royal Mail 48 \xA32.99\
+      \ | 24 \xA34.99</li>\n      <li>Gift wrap available at checkout (+\xA33)</li>\n    </ul>\n  </section>\n  <section class=\"\
+      newsletter\">\n    <h3>Join our mailing list</h3>\n    <p>10% off your first online order. News of author events and\
+      \ offers.</p>\n    <form action=\"/subscribe\" method=\"post\">\n      <label>Email<input type=\"email\" name=\"email\"\
+      \ required></label>\n      <label>First name<input type=\"text\" name=\"first_name\"></label>\n      <button type=\"\
+      submit\">Subscribe</button>\n    </form>\n  </section>\n</main>\n<footer>\n  <div class=\"stores\">\n    <p>Totnes:\
+      \ 12 Fore St, TQ9 \u2014 9\u20135:30</p>\n    <p>Exmouth: 4 Chapel St, EX8 \u2014 9\u20135:30</p>\n    <p>Newton Abbot:\
+      \ 28 Market Walk, TQ12 \u2014 9\u20135</p>\n  </div>\n  <small>\xA9 Three Oaks Books Ltd. Delivery cut-offs may vary\
+      \ by item. See Delivery & Returns.</small>\n</footer>\n</body></html>"
+  routes:
+  - path: /christmas*
+    answer:
+      status: 200
+      headers:
+        content-type: text/html; charset=utf-8
+      text: "<!doctype html><html lang=\"en\"><head><title>Christmas at Three Oaks Books</title><meta name=\"viewport\" content=\"\
+        width=device-width,initial-scale=1\"></head><body>\n<header>\n  <nav>\n    <a href=\"/\">Home</a>\n    <a href=\"\
+        /christmas\" aria-current=\"page\">Christmas</a>\n    <a href=\"/signed\">Signed</a>\n    <a href=\"/stores\">Stores</a>\n\
+        \    <a href=\"/basket\">Basket (0)</a>\n  </nav>\n</header>\n<main>\n  <h1>Christmas Gifts</h1>\n  <div class=\"\
+        cutoff\">Order by Mon 18 Dec (Standard) or Thu 21 Dec (Express). Click & Collect available.</div>\n  <div class=\"\
+        filters\">\n    <form method=\"get\"><label>Sort<select name=\"sort\"><option>Featured</option><option>Price: Low\
+        \ to High</option><option>Price: High to Low</option></select></label>\n    <label>Price<select name=\"price\"><option>All</option><option>Under\
+        \ \xA310</option><option>\xA310\u2013\xA325</option><option>\xA325+</option></select></label>\n    <label>Age<select\
+        \ name=\"age\"><option>All</option><option>Adults</option><option>Children</option></select></label>\n    <button\
+        \ type=\"submit\">Apply</button></form>\n  </div>\n  <p class=\"note\">Gift wrap can be added at checkout (+\xA33).\
+        \ Free local delivery 3 miles over \xA330.</p>\n  <ul class=\"grid\">\n    <li class=\"item\">\n      <a href=\"/product/winter-tales-signed\"\
+        ><img src=\"/img/winter-tales.jpg\" alt=\"Winter Tales\"></a>\n      <h2>Winter Tales (Signed)</h2>\n      <p>\xA3\
+        18.99</p>\n      <form action=\"/basket/add\" method=\"post\">\n        <label>Qty<input type=\"number\" name=\"qty\"\
+        \ min=\"1\" value=\"1\"></label>\n        <button type=\"submit\" name=\"sku\" value=\"WT-SIGNED\">Add to basket</button>\n\
+        \      </form>\n    </li>\n    <li class=\"item\">\n      <a href=\"/product/cosy-crime-gift\"><img src=\"/img/cosy-crime.jpg\"\
+        \ alt=\"Cosy Crime Bundle\"></a>\n      <h2>Cosy Crime Gift Bundle</h2>\n      <p>\xA329.00</p>\n      <form action=\"\
+        /basket/add\" method=\"post\">\n        <label>Qty<input type=\"number\" name=\"qty\" min=\"1\" value=\"1\"></label>\n\
+        \        <label>Format<select name=\"option\"><option>Paperback</option><option>Hardback</option></select></label>\n\
+        \        <button type=\"submit\" name=\"sku\" value=\"CC-BUNDLE\">Add to basket</button>\n      </form>\n    </li>\n\
+        \    <li class=\"item\">\n      <a href=\"/product/kids-christmas-box\"><img src=\"/img/kids-box.jpg\" alt=\"Kids\
+        \ Box\"></a>\n      <h2>Kids\u2019 Christmas Box</h2>\n      <p>From \xA315.00</p>\n      <form action=\"/basket/add\"\
+        \ method=\"post\">\n        <label>Age<select name=\"age\"><option>3\u20135</option><option>6\u20138</option><option>9\u2013\
+        12</option></select></label>\n        <button type=\"submit\" name=\"sku\" value=\"KIDS-BOX\">Add to basket</button>\n\
+        \      </form>\n    </li>\n    <li class=\"item\">\n      <a href=\"/product/gift-card\"><img src=\"/img/gift-card.jpg\"\
+        \ alt=\"Gift Card\"></a>\n      <h2>Gift Card (Online & Stores)</h2>\n      <p>\xA310\u2013\xA3100</p>\n      <form\
+        \ action=\"/basket/add\" method=\"post\">\n        <label>Amount<select name=\"amount\"><option>\xA310</option><option>\xA3\
+        25</option><option>\xA350</option><option>\xA3100</option></select></label>\n        <button type=\"submit\" name=\"\
+        sku\" value=\"GC\">Add to basket</button>\n      </form>\n    </li>\n  </ul>\n  <section class=\"info\">\n    <p>Express\
+        \ delivery Royal Mail 24 aims next day (not guaranteed). We\u2019ll email when Click & Collect is ready.</p>\n   \
+        \ <p>Live author signings: see Events. Stock levels vary by store; online shows central stock.</p>\n  </section>\n\
+        </main>\n<footer>\n  <small>Delivery & Returns \u2022 Terms \u2022 \xA9 Three Oaks Books Ltd</small>\n</footer>\n\
+        </body></html>"
+- host: heatherandpine.example
+  name: site_eilidh
+  kind: acknowledge
+  answer:
+    status: 200
+    headers:
+      content-type: text/html; charset=utf-8
+    text: "<!doctype html><html lang=\"en\"><head><title>Heather & Pine \u2013 small-batch Scottish skincare</title><meta\
+      \ name=\"viewport\" content=\"width=device-width, initial-scale=1\"><link rel=\"stylesheet\" href=\"/theme.css\"></head><body><header><div\
+      \ class=\"bar\">Free UK delivery over \xA340 \u2022 Hand-poured in Glasgow</div><nav><a href=\"/\">Home</a><a href=\"\
+      /shop\">Shop</a><a href=\"/our-story\">Our Story</a><a href=\"/ingredients\">Ingredients</a><a href=\"/journal\">Journal</a><a\
+      \ href=\"/contact\">Contact</a><a href=\"/account\">Account</a><a href=\"/cart\">Cart (0)</a></nav></header><main><section\
+      \ class=\"hero\"><img src=\"/img/hero-serum.jpg\" alt=\"Serum bottle in a Glasgow tenement window\"><div class=\"hero-copy\"\
+      ><h1>Glow, the Scottish way.</h1><p>Small-batch, simple formulas that do the job.</p><a class=\"btn\" href=\"/products/sea-buckthorn-glow-serum\"\
+      >Shop the Glow Serum</a></div></section><section class=\"tiktok\"><p>As seen by 2M+ on TikTok \u2014 thanks for the\
+      \ love! If you're new here, start with the Glow Serum.</p><a href=\"/products/sea-buckthorn-glow-serum\">Take me there</a></section><section\
+      \ class=\"bestsellers\"><h2>Bestsellers</h2><div class=\"grid\"><article><a href=\"/products/sea-buckthorn-glow-serum\"\
+      ><img src=\"/img/serum-thumb.jpg\" alt=\"Sea Buckthorn Glow Serum\"></a><h3>Sea Buckthorn Glow Serum</h3><p>\xA324</p><a\
+      \ class=\"btn\" href=\"/products/sea-buckthorn-glow-serum\">View</a></article><article><a href=\"/products/oat-bar\"\
+      ><img src=\"/img/oat-thumb.jpg\" alt=\"Oat Cleansing Bar\"></a><h3>Oat Cleansing Bar</h3><p>\xA39</p><a class=\"btn\"\
+      \ href=\"/products/oat-bar\">View</a></article></div></section><section class=\"newsletter\"><h2>10% off your first\
+      \ order</h2><p>Join our email list for a one-time code and product drops.</p><form action=\"/subscribe\" method=\"post\"\
+      ><label>Email<input type=\"email\" name=\"email\" required placeholder=\"you@example.com\"></label><button type=\"submit\"\
+      >Get my code</button></form><small>We email 1\u20132x/month. Unsubscribe anytime.</small></section><section class=\"\
+      shipping\"><h2>Shipping & Returns</h2><p>We ship UK-wide via Royal Mail 48. Orders dispatch Mon/Wed/Fri. Handmade in\
+      \ small batches; please allow up to 5 business days to dispatch during busy periods.</p><p>Free UK delivery over \xA3\
+      40. Returns accepted within 14 days on unopened items.</p></section><section class=\"instagram\"><h2>On Instagram</h2><div\
+      \ id=\"ig-embed\">Loading\u2026</div><script src=\"/ig.js\"></script></section></main><footer><p>\xA9 Heather & Pine,\
+      \ Glasgow</p><form action=\"/contact\" method=\"post\"><h3>Say hello</h3><label>Name<input name=\"name\" required></label><label>Email<input\
+      \ type=\"email\" name=\"email\" required></label><label>Message<textarea name=\"message\" required></textarea></label><button\
+      \ type=\"submit\">Send</button></form></footer></body></html>"
+  routes:
+  - path: /products/sea-buckthorn-glow-serum*
+    answer:
+      status: 200
+      headers:
+        content-type: text/html; charset=utf-8
+      text: "<!doctype html><html lang=\"en\"><head><title>Sea Buckthorn Glow Serum \u2013 Heather & Pine</title><meta name=\"\
+        viewport\" content=\"width=device-width, initial-scale=1\"><link rel=\"stylesheet\" href=\"/theme.css\"></head><body><header><nav><a\
+        \ href=\"/\">Home</a> / <a href=\"/shop\">Shop</a> / Sea Buckthorn Glow Serum</nav></header><main><article class=\"\
+        product\"><div class=\"gallery\"><img src=\"/img/serum-1.jpg\" alt=\"Sea Buckthorn Glow Serum bottle\"></div><div\
+        \ class=\"summary\"><h1>Sea Buckthorn Glow Serum</h1><p class=\"price\">\xA324.00 <small>incl. VAT</small></p><form\
+        \ action=\"/cart/add\" method=\"post\"><label>Size<select name=\"size\"><option value=\"15ml\" disabled>15ml \u2013\
+        \ \xA314 (Back in 2 weeks)</option><option value=\"30ml\" selected>30ml \u2013 \xA324</option></select></label><label>Quantity<input\
+        \ type=\"number\" name=\"quantity\" value=\"1\" min=\"1\"></label><button type=\"submit\">Add to cart</button><div\
+        \ class=\"alt-pay\"><button type=\"button\">Buy with Apple Pay</button><button type=\"button\">PayPal</button></div></form><p><strong>Hand-poured\
+        \ in Glasgow.</strong> A simple, brightening oil-serum with sea buckthorn, squalane and vitamin E. No fragrance.</p><section\
+        \ class=\"details\"><h2>How to use</h2><p>After cleansing, press 2\u20133 drops into damp skin, morning or night.</p><h2>Ingredients</h2><p>Squalane,\
+        \ Hippophae Rhamnoides (Sea Buckthorn) Oil, Prunus Armeniaca (Apricot) Kernel Oil, Tocopherol.</p></section><section\
+        \ class=\"shipping\"><h2>Shipping & returns</h2><p>UK only via Royal Mail 48. We pour weekly; during busy periods\
+        \ dispatch can take up to 5 business days. Shipping is calculated at checkout.</p></section><section class=\"trust\"\
+        ><h2>Reviews</h2><p>No reviews yet.</p><a href=\"#write-review\">Write a review</a></section><section class=\"faq\"\
+        ><h2>FAQs</h2><details><summary>Is it suitable for sensitive skin?</summary><p>Yes, but please patch test first.</p></details><details><summary>Can\
+        \ I use it with retinol?</summary><p>Yes, apply after retinol.</p></details></section><section class=\"upsell\"><h2>You\
+        \ may also like</h2><ul><li><a href=\"/products/oat-bar\">Oat Cleansing Bar \u2013 \xA39</a></li></ul></section><section\
+        \ class=\"calc\"><h3>Estimate shipping</h3><form action=\"/shipping\" method=\"get\"><label>Postcode<input name=\"\
+        postcode\" placeholder=\"e.g. G1 1AA\"></label><button type=\"submit\">Estimate</button></form></section></div></article><footer><p>\xA9\
+        \ Heather & Pine</p><form id=\"write-review\" action=\"/reviews\" method=\"post\"><h3>Write a review</h3><label>Name<input\
+        \ name=\"name\" required></label><label>Rating<select name=\"rating\"><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select></label><label>Comment<textarea\
+        \ name=\"comment\" required></textarea></label><button type=\"submit\">Submit</button></form></footer></main></body></html>"
+- host: fenmoorvale.example
+  name: site_nina
+  kind: acknowledge
+  answer:
+    status: 200
+    headers:
+      content-type: text/html; charset=utf-8
+    text: "<!doctype html><html lang=\"en\"><head><title>Fenmoor & Vale | Estate & Letting Agents</title><meta name=\"viewport\"\
+      \ content=\"width=device-width, initial-scale=1\"><link rel=\"stylesheet\" href=\"/assets/site.css\"></head><body>\n\
+      <header>\n  <div class=\"topbar\">Call 01926 555 210 \u2022 Mon\u2013Sat 9\u20136</div>\n  <nav>\n    <a href=\"/\"\
+      >Home</a>\n    <a href=\"/sales\">For Sale</a>\n    <a href=\"/lettings\">To Let</a>\n    <a href=\"/free-valuation\"\
+      \ class=\"cta\">Book a Valuation</a>\n    <a href=\"/landlords\">Landlords</a>\n    <a href=\"/mortgages\">Mortgages</a>\n\
+      \    <a href=\"/about\">About</a>\n    <a href=\"/blog\">Blog</a>\n    <a href=\"/contact\">Contact</a>\n  </nav>\n\
+      </header>\n<main>\n  <section class=\"hero\">\n    <h1>Move with confidence across South Warwickshire</h1>\n    <p>Local\
+      \ people, straight answers, no sale no fee.</p>\n    <a href=\"/free-valuation\" class=\"btn\">Get your free valuation</a>\n\
+      \    <div id=\"instant-val\">\n      <h3>Instant online valuation</h3>\n      <p>Get a guide price in about a minute.</p>\n\
+      \      <div class=\"widget\">Loading valuation tool\u2026</div>\n      <script src=\"https://cdn.valusnap.example/embed.js\"\
+      \ async></script>\n    </div>\n  </section>\n  <section class=\"trust\">\n    <p>Trusted by 3,200+ local sellers and\
+      \ landlords \u2022 4.7\u2605 Reviews</p>\n  </section>\n  <section class=\"mini-form\">\n    <h2>Request a call back</h2>\n\
+      \    <form action=\"/api/callback\" method=\"post\">\n      <label>Full name<input name=\"name\" required></label>\n\
+      \      <label>Email<input name=\"email\" type=\"email\" required></label>\n      <label>Mobile<input name=\"phone\"\
+      \ type=\"tel\" required></label>\n      <label>Postcode<input name=\"postcode\" required></label>\n      <label>Service<select\
+      \ name=\"service\"><option>Sales</option><option>Lettings</option></select></label>\n      <button type=\"submit\">Send</button>\n\
+      \      <p class=\"small\">We\u2019ll call you within one working day.</p>\n    </form>\n  </section>\n  <section class=\"\
+      fees\">\n    <h2>Our fees</h2>\n    <ul>\n      <li>Sales: from 1.0% + VAT (no sale, no fee)</li>\n      <li>Lettings:\
+      \ Tenant-find from 8% + VAT \u2022 Fully managed from 12% + VAT</li>\n    </ul>\n  </section>\n  <section class=\"alerts\"\
+      >\n    <h2>Get property alerts</h2>\n    <form action=\"/api/alerts\" method=\"post\">\n      <label>Email<input name=\"\
+      alerts_email\" type=\"email\" required></label>\n      <label>Area<select name=\"area\"><option>Leamington</option><option>Warwick</option><option>Kenilworth</option></select></label>\n\
+      \      <button type=\"submit\">Subscribe</button>\n      <p class=\"small\">Unsubscribe anytime.</p>\n    </form>\n\
+      \  </section>\n</main>\n<footer>\n  <p>Fenmoor & Vale Ltd \u2022 Reg No 07543210 \u2022 Privacy \u2022 Terms</p>\n \
+      \ <form action=\"/api/newsletter\" method=\"post\">\n    <label>Join our newsletter<input name=\"nl_email\" type=\"\
+      email\" placeholder=\"you@example.com\"></label>\n    <button>Join</button>\n  </form>\n</footer>\n<div class=\"cookie\"\
+      >We use cookies. <button>OK</button></div>\n</body></html>"
+  routes:
+  - path: /free-valuation*
+    answer:
+      status: 200
+      headers:
+        content-type: text/html; charset=utf-8
+      text: "<!doctype html><html lang=\"en\"><head><title>Free Home Valuation | Fenmoor & Vale</title><meta name=\"viewport\"\
+        \ content=\"width=device-width, initial-scale=1\"><link rel=\"stylesheet\" href=\"/assets/site.css\"></head><body>\n\
+        <header>\n  <nav>\n    <a href=\"/\">Home</a>\n    <a href=\"/sales\">For Sale</a>\n    <a href=\"/lettings\">To Let</a>\n\
+        \    <a href=\"/free-valuation\" class=\"active\">Free Valuation</a>\n    <a href=\"/contact\">Contact</a>\n  </nav>\n\
+        </header>\n<main>\n  <section class=\"val-hero\">\n    <h1>Get your free valuation</h1>\n    <p>Instant online guide\
+        \ price in 60 seconds. Prefer to talk? Book a local valuer call within 24 hours.</p>\n  </section>\n  <section class=\"\
+        form\">\n    <form id=\"valuation\" action=\"/api/valuation\" method=\"post\">\n      <h2>Your property</h2>\n   \
+        \   <label>Postcode<input name=\"postcode\" required></label>\n      <label>Address line 1<input name=\"addr1\" required></label>\n\
+        \      <label>Town/City<input name=\"town\" required></label>\n      <label>Property type<select name=\"ptype\"><option>Detached</option><option>Semi</option><option>Terraced</option><option>Flat</option><option>Bungalow</option></select></label>\n\
+        \      <label>Bedrooms<select name=\"beds\"><option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option></select></label>\n\
+        \      <h2>About you</h2>\n      <label>First name<input name=\"first\" required></label>\n      <label>Last name<input\
+        \ name=\"last\" required></label>\n      <label>Email<input name=\"email\" type=\"email\" required></label>\n    \
+        \  <label>Mobile<input name=\"mobile\" type=\"tel\" required></label>\n      <label>Are you looking to:<select name=\"\
+        intent\"><option>Sell</option><option>Let</option><option>Just curious</option></select></label>\n      <label>Timeframe<select\
+        \ name=\"timeframe\"><option>0\u20133 months</option><option>3\u20136 months</option><option>6\u201312 months</option><option>12+\
+        \ months</option></select></label>\n      <label>How did you hear about us?<select name=\"source\"><option>Facebook/Instagram</option><option>Google</option><option>Friend/Family</option><option>Board</option><option>Other</option></select></label>\n\
+        \      <label class=\"chk\"><input type=\"checkbox\" name=\"consent\" required> I agree to be contacted by phone and\
+        \ email.</label>\n      <div class=\"captcha\">reCAPTCHA</div>\n      <button type=\"submit\">Get my valuation</button>\n\
+        \      <p class=\"small\">We\u2019ll confirm details and send your guide price by email or call you if we need more\
+        \ info.</p>\n    </form>\n    <aside>\n      <div class=\"widget\">Loading instant valuation\u2026</div>\n      <script\
+        \ src=\"https://cdn.valusnap.example/instant.js\" async></script>\n      <p class=\"note\">Guide only. For an accurate\
+        \ price, book a free in\u2011person appraisal.</p>\n      <p class=\"disclaimer\">By clicking submit you agree to\
+        \ our Privacy Policy and Terms.</p>\n    </aside>\n  </section>\n  <section class=\"faq\">\n    <details><summary>Is\
+        \ the valuation instant?</summary><p>Most are generated within a minute; occasionally we\u2019ll call to verify details.</p></details>\n\
+        \    <details><summary>Do I have to sell with you?</summary><p>No\u2014no obligation.</p></details>\n  </section>\n\
+        </main>\n<footer>\n  <p>Fenmoor & Vale Ltd \u2022 ICO ZA123456 \u2022 Privacy \u2022 Terms</p>\n</footer>\n</body></html>"
+- host: saltmarshbrewing.example
+  name: site_euan
+  kind: acknowledge
+  answer:
+    status: 200
+    headers:
+      content-type: text/html; charset=utf-8
+    text: "<!doctype html><html lang=\"en\"><head><title>Saltmarsh Brewing Co. | Estuary\u2011born beers</title><meta name=\"\
+      viewport\" content=\"width=device-width, initial-scale=1\"/></head><body><header><div class=\"bar\">Free local delivery\
+      \ \xA350+. Nationwide shipping from \xA34.95 (calc at checkout).</div><nav><a href=\"/shop\">Shop</a> | <a href=\"/tide-club\"\
+      >Subscriptions</a> | <a href=\"/taproom\">Taproom</a> | <a href=\"/about\">About</a> | <a href=\"/contact\">Contact</a>\
+      \ | <a href=\"/cart\">Basket (0)</a></nav></header><main><section class=\"hero\"><h1>Estuary\u2011born beers, brewed\
+      \ on the Kent coast.</h1><p>Fresh cans weekly from our Whitstable brewhouse.</p><a href=\"/shop\" class=\"btn\">Shop\
+      \ cans</a> <a href=\"/tide-club\" class=\"btn alt\">Join Tide Club</a></section><section class=\"promo\"><h2>Join Tide\
+      \ Club from \xA329.00/mo</h2><p>First box ships the first week each month. Sign up by the 25th.</p><a href=\"/tide-club\"\
+      \ class=\"btn\">See what's in the next box</a></section><section class=\"grid\"><h3>Latest drops</h3><ul><li>Sandbank\
+      \ Pale 4.2%</li><li>Gullsong Helles 5.0%</li><li>Neap Tide NEIPA 6.2%</li></ul></section><section class=\"signup\"><h3>10%\
+      \ off your first order</h3><form method=\"post\" action=\"/newsletter\"><label>Email <input type=\"email\" name=\"email\"\
+      \ required></label><label>Phone (optional) <input type=\"tel\" name=\"phone\"></label><button type=\"submit\">Get code</button><p>We\
+      \ send ~2 emails/month. Unsubscribe anytime.</p></form></section></main><footer><p>Orders ship Tue\u2013Thu. We are\
+      \ a small team; please allow 2\u20134 working days for dispatch outside peak.</p><p>\xA9 Saltmarsh Brewing Co.</p></footer></body></html>"
+  routes:
+  - path: /tide-club*
+    answer:
+      status: 200
+      headers:
+        content-type: text/html; charset=utf-8
+      text: "<!doctype html><html lang=\"en\"><head><title>Tide Club \u2014 Monthly Beer Subscription | Saltmarsh Brewing\
+        \ Co.</title><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/></head><body><header><nav><a\
+        \ href=\"/\">Home</a> | <a href=\"/shop\">Shop</a> | <a href=\"/tide-club\">Subscriptions</a> | <a href=\"/taproom\"\
+        >Taproom</a> | <a href=\"/about\">About</a> | <a href=\"/cart\">Basket (0)</a></nav></header><main><h1>Join Tide Club</h1><p\
+        \ class=\"price\">From \xA329.00/mo + delivery <small>(save up to 10% vs single cans)</small></p><p>Fresh, rotating\
+        \ beers every month. Pause or cancel any time.* Member\u2011only releases and taproom perks.</p><p class=\"note\"\
+        >*To cancel, email support@saltmarshbrewing.example at least 7 days before renewal so we can catch it. Self\u2011\
+        serve pause coming soon.</p><section class=\"includes\"><h3>This month\u2019s box</h3><ul><li>6/12/24 cans (mix of\
+        \ IPAs, lagers and seasonals)</li><li>Tasting notes card</li><li>Occasional collab can</li></ul></section><section\
+        \ class=\"signup-form\"><h3>Build your box</h3><form method=\"post\" action=\"/subscribe\"><label>Full name <input\
+        \ type=\"text\" name=\"name\" required></label><label>Email <input type=\"email\" name=\"email\" required></label><label>Mobile\
+        \ (for courier) <input type=\"tel\" name=\"phone\"></label><label>Date of birth (18+) <input type=\"date\" name=\"\
+        dob\" required></label><fieldset><legend>Delivery address</legend><label>Street <input type=\"text\" name=\"street\"\
+        \ required></label><label>City <input type=\"text\" name=\"city\" required></label><label>Postcode <input type=\"\
+        text\" name=\"postcode\" required></label></fieldset><label>Box size <select name=\"size\" required><option value=\"\
+        \">Choose\u2026</option><option>6 cans</option><option>12 cans</option><option>24 cans</option></select></label><fieldset><legend>Style\
+        \ preferences</legend><label><input type=\"checkbox\" name=\"style[]\" value=\"hazy\"> Hazy IPA</label><label><input\
+        \ type=\"checkbox\" name=\"style[]\" value=\"lager\"> Crisp lager</label><label><input type=\"checkbox\" name=\"style[]\"\
+        \ value=\"mixed\"> Mixed</label><label><input type=\"checkbox\" name=\"style[]\" value=\"no-sours\" checked> No sours</label></fieldset><label>Delivery\
+        \ instructions <textarea name=\"instructions\" rows=\"3\"></textarea></label><label><input type=\"checkbox\" name=\"\
+        marketing\" checked> Send me updates and member offers</label><p class=\"ship-info\">Your first delivery: Ships 3\u2013\
+        10 working days after billing. Orders placed after the 25th ship the following month. Shipping is calculated at checkout\
+        \ and varies by postcode. We cannot ship to Northern Ireland currently.</p><button type=\"submit\" disabled>Proceed\
+        \ to checkout</button><p class=\"calc\">Note: Calculating shipping rates may take up to 30 seconds after you click\
+        \ proceed.</p></form></section><section class=\"faq\"><h3>FAQs</h3><details><summary>Can I pick exact beers?</summary><p>We\
+        \ curate the mix each month to keep it fresh; no individual picks just yet.</p></details><details><summary>When am\
+        \ I billed?</summary><p>On the 1st of each month.</p></details><details><summary>Pause or cancel?</summary><p>Pause\
+        \ is manual at the moment; email us 7 days ahead. Cancellation also via email.</p></details><details><summary>Payment\
+        \ methods</summary><p>Visa and Mastercard accepted. Amex coming soon.</p></details></section><section class=\"social-proof\"\
+        ><p>Trusted by 600+ members across the UK.</p></section><footer><p>Orders ship Tue\u2013Thu. Weather or courier delays\
+        \ may add 1\u20132 days.</p></footer></main></body></html>"
+- host: nooksleep.example
+  name: site_naomi
+  kind: acknowledge
+  answer:
+    status: 200
+    headers:
+      content-type: text/html; charset=utf-8
+    text: "<!doctype html><html><head><title>NookSleep \u2014 Better sleep starts here</title><meta name=\"viewport\" content=\"\
+      width=device-width, initial-scale=1\"></head><body><header><div class=\"bar\">Autumn Event: up to 40% off. Free delivery\
+      \ over \xA350.</div><nav><a href=\"/mattress/classic\">Mattresses</a> <a href=\"/pillows\">Pillows</a> <a href=\"/toppers\"\
+      >Toppers</a> <a href=\"/reviews\">Reviews</a> <a href=\"/help\">Help</a> <a href=\"/track\">Track order</a> <a href=\"\
+      /sale\">Sale</a></nav></header><main><section class=\"hero\"><h1>Sleep better, guaranteed</h1><p>100\u2011night trial.\
+      \ 10\u2011year warranty. Free next\u2011day delivery*</p><a href=\"/mattress/classic\" class=\"btn\">Shop Classic Mattress\
+      \ from \xA3499</a><p class=\"small\">*Delivery times vary by postcode.</p></section><section class=\"grid\"><article><h2>Classic</h2><p>Supportive\
+      \ hybrid, cooling cover.</p><p>From \xA3499</p><a href=\"/mattress/classic\" class=\"btn\">Shop Classic</a></article><article><h2>Hybrid</h2><p>More\
+      \ springs, more airflow.</p><p>From \xA3699</p><a href=\"/mattress/hybrid\" class=\"btn\">Shop Hybrid</a></article><article><h2>Luxe</h2><p>Premium\
+      \ comfort, 5 zones.</p><p>From \xA3999</p><a href=\"/mattress/luxe\" class=\"btn\">Shop Luxe</a></article></section><section\
+      \ class=\"trust\"><p>4.8/5 from 12,423 sleepers \u2022 As seen in BBC, The Independent</p></section><section class=\"\
+      signup\"><h3>Get 5% off your first order</h3><form action=\"/subscribe\" method=\"post\"><label>Email</label><input\
+      \ type=\"email\" name=\"email\" required placeholder=\"you@example.com\"><button type=\"submit\">Subscribe</button><p\
+      \ class=\"note\">By subscribing you agree to receive marketing by email. Opt out anytime.</p></form></section></main><footer><p>Finance\
+      \ available with Klarna. Representative 19.9% APR. Subject to status.</p><p>&copy; 2026 NookSleep Ltd.</p></footer></body></html>"
+  routes:
+  - path: /mattress/classic*
+    answer:
+      status: 200
+      headers:
+        content-type: text/html; charset=utf-8
+      text: "<!doctype html><html><head><title>Classic Mattress | NookSleep</title><meta name=\"viewport\" content=\"width=device-width,\
+        \ initial-scale=1\"></head><body><header><nav><a href=\"/\">Home</a> <a href=\"/mattress/classic\">Mattress</a> <a\
+        \ href=\"/pillows\">Pillows</a> <a href=\"/reviews\">Reviews</a> <a href=\"/help\">Help</a> <a href=\"/sale\">Sale</a></nav></header><main><article><h1>Classic\
+        \ Mattress</h1><p><strong>From \xA3499</strong> or from \xA321.42/month with Klarna.</p><form id=\"buy\"><label>Size</label><select\
+        \ name=\"size\"><option>Single</option><option>Double</option><option>King</option><option>Super King</option></select><label>Firmness</label><select\
+        \ name=\"firmness\"><option>Medium</option><option>Firm</option></select><label>Add pillows (pair) +\xA360</label><input\
+        \ type=\"checkbox\" name=\"pillows\"><label>Postcode for delivery estimate</label><input type=\"text\" name=\"postcode\"\
+        \ placeholder=\"e.g. SW1A 1AA\"><button type=\"submit\">Add to Basket</button> <button type=\"button\">Buy Now</button></form><p\
+        \ class=\"offer\">Use code AUTUMN40 at checkout. Ends Sunday.</p><p>100\u2011night trial \u2022 10\u2011year warranty\
+        \ \u2022 Free delivery (2\u20135 working days)</p><section><h2>Why Classic</h2><ul><li>Hybrid springs + foam for balanced\
+        \ support</li><li>Removable, washable cover</li><li>Edge support</li></ul></section><section class=\"compare\"><a\
+        \ href=\"/compare\">Not sure? Take the quiz</a> \u2022 <a href=\"/compare\">Compare models</a></section><section class=\"\
+        reviews\"><h3>4.8/5 from 12,423 reviews</h3><div class=\"widget\">[Reviews load here]</div></section><section class=\"\
+        details\"><h3>Details & Specs</h3><p>Depth 25cm; 5 zones; cooling fibres.</p><h3>Delivery & Returns</h3><p>Next\u2011\
+        day delivery available in most areas. Rural areas 3\u20137 days. Returns are free within 100 nights.</p></section><section\
+        \ class=\"cta-bottom\"><a href=\"#buy\" class=\"btn\">Add to Basket</a> <a href=\"/help/size-guide\">Size Guide</a></section><section\
+        \ class=\"sms\"><h4>10% off when you join texts</h4><form action=\"/sms-optin\" method=\"post\"><label>Mobile number</label><input\
+        \ type=\"tel\" name=\"mobile\" placeholder=\"07\u2026\"><button type=\"submit\">Join</button><p>By subscribing you\
+        \ agree to receive recurring automated messages. T&Cs apply.</p></form></section></article></main><footer><p>Finance\
+        \ subject to status. NookSleep Ltd is authorised and regulated by the FCA for consumer credit activities.</p></footer></body></html>"
+- host: mayabainscreative.example
+  name: site_maya
+  kind: acknowledge
+  answer:
+    status: 200
+    headers:
+      content-type: text/html; charset=utf-8
+    text: "<!doctype html><html><head><title>Maya Bains Creative \u2014 UGC for DTC brands</title><meta name=\"viewport\"\
+      \ content=\"width=device-width, initial-scale=1\"></head><body><nav>\n<a href=\"/\">Home</a> \xB7 <a href=\"/work\"\
+      >Work</a> \xB7 <a href=\"/packages\">Packages</a> \xB7 <a href=\"/about\">About</a> \xB7 <a href=\"/contact\">Contact</a>\n\
+      </nav>\n<header>\n<h1>Short\u2011form ads your customers actually watch</h1>\n<p>Vertical videos and simple product\
+      \ photos for CPG, beauty and food brands. Shot on iPhone, edited fast.</p>\n<a href=\"/packages\">See Packages</a> \
+      \ <a href=\"#book\">Book a call</a>\n</header>\n<section>\n<h2>Recent work</h2>\n<ul>\n<li>Tea brand UGC: 3x 20s cuts,\
+      \ CTR from 1.2% \u2192 2.1%</li>\n<li>Serum demo: hook test, top cut hit 5.8% watch-through</li>\n<li>Protein bar taste\
+      \ test: 4 hooks, 2 winners</li>\n</ul>\n</section>\n<section id=\"book\">\n<h2>Quick Brief</h2>\n<form action=\"/send\"\
+      \ method=\"post\">\n<label>Name<input name=\"name\" type=\"text\" required></label>\n<label>Email<input name=\"email\"\
+      \ type=\"email\" required></label>\n<label>Brand name<input name=\"brand\" type=\"text\"></label>\n<label>Website<input\
+      \ name=\"site\" type=\"url\"></label>\n<fieldset><legend>What do you need?</legend>\n<label><input type=\"checkbox\"\
+      \ name=\"need\" value=\"ugc\"> UGC video(s)</label>\n<label><input type=\"checkbox\" name=\"need\" value=\"photos\"\
+      > Product photos</label>\n<label><input type=\"checkbox\" name=\"need\" value=\"adpack\"> Ad testing pack</label>\n\
+      </fieldset>\n<label>Deadline<input name=\"deadline\" type=\"date\"></label>\n<label>Budget<select name=\"budget\"><option>Under\
+      \ \xA31k</option><option>\xA31k\u2013\xA33k</option><option>\xA33k+</option></select></label>\n<label>Instagram<input\
+      \ name=\"ig\" type=\"text\" placeholder=\"@brand\"></label>\n<label>Message<textarea name=\"msg\" rows=\"4\"></textarea></label>\n\
+      <button type=\"submit\">Send brief</button>\n<p>I reply within 48 hours, Mon\u2013Fri.</p>\n</form>\n</section>\n<section>\n\
+      <h2>Free UGC Brief Template</h2>\n<p>Make shoots smoother. One email with the PDF, then 1\u20132 practical tips a month.</p>\n\
+      <form action=\"/subscribe\" method=\"post\">\n<label>Email<input name=\"subEmail\" type=\"email\" required></label>\n\
+      <button type=\"submit\">Get the template</button>\n</form>\n</section>\n<footer><p>Day rates from \xA3300/video. Turnaround\
+      \ in 7\u201310 days. Rush +25% if slots open.</p></footer>\n</body></html>"
+  routes:
+  - path: /packages*
+    answer:
+      status: 200
+      headers:
+        content-type: text/html; charset=utf-8
+      text: "<!doctype html><html><head><title>Packages \u2014 Maya Bains Creative</title><meta name=\"viewport\" content=\"\
+        width=device-width, initial-scale=1\"></head><body>\n<nav>\n<a href=\"/\">Home</a> \xB7 <a href=\"/work\">Work</a>\
+        \ \xB7 <a href=\"/packages\">Packages</a> \xB7 <a href=\"/about\">About</a> \xB7 <a href=\"/contact\">Contact</a>\n\
+        </nav>\n<main>\n<h1>Packages</h1>\n<article>\n<h2>Starter UGC</h2>\n<p>From \xA3300/video. 1 raw + 1 edited (15\u2013\
+        30s), 1 hook variation, basic usage 30 days. No reshoots. Simple props only.</p>\n<button>Enquire</button>\n</article>\n\
+        <article>\n<h2>Ad Testing Pack</h2>\n<p>\xA31,200 flat. 4 scripts, 6 hooks, 3 edits each (9:16). 2x alt captions.\
+        \ Add whitelisting +\xA3200. Delivery in 10\u201314 days.</p>\n<button>Enquire</button>\n</article>\n<article>\n<h2>Monthly\
+        \ UGC</h2>\n<p>From \xA3900/mo. 4 videos + 2 hook tests per video. Basic monthly report. Klaviyo flow clips add\u2011\
+        on +\xA3150.</p>\n<button>Join waitlist</button>\n</article>\n<section>\n<h3>FAQs</h3>\n<p>Payment: 50% to book, 50%\
+        \ on delivery. Rush fee +25% if I can fit it. You provide product; return shipping billed.</p>\n<p>Usage: Organic\
+        \ + paid social for 30 days unless extended. Raw files not included by default.</p>\n</section>\n<section id=\"call\"\
+        >\n<h3>Book a quick call</h3>\n<p>Pick a time that works (calendar shows in your time zone). If no times show, DM\
+        \ @mayabainscreative.</p>\n<form action=\"/call\" method=\"post\">\n<label>Name<input name=\"name\" type=\"text\"\
+        \ required></label>\n<label>Email<input name=\"email\" type=\"email\" required></label>\n<label>Preferred time<select\
+        \ name=\"slot\"><option>Tue 10:00</option><option>Wed 14:00</option><option>Thu 17:30</option></select></label>\n\
+        <button type=\"submit\">Confirm</button>\n<p>You\u2019ll get a calendar invite within 15 minutes.</p>\n</form>\n</section>\n\
+        <section>\n<h3>Project Enquiry</h3>\n<form action=\"/enquire\" method=\"post\">\n<label>Brand<input name=\"brand\"\
+        \ type=\"text\"></label>\n<label>Website<input name=\"site\" type=\"url\"></label>\n<label>Deliverables<textarea name=\"\
+        deliverables\" rows=\"3\" placeholder=\"e.g. 3x 20s videos, 10 photos\"></textarea></label>\n<label>Deadline<input\
+        \ name=\"deadline\" type=\"date\"></label>\n<label>Budget<select name=\"budget\"><option>Select</option><option>Under\
+        \ \xA31k</option><option>\xA31k\u20133k</option><option>\xA33k+</option></select></label>\n<label>Upload brief<input\
+        \ name=\"brief\" type=\"file\" accept=\".pdf,.docx\"></label>\n<button type=\"submit\">Send</button>\n<p>I reply within\
+        \ 48 hours with a simple estimate and next steps.</p>\n</form>\n</section>\n</main>\n<footer><p>Based in Leeds, UK.\
+        \ Remote-friendly. Invoices via Stripe. Terms sent on booking.</p></footer>\n</body></html>"
+- host: sproutandstitch.example
+  name: site_amrita
+  kind: acknowledge
+  answer:
+    status: 200
+    headers:
+      content-type: text/html; charset=utf-8
+    text: "<html><head><title>Sprout & Stitch \u2014 Playproof kids clothes</title></head><body><div class=\"bar\">Free UK\
+      \ returns \u2022 Order by 2pm for same\u2011day dispatch \u2022 Pay later with Klarna</div><nav><a href=\"/\">Home</a><a\
+      \ href=\"/collections/new-in\">New In</a><a href=\"/shop\">Shop</a><a href=\"/lookbook-summer\">Lookbook</a><a href=\"\
+      /journal\">Journal</a><a href=\"/about\">About</a><a href=\"/help\">Help</a><a href=\"/cart\">Bag (0)</a><form action=\"\
+      /search\"><input name=\"q\" placeholder=\"Search\"><button>Search</button></form></nav><main><section class=\"hero\"\
+      ><h1>Bright, tough, planet\u2011kind clothes for play</h1><p>GOTS organic cotton. Built to be handed down.</p><a class=\"\
+      cta\" href=\"/collections/new-in\">Shop New In</a></section><section class=\"grid\"><article><img alt=\"Dino Tee\" src=\"\
+      /img/dino-tee.jpg\"><h3>Dino Tee</h3><p>\xA316</p><form><label>Size</label><select><option>2-3</option><option>3-4</option><option>4-5</option></select><button>Add\
+      \ to bag</button></form></article><article><img alt=\"Rainbow Leggings\" src=\"/img/rainbow-leggings.jpg\"><h3>Rainbow\
+      \ Leggings</h3><p>\xA318</p><form><label>Size</label><select><option>2-3</option><option>3-4</option><option>4-5</option></select><button>Add\
+      \ to bag</button></form></article><article><img alt=\"Splash Raincoat\" src=\"/img/raincoat.jpg\"><h3>Splash Raincoat</h3><p>\xA3\
+      48</p><form><label>Size</label><select><option>2-3</option><option>4-5</option><option>6-7</option></select><button>Add\
+      \ to bag</button></form></article><article><img alt=\"Kite Dress\" src=\"/img/kite-dress.jpg\"><h3>Kite Dress</h3><p>\xA3\
+      28</p><form><label>Size</label><select><option>3-4</option><option>4-5</option><option>5-6</option></select><button>Add\
+      \ to bag</button></form></article></section><section class=\"reasons\"><h2>Why Sprout & Stitch</h2><ul><li>GOTS certified\
+      \ cotton</li><li>Reinforced knees and seams</li><li>30\u2011day free returns</li></ul></section><section class=\"signup\"\
+      ><h2>Join the Play Club</h2><p>Get 10% off your first order. Code arrives within 5 minutes.</p><form><label>First name\
+      \ (optional)</label><input name=\"first_name\"><label>Email</label><input name=\"email\" type=\"email\" required><label><input\
+      \ type=\"checkbox\" required> I agree to receive emails</label><button>Join</button></form></section></main><footer><p>Questions?\
+      \ hello@sproutandstitch.example \u2022 Live chat Mon\u2013Fri 9\u20135</p><p>UK delivery 2\u20134 days \u2022 EU 5\u2013\
+      7 days</p></footer></body></html>"
+  routes:
+  - path: /lookbook-summer*
+    answer:
+      status: 200
+      headers:
+        content-type: text/html; charset=utf-8
+      text: "<html><head><title>Summer Lookbook \u2014 Sprout & Stitch</title></head><body><nav><a href=\"/\">Home</a><a href=\"\
+        /collections/new-in\">New In</a><a href=\"/shop\">Shop</a><a href=\"/lookbook-summer\">Lookbook</a><a href=\"/journal\"\
+        >Journal</a><a href=\"/about\">About</a></nav><main><h1>Summer Lookbook 2026</h1><p>Shot in studio and playgrounds\
+        \ across Leeds. Mix and match brights built for long days out.</p><a href=\"/press/summer-2026.zip\">Download press\
+        \ kit (52MB)</a><section class=\"gallery\"><figure><img src=\"/img/look1.jpg\" alt=\"Kids in rainbow set on yellow\
+        \ block\"><figcaption>Rainbow Set with Dino Tee</figcaption></figure><figure><img src=\"/img/look2.jpg\" alt=\"Girl\
+        \ in kite dress on pastel backdrop\"><figcaption>Kite Dress</figcaption></figure><figure><img src=\"/img/look3.jpg\"\
+        \ alt=\"Boy in splash raincoat against blue wall\"><figcaption>Splash Raincoat</figcaption></figure><figure><img src=\"\
+        /img/look4.jpg\" alt=\"Siblings in stripes sitting on crates\"><figcaption>Stripe Play Set</figcaption></figure><figure><img\
+        \ src=\"/img/look5.jpg\" alt=\"Closeup of reinforced knee patch\"><figcaption>Reinforced knees</figcaption></figure><button>Load\
+        \ more</button></section><section class=\"notes\"><h2>Credits</h2><p>Photographer: L. Carter \u2022 Styling: K. Moss\
+        \ \u2022 Studio: Sunny Yard</p></section><section class=\"cta\"><a class=\"btn\" href=\"/collections/new-in\">Shop\
+        \ the looks</a></section></main><footer><p>Tag us @sproutandstitchkids</p></footer></body></html>"
+- host: flextownfitness.example
+  name: site_liam
+  kind: acknowledge
+  answer:
+    status: 200
+    headers:
+      content-type: text/html; charset=utf-8
+    text: "<!doctype html><html><head><title>FlexTown Fitness | 8 Gyms | New Year Offer</title></head><body><nav><a href=\"\
+      /\">Home</a> | <a href=\"/locations\">Locations</a> | <a href=\"/memberships\">Memberships</a> | <a href=\"/classes\"\
+      >Classes</a> | <a href=\"/timetable\">Timetable</a> | <a href=\"/join\">Join</a> | <a href=\"/blog\">Blog</a> | <a href=\"\
+      /contact\">Contact</a></nav><header><h1>Join for \xA31 this January</h1><p>No contract. Freeze any time. Offer ends\
+      \ 31 Jan.</p><a href=\"/join\">Join now</a> <a href=\"/locations\">Find your gym</a></header><section id=\"finder\"\
+      ><h2>Find your nearest FlexTown</h2><form><label>Postcode <input type=\"text\" name=\"postcode\" placeholder=\"e.g.\
+      \ B3 1AB\"></label><button type=\"submit\">Show gyms</button></form><p>Open 24/7 in most clubs. Free parking at selected\
+      \ sites.</p></section><section id=\"memberships\"><h2>Memberships</h2><div class=\"card\"><h3>Anytime</h3><p>\xA329.99/mo.\
+      \ Access any time. No contract.</p><a href=\"/join\">Choose</a></div><div class=\"card\"><h3>Off-Peak</h3><p>\xA324.99/mo.\
+      \ Weekdays 9\u20134, weekends after 2.</p><a href=\"/join\">Choose</a></div><div class=\"card\"><h3>Student</h3><p>\xA3\
+      21.99/mo. Valid NUS required.</p><a href=\"/join\">Choose</a></div></section><section id=\"amenities\"><h2>What\u2019\
+      s inside</h2><ul><li>Cardio + free weights</li><li>Classes included</li><li>Sauna (selected clubs)</li><li>Free induction</li></ul></section><section\
+      \ id=\"pass\"><h2>Get a 7\u2011Day Pass</h2><form action=\"/passes\" method=\"post\"><label>First name <input name=\"\
+      first\" required></label><label>Last name <input name=\"last\" required></label><label>Email <input type=\"email\" name=\"\
+      email\" required></label><label>Mobile <input type=\"tel\" name=\"mobile\" required></label><label>Postcode <input name=\"\
+      pc\"></label><label>Preferred gym <select name=\"gym\"><option>\u2014 Select \u2014</option><option>Digbeth</option><option>Wolverhampton</option><option>Solihull</option></select></label><label><input\
+      \ type=\"checkbox\" name=\"optin\"> Send me class updates</label><button type=\"submit\">Email my pass</button><p>You\u2019\
+      ll get your pass by email within 10 minutes.</p></form></section><section id=\"reviews\"><h2>Members say</h2><blockquote>\u201C\
+      Clean kit and no waiting even at 6pm.\u201D \u2014 Jade</blockquote></section><footer><p>Offer ends 31 Jan. \xA315 joining\
+      \ fee may apply at some clubs. See <a href=\"/terms\">T&Cs</a>. For corporate rates email sales@flextownfitness.example.</p></footer></body></html>"
+  routes:
+  - path: /join*
+    answer:
+      status: 200
+      headers:
+        content-type: text/html; charset=utf-8
+      text: "<!doctype html><html><head><title>Join FlexTown | January Offer</title></head><body><nav><a href=\"/\">Home</a>\
+        \ | <a href=\"/locations\">Locations</a> | <a href=\"/memberships\">Memberships</a> | <a href=\"/classes\">Classes</a>\
+        \ | <a href=\"/contact\">Contact</a></nav><header><h1>Join for \xA31</h1><p>Ends 31 Jan. No contract. Start today.</p></header><main><form\
+        \ action=\"/checkout\" method=\"post\"><fieldset><legend>1. Choose your home gym</legend><label>Location <select name=\"\
+        gym\"><option>\u2014 Select \u2014</option><option>Digbeth</option><option>Wolverhampton</option><option>Solihull</option><option>Perry\
+        \ Barr</option></select></label></fieldset><fieldset><legend>2. Your details</legend><label>First name <input name=\"\
+        first\" required></label><label>Last name <input name=\"last\" required></label><label>Email <input type=\"email\"\
+        \ name=\"email\" required></label><label>Mobile <input type=\"tel\" name=\"mobile\" required></label><label>Date of\
+        \ birth <input type=\"date\" name=\"dob\"></label><label>Address <input name=\"addr\"></label><label>Postcode <input\
+        \ name=\"pc\" required></label></fieldset><fieldset><legend>3. Membership</legend><label><input type=\"radio\" name=\"\
+        plan\" value=\"anytime\"> Anytime \xA329.99/mo</label><label><input type=\"radio\" name=\"plan\" value=\"offpeak\"\
+        > Off\u2011Peak \xA324.99/mo</label><label><input type=\"radio\" name=\"plan\" value=\"student\"> Student \xA321.99/mo</label><div><label><input\
+        \ type=\"checkbox\" name=\"addons\" value=\"pt\"> Add 1 PT session \xA325</label><label><input type=\"checkbox\" name=\"\
+        addons\" value=\"sauna\"> Add sauna \xA35/mo</label></div></fieldset><fieldset><legend>4. Payment</legend><label>Name\
+        \ on card <input name=\"cardname\" required></label><label>Card number <input name=\"card\" inputmode=\"numeric\"\
+        \ required></label><label>Expiry <input name=\"exp\" placeholder=\"MM/YY\" required></label><label>CVC <input name=\"\
+        cvc\" required></label><label><input type=\"checkbox\" name=\"terms\" required> I agree to the Membership Terms</label></fieldset><button\
+        \ type=\"submit\">Complete Join</button><p>Instant confirmation by email. Access card ready to collect at reception\
+        \ within 5 minutes during staffed hours.</p><p><a href=\"/tours\">Prefer a tour first?</a></p></form><section><h2>Good\
+        \ to know</h2><ul><li>Freeze any time (\xA35/mo).</li><li>Cancel with 30 days\u2019 notice.</li><li>\xA315 joining\
+        \ fee may apply to some clubs.</li></ul></section></main><footer><p>Support Mon\u2013Fri 9\u20135 on 0121 000 1234.\
+        \ See full <a href=\"/terms\">T&Cs</a>.</p></footer></body></html>"
+- host: layerlock.example
+  name: site_ninao
+  kind: acknowledge
+  answer:
+    status: 200
+    headers:
+      content-type: text/html; charset=utf-8
+    text: "<!doctype html><html><head><title>LayerLock \u2014 Agentless Cloud Security for AWS, GCP, Azure</title><meta name=\"\
+      viewport\" content=\"width=device-width, initial-scale=1\"><link rel=\"stylesheet\" href=\"/assets/site.css\"></head><body>\n\
+      <header>\n  <div class=\"topbar\">Now SOC 2 Type I. ISO 27001 in progress.</div>\n  <nav>\n    <a href=\"/\">LayerLock</a>\n\
+      \    <a href=\"/product\">Product</a>\n    <a href=\"/solutions\">Solutions</a>\n    <a href=\"/resources\">Resources</a>\n\
+      \    <a href=\"/pricing\">Pricing</a>\n    <a href=\"/customers\">Customers</a>\n    <a class=\"cta\" href=\"/request-demo\"\
+      >Request demo</a>\n    <a href=\"/signin\">Sign in</a>\n  </nav>\n</header>\n<main>\n  <section class=\"hero\">\n  \
+      \  <h1>Ship faster, stay compliant.</h1>\n    <p>LayerLock continuously scans your cloud for misconfigurations, risky\
+      \ data flows, and compliance drift\u2014no agents, no downtime.</p>\n    <div class=\"ctas\">\n      <a class=\"primary\"\
+      \ href=\"/request-demo\">Request demo</a>\n      <a class=\"secondary\" href=\"/assets/layerlock-overview.pdf\">Download\
+      \ one\u2011pager</a>\n    </div>\n  </section>\n  <section class=\"logos\">\n    <p>Trusted by teams at</p>\n    <ul><li>NorthSpark</li><li>Quorso</li><li>PipeFin</li><li>Harborly</li></ul>\n\
+      \  </section>\n  <section class=\"features\">\n    <h2>What\u2019s inside</h2>\n    <ul>\n      <li>Agentless posture\
+      \ management across AWS/GCP/Azure</li>\n      <li>Real\u2011time policy guardrails and auto\u2011remediation</li>\n\
+      \      <li>Data flow mapping and PII lineage</li>\n      <li>Out\u2011of\u2011the\u2011box SOC 2, ISO 27001, PCI dashboards</li>\n\
+      \    </ul>\n  </section>\n  <section class=\"testimonial\">\n    <blockquote>\u201CWe cut audit prep from weeks to days\
+      \ while shipping features.\u201D \u2014 CTO, Fintech</blockquote>\n  </section>\n</main>\n<footer>\n  <div class=\"\
+      foot-links\">\n    <a href=\"/privacy\">Privacy</a> \u2022 <a href=\"/security\">Security</a> \u2022 <a href=\"/status\"\
+      >Status</a>\n  </div>\n  <small>\xA9 LayerLock Ltd</small>\n</footer>\n<div class=\"cookie\">We use cookies for site\
+      \ performance and ads. <button>OK</button></div>\n</body></html>"
+  routes:
+  - path: /request-demo*
+    answer:
+      status: 200
+      headers:
+        content-type: text/html; charset=utf-8
+      text: "<!doctype html><html><head><title>Request a Demo | LayerLock</title><meta name=\"viewport\" content=\"width=device-width,\
+        \ initial-scale=1\"></head><body>\n<header>\n  <nav>\n    <a href=\"/\">LayerLock</a>\n    <a href=\"/product\">Product</a>\n\
+        \    <a href=\"/resources\">Resources</a>\n    <a href=\"/pricing\">Pricing</a>\n  </nav>\n</header>\n<main>\n  <section\
+        \ class=\"hero\">\n    <h1>See LayerLock in action</h1>\n    <p>Live 45\u2011minute Zoom with a Solutions Architect.\
+        \ Tell us a bit so we can tailor the walkthrough.</p>\n  </section>\n  <form id=\"demo-form\" action=\"/api/demo\"\
+        \ method=\"post\">\n    <label>First name* <input name=\"first_name\" required></label>\n    <label>Last name* <input\
+        \ name=\"last_name\" required></label>\n    <label>Work email* <input type=\"email\" name=\"email\" placeholder=\"\
+        name@company.com\" required></label>\n    <label>Company* <input name=\"company\" required></label>\n    <label>Website\
+        \ <input type=\"url\" name=\"website\" placeholder=\"https://\"></label>\n    <label>Job title* <input name=\"title\"\
+        \ required></label>\n    <label>Phone* <input name=\"phone\" required></label>\n    <label>Country/Region* <input\
+        \ name=\"country\" required></label>\n    <label>Employees* <select name=\"employees\" required><option></option><option>1\u2013\
+        50</option><option>51\u2013200</option><option>201\u20131000</option><option>1000+</option></select></label>\n   \
+        \ <label>Cloud providers* <select multiple name=\"clouds\" required><option>AWS</option><option>GCP</option><option>Azure</option></select></label>\n\
+        \    <label>Annual cloud spend* <select name=\"spend\" required><option></option><option><\xA350k</option><option>\xA3\
+        50k\u2013\xA3250k</option><option>\xA3250k\u2013\xA31m</option><option>\xA31m+</option></select></label>\n    <label>Primary\
+        \ use case* <select name=\"use_case\" required><option></option><option>CSPM</option><option>Compliance</option><option>Data\
+        \ mapping</option><option>Remediation</option></select></label>\n    <label>Compliance focus <select multiple name=\"\
+        frameworks\"><option>SOC 2</option><option>ISO 27001</option><option>PCI</option><option>HIPAA</option></select></label>\n\
+        \    <label>How did you hear about us?* <input name=\"ref\" required></label>\n    <label>Anything else? <textarea\
+        \ name=\"notes\" rows=\"3\" placeholder=\"e.g., timeline, priorities\"></textarea></label>\n    <label><input type=\"\
+        checkbox\" name=\"consent\"> I agree to receive emails about LayerLock.</label>\n    <div class=\"captcha\">reCAPTCHA\
+        \ protected</div>\n    <button type=\"submit\">Request demo</button>\n    <p class=\"help\">We review submissions\
+        \ within 3\u20135 business days. If qualified, a rep will reach out to schedule. Work emails only.</p>\n  </form>\n\
+        \  <aside>\n    <p>Prefer email? sales@layerlock.example</p>\n    <p>Need a one\u2011pager? <a href=\"/assets/layerlock-overview.pdf\"\
+        >Download</a></p>\n  </aside>\n</main>\n<footer><small>By submitting, you agree to our Terms & Privacy.</small></footer>\n\
+        </body></html>"
+- host: fellviewhouse.example
+  name: site_mayap
+  kind: acknowledge
+  answer:
+    status: 200
+    headers:
+      content-type: text/html; charset=utf-8
+    text: "<!doctype html><html lang=\"en\"><head><title>Fell View House Hotel | Lake District</title><meta name=\"viewport\"\
+      \ content=\"width=device-width, initial-scale=1\"><meta name=\"description\" content=\"Family-run country house hotel\
+      \ near Ambleside. Book direct for best rate.\"></head><body><header><div class=\"topbar\">Call 015394 77777 \u2022 hello@fellviewhouse.example</div><nav><a\
+      \ href=\"/\">Home</a><a href=\"/rooms\">Rooms</a><a href=\"/dining\">Dining</a><a href=\"/offers\">Offers</a><a href=\"\
+      /explore\">Explore</a><a href=\"/gallery\">Gallery</a><a href=\"/contact\">Contact</a><a class=\"book\" href=\"/rooms\"\
+      >Book Now</a></nav></header><main><section class=\"hero\"><h1>Wake up to fell views</h1><p>Family-run since 1998, a\
+      \ short walk to Ambleside and Windermere.</p><form class=\"booking\" action=\"/rooms\"><label>Arrive<input type=\"date\"\
+      \ name=\"in\"></label><label>Depart<input type=\"date\" name=\"out\"></label><label>Adults<select name=\"adults\"><option>2</option><option>1</option><option>3</option><option>4</option></select></label><label>Children<select\
+      \ name=\"children\"><option>0</option><option>1</option><option>2</option></select></label><label>Promo code<input type=\"\
+      text\" name=\"code\" placeholder=\"Optional\"></label><button type=\"submit\">Search</button><small>You'll be taken\
+      \ to our secure booking portal to complete checkout.</small></form><ul class=\"usps\"><li>Book Direct & Save 10%</li><li>Flexible\
+      \ cancellation</li><li>Free parking</li><li>Dog-friendly rooms</li><li>Breakfast cooked to order</li></ul></section><section\
+      \ class=\"rooms-preview\"><h2>Rooms</h2><div class=\"grid\"><article><img src=\"/img/classic.jpg\" alt=\"Classic Double\"\
+      ><h3>Classic Double</h3><p>From \xA3129 BB</p><a href=\"/rooms#classic\">More info</a></article><article><img src=\"\
+      /img/superior.jpg\" alt=\"Superior King\"><h3>Superior King</h3><p>From \xA3159 BB</p><a href=\"/rooms#superior\">More\
+      \ info</a></article><article><img src=\"/img/lakeview.jpg\" alt=\"Lake View Suite\"><h3>Lake View Suite</h3><p>From\
+      \ \xA3209 BB</p><a href=\"/rooms#suite\">More info</a></article></div></section><section class=\"why-direct\"><h2>Why\
+      \ book direct?</h2><p>10% off our Best Available Rate, free room requests, and late checkout when available.</p></section><section\
+      \ class=\"newsletter\"><h2>Midweek offers</h2><p>Join our VIP list for occasional midweek deals.</p><form action=\"\
+      /subscribe\" method=\"post\"><label>Email<input type=\"email\" name=\"email\" required></label><button type=\"submit\"\
+      >Subscribe</button></form></section></main><footer><p>Fell View House, Rydal Road, Ambleside, LA22 \u2022 Free on-site\
+      \ parking</p><p><a href=\"https://instagram.com/fellviewhouse\">Instagram</a> \u2022 <a href=\"/privacy\">Privacy</a></p></footer></body></html>"
+  routes:
+  - path: /rooms*
+    answer:
+      status: 200
+      headers:
+        content-type: text/html; charset=utf-8
+      text: "<!doctype html><html lang=\"en\"><head><title>Rooms & Rates | Fell View House</title><meta name=\"viewport\"\
+        \ content=\"width=device-width, initial-scale=1\"></head><body><header><nav><a href=\"/\">Home</a><a href=\"/rooms\"\
+        >Rooms</a><a href=\"/dining\">Dining</a><a href=\"/offers\">Offers</a><a href=\"/explore\">Explore</a><a href=\"/contact\"\
+        >Contact</a><a class=\"book\" href=\"#availability\">Check Availability</a></nav></header><main><h1>Rooms & Rates</h1><p>Choose\
+        \ from Classic Doubles, Superior Kings, spacious Family Rooms, and our Lake View Suite. Rates change daily and some\
+        \ weekends require a 2\u2011night minimum.</p><section id=\"availability\"><form class=\"booking\" action=\"/book\"\
+        ><label>Arrive<input type=\"date\" name=\"in\"></label><label>Depart<input type=\"date\" name=\"out\"></label><label>Adults<select\
+        \ name=\"adults\"><option>2</option><option>1</option><option>3</option><option>4</option></select></label><label>Children<select\
+        \ name=\"children\"><option>0</option><option>1</option><option>2</option></select></label><label>Promo code<input\
+        \ type=\"text\" name=\"code\" placeholder=\"Have a code?\"></label><button type=\"submit\">Check availability</button><small>Complete\
+        \ booking on our secure portal.</small></form></section><section class=\"list\"><article id=\"classic\"><h2>Classic\
+        \ Double</h2><p>Cosy doubles with woodland views. From \xA3129 BB.</p><a href=\"/book?room=classic\" class=\"btn\"\
+        >Select dates</a></article><article id=\"superior\"><h2>Superior King</h2><p>King beds, rainfall showers, some with\
+        \ balconies. From \xA3159 BB.</p><a href=\"/book?room=superior\" class=\"btn\">Select dates</a></article><article\
+        \ id=\"family\"><h2>Family Room</h2><p>Sleeps up to 4 with sofabed. From \xA3179 BB.</p><a href=\"/book?room=family\"\
+        \ class=\"btn\">Select dates</a></article><article id=\"suite\"><h2>Lake View Suite</h2><p>Separate lounge and panoramic\
+        \ views. From \xA3209 BB.</p><a href=\"/book?room=suite\" class=\"btn\">Select dates</a></article></section><section\
+        \ class=\"guarantee\"><h3>Best Rate Promise</h3><p>If you spot a lower public rate for the same dates and room, call\
+        \ 015394 77777 and we\u2019ll match it.</p></section><section class=\"notes\"><p>Check-in from 3pm \u2022 Check-out\
+        \ 11am \u2022 Free parking \u2022 Dogs welcome in selected rooms (\xA315 per stay)</p></section></main><footer><p>Questions?\
+        \ Email hello@fellviewhouse.example or call 015394 77777</p></footer></body></html>"
+- host: sproutbox.example
+  name: site_mira
+  kind: acknowledge
+  answer:
+    status: 200
+    headers:
+      content-type: text/html; charset=utf-8
+    text: "<!doctype html><html><head><title>SproutBox Meals \u2014 Vegan meal kits delivered weekly</title><meta name=\"\
+      viewport\" content=\"width=device-width,initial-scale=1\"></head><body><header><nav><a href=\"/menu\">Menu</a> <a href=\"\
+      /how-it-works\">How it works</a> <a href=\"/pricing\">Pricing</a> <a href=\"/reviews\">Reviews</a> <a href=\"/blog\"\
+      >Blog</a> <a href=\"/login\">Login</a></nav></header><main><section id=\"hero\"><h1>Cook plant-based in 20 minutes</h1><p>Chef-designed\
+      \ vegan recipes. Fresh ingredients, zero guesswork.</p><form id=\"signup\"><label>Email <input type=\"email\" name=\"\
+      email\" placeholder=\"you@example.com\"></label> <label>Postcode <input type=\"text\" name=\"postcode\" placeholder=\"\
+      e.g. SW1A 1AA\"></label> <button type=\"submit\">Get \xA330 off your first two boxes</button></form><p><a href=\"/menu\"\
+      >See this week's menu</a> or <a href=\"/box-builder\">Build your box</a></p></section><section id=\"badges\"><p>As seen\
+      \ in: The Guardian \xB7 BBC Good Food \xB7 Vegan Life</p></section><section id=\"why\"><h2>Why SproutBox</h2><ul><li>100%\
+      \ vegan, no compromise on flavour</li><li>Pre-portioned to cut food waste</li><li>Recyclable packaging</li><li>Pause,\
+      \ skip or cancel anytime</li></ul></section><section id=\"how\"><h2>How it works</h2><ol><li>Pick your plan</li><li>We\
+      \ deliver Tue\u2013Fri in eco-cool boxes</li><li>Cook in ~20 minutes with easy cards</li></ol></section><section id=\"\
+      plans\"><h2>Choose your plan</h2><form id=\"plan\"><fieldset><legend>Servings per meal</legend><label><input type=\"\
+      radio\" name=\"servings\" value=\"2\" checked> 2 servings</label> <label><input type=\"radio\" name=\"servings\" value=\"\
+      4\"> 4 servings</label></fieldset><fieldset><legend>Meals per week</legend><label><input type=\"radio\" name=\"meals\"\
+      \ value=\"3\" checked> 3 meals</label> <label><input type=\"radio\" name=\"meals\" value=\"4\"> 4 meals</label> <label><input\
+      \ type=\"radio\" name=\"meals\" value=\"5\"> 5 meals</label></fieldset><p>From \xA35.99 per serving with intro offer\
+      \ applied.</p><button type=\"submit\">Continue</button></form></section><section id=\"social\"><h2>4.8\u2605 from 3,200+\
+      \ reviews</h2><blockquote>\u201CBest vegan kit we\u2019ve tried.\u201D \u2014 Hannah L.</blockquote></section></main><footer><p>Questions?\
+      \ support@sproutbox.example</p><p>First delivery in 2\u20134 days. Delivery Tue\u2013Fri. Pause or cancel anytime.</p><p>\xA9\
+      \ SproutBox Foods Ltd</p></footer></body></html>"
+  routes:
+  - path: /box-builder*
+    answer:
+      status: 200
+      headers:
+        content-type: text/html; charset=utf-8
+      text: "<!doctype html><html><head><title>Build your SproutBox</title><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"\
+        ></head><body><header><nav><a href=\"/\">Home</a> <a href=\"/menu\">Menu</a> <a href=\"/pricing\">Pricing</a> <a href=\"\
+        /login\">Login</a></nav></header><main><h1>Build your box</h1><p id=\"offer\">Your intro offer: \xA330 off across\
+        \ first two boxes</p><form id=\"builder\"><label>Promo code <input type=\"text\" name=\"code\" placeholder=\"Optional\"\
+        ></label><section id=\"step1\"><h2>Step 1: Choose servings</h2><label><input type=\"radio\" name=\"servings\" value=\"\
+        2\" checked> 2 servings</label> <label><input type=\"radio\" name=\"servings\" value=\"4\"> 4 servings</label></section><section\
+        \ id=\"step2\"><h2>Step 2: Meals per week</h2><label><input type=\"radio\" name=\"meals\" value=\"3\" checked> 3 meals</label>\
+        \ <label><input type=\"radio\" name=\"meals\" value=\"4\"> 4 meals</label> <label><input type=\"radio\" name=\"meals\"\
+        \ value=\"5\"> 5 meals</label></section><section id=\"step3\"><h2>Step 3: Pick your recipes</h2><p>Loading menu\u2026\
+        </p><div class=\"grid\"><article><h3>Smoky Bean Chilli</h3><p>20 mins \u2022 2 of 5 spice</p><button type=\"button\"\
+        >Add</button></article><article><h3>Tofu Katsu Curry</h3><p>25 mins \u2022 3 of 5 spice</p><button type=\"button\"\
+        >Add</button></article><article><h3>Mushroom Stroganoff</h3><p>20 mins \u2022 Comfort</p><button type=\"button\">Add</button></article></div></section><section\
+        \ id=\"addons\"><h2>Step 4: Add-ons (optional)</h2><label><input type=\"checkbox\" name=\"dessert\"> Dessert of the\
+        \ week (+\xA34.50)</label> <label><input type=\"checkbox\" name=\"juice\"> Cold-pressed juices (+\xA37.00)</label></section><section\
+        \ id=\"delivery\"><h2>Step 5: Delivery</h2><label>Full name <input type=\"text\" name=\"name\"></label> <label>Email\
+        \ <input type=\"email\" name=\"email\"></label> <label>Phone <input type=\"tel\" name=\"phone\"></label> <label>Address\
+        \ line 1 <input type=\"text\" name=\"addr1\"></label> <label>Address line 2 <input type=\"text\" name=\"addr2\"></label>\
+        \ <label>City <input type=\"text\" name=\"city\"></label> <label>Postcode <input type=\"text\" name=\"postcode\"></label>\
+        \ <label>Delivery day <select name=\"day\"><option>Tuesday</option><option>Wednesday</option><option>Thursday</option><option>Friday</option></select></label></section><section\
+        \ id=\"account\"><h2>Step 6: Create account</h2><label>Password <input type=\"password\" name=\"pw\"></label> <label>Marketing\
+        \ emails <input type=\"checkbox\" name=\"optin\"></label></section><section id=\"payment\"><h2>Step 7: Payment</h2><label>Card\
+        \ number <input type=\"text\" name=\"card\"></label> <label>Expiry <input type=\"text\" name=\"exp\"></label> <label>CVC\
+        \ <input type=\"text\" name=\"cvc\"></label> <label>Billing postcode <input type=\"text\" name=\"billpc\"></label><p>Total\
+        \ today shown after recipes selected. Cancel or pause anytime.</p><button type=\"submit\">Place order</button></section></form><p>Ships\
+        \ in 2\u20134 days. Delivery Tue\u2013Fri. Secure checkout.</p></main><footer><p>\xA9 SproutBox Foods Ltd \xB7 support@sproutbox.example</p></footer></body></html>"
+- host: warmcurrent.example
+  name: site_milo
+  kind: acknowledge
+  answer:
+    status: 200
+    headers:
+      content-type: text/html; charset=utf-8
+    text: "<!doctype html><html><head><title>Warm Current \u2014 Performance Creative & Paid Social for DTC</title></head><body><header><nav><a\
+      \ href=\"/\">Home</a> | <a href=\"/services\">Services</a> | <a href=\"/work\">Work</a> | <a href=\"/pricing\">Pricing</a>\
+      \ | <a href=\"/journal\">Journal</a> | <a href=\"/contact\">Contact</a></nav></header><main><section><h1>Paid Social\
+      \ that Moves Carts</h1><p>Meta + TikTok buying, UGC that\u2019s made to be tested, and the landing pages to catch the\
+      \ lift.</p><p>For DTC brands doing \xA31m\u2013\xA312m a year.</p><a href=\"/contact\">Book a discovery call</a></section><section><h2>What\
+      \ we do</h2><ul><li>Performance creative: hooks, angles, briefs, UGC sourcing</li><li>Media buying: Meta & TikTok</li><li>Landing\
+      \ pages: message match and CRO sweeps</li></ul></section><section><h2>Recent wins</h2><ul><li>Snack brand: -28% CPA\
+      \ in 30 days</li><li>Supplements: +41% new-to-brand revenue Q/Q</li><li>Home goods: Launched TikTok from zero to 3.2\
+      \ ROAS</li></ul><p><small>*Platform-reported where noted</small></p></section><section><h2>Free Test Matrix (PDF)</h2><p>Get\
+      \ our 8-angle creative test matrix. 12 pages, real briefs.</p><form method=\"post\" action=\"/subscribe\"><label>Email</label><input\
+      \ type=\"email\" name=\"email\" placeholder=\"you@brand.com\" required><button type=\"submit\">Send me the PDF</button><p><small>We\u2019\
+      ll send 1\u20132 emails a month. Unsubscribe anytime.</small></p></form></section><section><h2>How we work</h2><p>Monthly\
+      \ retainers with a 90-day kickoff. Weekly reporting, Slack, creative every sprint.</p></section></main><footer><p>\xA9\
+      \ Warm Current Ltd. Manchester, UK</p></footer></body></html>"
+  routes:
+  - path: /contact*
+    answer:
+      status: 200
+      headers:
+        content-type: text/html; charset=utf-8
+      text: "<!doctype html><html><head><title>Talk to Warm Current</title></head><body><header><nav><a href=\"/\">Home</a>\
+        \ | <a href=\"/services\">Services</a> | <a href=\"/work\">Work</a> | <a href=\"/pricing\">Pricing</a> | <a href=\"\
+        /journal\">Journal</a> | <a href=\"/contact\">Contact</a></nav></header><main><h1>Book a Discovery Call</h1><p>Tell\
+        \ us about your brand. We\u2019ll review and reply in 2\u20133 business days with next steps.</p><form method=\"post\"\
+        \ action=\"/submit-contact\"><label>First name</label><input name=\"first\" required><label>Last name</label><input\
+        \ name=\"last\" required><label>Work email</label><input type=\"email\" name=\"email\" required><label>Company</label><input\
+        \ name=\"company\" required><label>Website URL</label><input type=\"url\" name=\"url\" placeholder=\"https://\" required><label>Monthly\
+        \ online revenue</label><select name=\"revenue\" required><option value=\"\">Select\u2026</option><option>Under \xA3\
+        100k</option><option>\xA3100k\u2013\xA3300k</option><option>\xA3300k\u2013\xA31m</option><option>\xA31m+</option></select><label>Monthly\
+        \ ad spend</label><select name=\"spend\" required><option value=\"\">Select\u2026</option><option>Under \xA310k</option><option>\xA3\
+        10k\u2013\xA330k</option><option>\xA330k\u2013\xA375k</option><option>\xA375k+</option></select><fieldset><legend>Current\
+        \ platforms</legend><label><input type=\"checkbox\" name=\"platforms\" value=\"meta\">Meta</label><label><input type=\"\
+        checkbox\" name=\"platforms\" value=\"tiktok\">TikTok</label><label><input type=\"checkbox\" name=\"platforms\" value=\"\
+        google\">Google</label></fieldset><label>Main goal for the next 90 days</label><textarea name=\"goal\" rows=\"4\"\
+        \ placeholder=\"e.g., Scale new customers while holding CAC\"></textarea><label>Timeline</label><select name=\"timeline\"\
+        \ required><option>ASAP (this month)</option><option>Next month</option><option>In 2\u20133 months</option></select><label>Estimated\
+        \ monthly budget</label><select name=\"budget\" required><option>Under \xA38k</option><option>\xA38k\u2013\xA315k</option><option>\xA3\
+        15k\u2013\xA330k</option><option>\xA330k+</option></select><label>How did you hear about us?</label><select name=\"\
+        ref\"><option>Referral</option><option>Twitter</option><option>LinkedIn</option><option>Podcast</option><option>Search</option></select><label>Attach\
+        \ deck (optional)</label><input type=\"file\" name=\"deck\"><label><input type=\"checkbox\" name=\"consent\" required>\
+        \ I agree to be contacted and to the privacy policy.</label><label><input type=\"checkbox\" name=\"newsletter\" checked>\
+        \ Also send me the monthly roundup.</label><button type=\"submit\">Submit & Continue</button><p><small>After submit,\
+        \ you\u2019ll receive a scheduling link.</small></p></form></main><footer><p>\xA9 Warm Current Ltd.</p></footer></body></html>"
+- host: bruntsfieldwine.example
+  name: site_gavin
+  kind: acknowledge
+  answer:
+    status: 200
+    headers:
+      content-type: text/html; charset=utf-8
+    text: "<!doctype html><html><head><title>Bruntsfield Wine Co. | Independent Wine Merchant, Edinburgh</title><meta name=\"\
+      description\" content=\"Independent wine shop in Bruntsfield. Mixed cases, tastings, corporate gifting, UK delivery.\"\
+      /></head><body><header><div class=\"topbar\">Call 0131 555 0192 \xB7 Free local delivery over \xA350</div><nav><a href=\"\
+      /\">Home</a><a href=\"/shop\">Shop</a><a href=\"/corporate-gifting\">Corporate Gifting</a><a href=\"/tastings\">Tastings</a><a\
+      \ href=\"/about\">About</a><a href=\"/contact\">Contact</a></nav></header><main><section class=\"hero\"><h1>Independent\
+      \ Wine Merchant in Bruntsfield</h1><p>Thoughtful bottles from small producers. Shop in-store or online. UK-wide delivery.</p><a\
+      \ href=\"/shop\" class=\"btn\">Shop mixed cases from \xA365</a> <a href=\"/corporate-gifting\" class=\"btn alt\">Corporate\
+      \ Christmas Gifting</a></section><section><h2>What we do</h2><ul><li>Seasonal mixed cases and subscriptions</li><li>Corporate\
+      \ gifts with branded notes and bulk delivery</li><li>Private tastings in-store and on-site</li></ul></section><section\
+      \ class=\"promo\"><h3>Christmas Corporate Gifting</h3><p>Reserve your delivery window for November\u2013December. From\
+      \ \xA312 per bottle.</p><a href=\"/corporate-gifting\" class=\"btn\">Plan your gifts</a></section><section class=\"\
+      testimonials\"><h3>What customers say</h3><blockquote>\u201CBruntsfield always pick winners. Fast delivery.\u201D \u2014\
+      \ Anna, Edinburgh</blockquote></section><section class=\"newsletter\"><h3>Get new arrivals</h3><form action=\"/subscribe\"\
+      \ method=\"post\"><label>First name<input type=\"text\" name=\"first_name\"></label><label>Email<input type=\"email\"\
+      \ name=\"email\"></label><button type=\"submit\">Subscribe</button></form></section></main><footer><p>184 Bruntsfield\
+      \ Place, Edinburgh EH10 \xB7 Open Mon\u2013Sat 10\u20137, Sun 11\u20135</p><p>Follow: <a href=\"#\">Instagram</a> \xB7\
+      \ <a href=\"#\">Facebook</a></p></footer></body></html>"
+  routes:
+  - path: /corporate-gifting*
+    answer:
+      status: 200
+      headers:
+        content-type: text/html; charset=utf-8
+      text: "<!doctype html><html><head><title>Corporate Wine & Christmas Gifts | Bruntsfield Wine Co.</title><meta name=\"\
+        description\" content=\"Corporate wine gifts and Christmas hampers delivered UK-wide. Personalised notes and multi-address\
+        \ shipping.\"/></head><body><header><nav><a href=\"/\">Home</a><a href=\"/shop\">Shop</a><a href=\"/corporate-gifting\"\
+        >Corporate Gifting</a><a href=\"/about\">About</a><a href=\"/contact\">Contact</a></nav></header><main><section class=\"\
+        hero\"><h1>Corporate Wine & Christmas Gifts</h1><p>Say thank you with wine. From classic reds to mixed cases and hampers,\
+        \ sent with your message.</p><a href=\"/files/Bruntsfield-Corporate-Gifting-2026.pdf\" class=\"btn\">Download Brochure\
+        \ (PDF)</a> <a href=\"#enquire\" class=\"btn alt\">Enquire now</a><p class=\"small\">Minimum order 20 gifts. Delivery\
+        \ windows 1 Nov \u2013 20 Dec. UK-wide shipping.</p></section><section><h2>Options & Pricing</h2><ul><li>Bottles from\
+        \ \xA312\u2013\xA338 \xB7 Mixed cases from \xA365</li><li>Hampers with chocolate/cheese add-ons</li><li>Branded note\
+        \ cards included; custom sleeves POA</li><li>Multi-address delivery via spreadsheet upload</li><li>Lead time: 5\u2013\
+        10 working days after payment</li></ul></section><section><h2>How it works</h2><ol><li>Choose a budget and style (red,\
+        \ white, mixed)</li><li>We propose 2\u20133 options</li><li>Send recipient list (template provided)</li><li>Approve\
+        \ and pay</li><li>We pack and ship to your dates</li></ol></section><section id=\"enquire\"><h2>Enquire</h2><form\
+        \ action=\"/enquire-corporate\" method=\"post\"><label>Full name<input type=\"text\" name=\"name\"></label><label>Company<input\
+        \ type=\"text\" name=\"company\"></label><label>Work email<input type=\"email\" name=\"email\"></label><label>Phone<input\
+        \ type=\"tel\" name=\"phone\"></label><label>Number of recipients<input type=\"number\" name=\"recipients\" min=\"\
+        20\"></label><label>Budget per gift<input type=\"text\" name=\"budget\" placeholder=\"e.g. \xA325\u2013\xA340\"></label><label>Preferred\
+        \ delivery window<input type=\"text\" name=\"window\" placeholder=\"e.g. w/c 4 Dec\"></label><label>Notes<textarea\
+        \ name=\"notes\" placeholder=\"Any dietary notes, branding, etc.\"></textarea></label><label>Upload recipient spreadsheet\
+        \ (optional)<input type=\"file\" name=\"spreadsheet\"></label><div class=\"disclaimer\">We aim to reply within 2\u2013\
+        3 working days. Payment due on approval. Prices exclude VAT and courier.</div><button type=\"submit\">Get a proposal</button></form></section><section\
+        \ class=\"faq\"><h3>FAQs</h3><p><strong>Do you ship internationally?</strong> UK only.</p><p><strong>Can we include\
+        \ our logo?</strong> Yes, note cards included; sleeves quoted separately.</p><p><strong>Do you handle alcohol duty\
+        \ to NI?</strong> Yes, additional time required.</p></section></main><footer><p>Questions? 0131 555 0192 \xB7 corporate@bruntsfieldwine.example</p></footer></body></html>"
+- host: rivercitycycles.example
+  name: site_miles
+  kind: acknowledge
+  answer:
+    status: 200
+    headers:
+      content-type: text/html; charset=utf-8
+    text: "<!doctype html><html lang=\"en\"><head><title>River City Cycles | Bikes, E\u2011Bikes & Service</title></head><body><header><nav><a\
+      \ href=\"/\">Home</a> | <a href=\"/collections/bikes\">Bikes</a> | <a href=\"/collections/e-bikes\">E\u2011Bikes</a>\
+      \ | <a href=\"/collections/accessories\">Accessories</a> | <a href=\"/collections/sale\">Sale</a> | <a href=\"/service\"\
+      >Service</a> | <a href=\"/about\">About</a> | <a href=\"/contact\">Contact</a></nav></header><main><section><h1>Family\u2011\
+      run bike shop in Bristol</h1><p>Click & Collect in 24h \u2022 Bikes built by mechanics \u2022 0% finance up to \xA3\
+      1,000</p><form action=\"/search\"><label>Search</label><input name=\"q\" placeholder=\"Search bikes, parts\u2026\"><button\
+      \ type=\"submit\">Go</button></form><p>Orders placed by 1pm ship next business day. Bikes ship assembled for \xA335\
+      \ or free local pickup.</p><div class=\"hero-cta\"><a href=\"/collections/e-bikes\">Shop E\u2011Bikes</a> <a href=\"\
+      /service\">Book a Service</a></div></section><section><h2>Featured</h2><article><h3>Ridgeback Element 2024</h3><p>\xA3\
+      649.00</p><form method=\"post\" action=\"/cart/add\"><input type=\"hidden\" name=\"id\" value=\"sku-elem-54\"><button>Add\
+      \ to cart</button></form></article><article><h3>Orbea Gain M30 (Road E\u2011Bike)</h3><p><s>\xA32,599</s> \xA32,349</p><form\
+      \ method=\"post\" action=\"/cart/add\"><input type=\"hidden\" name=\"id\" value=\"sku-gainm30-54\"><button>Add to cart</button></form></article><article><h3>Abus\
+      \ Hyban 2.0 Helmet</h3><p>\xA359.99</p><form method=\"post\" action=\"/cart/add\"><input type=\"hidden\" name=\"id\"\
+      \ value=\"sku-abus-hyban-black-m\"><button>Add to cart</button></form></article></section><section><h2>Service & Repairs</h2><p>Basic\
+      \ tune \xA345 \u2022 Full service \xA3120 \u2022 e\u2011bike diagnostics available</p><p><a href=\"/service\">See service\
+      \ menu</a></p></section><section><h2>Stay in the loop</h2><form method=\"post\" action=\"/subscribe\"><label>Email</label><input\
+      \ type=\"email\" name=\"email\" placeholder=\"you@example.com\" required><label><input type=\"checkbox\" name=\"offers\"\
+      > Send me deals and new bike alerts</label><button type=\"submit\">Subscribe</button></form><p>We send 1\u20132 emails/month.\
+      \ Unsubscribe anytime.</p></section></main><footer><p>River City Cycles, 14 North Street, Bristol BS3 \u2022 0117 000\
+      \ 0000</p><p>Returns within 30 days on accessories (unused). Bikes: 14\u2011day returns; collection fee may apply.</p></footer></body></html>"
+  routes:
+  - path: /collections/e-bikes*
+    answer:
+      status: 200
+      headers:
+        content-type: text/html; charset=utf-8
+      text: "<!doctype html><html lang=\"en\"><head><title>E\u2011Bikes | River City Cycles</title></head><body><header><nav><a\
+        \ href=\"/\">Home</a> | <a href=\"/collections/bikes\">Bikes</a> | <a href=\"/collections/e-bikes\">E\u2011Bikes</a>\
+        \ | <a href=\"/collections/accessories\">Accessories</a> | <a href=\"/collections/sale\">Sale</a></nav></header><main><h1>E\u2011\
+        Bikes</h1><p>From city commuters to lightweight road assist. In\u2011store pickup recommended for setup. Large item\
+        \ surcharge may apply.</p><form id=\"filters\"><fieldset><legend>Filter by brand</legend><label><input type=\"checkbox\"\
+        \ name=\"brand\" value=\"Volt\"> Volt</label><label><input type=\"checkbox\" name=\"brand\" value=\"Ridgeback\"> Ridgeback</label><label><input\
+        \ type=\"checkbox\" name=\"brand\" value=\"Orbea\"> Orbea</label><label><input type=\"checkbox\" name=\"brand\" value=\"\
+        Specialized\"> Specialized</label></fieldset><label>Sort <select name=\"sort\"><option value=\"pop\">Most popular</option><option\
+        \ value=\"price-asc\">Price: Low to High</option><option value=\"price-desc\">Price: High to Low</option><option value=\"\
+        new\">New</option></select></label></form><section class=\"grid\"><article><h2>Volt Metro 2023 Step\u2011Through E\u2011\
+        Bike \u2014 15Ah</h2><p>\xA31,699.00</p><p>Status: In stock</p><form method=\"post\" action=\"/cart/add\"><input type=\"\
+        hidden\" name=\"id\" value=\"volt-metro-15ah-2023\"><button>Add to cart</button></form></article><article><h2>VOLT\
+        \ Metro ST 15Ah (2023)</h2><p>From \xA31,699</p><label>Battery <select name=\"battery\"><option>10Ah</option><option>15Ah</option></select></label><p>Status:\
+        \ In stock</p><form method=\"post\" action=\"/cart/add\"><input type=\"hidden\" name=\"id\" value=\"volt-metro-variant\"\
+        ><button>Add to cart</button></form></article><article><h2>Ridgeback E\u2011Flight 2.0</h2><p>\xA32,099.00</p><p>Status:\
+        \ Out of stock</p><form method=\"post\" action=\"/notify\"><label>Email when back <input type=\"email\" name=\"email\"\
+        \ placeholder=\"you@example.com\"></label><button>Notify me</button></form></article><article><h2>Orbea Gain M30</h2><p><s>\xA3\
+        2,599</s> \xA32,349</p><p>Pre\u2011order: ships in 2\u20133 weeks</p><form method=\"post\" action=\"/cart/add\"><input\
+        \ type=\"hidden\" name=\"id\" value=\"gain-m30-54\"><button>Pre\u2011order</button></form></article><article><h2>Specialized\
+        \ Turbo Vado 3.0</h2><p>\xA32,850.00</p><p>Delivery: battery ships by road only; in\u2011store pickup recommended</p><form\
+        \ method=\"post\" action=\"/cart/add\"><input type=\"hidden\" name=\"id\" value=\"vado3-2024\"><button>Add to cart</button></form></article><article><h2>Urban\
+        \ Arrow Family Cargo</h2><p>\xA34,499.00</p><p>Delivery surcharge applies; call for lead times</p><form method=\"\
+        post\" action=\"/enquire\"><label>Phone <input type=\"tel\" name=\"phone\"></label><button>Request call</button></form></article></section><section><h3>Delivery\
+        \ & Assembly</h3><p>Bikes are fully built and safety checked. UK shipping \xA335; remote areas may incur a carrier\
+        \ surcharge. Batteries ship road only.</p><p>Finance: 0% up to \xA31,000; 9.9% APR above.</p></section></main><footer><p>Questions?\
+        \ 0117 000 0000 \u2022 support@rivercitycycles.example</p></footer></body></html>"
+inboxes:
+- name: world
+  kind: http
+  uses:
+  - name: publishes
+    description: The trade press reports something that happened in marketing (a real article)
+    request:
+      kind: template
+      method: POST
+      url: http://127.0.0.1:{run.port}/api/world
+      body:
+        fact: '{input.fact}'
+        source: '{input.source}'
+        published: '{input.published}'
+        topic: '{input.topic}'
+    inputs:
+    - name: fact
+      description: What happened, as the article says it
+    - name: source
+      description: The article's link
+    - name: published
+      description: Its date, YYYY-MM-DD
+    - name: topic
+      description: 'One of: an event..., a change on a platform..., go-to-market news... (the desk''s Topic value)'
+- name: site
+  kind: http
+  within:
+    min: PT5S
+    max: PT40S
+  leaning: A visitor sees the agent's message pop up over the page while browsing, glances at it for a few seconds, and mostly
+    ignores it or deletes it. They open the chat to read it only when it says something about their own problem, write back
+    when they have something to say, and leave their email in the form under an offer only for something specific they want.
+  pending:
+    request:
+      kind: template
+      url: http://127.0.0.1:{run.port}/api/shown?v={person.key}
+    items: $.items[*]
+    id: $.id
+    summary: $.summary
+    decisions: $.decisions
+  decisions:
+  - name: open
+    reads: opened the chat and read it
+    description: Opens the chat on the message and reads it, without writing anything
+    request:
+      kind: template
+      method: POST
+      url: http://127.0.0.1:{run.port}/api/thread/read
+      body:
+        visitor: '{person.key}'
+        through: '{item.id}'
+  - name: dismiss
+    reads: deleted it
+    description: "Deletes the message's pop-up with its \xD7"
+    request:
+      kind: template
+      method: POST
+      url: http://127.0.0.1:{run.port}/api/thread/dismiss
+      body:
+        visitor: '{person.key}'
+        id: '{item.id}'
+        at: '{clock.now}'
+  - name: reply
+    reads: wrote back
+    description: Opens the chat and writes to the agent
+    request:
+      kind: template
+      method: POST
+      url: http://127.0.0.1:{run.port}/api/thread/send
+      body:
+        visitor: '{person.key}'
+        text: '{input.text}'
+        at: '{clock.now}'
+    inputs:
+    - name: text
+      description: What they write
+  - name: introduce
+    reads: left their name and email
+    description: Fills in the form in the chat, under the remark that offered it, with their name, work email and website
+    request:
+      kind: template
+      method: POST
+      url: http://127.0.0.1:{run.port}/api/events
+      body:
+        visitor: '{person.key}'
+        name: '{input.name}'
+        email: '{input.email}'
+        website: '{input.website}'
+        touch:
+          kind: identify
+          at: '{clock.now}'
+          label: introduced themselves
+    inputs:
+    - name: name
+      description: Their name
+    - name: email
+      description: Their work email
+    - name: website
+      description: Their business's website
+      required: false
+  uses:
+  - name: views
+    description: Opens a page of the site
+    request:
+      kind: template
+      method: POST
+      url: http://127.0.0.1:{run.port}/api/events
+      body:
+        visitor: '{person.key}'
+        touch:
+          kind: view
+          at: '{clock.now}'
+          page: '{input.page}'
+          title: '{input.title}'
+    inputs:
+    - name: page
+      description: The page's path
+    - name: title
+      description: The page's title
+      required: false
+  - name: reads
+    description: Leaves a page, having stayed and scrolled so far
+    request:
+      kind: template
+      method: POST
+      url: http://127.0.0.1:{run.port}/api/events
+      body:
+        visitor: '{person.key}'
+        touch:
+          kind: read
+          at: '{clock.now}'
+          page: '{input.page}'
+          label: '{input.how}'
+    inputs:
+    - name: page
+      description: The page's path
+    - name: how
+      description: How long they stayed and how far they scrolled
+  - name: clicks
+    description: Touches something on a page (an image, a link, the pricing toggle)
+    request:
+      kind: template
+      method: POST
+      url: http://127.0.0.1:{run.port}/api/events
+      body:
+        visitor: '{person.key}'
+        touch:
+          kind: click
+          at: '{clock.now}'
+          page: '{input.page}'
+          label: '{input.label}'
+    inputs:
+    - name: page
+      description: The page's path
+    - name: label
+      description: What they touched
+  - name: lingers
+    description: Stays on one thing on a page (an image, a result) for a few seconds
+    request:
+      kind: template
+      method: POST
+      url: http://127.0.0.1:{run.port}/api/events
+      body:
+        visitor: '{person.key}'
+        touch:
+          kind: linger
+          at: '{clock.now}'
+          page: '{input.page}'
+          label: '{input.label}'
+    inputs:
+    - name: page
+      description: The page's path
+    - name: label
+      description: What they stayed on
+  - name: picks
+    description: Answers one of the page's own questions (a headache chip, "show me work for", the pricing toggle)
+    request:
+      kind: template
+      method: POST
+      url: http://127.0.0.1:{run.port}/api/events
+      body:
+        visitor: '{person.key}'
+        touch:
+          kind: signal
+          at: '{clock.now}'
+          page: '{input.page}'
+          label: '{input.question}'
+          text: '{input.answer}'
+    inputs:
+    - name: page
+      description: The page's path
+    - name: question
+      description: The page's question
+    - name: answer
+      description: What they picked
+  - name: asks
+    description: Asks the agent for something through the page (Roast my site)
+    request:
+      kind: template
+      method: POST
+      url: http://127.0.0.1:{run.port}/api/thread/send
+      body:
+        visitor: '{person.key}'
+        website: '{input.text}'
+        asked_through: '{input.label}'
+        text: '{input.text}'
+        at: '{clock.now}'
+    inputs:
+    - name: page
+      description: The page's path
+    - name: label
+      description: What the page calls the request
+    - name: text
+      description: What they typed
+  - name: writes
+    description: Writes to the agent in the chat
+    request:
+      kind: template
+      method: POST
+      url: http://127.0.0.1:{run.port}/api/thread/send
+      body:
+        visitor: '{person.key}'
+        text: '{input.text}'
+        at: '{clock.now}'
+    inputs:
+    - name: text
+      description: What they write
+  - name: unsubscribes
+    description: Clicks the unsubscribe link at the foot of one of the agent's emails
+    request:
+      kind: template
+      url: http://127.0.0.1:{run.port}/api/unsubscribe?v={person.key}
+  - name: leaves
+    description: Moves the pointer to the tab bar, about to leave
+    request:
+      kind: template
+      method: POST
+      url: http://127.0.0.1:{run.port}/api/events
+      body:
+        visitor: '{person.key}'
+        touch:
+          kind: leaving
+          at: '{clock.now}'
+          page: '{input.page}'
+          label: pointer to the tab bar
+    inputs:
+    - name: page
+      description: The page's path

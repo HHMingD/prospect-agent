@@ -1,0 +1,73 @@
+*{box-sizing:border-box}body{margin:0;font-family:Georgia,serif;color:#1d1b18;background:#f6f2ea;line-height:1.55}
+a{color:inherit}header{display:flex;justify-content:space-between;align-items:center;padding:22px 6vw;border-bottom:1px solid #d9d1c2}
+header nav a{margin-left:26px;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:14px;letter-spacing:.04em}
+.logo{font-weight:bold;font-size:20px;text-decoration:none}main{padding:48px 6vw 120px;max-width:1100px}
+h1{font-size:54px;line-height:1.05;margin:0 0 18px;font-weight:normal}h2{font-weight:normal;font-size:30px;margin-top:48px}
+.lede{font-size:21px;max-width:680px;color:#4a453d}.sans{font-family:Helvetica,Arial,sans-serif}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}.chip{font-family:Helvetica,Arial,sans-serif;font-size:14px;border:1px solid #1d1b18;background:none;border-radius:20px;padding:8px 16px;cursor:pointer}
+.chip.on{background:#1d1b18;color:#f6f2ea}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:22px}
+.card{background:#fff;border:1px solid #e3dccf;padding:22px;text-decoration:none;display:block}.card h3{margin:0 0 8px;font-weight:normal;font-size:22px}
+.card small{font-family:Helvetica,Arial,sans-serif;color:#8a8275;text-transform:uppercase;letter-spacing:.08em;font-size:11px}
+.photo{height:340px;border-radius:2px;margin:26px 0;display:flex;align-items:flex-end;padding:16px;color:#fff;font-family:Helvetica,Arial,sans-serif;font-size:13px;cursor:pointer}
+.result{font-size:40px}.roast{display:flex;gap:10px;margin-top:10px}.roast input{flex:1;max-width:380px;padding:10px 12px;border:1px solid #1d1b18;background:#fff;font-size:15px}
+button.go{background:#1d1b18;color:#f6f2ea;border:0;padding:10px 18px;font-family:Helvetica,Arial,sans-serif;cursor:pointer}
+.toggle{display:inline-flex;border:1px solid #1d1b18;border-radius:22px;overflow:hidden}.toggle button{border:0;background:none;padding:9px 20px;font-family:Helvetica,Arial,sans-serif;cursor:pointer}.toggle button.on{background:#1d1b18;color:#fff}
+.price{font-size:46px;margin:18px 0 4px}article p{max-width:680px;font-size:18px}
+@media (max-width:720px){header{flex-wrap:wrap;gap:10px;padding:16px 5vw}header nav a{margin:0 16px 0 0}main{padding:28px 5vw 140px}
+h1{font-size:38px}.lede{font-size:18px}.grid{grid-template-columns:1fr}.photo{height:220px}.roast{flex-direction:column}.roast input{max-width:none}}
+/* the agent: one chat in two sizes. Collapsed, a labelled button in the corner with previews above it; expanded, the
+   conversation above the same button, which then closes it */
+#fw-agent{--ink:#1d1b18;--paper:#fffdf8;--gold:#c8b98f;--rule:#e3dccf;--dim:#8a8275;position:fixed;right:24px;bottom:24px;z-index:9;font-family:Helvetica,Arial,sans-serif;display:flex;flex-direction:column;align-items:flex-end;gap:10px;max-width:calc(100vw - 48px)}
+#fw-agent button{font:inherit;cursor:pointer}
+#fw-agent [hidden]{display:none!important}
+#fw-agent :focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+
+/* the button: always there, says what it is */
+.fw-button{display:flex;align-items:center;gap:10px;background:var(--ink);color:var(--paper);border:0;border-radius:26px;padding:7px 18px 7px 7px;font-size:14px;box-shadow:0 8px 26px rgba(29,27,24,.22)}
+.fw-button:hover{background:#2f2b26}
+.fw-label{white-space:nowrap}
+.fw-badge{min-width:20px;height:20px;padding:0 6px;border-radius:10px;background:var(--gold);color:var(--ink);font-size:12px;font-weight:700;line-height:20px;text-align:center}
+.fw-glyph{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#2f2b26;color:var(--gold)}
+.fw-icon{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.fw-icon-writing path:last-child{stroke-dasharray:6;animation:fwink 1.2s ease-in-out infinite}
+@keyframes fwink{0%{stroke-dashoffset:6}60%,100%{stroke-dashoffset:0}}
+.fw-icon-researching{animation:fwsweep 1.6s ease-in-out infinite;transform-origin:45% 45%}
+@keyframes fwsweep{0%,100%{transform:translate(-1px,0) rotate(-8deg)}50%{transform:translate(1px,0) rotate(8deg)}}
+.fw-icon-thinking path:last-child{animation:fwlook 1.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes fwlook{0%,100%{transform:translateX(-1.5px)}50%{transform:translateX(1.5px)}}
+.fw-button.busy .fw-glyph{background:var(--gold);color:var(--ink)}
+.fw-avatar{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--gold);color:var(--ink);font:bold 15px/1 Georgia,serif}
+
+/* previews: the agent's messages while the chat is closed, newest nearest the button */
+.fw-previews{display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+.fw-preview{width:320px;max-width:100%;background:var(--paper);color:var(--ink);border:1px solid var(--rule);border-radius:12px 12px 3px 12px;padding:12px 14px 10px;box-shadow:0 12px 32px rgba(29,27,24,.16);animation:fwslide .3s cubic-bezier(.2,.8,.2,1)}
+.fw-said{font-family:Georgia,serif;font-size:15px;line-height:1.45;margin:0 0 8px;cursor:pointer}
+.fw-actions{display:flex;justify-content:space-between;align-items:center}
+.fw-reply{background:none;border:0;padding:4px 0;color:var(--ink);font-size:13px;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.fw-x{background:none;border:0;color:var(--dim);font-size:18px;line-height:1;padding:2px 4px}.fw-x:hover{color:var(--ink)}
+@keyframes fwslide{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+/* the chat */
+.fw-panel{width:380px;max-width:100%;height:min(540px,calc(100vh - 110px));display:flex;flex-direction:column;background:var(--ink);color:var(--paper);box-shadow:0 20px 50px rgba(29,27,24,.3);border-radius:12px;overflow:hidden;animation:fwslide .25s ease-out}
+.fw-head{display:flex;align-items:center;padding:12px 14px;border-bottom:1px solid #2f2b26}
+.fw-who{display:flex;align-items:center;gap:10px}.fw-who b{display:block;font-size:14px;font-weight:600}.fw-who small{display:block;font-size:11.5px;color:var(--gold)}
+.fw-lines{flex:1;min-height:0;overflow-y:auto;display:flex;flex-direction:column;gap:10px;padding:16px 14px}
+.fw-intro{margin:auto 0 0;color:#d9d1c2;font-size:14px;line-height:1.5}
+.fw-line{padding:9px 12px;max-width:85%;font-size:14px;line-height:1.45;border-radius:12px;white-space:pre-wrap;overflow-wrap:anywhere}
+.fw-line.agent{background:#2c2925;align-self:flex-start;border-bottom-left-radius:3px}
+.fw-line.you{background:var(--gold);color:var(--ink);align-self:flex-end;border-bottom-right-radius:3px}
+.fw-line.pending{opacity:.6}.fw-line.failed{opacity:1;outline:1px solid #e58a7c}
+.fw-retry{display:block;margin-top:6px;background:none;border:0;padding:0;color:var(--ink);font-size:12px;text-decoration:underline}
+.fw-working{display:flex;align-items:center;gap:8px;align-self:flex-start;padding:8px 12px;border-radius:12px;background:#2c2925;color:var(--gold);font-size:13px}
+.fw-form{background:#2c2925;padding:10px 12px 12px;border-radius:10px;align-self:stretch}
+.fw-offer{font-size:13px;color:#d9d1c2}
+.fw-form input{display:block;width:100%;margin-top:7px;padding:8px 10px;border:1px solid #4a453d;border-radius:6px;background:var(--paper);color:var(--ink);font-size:13px}
+.fw-form button{margin-top:9px;background:var(--gold);color:var(--ink);border:0;border-radius:6px;padding:8px 14px;font-size:13px}
+.fw-sent{font-size:13px;color:var(--gold);align-self:flex-start}
+.fw-compose{display:flex;gap:8px;align-items:flex-end;padding:10px 12px;border-top:1px solid #2f2b26}
+.fw-compose textarea{flex:1;min-width:0;resize:none;border:0;border-radius:8px;padding:9px 11px;font:14px/1.4 Helvetica,Arial,sans-serif;background:var(--paper);color:var(--ink)}
+.fw-send{background:var(--gold);color:var(--ink);border:0;border-radius:8px;padding:9px 14px;font-size:13px}
+
+@media (max-width:480px){#fw-agent{right:12px;left:12px;bottom:12px;max-width:none}.fw-preview,.fw-panel{width:100%}.fw-panel{height:calc(100dvh - 90px)}}
+#fw-agent .fw-kept{animation:none}
+@media (prefers-reduced-motion:reduce){#fw-agent *{animation:none!important;transition:none!important}}

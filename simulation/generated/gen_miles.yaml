@@ -1,0 +1,174 @@
+name: gen_miles
+starts_at: '2026-10-12T09:00:00Z'
+runs_for: P21D
+max_wakes: 200
+people:
+- key: miles
+  name: Miles Carter
+  email: miles@rivercitycycles.example
+  profile: Owner-operator of River City Cycles, a brick-and-mortar bike shop in Bristol with a Shopify store. Reads on a 13-inch
+    laptop in the back office; checks things on his phone between customers. Pragmatic, margin-conscious, allergic to fluff,
+    asks blunt questions and moves on fast.
+  facts:
+  - "Sells commuter, gravel and e\u2011bikes plus helmets/parts; AOV ~\xA3240 online, bike AOV ~\xA31,650."
+  - "Turnover ~\xA32.6m; online ~35% of sales; 7 staff in peak season."
+  - "Tried Smart Shopping then PMax; suspects it\u2019s bidding on brand terms and cannibalising organic; product feed messy\
+    \ (duplicate titles, variant chaos, some out-of-stock still showing)."
+  - "Can test \xA34\u20136k media/month and \xA33\u20135k for fees for a 90\u2011day block if there\u2019s a clear feed fix\
+    \ + measurement plan; target blended ROAS \u22653x on non-brand."
+  - "Would share email for a concrete feed audit and category-level ROAS/CPC benchmarks for UK bike retailers, or a break-even\
+    \ CPC calc template. Won\u2019t for generic ebooks or scheduling a \u2018discovery call\u2019."
+  - "Seasonality peaks Mar\u2013Jun; must move last year\u2019s e\u2011bikes; MAP constraints from brands; shipping on bikes\
+    \ adds \xA335 assembly/large item rules that confuse Google."
+  - Their business's website is rivercitycycles.example; whenever asked for it they give exactly rivercitycycles.example.
+  working_hours:
+    timezone: Europe/London
+    opens: 08:00
+    closes: '22:00'
+  reply_within:
+    min: PT3H
+    max: P2D
+  reply:
+    kind: answers
+- key: newsroom
+  name: The trade press
+  email: newsroom@press.example
+  profile: Not a visitor. Reports what happens in marketing; never on the site and never writes to the agent.
+happenings:
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P2D
+  inputs:
+    fact: "Google announced new channel prioritization and budget allocation controls on Oct 14, 2026, allowing advertisers\
+      \ to set High/Low priority for Google channels and cap spend on lower\u2011priority ones across Performance Max and\
+      \ more, with a global rollout underway."
+    source: https://blog.google/products/ads-commerce/channel-prioritization-budget-allocation/
+    published: '2026-10-14'
+    topic: 'a change on a platform brands buy or build on: Meta, Google, TikTok, Pinterest, Shopify, Klaviyo'
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P5D
+  inputs:
+    fact: "Halfords will join the Cyclescheme retailer network later in October 2026, adding its 373 UK stores; Halfords\u2019\
+      \ own Cycle2Work vouchers will continue, CyclingIndustry.News reported on Oct 7, 2026."
+    source: https://cyclingindustry.news/halfords-teams-up-with-cyclescheme/
+    published: '2026-10-07'
+    topic: 'go-to-market news: what consumer brands are doing, a shift in how people buy, a season''s numbers'
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P8D
+  inputs:
+    fact: "Bosch eBike Systems\u2019 M27 dealer training season starts on Oct 20 across Europe and Oct 22 in the UK & Ireland,\
+      \ covering topics like theft protection in the eBike Flow app, Active Line Plus, PowerTube batteries and the ConnectModule,\
+      \ BikeBiz reported Sept 24, 2026."
+    source: https://bikebiz.com/bosch-ebike-systems-m27-training-starts-in-october/
+    published: '2026-09-24'
+    topic: 'an event a brand''s founder or marketer could go to: a conference, meetup, workshop or webinar'
+- kind: uses
+  person: miles
+  inbox: site
+  use: views
+  inputs:
+    page: /
+    title: Home
+  after: PT0S
+- kind: uses
+  person: miles
+  inbox: site
+  use: picks
+  inputs:
+    page: /
+    question: biggest headache
+    answer: Can't tell what's working
+  gap:
+    min: PT3S
+    max: PT12S
+- kind: uses
+  person: miles
+  inbox: site
+  use: asks
+  inputs:
+    page: /
+    label: Roast my site
+    text: rivercitycycles.example
+  gap:
+    min: PT7S
+    max: PT28S
+- kind: uses
+  person: miles
+  inbox: site
+  use: views
+  inputs:
+    page: /pricing
+    title: Pricing
+  gap:
+    min: PT6S
+    max: PT24S
+- kind: uses
+  person: miles
+  inbox: site
+  use: picks
+  inputs:
+    page: /pricing
+    question: pricing toggle
+    answer: Project
+  gap:
+    min: PT2S
+    max: PT10S
+- kind: uses
+  person: miles
+  inbox: site
+  use: views
+  inputs:
+    page: /work
+    title: Work
+  gap:
+    min: PT5S
+    max: PT20S
+- kind: uses
+  person: miles
+  inbox: site
+  use: picks
+  inputs:
+    page: /work
+    question: show me work for
+    answer: Retail
+  gap:
+    min: PT2S
+    max: PT10S
+- kind: uses
+  person: miles
+  inbox: site
+  use: reads
+  inputs:
+    page: /work/tallow-and-thyme
+    how: about eighty seconds, scrolled 70%
+  gap:
+    min: PT6S
+    max: PT24S
+- kind: uses
+  person: miles
+  inbox: site
+  use: writes
+  inputs:
+    text: "Quick one: is Google Shopping/PMAX actually worth it for a bike shop? Margins ~20\u201325% on bikes, shipping adds\
+      \ \xA335. Worried it\u2019s just bidding on our brand + cannibalising. What ROAS would you expect and what would you\
+      \ fix first?"
+  gap:
+    min: PT15S
+    max: PT60S
+- kind: uses
+  person: miles
+  inbox: site
+  use: leaves
+  inputs:
+    page: /
+  gap:
+    min: PT2S
+    max: PT8S

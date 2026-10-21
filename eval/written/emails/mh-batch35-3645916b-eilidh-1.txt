@@ -1,0 +1,110 @@
+To: Eilidh MacLeod (Founder of Heather & Pine, a two-product skincare microbrand in Glasgow. Solo operator most days; sister helps on weekends. Reads on iPhone first while on the bus or in the workshop; opens laptop late evening for decisions. Pragmatic, frugal, a bit sceptical of agencies but open if shown specifics and quick tests.)
+Judge: 25/25 (specific 5, useful 5, voice 5, fits 5, reply 5) INVENTED 2
+Worst: The Glow Theory before/after adds a small, unsupported detail and lacks a quick visual side‑by‑side, which a CEO might prefer.
+! Glow Theory “before” phrased as a homepage/PDP blend (the provided case study only states ads pointed to the homepage).
+! Glow Theory “after” detail that wallets were styled secondary (not specified in the case study).
+
+Subject: Your serum lander wireframe (+ quick before/after)
+
+Eilidh —
+
+You asked for the wireframe and a quick before/after. Here’s a mobile‑first serum offer page you can drop into Shopify today, plus a fast comparison you can forward to your CEO.
+
+Mobile wireframe: Serum TikTok Offer Page (30ml in stock, 15ml OOS)
+
+Screen 1 — Hero (one promise, one action)
+- H1: [Repeat your TikTok hook verbatim]
+- Sub: Fragrance‑free. Hand‑poured in Glasgow.
+- Price & variant: 30ml £24 pre‑selected
+- Primary CTA: Add to cart
+- Express wallets (secondary): Apple Pay / PayPal
+- Proof chip: Seen by 2.3M on TikTok
+- Trust/dispatch line (right beside CTA): Poured Mon/Wed/Fri • Royal Mail 48 • Free UK delivery over £40
+- Sticky Add to cart on scroll
+
+Screen 2 — What it is (scan‑friendly)
+- One line: A simple, brightening oil‑serum.
+- Ingredient scan line: Sea buckthorn, squalane, vitamin E.
+
+Screen 3 — Social proof (keep it tight)
+- If you have a strong UGC pull‑quote or creator credit, place it here. If not, keep the TikTok reach chip near the CTA and move on.
+
+Screen 4 — How to use
+- After cleansing, press 2–3 drops into damp skin, morning or night.
+
+Screen 5 — FAQs (collapsed)
+- “Is it suitable for sensitive skin?”
+- “Can I use it with retinol?”
+
+Footer — Keep standard links; no extra modules.
+
+Conversion hygiene (what to toggle/hide on paid landers)
+- Default to 30ml; move 15ml (Back in 2 weeks) behind a simple “Notify me” flow.
+- Hide Estimate shipping input.
+- Hide empty Reviews (or swap for a single UGC quote if you have one).
+- Ditch heavy embeds (e.g., Instagram) in the landing variant; use a static tile if needed.
+
+Copy blocks you can paste today
+- H1: “{your TikTok hook}”
+- Sub: “Fragrance‑free. Hand‑poured in Glasgow.”
+- Ingredient scan: “Sea buckthorn, squalane, vitamin E.”
+- Dispatch/benefits line: “Poured Mon/Wed/Fri • Royal Mail 48 • Free UK delivery over £40.”
+- CTA label: “Add 30ml to cart — £24”
+
+How to measure in a week
+- Split serum traffic 50/50 to: a) this offer page, b) current PDP.
+- Watch: click‑to‑ATC rate, checkout starts, first‑order CPA. Retire the loser; iterate on the winner weekly.
+
+Quick before/after (DTC beauty)
+- Glow Theory, before: traffic sent to a broad homepage/PDP blend; split attention; weak promise match above the fold.
+- After: two focused product pages matching the ad’s exact promise; single primary CTA with wallets styled secondary; proof early.
+- Result: ROAS improved from 1.6 to 3.1 after shipping 27 creative variants and building those two focused pages.
+
+One small Q (so I lock the hero): happy to run with your TikTok hook + “Fragrance‑free” as the first screen, with “Seen by 2.3M on TikTok” and the dispatch line directly beside the button?
+
+PS — When Royal Mail’s holiday cut‑offs publish, add “Order by [date] for Christmas delivery” right beside the CTA.
+
+Fieldwork Studio
+
+==== Sent before (24/25 (specific 5, useful 5, voice 4, fits 5, reply 5) PROMISES 1)
+Subject: Heather & Pine — mobile serum lander wireframe + quick before/after
+
+Eilidh —
+
+Here’s the mobile‑first wireframe for your TikTok serum lander you can drop in as a standalone page (no theme overhaul):
+
+Above the fold
+- H1: your TikTok hook, verbatim.
+- Sub: “Fragrance‑free. Sea buckthorn, squalane, vitamin E.”
+- Single bottle image (no carousel).
+- Size: pre‑select 30ml; move 15ml behind “Notify me”.
+- Primary CTA: Add to cart (full‑width).
+- Beside CTA: “Royal Mail 48 • Dispatch Mon/Wed/Fri.”
+- Proof chip: “Seen by 2.3M on TikTok.”
+- Sticky add‑to‑cart bar appears after first scroll.
+
+First scroll
+- Three scan‑lines: Brightening. Fragrance‑free. Hand‑poured in Glasgow.
+- How to use: “After cleansing, press 2–3 drops into damp skin, morning or night.”
+
+Social proof
+- One UGC pull‑quote or creator credit; hide empty Reviews on this page.
+
+FAQ (accordion)
+- Sensitive skin? With retinol? Shipping & returns.
+
+Speed
+- Remove the “Estimate shipping” widget on this page; compress images; skip embedded Instagram here.
+
+7‑day test
+- Split serum clicks 50/50: this lander vs the current serum PDP. Track click‑to‑ATC, checkout starts, first‑order CPA. Keep the winner and iterate weekly.
+
+Quick before/after — Glow Theory (DTC skincare)
+- Before: Ads to homepage; creative ran unchanged.
+- After: Two focused product pages (one promise each) and new creative in variants.
+- Result: ROAS 1.6 → 3.1 over two 90‑day blocks.
+- Bonus: a phone shot (serum in a cold sink) beat a £12k studio shoot in testing.
+
+If useful next, I’ll sketch the same wireframe for a “Cleanse + Glow” mini‑set to hit £40+ out of the box.
+
+Fieldwork Studio

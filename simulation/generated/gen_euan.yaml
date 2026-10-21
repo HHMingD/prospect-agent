@@ -1,0 +1,172 @@
+name: gen_euan
+starts_at: '2026-10-12T09:00:00Z'
+runs_for: P21D
+max_wakes: 200
+people:
+- key: euan
+  name: Euan MacLeod
+  email: euan@saltmarshbrewing.example
+  profile: Founder of Saltmarsh Brewing, does everything from sales to delivery. Skims on a phone between brew days and taproom
+    hours, opens laptop late at night. Direct, slightly sceptical of agencies, wants proof and speed.
+  facts:
+  - We sell coastal-inspired small-batch beers DTC and to local retail; our "Tide Club" monthly box is the growth bet.
+  - "~\xA32.2m last year, 11 staff; Shopify + Recharge powers subscriptions; ads are mostly Meta and a bit of Google Brand."
+  - "Problem in my words: 1,200\u20131,500 visits/month to Tide Club page, 0.6% buy; drop-offs when shipping and first-ship\
+    \ date show."
+  - "Budget: I can put \xA38\u201312k into a 90\u2011day sprint if you touch the page and the ads; can\u2019t do long retainers\
+    \ now."
+  - "I\u2019d give my email for a specific teardown video or wireframe of our Tide Club page; won\u2019t for a newsletter\
+    \ or generic ebook."
+  - Next month is peak (collab launch + events); need something that moves the needle within weeks, not quarters.
+  - Their business's website is saltmarshbrewing.example; whenever asked for it they give exactly saltmarshbrewing.example.
+  working_hours:
+    timezone: Europe/London
+    opens: 08:00
+    closes: '22:00'
+  reply_within:
+    min: PT3H
+    max: P2D
+  reply:
+    kind: answers
+- key: newsroom
+  name: The trade press
+  email: newsroom@press.example
+  profile: Not a visitor. Reports what happens in marketing; never on the site and never writes to the agent.
+happenings:
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P2D
+  inputs:
+    fact: "Royal Mail\u2019s Q4 2026 calendar: parcel prices rose on 5 October 2026, and a peak-season surcharge period for\
+      \ business accounts runs from 2 November 2026 to 10 January 2027. Brands should verify exact per\u2011item surcharges\
+      \ and capacity limits in their Royal Mail account terms."
+    source: https://anglerfulfilment.co.uk/insight-q4-2026-parcel-costs
+    published: '2026-09-19'
+    topic: 'go-to-market news: what consumer brands are doing, a shift in how people buy, a season''s numbers'
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P5D
+  inputs:
+    fact: 'At Advertising Week New York (7 Oct 2026), Meta unveiled enhanced AI-powered tools for advertisers: upgrades to
+      its Business Assistant plus expanded automated shopping, creative and targeting capabilities, including broader availability
+      of Ads Creative Studio features and video options.'
+    source: https://www.mediapost.com/publications/article/418580/meta-unveils-enhanced-ai-business-assistant-autom.html
+    published: '2026-10-07'
+    topic: 'a change on a platform brands buy or build on: Meta, Google, TikTok, Pinterest, Shopify, Klaviyo'
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P8D
+  inputs:
+    fact: "Google Ads introduced channel prioritization and budget allocation controls (announced 14 Oct 2026), letting advertisers\
+      \ set high/low priority networks and cap spend on lower\u2011priority channels \u2014 rolling out across Search, Shopping\
+      \ and Performance Max to guide holiday budgets."
+    source: https://blog.google/products/ads-commerce/channel-prioritization-budget-allocation/
+    published: '2026-10-14'
+    topic: 'a change on a platform brands buy or build on: Meta, Google, TikTok, Pinterest, Shopify, Klaviyo'
+- kind: uses
+  person: euan
+  inbox: site
+  use: views
+  inputs:
+    page: /
+    title: Home
+  after: PT0S
+- kind: uses
+  person: euan
+  inbox: site
+  use: picks
+  inputs:
+    page: /
+    question: biggest headache
+    answer: Traffic but no sales
+  gap:
+    min: PT3S
+    max: PT12S
+- kind: uses
+  person: euan
+  inbox: site
+  use: views
+  inputs:
+    page: /work
+    title: Work
+  gap:
+    min: PT10S
+    max: PT40S
+- kind: uses
+  person: euan
+  inbox: site
+  use: picks
+  inputs:
+    page: /work
+    question: show me work for
+    answer: DTC
+  gap:
+    min: PT1S
+    max: PT6S
+- kind: uses
+  person: euan
+  inbox: site
+  use: views
+  inputs:
+    page: /work/oatside-kitchen
+    title: Oatside Kitchen case study
+  gap:
+    min: PT7S
+    max: PT30S
+- kind: uses
+  person: euan
+  inbox: site
+  use: reads
+  inputs:
+    page: /journal/landing-pages-not-homepages
+    how: about 1 minute, scrolled ~70%
+  gap:
+    min: PT27S
+    max: PT110S
+- kind: uses
+  person: euan
+  inbox: site
+  use: views
+  inputs:
+    page: /pricing
+    title: Pricing
+  gap:
+    min: PT9S
+    max: PT36S
+- kind: uses
+  person: euan
+  inbox: site
+  use: picks
+  inputs:
+    page: /pricing
+    question: pricing toggle
+    answer: Project
+  gap:
+    min: PT1S
+    max: PT4S
+- kind: uses
+  person: euan
+  inbox: site
+  use: asks
+  inputs:
+    page: /
+    label: Roast my site
+    text: saltmarshbrewing.example/tide-club
+  gap:
+    min: PT12S
+    max: PT50S
+- kind: uses
+  person: euan
+  inbox: site
+  use: leaves
+  inputs:
+    page: /
+  gap:
+    min: PT1S
+    max: PT6S

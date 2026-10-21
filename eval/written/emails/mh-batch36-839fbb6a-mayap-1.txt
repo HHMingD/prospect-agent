@@ -1,0 +1,75 @@
+To: Maya Rudd (Co-owner/GM of Fell View House, a 26-room family-run hotel near Ambleside. Splits days between front desk and supplier calls. Checks sites on an iPhone 13 while walking between rooms; laptop only after 9pm. Practical, polite, cost-aware, skeptical of agency fluff, wants numbers and fast tests.)
+Judge: 22/25 (specific 4, useful 5, voice 4, fits 5, reply 4) PROMISES 1
+Worst: It assumes you can instrument booking portal events (especially booking_confirmation on the third‑party thank‑you page) immediately, which may be hard until winter, so parts of the measurement plan could be blocked.
+! If you want wireframe examples of the date picker block and room tiles, Priya Nair will share them.
+
+Subject: Today’s GEM launch: how to use it in Fell View’s three tests (and how to read lift on mobile)
+
+Maya —
+
+Meta just announced their unified Generative Ads Model (GEM) this morning. They’re claiming up to +18.9% conversions and +12% CTR from one model running across Facebook, Instagram, Reels and Stories. Helpful context: those are Meta-wide numbers, not hotel-specific; without strong booking signals, expect lift to be lower. Here’s how I’d use GEM inside your three tests, and how to read its impact next to mobile portal-starts.
+
+North-star for the next 90 days
+- Primary metric: Mobile portal starts per availability search. That keeps us honest when GEM changes delivery volume/quality. Secondary: confirmations per search, and cost per portal start from Meta.
+- Instrument now: fire a “portal_start” event on the hand-off to your booking portal and a “booking_confirmation” event on thank-you; record device, source/UTM, dates selected.
+
+Your three tests with GEM in the loop
+1) Decision block up front (mobile-first)
+- What changes: Move “Book Direct & Save 10%”, “Flexible cancellation”, and any 2-night weekend rule to sit beside the date picker on Rooms and Home; add a short reviews strip above the fold. Keep dates prefilled across the hand-off.
+- How GEM helps: Send Meta clicks to the Rooms & Rates section with the date picker in view; allow all placements so GEM can find the cheapest qualified traffic.
+- Read it: Watch mobile portal starts per availability search vs the prior 2 weeks, split Meta vs non-Meta. Expectation: on-site change drives the bulk; directionally +10–25% on mobile is a good first bar.
+
+2) Min-stay clarity and “date-first” room tiles
+- What changes: On each room tile show “From £129 BB (typical midweek)”, show when a 2‑night weekend applies, and change the CTA to “View availability.” If your portal exposes it, surface live availability for selected dates; otherwise prefill dates on click.
+- How GEM helps: Ads can truthfully set expectations (e.g., “2‑night weekends; save 10% direct; free parking”) so paid traffic arrives primed rather than bouncing on surprises.
+- Read it: Track tile clicks → portal starts. Expectation: +5–15% improvement in the tile→portal step on mobile.
+
+3) Creative set built for GEM’s cross-placement optimization
+- What to run: Three lightweight angles that map to your on-site story:
+  a) “Book direct & save 10% + flexible cancellation”
+  b) “Midweek escapes from £129 BB (typical midweek)”
+  c) “Dog-friendly rooms + free parking near Ambleside”
+- How GEM helps: One model explores placements/combos; give it breadth (all placements, 3–5 creative variants) and clean conversion signals (portal_start, booking_confirmation) and let it hunt for the cheapest qualified clicks.
+- Read it: Compare Meta cost per portal start and CTR pre/post GEM while holding landing constant for a week. Expectation: delivery-side gains in the single digits to low teens unless your first‑party signals are very strong.
+
+How to separate GEM’s lift from on-site lift
+- Use two windows: 7 days pre-change vs 7 days post-change, same weekday mix. Keep landing constant while you read GEM; then change the landing and read the on-site metric.
+- Segment by device and source: 
+  • On-site lift = change in mobile portal starts per availability search for non-Meta traffic (control) AND Meta traffic after you change the page.
+  • GEM lift = change in Meta cost per portal start and CTR with the same landing.
+- Sanity-check: confirmation rate per portal start should move with on-site changes, not with GEM alone.
+
+Quick setup today
+- Add the “portal_start” event on the booking hand-off; ensure UTMs carry device and campaign.
+- Point Meta clicks to Rooms & Rates with the date picker in view, not the homepage.
+- Turn on all placements so GEM can work; start with the three creatives above.
+
+One line I’d love your take on today: for Meta traffic, should we route to Rooms & Rates with the date picker visible rather than Home? A yes/no lets us align the test quickly. If you want wireframe examples of the date picker block and room tiles to brief your developer, say the word and Priya Nair at the studio will share them.
+
+Fieldwork Studio
+
+==== Sent before (22/25 (specific 4, useful 5, voice 4, fits 5, reply 4) INVENTED 1 PROMISES 2)
+Subject: Meta GEM: what changed today, how to use it for Fell View’s 3 tests, and how to read lift on mobile
+
+Maya —
+
+Meta’s new Generative Ads Model (GEM) rolled out today. Meta reports up to +18.9% conversions and +12% CTR from one model optimising creative and placement across FB/IG/Reels; useful, but hotel‑specific lift will depend on the quality of booking signals you feed it.
+
+How to use GEM for Fell View’s 3 ad+landing tests
+1) Weekend 2‑night package (pre‑qualify): Ads say “Two‑night Lake District weekend” + key perks (breakfast, late checkout), and state the 2‑night rule up front. Landing: a focused weekend page or variant with Fri–Sun pre‑selected, the 2‑night rule and 2–3 recent reviews beside the date picker, one CTA: Check availability.
+2) Midweek direct‑book value: Ads lead with “Midweek 10% direct rate + flexible cancellation + free parking.” Landing: midweek dates pre‑filled, perks and review strip next to the date picker.
+3) Dog‑friendly getaway: Ads promise “Dog‑friendly rooms near Ambleside trails.” Landing: dog‑friendly rooms filtered by default, min‑stay made explicit near dates.
+
+Make GEM do the work
+- Campaign structure: one consolidated campaign per test with Advantage+ placements; broad targeting; 3–5 creative variants per concept (square + vertical), one promise per ad.
+- Conversion signals: ideal is booking confirmations with value back to Meta. If the portal can’t pass that, set portal‑start as the optimisation event and track confirmations separately. If available, include arrival date and length of stay in the signal.
+- Creative cues: lead with the room/setting in the first frame and copy that pre‑qualifies (e.g., “Two‑night minimum on weekends”).
+
+How to read lift alongside mobile portal‑starts
+- Primary read: Mobile portal‑starts per 100 availability searches, by week, per test page, vs your pre‑test baseline. Secondary: Confirmations per 100 portal‑starts (lagging).
+- Sanity check: Compare mobile vs desktop; GEM’s gains should skew mobile.
+- Expectation: treat a sustained +5–10% improvement in the mobile portal‑start rate as a meaningful win; Meta’s +18.9% is aggregate, not hotel‑specific.
+
+If helpful, I can share quick wireframes for the three landing variants and a simple tracking map for passing portal‑starts/confirmations back to Meta.
+
+Fieldwork Studio

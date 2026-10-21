@@ -1,0 +1,112 @@
+To: Lena Duarte (Solo founder and maker at Salt & Strand Jewellery in Brighton. Splits time between the bench and packing orders; checks marketing on her phone between tasks and on a laptop at night. Careful with cash, blunt, a bit burned by a previous freelancer. Pragmatic, quick skimmer, screenshots things to revisit.)
+Judge: 22/25 (specific 5, useful 5, voice 4, fits 4, reply 4) PROMISES 1
+Worst: She asked for specific app recommendations and a quick wireframe/video; you gave criteria and text layout but no app names and no video/wireframe, missing her explicit ask.
+! If you send the specific ring URL, I’ll mark it up (tighten the layout).
+
+Subject: Ring offer-page layout + “to £75” bundle block, and how to track per ad→page (no GA4)
+
+Lena —
+
+Appreciate the quick reply — and good spot moving the encoding to the top of the list.
+
+Below are three things you can use tonight: a lightweight spec for the shipping bar and bundles (no bloat), a ring offer‑page layout you can mirror on your best seller, and a simple way to attribute orders per ad→page without GA4.
+
+1) Progress bar + bundles (what to choose and why)
+If you add apps, keep them single‑purpose and light. Look for:
+- Shipping progress bar
+  - Shows “£X to free UK shipping” from the first view (PDP, mini‑cart, cart)
+  - Lets you set the free‑shipping threshold (£75) and custom copy
+  - Updates live as items are added/removed
+  - Doesn’t inject site‑wide pop‑ups; installs as a theme block/section you control
+- Bundles/1‑click add
+  - Renders directly on PDP and cart (no separate bundle page)
+  - 1‑click adds a curated pair/trio; items appear as separate line items so stock stays right
+  - Plays nicely with any first‑order discount you already run (no code box required)
+
+If you’d rather avoid apps this week, ship the copy/UI first: place a static “£X to free UK shipping” line on PDP and cart and a “Complete the stack” block with 1‑click adds; swap to an app only if you need dynamic updates.
+
+2) Ring offer‑page layout (copy you can paste)
+Use one focused page per ad. Start with your best‑selling ring.
+- Headline: Seafoam Stacking Ring
+- Sub: Recycled sterling silver. Hand‑finished in Brighton. Fits first time.
+- Price + size: Price visible up top. Size dropdown + “Find your size” opens a popover (don’t send to a new page).
+- Primary CTA: Add to bag
+- Trust, above the fold:
+  - 4.8★ (180+ reviews)
+  - Free resizing within 30 days
+  - Dispatches in 3–5 days
+  - Free UK shipping over £75
+- Gallery: 3–5 images; include an on‑hand scale shot
+- Reasons to wear daily: short bullets on recycled silver/gold vermeil, durability, finish
+- Reviews: 3 short quotes with stars; link to full reviews below
+- Complete the stack (to reach £75):
+  - “Pair it with Pebble Band to hit free shipping”
+  - Buttons: [Add both] [Add Pebble]
+  - Show new subtotal when selected
+- FAQ accordion: sizing, care, resizing window, shipping/returns
+
+Paste‑ready microcopy for the hero:
+- H1: Seafoam Stacking Ring
+- Lead: Recycled sterling silver, made in Brighton. Fits first time.
+- Trust row: 4.8★ from 180+ reviews • Free resizing in 30 days • Dispatches in 3–5 days • Free UK shipping over £75
+- Size help: Not sure? Find your size → (opens popover)
+
+3) Track orders per ad→page without GA4
+Keep it dumb and dependable.
+- Step 1: Give each ad a unique landing URL. Example:
+  - .../seafoam-offer?utm_source=meta&utm_campaign=q4_gifting&utm_content=ring_concept_a&lp=seafoam_v1
+- Step 2: Make sure that lp (or your chosen param) persists from PDP → cart → checkout. If your theme strips params, append them on Add to Bag and cart links.
+- Step 3: Attribute orders using those params.
+  - Fastest path: export orders for the period and read the original landing URL/params; group by lp to see which ad→page pairs produced first orders.
+  - If your export doesn’t include the landing params, store lp in a first‑party cookie and copy it into the cart note/additional details on Add to Bag; it will appear on the order so you can pivot by lp later.
+- Step 4: Move spend to the ad→page pairs that produce first orders; pause the rest. Keep the page constant while you test creative; change one variable at a time.
+
+A 10‑minute pass for tonight (minimum viable):
+- Duplicate your best‑selling ring PDP into an “offer” version with the hero trust row above the fold and the size popover.
+- Add a “Complete the stack” block that pairs Seafoam Stacking Ring (£38) with Pebble Band (£45) to clear the £75 threshold in one click.
+- Put a simple “£X to free UK shipping” line on PDP and cart; refine to a dynamic bar later if needed.
+- Point your next three ring ads only to that offer URL.
+
+If you want me to tighten this layout further for one specific ring page, send the URL you want to use and I’ll mark it up.
+
+Fieldwork Studio
+
+==== Sent before (25/25 (specific 5, useful 5, voice 5, fits 5, reply 5) PROMISES 2)
+Subject: Re: Salt & Strand teardown: tracking + apps + ring page layout
+
+Lena —
+
+Quick, specific answers.
+
+1) Simple Shopify adds for the £75 nudge
+- Free‑shipping progress bar: “Free Shipping Bar” by Hextom is the lightest lift and does the threshold math out of the box.
+- Bundles to reach £75: Shopify’s own “Shopify Bundles” handles fixed pairs/trios cleanly (inventory‑aware). Use it for a “Stacks & Gifts” set (e.g., Seafoam + Pebble) and surface it on the ring page and in cart.
+
+2) Track orders per ad→page pair without GA4
+- Naming/UTMs: name each ad concept clearly and add UTMs like:
+  utm_source=meta | utm_medium=paid-social | utm_campaign=ring-fit-first | utm_content=ring-offer-page-v1
+- Shopify capture: orders include the first landing URL; to make it bulletproof, also write UTMs + landing page into cart attributes so they flow into every order:
+  a) On page load, read the querystring + pathname.
+  b) Populate hidden inputs on the cart form: attributes[utm_campaign], attributes[utm_content], attributes[landing_page].
+  c) Shopify carries these attributes onto the order; export Orders CSV and pivot revenue by utm_campaign + utm_content to see the ad→page pairs that produced first orders.
+- Creative variants: if multiple creatives hit the same page, add a short creative id in utm_term (e.g., c1, c2) so you can kill losers fast.
+
+3) Ring offer page layout (wireframe)
+- Header: minimalist (no mega‑nav); keep the shopper on task.
+- Hero (first screen):
+  [Product photo]  Recycled silver ring that fits first time
+  £XX  |  Size ▼  |  Find your size (popover)  |  ★ 4.8 (180+)
+  [Add to bag]
+- Trust strip: Free resizing in 30 days • Dispatches in 3–5 days • Recycled silver
+- Proof: 2–3 short review quotes with names.
+- Details: materials, finish, care, returns (accordion).
+- Make it a set (to hit £75): pre‑curated 2‑item stack with 1‑click add‑both; shows “£X to free shipping” progress.
+- FAQ: sizing, gift wrap, resizing policy.
+- UGC row: 4–6 real photos.
+- Sticky Add to Bag + free‑shipping progress as the user scrolls.
+
+Note: If you’re trying to move fast without a dev, Shopify’s new Canvas editor can draft this layout quickly; happy to share the prompt structure that gets the hero + trust + bundle blocks in the right order.
+
+If a 5‑minute teardown video of saltandstrand.example would help, say the word and I’ll record it today; otherwise the wireframe above is the exact stack we’d build first.
+
+Fieldwork Studio

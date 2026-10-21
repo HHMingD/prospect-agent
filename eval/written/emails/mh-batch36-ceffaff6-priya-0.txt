@@ -1,0 +1,104 @@
+To: Priya Malhotra (Marketing Lead at a 5-location London yoga studio chain. Splits time between HQ and Shoreditch studio. Starts research on a 13" MacBook Pro, continues on iPhone on the Overground. Pragmatic, number-driven, wary of fluffy agency talk; wants clear tests and fast feedback.)
+Judge: 25/25 (specific 5, useful 5, voice 5, fits 5, reply 5) PROMISES 1
+Worst: It doesn’t outline a concrete Mindbody-specific tracking/attribution fix (e.g., cross-domain events/CAPI) beyond UTMs/notes, so it undershoots the CAC/attribution pain.
+! If you reply with 'teardown', Priya Nair will share a fuller annotated teardown with wireframes and booking-flow options.
+
+Subject: Ember Yoga: 3 homepage fixes to turn browse into book
+
+Hi Priya—
+
+Saw you on our Work page just now. You flagged “Traffic but no sales,” so I took a quick pass at Ember’s site.
+
+What’s breaking the booking moment
+- “Book a class” jumps to a new Mindbody tab and puts a log‑in/create‑account wall before choosing passes or offers (your /book page explains this, but the jump still surprises people).
+- No clear “start here” path splits total beginners from regular yogis; there’s also no cue on which class most people choose first.
+- Social proof is thin: two short, generic quotes with no outcomes, locations, or teacher mentions.
+- Your intro offer (30 days for £39) is strong, but it isn’t the primary path in the hero.
+
+Three changes you can ship today
+1) Make the intro offer the primary path
+Use the hero to route new visitors to the offer, and let regulars hit the timetable.
+
+Paste‑ready hero copy
+Headline: Find your calm in the city
+Sub: New here? 30 days of classes for £39. Start anytime. Valid for new clients only. Excludes workshops and courses. One per person. Activates on first visit.
+Buttons: 
+- Primary: Start 30 days for £39 → /intro-offer 
+- Secondary: See timetable → /book
+
+2) Add a “New here? Start here” chooser under the hero
+Two simple cards reduce decision anxiety and stop back‑and‑forth tabbing.
+
+Paste‑ready chooser copy
+Left card (for beginners)
+- Title: I’m new to yoga
+- Body: Start with Beginner or Yin. Go at your pace, focus on form, and get confident on the mat.
+- Button: See beginner‑friendly times → /book  
+  Dev note: pre‑filter to Beginner and Yin on load.
+
+Right card (for regulars)
+- Title: I’ve done yoga before
+- Body: Try Hot Yoga 60 or Vinyasa Open. Great everyday flows across Shoreditch, Hackney, Battersea, Camden and Peckham.
+- Button: See today’s classes → /book  
+  Dev note: pre‑filter to Hot and Vinyasa on load.
+
+3) Strengthen proof where the decision happens
+New UK studio best practice this year is to place specific, named, outcome‑focused testimonials right next to the class/timetable/offer—not just in one testimonials strip. Local mentions and teacher names outperform generic praise. Why it matters here: your current quotes are few and generic.
+
+What to collect (and show side‑by‑side with the chooser and near /book)
+- Outcome + timeframe: “After three weeks my back pain eased and I started sleeping better.”
+- Name + local anchor: “— Maya S., Hackney”
+- Optional teacher/class: “Beginner with [Teacher]” or “Hot 60, Shoreditch”
+
+Placement
+- One card under each chooser card.
+- A narrow proof column on /book beside the timetable with 2–3 local stories.
+
+Reduce the Mindbody drop‑off (one‑week test plan)
+- Expectation‑setting step: After clicking “See timetable,” load a light on‑site step that says: “Next you’ll book securely via Mindbody. You’ll be asked to log in or create an account.” Repeat the intro‑offer eligibility here.
+- Keep users on‑site longer: If possible, embed the Mindbody timetable/widget on your /book page so the tab change isn’t a surprise.
+- Tracking: Add UTMs to hero buttons and note source in the Mindbody checkout notes to see which path starts more purchases (Intro Offer vs. Timetable).
+
+Why this is likely to move the needle
+- It removes the first big surprise (new tab + login) and answers the beginner’s “what should I pick?” before they bounce.
+- It upgrades proof at the exact moment of doubt with local, teacher‑tied stories instead of generic praise.
+
+If it’s useful, Priya Nair on our side can share a fuller annotated teardown with wireframes and booking‑flow options. Reply with “teardown” and she’ll answer.
+
+Fieldwork Studio
+
+==== Sent before (22/25 (specific 4, useful 5, voice 4, fits 5, reply 4) PROMISES 3)
+Subject: Ember Yoga: homepage + booking teardown (prioritized fixes)
+
+Priya —
+
+We looked at emberyoga.example this morning. The biggest conversion tax is the “Book a class” click opening a new Mindbody tab and asking for an account before showing value.
+
+Prioritized fixes:
+
+P1. Make the intro offer the default path.
+– Replace the hero CTA with “Start 30 days for £39” (primary), keep “See timetable” as secondary.
+– Mirror “Start 30 days” in the top nav and in the footer.
+
+P2. Keep the flow on-site until commitment.
+– Embed your timetable/checkout or use a lightbox; avoid a new tab.
+– Where possible, deep‑link with the Intro Offer pre‑selected so new clients don’t hit a price wall first.
+
+P3. Add a “Beginner or Regular?” chooser under the hero.
+– “I’m new” → three recommended classes this week, first‑visit tips, and the Intro Offer CTA.
+– “I practise regularly” → timetable and 10‑class pack.
+
+P4. Replace generic quotes with specific, local social proof next to CTAs.
+– Short stories that name a studio/teacher and an outcome (e.g., “4 weeks on Beginner in Hackney, back pain gone”) outperform generic praise. Current best practice in UK studio sites backs this.
+
+P5. Reduce first‑timer doubts in microcopy.
+– Next to every primary CTA: “Mats/towels available • arrive 10 min early • heat and non‑hot options • showers/lockers.”
+
+P6. Guide choice on the timetable.
+– Default to “Today” and the nearest studio; add tags like “Good for beginners” and “Most booked this week.”
+
+If helpful, we can share an annotated wireframe of the hero + chooser, sample testimonial prompts to collect the right stories, and two booking-flow options that reduce account friction while keeping Mindbody.
+
+Count first‑class bookings from web as your north star; watch the drop from hero click → class selected → checkout started → paid. Fixes P1–P3 directly compress that gap.
+
+Fieldwork Studio

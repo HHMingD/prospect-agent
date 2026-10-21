@@ -1,0 +1,101 @@
+To: Naomi Fletcher (CFO at a UK DTC mattress brand. Reviewing agencies on behalf of the CEO. Laptop reader with 12 tabs open, numbers-first, brief, sceptical about agency promises, expects immediate evidence and clear commercials.)
+Judge: 16/25 (specific 2, useful 4, voice 4, fits 3, reply 3) INVENTED 8
+Worst: It assumes specific NookSleep site elements and product lines (crib/kids mattresses, promo sections like Deal of the Day/Final Sale/20% off) that weren’t supported, making the otherwise-strong, actionable plan feel templated and untrustworthy to a CFO.
+! That NookSleep sells crib or kids’ mattresses
+! That NookSleep has a fast comparison experience
+! That NookSleep is running a 20% sitewide promotion
+! That NookSleep has a Deal of the Day section
+! That NookSleep has a Final Sale section
+! That the homepage has a reviews module above the fold linking to PDPs
+! That there are promo/discount overlays live
+! That there is a Buy Now above the fold on the homepage
+
+Subject: Naomi — NookSleep 1‑page counting plan (UTM hygiene + homepage tag map for clean first‑order attribution)
+
+Hi Naomi —
+
+Thanks for introducing yourself just now. You flagged “Can’t tell what’s working,” and you were on our DTC work page. Here’s the 1‑page plan we’d hand to whoever owns UTMs and the homepage at NookSleep so first‑order attribution stays clean as Meta’s unified GEM optimization rolls through October.
+
+What to do now (so GEM doesn’t blur what’s winning)
+1) Promise‑based landing, not homepage
+- Map each paid promise to the closest page you already have:
+  • Breathability/organic safety → the specific PDP that proves it (crib or kids’ mattress). 
+  • Allergen/chemical concern → PDP or the fast comparison experience that foregrounds certifications.
+  • Price/urgency (“20% sitewide”, “Final sale”, “Deal of the day”) → those corresponding sections.
+- Every ad link resolves to the matching page, not Home. If one creative carries two promises (e.g., breathability + 20% off), choose the page that fulfills the primary promise in the first screen.
+
+2) UTM hygiene kit (copy/paste)
+- Rule zero: never put UTM tags on your own internal links (nav, promos, recirculation, banners). They overwrite the landing source and destroy the original acquisition path from paid.
+- Standardize paid UTMs so you can group by promise and creative under cross‑placement optimization:
+  • utm_source = meta (or tiktok, pinterest, etc.)
+  • utm_medium = paid_social
+  • utm_campaign = YYYY‑MM_theme (e.g., 2026‑10_breathable or 2026‑10_offer)
+  • utm_term = promise_slug (e.g., breathable, allergen‑safe, 20off)
+  • utm_content = creative_id‑format‑length‑variant (e.g., ugc01‑sq‑15s‑v1)
+- Link pattern (example):
+  https://nooksleep.com/[best‑fit‑landing]?utm_source=meta&utm_medium=paid_social&utm_campaign=2026-10_breathable&utm_term=breathable&utm_content=ugc01-sq-15s-v1
+
+3) First‑order counting (clean “who truly won” signal)
+- Fire a server‑side “first_order” event only when the order is a customer’s first. Include: order_id, revenue, landing_url, utm_source/campaign/term/content, and a derived promise_tag (mirror utm_term). Deduplicate against any client‑side purchase.
+- Your core metric to compare promises under GEM: First Orders by promise_tag (and then by creative within that).
+
+4) Homepage tag map (instrument first‑screen CTAs and exits)
+Instrument the above‑the‑fold elements so you can see which paths cannibalize or convert paid landings:
+- Hero primary CTA (e.g., Shop crib/kids mattress) → event: hp_hero_primary; props: cta_text, dest_url, promise_hint
+- Compare/“Which mattress?” tool entry → hp_compare_entry; props: dest_url
+- Deal of the Day entry → hp_deal_entry; props: dest_url
+- Final Sale entry → hp_sale_entry; props: dest_url
+- Reviews module clicks through to PDP → hp_reviews_to_pdp; props: dest_url
+- Any “Buy Now” above the fold → hp_buy_now; props: dest_url
+- Promo/discount overlay interactions (close/click) → hp_promo_interact; props: action
+- Site search submit (first interaction) → hp_search_submit; props: query_length
+Implementation note: send a concise dataLayer push (or equivalent) on click; don’t add UTMs to those internal links.
+
+5) Two‑minute QA to prevent internal UTM pollution
+- Click a live ad preview to land on site; confirm the URL has UTMs once (on the landing page) and that internal links are clean.
+- From landing, click: Compare, Deal of the Day, Final Sale, and a PDP. Confirm no internal link appends utm_* or resets source.
+- In analytics, verify sessions from paid keep their original source/UTM even after users hit the homepage or overlays.
+
+6) Tiny proof test (valid under GEM)
+- Pick two distinct promises you already advertise (e.g., breathable vs. offer). Give each a unique utm_term and utm_content, and point each creative to its matching page as above. Read out First Orders by promise_tag and by creative. That’s your immediate creative truth under cross‑placement optimization.
+
+Why this matters right now
+- Meta’s Generative Ads Model (GEM) is unifying optimization across Facebook, Instagram, Reels, and Stories in October. When optimization is unified, measurement has to be unified too: the only levers you fully control are UTMs, landing promise, and a clean first‑order event. Meta reports gains (up to 18.9% more conversions and 12% higher CTR), which is great—provided you can still tell which promise actually caused a first purchase.
+
+One question for you
+- If you had to pick one promise that should never go to the homepage again, which is it? That’s the first link to hard‑point at its own page with clean UTMs today.
+
+If this belongs with someone on your team, feel free to forward—it’s designed to be copied straight into a tracking doc.
+
+Fieldwork Studio
+
+==== Sent before (13/25 (specific 2, useful 3, voice 3, fits 3, reply 2) PROMISES 1)
+Subject: NookSleep 1‑page counting plan (GEM‑proof attribution)
+
+Naomi—
+
+Here’s the 1‑page plan we promised to keep first‑order attribution clear as Meta’s GEM rolls out.
+
+1) Homepage tag map (what to record)
+- Primary above‑the‑fold CTAs (each labelled separately)
+- Entry points into comparison tools
+- Promo interactions (open, click‑through, dismiss)
+- First destination path from home (e.g., /products/… vs /compare/…)
+
+2) Paid UTM + naming kit
+- utm_source: meta | google | pinterest | partner
+- utm_campaign: 2026Q4_mattress_{sale|evergreen|launch}
+- utm_content: creative_concept‑variant (e.g., breathable‑video‑a)
+- utm_term: the promise (e.g., breathable | certified‑organic | hypoallergenic)
+
+3) Count the thing you want
+- One server‑side first_order event.
+- Attribute by landing_page + utm_term (promise) + utm_content (variant).
+- Weekly: first_orders and CAC by promise x creative x page; retire any creative after three weeks of falling CTR.
+
+Why now
+Meta’s new unified Generative Ads Model (GEM) starts rolling out tomorrow; it blends placements/creative and claims up to 18.9% more conversions and 12% higher CTR. Great for performance, noisier for analytics—the setup above preserves the signal you actually use to decide.
+
+If useful, we can return a filled tag map with your exact labels.
+
+Fieldwork Studio

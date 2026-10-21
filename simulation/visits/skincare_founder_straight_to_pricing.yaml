@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Alknoma/minutehand/integration-main/schemas/scenario.schema.json
+# Tom runs a skincare brand and came from a paid ad straight to pricing. He toggles the two prices, glances at one
+# case study and leaves inside three minutes, never touching the agent unless it says something worth his time.
+# Pages and choices are fixed; the time between them is drawn per seed.
+name: skincare_founder_straight_to_pricing
+starts_at: 2026-10-13T19:40:00Z
+runs_for: P21D
+max_wakes: 200
+people:
+  - key: tom
+    name: Tom Okafor
+    email: tom@brightdermis.example
+    profile: >-
+      Co-founder of Bright Dermis, a London skincare brand selling online, about £900k a year. Price-conscious, short on time, browsing on his phone in the evening.
+    facts:
+      - Bright Dermis sells serums and moisturisers direct to consumers; its website is brightdermis.example.
+      - His cost per purchase on Meta has nearly doubled this year.
+      - He could spend about £8,000 once, not every month.
+      - He has been burnt by an agency retainer before and will not sign another.
+    working_hours: {timezone: Europe/London, opens: "08:00", closes: "23:00"}
+    reply_within: {min: PT3H, max: P2D}
+    reply: {kind: answers}
+  - key: newsroom
+    name: The trade press
+    email: newsroom@press.example
+    profile: Not a visitor. Reports what happens in marketing; never on the site and never writes to the agent.
+happenings:
+  - {kind: uses, person: newsroom, inbox: world, use: publishes, after: P6D,
+     inputs: {fact: "Marks & Spencer and Sephora will launch Sephora at M&S in 100 M&S stores and on M&S.com from spring 2027, a shop-in-shop with established favourites, emerging brands and exclusives across skincare, makeup, fragrance, haircare and bodycare.",
+              source: "https://cewuk.co.uk/ms-and-sephora-partner-to-launch-new-beauty-destination-on-uk-high-streets/",
+              published: "2026-10-02", topic: "go-to-market news: what consumer brands are doing, a shift in how people buy, a season's numbers"}}
+  - {kind: uses, person: newsroom, inbox: world, use: publishes, after: P3D,
+     inputs: {fact: "Meta has been removing manual ad placement options, so advertisers can no longer choose where their ads appear across Meta's placements; on 12 October 2026 it published guidance on keeping some control.",
+              source: "https://www.socialmediatoday.com/news/meta-offers-updated-ad-placement-control-guidance/832791/",
+              published: "2026-10-12", topic: "a change on a platform brands buy or build on: Meta, Google, TikTok, Pinterest, Shopify, Klaviyo"}}
+  - {kind: uses, person: tom, inbox: site, use: views, after: PT0S, inputs: {page: /pricing, title: Pricing}}
+  - {kind: uses, person: tom, inbox: site, use: picks, gap: {min: PT5S, max: PT25S}, inputs: {page: /pricing, question: pricing toggle, answer: Retainer}}
+  - {kind: uses, person: tom, inbox: site, use: picks, gap: {min: PT3S, max: PT15S}, inputs: {page: /pricing, question: pricing toggle, answer: Project}}
+  - {kind: uses, person: tom, inbox: site, use: views, gap: {min: PT10S, max: PT40S}, inputs: {page: /work/glow-theory, title: Glow Theory case study}}
+  - {kind: uses, person: tom, inbox: site, use: reads, gap: {min: PT30S, max: PT1M30S}, inputs: {page: /work/glow-theory, how: "under a minute, scrolled 60%"}}
+  - {kind: uses, person: tom, inbox: site, use: views, gap: {min: PT1S, max: PT3S}, inputs: {page: /pricing, title: Pricing}}
+  - {kind: uses, person: tom, inbox: site, use: leaves, gap: {min: PT10S, max: PT40S}, inputs: {page: /pricing}}

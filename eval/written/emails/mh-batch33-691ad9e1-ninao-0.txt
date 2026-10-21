@@ -1,0 +1,103 @@
+To: Nina Petrovic (Only marketer at a 18-person B2B cybersecurity startup in London. Title: Growth & Marketing Lead. She’s on a MacBook Pro with way too many tabs, often on coffee shop Wi‑Fi. Analytical, skeptical, impatient with fluff; polite but direct. She has to convince two technical founders and a sales lead, fast.)
+Judge: 11/25 (specific 1, useful 3, voice 4, fits 2, reply 1) PROMISES 2
+Worst: It personalizes to the wrong LayerLock (TapMint-style verifier flows) instead of Nina’s cloud security product, undermining relevance and trust.
+! If you reply with the blunt first question buyers ask, I’ll mark up your hero and first 100 words.
+! Reply “Ledgerly” and Priya Nair will send the fuller write‑up.
+
+Subject: Nina — the two one‑pagers you asked for (and the one question to fix your demo page)
+
+Nina,
+
+Thanks for saying hi on the site. You tapped B2B and “traffic but no sales,” so—as promised—here are the two one‑pagers you can use today.
+
+1) One‑page demo‑page rewrite checklist (built around the first‑sales‑call question)
+Why this matters: Ledgerly halved cost per booked demo by rewriting the demo page around the first question prospects ask. The plain page won because it answered the only question that mattered first.
+
+How to build yours in 30 minutes:
+- Lead with the blunt question buyers ask first on your calls.
+  Template:
+  • Headline: “Q: [Buyer’s blunt question]”
+  • Subhead: “[Direct, one‑sentence answer. No jargon.]”
+- Then earn the click with three proof modules:
+  • How it works (60 words, plain sequence: create/register object on TapMint → request LayerLock verification → what appears publicly)
+  • Who it’s for (2 bullets: “Brands verifying real‑world objects,” “Expert/industry verifiers”)
+  • What shows publicly + what doesn’t (one line each—trust hinges on clarity here)
+- Calls‑to‑action, one per audience:
+  • Primary: “Book a demo” (or “Start a verification”) for brands
+  • Secondary: “See verifier requirements” for experts/industry
+- De‑risk section (3 bullets): “What LayerLock is not,” “Data ownership/visibility,” “Approval/turnaround at a glance”
+- What happens next (3 steps): Book → Review → Go live
+- Footer navigation that keeps them on‑track:
+  • For brands: Start verification → Requirements → Example record
+  • For verifiers: Apply → Criteria → Public profile example
+
+If you want a quick sanity check before you ship: read the page aloud. If it doesn’t sound like your last sales call, rewrite the first 100 words until it does.
+
+2) One‑pager: Using Meta Muse + Klaviyo to tie campaigns to booked demos (and fix weak ones faster)
+What’s possible now: Since Sept ’26, the Klaviyo–Muse connector lets you use conversational AI to analyze Klaviyo campaign data, spot disengaged segments, draft campaigns, and monitor performance with built‑in approvals.
+
+Set this up once; use it weekly:
+- Define the conversion you care about in Klaviyo: booked_demo (or verification_request_submitted / verifier_application_started).
+- In Muse, connect Klaviyo. Then ask:
+  • “Which Klaviyo campaigns created booked_demo in the last 30 days? Break down by segment and subject line.”
+  • “Which segments are disengaging? Draft a re‑engagement email for [segment], 2 subject lines, 60‑word body, CTA to ‘Book a demo.’ Queue for approval.”
+  • “Monitor booked_demo daily; alert me if today is down >20% vs 7‑day average.”
+- Close the loop: approve in Muse, ship, then ask: “Show uplift in booked_demo this week vs last for refreshed campaigns.”
+
+A quick LayerLock‑specific win (you can ship this copy today)
+Your current flow requires: create/register object on TapMint → request LayerLock verification, and verifier onboarding is approval‑gated. That’s solid infrastructure—but it adds steps. Make the first choice obvious and reduce bounces:
+
+Paste this at the top of Get Started (two‑path gate):
+- I’m a brand verifying an object
+  • Step 1: Create/register your object on TapMint
+  • Step 2: Request LayerLock verification
+  • Step 3: Your public trust record is generated
+  CTA: “Start verification”
+- I’m an expert/industry verifier
+  • What you’ll need: credentials + public profile
+  • How approval works: application → review → live profile
+  • What’s public: your name, expertise, accuracy record
+  CTA: “See verifier requirements”
+
+Why we push single‑purpose pages: Oatside Kitchen dropped cost per first order by 38% by taking ads off the homepage and pointing them at single‑offer pages. The plainest page—a photo and a price—beat the rest. The B2B version is your demo page (or verification start page) that answers one question first, then drives a single action.
+
+The one question I’d start your rewrite with
+What’s the blunt first question your buyers ask on sales calls? Reply with that exact sentence. I’ll mark up your hero and first 100 words around it.
+
+If you want the fuller Ledgerly write‑up to pass to your CEO, reply “Ledgerly” and Priya Nair will send it.
+
+—
+Fieldwork Studio
+
+==== Sent before (10/25 (specific 2, useful 2, voice 4, fits 1, reply 1) PROMISES 1)
+Subject: LayerLock: fast wins to turn visits into verification requests
+
+You’re asking new users to (1) create/register an object in TapMint, then (2) request LayerLock verification; verifiers face a gated, manual approval flow. That’s a lot to ask before someone has seen the payoff, which explains “traffic but no sales.”
+
+Do this next (low‑lift, high‑impact):
+- Split intent: two single‑promise pages — “Get an object verified” and “Become a verifier.” Each page exists to win one action.
+- Show the payoff first: link a real sample trust record on the verification page, and a real verifier profile on the verifier page. People commit faster when they can picture the outcome.
+- Make the 2‑step explicit with one CTA: “Start verification.” If the object isn’t in TapMint, route to Step 1, then return to Step 2 with state preserved. The UX can be two steps; the promise should feel like one.
+- Answer the scary questions in the first screen: what you’ll get, what’s required (docs/ownership proof), and typical review time. Put this above the fold; move everything else down.
+- Count what matters: track and optimise to “verification request submitted” and “verifier application submitted,” not clicks or page views. Budget and effort follow those two numbers.
+
+Mini‑checklist: “Get an object verified” page
+1) Headline mirrors the first doubt (“Will my buyers be able to see and trust this?”) — followed by a 3‑item payoff list.
+2) First screen blocks: What you’ll get; Requirements; Time to complete (Step 1 + Step 2).
+3) Primary CTA repeated (“Start verification”). Secondary: “See a sample trust record.”
+4) Objections row: privacy of data, cost/fees, proof of ownership — each answered in one line with a link to docs.
+5) Remove detours: keep nav minimal; put docs/help in the footer.
+6) Instrumentation: fire “start_verification” and “submit_verification”; pass through UTMs.
+
+Mini‑checklist: “Become a verifier” page
+1) Lead with value to verifiers (public, portable reputation) and how tiers work (self / expert / industry) in one graphic.
+2) Eligibility checklist and typical review timeline, before the form.
+3) Proof: link a real verifier profile and a sample trust record they signed.
+4) Inline application form (no extra click); save state.
+5) Track “start_application” and “submit_application” as your success events.
+
+Why this works: when we did the same pattern for a B2B client (Ledgerly), cost per booked demo halved; the winning page opened with the blunt question buyers asked first.
+
+If useful, I can turn the above into a one‑page wireframe for the verification page so your team can build from it.
+
+Fieldwork Studio

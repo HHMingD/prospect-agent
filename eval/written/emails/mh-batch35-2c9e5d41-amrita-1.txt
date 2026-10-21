@@ -1,0 +1,73 @@
+To: Amrita Shah (Founder of Sprout & Stitch, a UK kids’ clothing brand. She splits time between the studio and a small warehouse. Skims on her iPhone first, opens laptop only if it’s worth it. Direct, impatient with fluff, numbers-first but creative-savvy. Skeptical of long retainers; likes clear experiments and visible outputs.)
+Judge: 23/25 (specific 5, useful 5, voice 5, fits 4, reply 4)
+Worst: It doesn’t include proof or visuals (mockups/teardown screenshots) or a kidswear case with numbers—so it reads as strong advice but light on evidence for her category.
+
+Subject: GEM lands today: 3 ready‑to‑ship variants for Sprout & Stitch
+
+Amrita —
+
+Meta just announced their Generative Ads Model (GEM): one model now optimizes delivery across Facebook, Instagram, Reels, and Stories. In Meta’s own tests it’s driven up to 18.9% more conversions and 12% higher CTR. If you’re running Meta, the win now is to feed GEM distinct creative angles and let it handle placements — not to micro‑target.
+
+A simple 3‑variant test you can ship this week
+- Structure: 1 campaign (Purchases), placement optimization on; 1 ad set; 3 ads. Keep targeting broad; let GEM allocate across placements.
+- Landing: Point each ad to a page that matches its promise. If those pages don’t exist yet, link straight to the most relevant product(s) for now. 
+- Cadence: If CTR trends down for ~3 weeks, retire that creative and rotate in a fresh variant.
+- Judge it: Prioritise add‑to‑bag and first‑order rate over CTR when you read results.
+
+The three angles (copy you can paste)
+1) Rain‑Ready (Splash Raincoat)
+- Primary: Dry kids. Big grins. Splash Raincoat is built for downpours — and hand‑me‑downs.
+- Headline: Rain‑Ready playproof gear
+- Description: 30‑day free returns. Order by 2pm for same‑day dispatch.
+- Asset note: 5–7s clip of water beading off the coat or a boomerang of a hood shake; crop tight on texture.
+
+2) Knee‑Proof (reinforced bottoms/leggings)
+- Primary: Slides, scuffs, scrapes. Reinforced knees + seams that outlast the playground.
+- Headline: Knee‑Proof playwear
+- Description: Built to be handed down. 30‑day free returns.
+- Asset note: Close‑up of knees before/after a scuff, or a carousel with a macro stitch shot first.
+
+3) Under £20 (price‑led picks)
+- Primary: Under £20, overbuilt for play. Dino Tee £16. Rainbow Leggings £18.
+- Headline: Picks under £20
+- Description: Same‑day dispatch if you order by 2pm.
+- Asset note: Clean flat‑lay with bold price card; keep backgrounds consistent so GEM can remix for Reels/Stories.
+
+Small but important
+- In any price‑led creative, make sure the £ renders correctly. Your site shows odd characters for £ in places; fix that in any exported assets.
+- Keep each ad to one promise, one CTA, one destination. GEM learns faster when the signal is clear.
+
+Why this suits a 90‑day sprint
+- Week 1: ship 3 angles; Week 3–4: rotate weakest; Week 6–7: second rotation; Week 9–10: lock best performer for Q4.
+
+If Sprout & Stitch is on Meta today, will you forward this to whoever owns Ads Manager with “Let’s ship these three this week”? A yes/no reply works, too.
+
+Fieldwork Studio
+
+==== Sent before (20/25 (specific 4, useful 4, voice 4, fits 4, reply 4) PROMISES 1)
+Subject: Meta GEM launches today: a 3‑variant kidswear test to beat ad fatigue
+
+Amrita —
+
+Meta just rolled out its Generative Ads Model (GEM): one model now optimizes creative and placements across Facebook, Instagram, Reels and Stories. In Meta’s tests it delivered up to 18.9% more conversions and 12% higher CTR — but it only helps if you feed it distinct angles.
+
+Here’s a one‑week test we’d run for Sprout & Stitch:
+
+- Three angles (three ads, same budget, automatic placements on):
+  1) Rain‑Ready — raincoat + layers; first frame is a puddle splash; 5–15s phone video or loop; headline “Dry kids, happy park.”
+  2) Knee‑Proof — close‑ups of reinforced knees; before/after or scrape test; headline “Built for slides, not sit‑still.”
+  3) Under £20 — price‑forward grid of 4 bestsellers; headline “Playproof picks under £20.”
+
+- Each ad links to a matching landing page (one promise, one CTA). Even a simple section page works if the hero keeps the ad’s promise.
+
+- Let it run 5–7 days. Retire any variant with three straight days of falling click‑through; swap in a fresh cut, not a fresh idea.
+
+- Judge winners by add‑to‑bag and first‑order rate vs. your home baseline, not just CTR.
+
+Two setup notes:
+- Keep targeting simple and leave placements on automatic; the lift comes from creative diversity, not audience micromanagement.
+- Ship variants in threes on a schedule; aim to have the next three ready before the current set tires.
+
+If you want, we can sketch the three lightweight landing blocks those ads need.
+
+Fieldwork Studio

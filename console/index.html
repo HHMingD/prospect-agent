@@ -1,0 +1,45 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Fieldwork agent: what it is doing</title>
+<style>
+body{font:14px/1.45 -apple-system,sans-serif;margin:24px;background:#f6f4ef;color:#1d1b18;max-width:1100px}
+h1{font-size:18px}.v{background:#fff;border:1px solid #ddd6c6;padding:14px 18px;margin:0 0 16px}
+.top{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}.id{font-weight:600}.dim{color:#8a8172}
+.busy{background:#fff4d6;border-left:3px solid #c89b2c;padding:6px 10px;margin:8px 0}
+.lbl{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:#8a8172;margin-top:10px}
+ul{margin:4px 0;padding-left:18px}li{margin:2px 0}.tag{font-size:11px;padding:1px 6px;border-radius:3px;background:#eee8da;margin-right:6px}
+.pre{white-space:pre-wrap}
+</style>
+<h1>Fieldwork agent: what it is doing, per visitor <span class="dim">(updates every 2s)</span></h1>
+<div id="all"></div>
+<script>
+const esc = s => String(s ?? "").replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"})[c]);
+const ago = t => { const s = Math.round((Date.now() - new Date(t)) / 1000); return s < 90 ? `${s}s ago` : `${Math.round(s/60)} min ago`; };
+function landed(v, m) {
+  if (m.sender === "visitor") return m.asked_through ? `they asked (${m.asked_through})` : "they wrote";
+  if (m.dismissed_at) return "deleted by them";
+  return m.id > v.read_through ? "not opened yet" : "seen";
+}
+async function draw() {
+  const { visitors } = await (await fetch("/api/visitors" + location.search)).json();
+  document.getElementById("all").innerHTML = visitors.map(v => {
+    const l = v.last_look, last = v.touches[v.touches.length - 1];
+    return `<div class="v">
+      <div class="top"><span class="id">${esc(v.name || "Anonymous")} ${v.email ? `&lt;${esc(v.email)}&gt;` : ""}</span>
+        <span class="dim">${esc(v.id.slice(0, 8))} · ${esc(v.status)} · now on ${esc(last?.page || "-")} · last seen ${last ? ago(last.at) : "-"}</span></div>
+      ${v.main_now ? `<div class="busy"><b>Working now:</b> ${esc(v.main_now)}</div>` : ""}
+      <div class="lbl">Preparing for them</div><div>${esc(v.preparing || "nothing")}</div>
+      <div class="lbl">Next wake it chose</div><div>${v.wake_at ? `${esc(new Date(v.wake_at).toLocaleString())}: ${esc(v.wake_why)}` : "none"}</div>
+      ${l ? `<div class="lbl">Last decision on the site, ${ago(l.at)}</div><div><b>${esc(l.decision)}</b></div>
+        <div class="pre dim">${esc(l.learned)}</div><div class="pre dim">${esc(l.brief)}</div>` : ""}
+      <div class="lbl">What it believes</div><div>${esc(v.beliefs || "nothing yet")}</div>
+      <div class="lbl">The conversation on the site</div><ul>${v.thread.slice().reverse().map(m =>
+        `<li><span class="tag">${landed(v, m)}</span>${esc(m.text)}${m.offer ? ` <span class="dim">(offer, ${esc(m.offer.kind)}: ${esc(m.offer.what)})</span>` : ""}</li>`).join("") || "<li>nothing</li>"}</ul>
+      <div class="lbl">Emails it sent</div><ul>${v.emails.slice().reverse().map(e =>
+        `<li><b>${esc(e.subject)}</b> ${esc(e.text)}</li>`).join("") || "<li>none</li>"}</ul>
+      <div class="lbl">Research</div><ul>${v.research.map(r => `<li>${esc(r.fact)} <a href="${esc(r.source)}">source</a></li>`).join("") || "<li>none</li>"}</ul>
+    </div>`;
+  }).join("") || "No visitors yet.";
+}
+draw(); setInterval(draw, 2000);
+</script>

@@ -1,0 +1,79 @@
+To: Eilidh MacLeod (Founder of Heather & Pine, a two-product skincare microbrand in Glasgow. Solo operator most days; sister helps on weekends. Reads on iPhone first while on the bus or in the workshop; opens laptop late evening for decisions. Pragmatic, frugal, a bit sceptical of agencies but open if shown specifics and quick tests.)
+Judge: 25/25 (specific 5, useful 5, voice 5, fits 5, reply 5) PROMISES 1
+Worst: The brief BRC/Canvas lines feel like minor filler next to the otherwise paste‑ready landing copy and could be cut without losing momentum.
+! Tailor the micro‑copy once she replies with hero image choice A or B.
+
+Subject: Eilidh — paste‑ready hero copy for your TikTok page (pick A or B)
+
+Eilidh —
+
+Love that you’re pushing the fast variant now. Here’s copy you can paste for the first screen, plus OOS vs in‑stock CTA lines. One quick question at the end so you can move today.
+
+Paste‑ready hero (mobile‑first)
+- H1: Sea Buckthorn Glow Serum
+- One‑line: A simple, brightening oil‑serum with sea buckthorn, squalane and vitamin E. No fragrance.
+- Price: £24
+- Primary CTA: Buy 30ml — £24
+- Tiny proof under CTA: As seen by 2M+ on TikTok • Free UK delivery over £40
+
+OOS state (15ml)
+- Hide the size selector.
+- Small line under the fold: 15ml — £14 (back in ~2 weeks).
+- Alt CTA test: Buy 30ml — Ships now
+
+In‑stock state (both sizes)
+- Keep 30ml preselected.
+- Show size selector below the CTA.
+- Small secondary line under CTA: Or 15ml — £14 to try it first.
+
+Hero image pick (choose one to start)
+- A) Plain bottle on clean background
+- B) Cropped TikTok frame‑grab that matches the viral post
+
+Reply A or B and I’ll tailor the micro‑copy to that image style.
+
+Routing and tracking (for your TikTok bio/ads)
+- Point all TikTok links to the fast URL and tag them like:
+  ?utm_source=tiktok&utm_medium=social&utm_campaign=glow_heroA
+- Scoreboard to watch: TikTok sessions, Add‑to‑Cart rate, First‑order conversion, Cost per first order.
+
+Q4 note
+- UK retail footfall fell 2.9% YoY in September (BRC). If store traffic is softer, squeezing more from each TikTok click matters even more this quarter.
+
+Optional
+- If you’re on Shopify, Canvas (launched this month) lets you rework product/landing pages via chat with instant previews—useful for turning these variants fast.
+
+Quick check: is “15ml back in ~2 weeks” still accurate? If it’s sooner or later, I’d tweak the line above accordingly.
+
+Fieldwork Studio
+
+==== Sent before (24/25 (specific 5, useful 5, voice 5, fits 5, reply 4))
+Subject: Re: Glow Theory before/after link + your 7‑day TikTok landing test (mobile‑first)
+
+Eilidh —
+
+Great — a few extras that make the TikTok test cleaner and faster to learn from, without adding build time:
+
+- Measurement hygiene
+  - Use distinct UTMs for each hero (e.g., utm_content=heroA / heroB) so you can read first orders by variant.
+  - Judge on first orders and checkout starts from TikTok sessions, not clicks. Hold variants steady for a few days before calling it; don’t change ads mid‑test.
+
+- OOS handling (15ml)
+  - Keep 30ml preselected; grey out 15ml with a small line: “15ml back in ~2 weeks”.
+  - Add a lightweight “Email me when 15ml is back” right below the size options (single field). Micro‑copy under the CTA: “Most start with 30ml”.
+
+- TikTok‑side congruence
+  - Update your bio link to the fast URL and pin a top comment with the same link on the viral post.
+  - Post a short reply video that ends on a freeze‑frame of the fast page hero; caption mirrors the CTA text (“Buy 30ml — £24”). Keep the first second/thumbnail matching the hero so the click feels seamless.
+  - If you already have TikTok Shop, mirror the same “30ml first” offer there; if not, ignore this for now.
+
+- Page speed/QA (mobile)
+  - One hero image, system font, no popups on this URL. Sticky Add to Cart only after scroll; make sure it doesn’t cover price/CTA on small screens.
+  - Test Apple Pay/PayPal on a real phone; confirm the size stays 30ml through to checkout.
+
+- Call the winner
+  - Pick one primary success metric (lower cost per first order is ideal). When one variant clearly wins, retire the other and send all TikTok traffic to the winner.
+
+Context for Q4: the BRC reported UK retail footfall down 2.9% YoY in September — softer offline demand usually nudges more gifting intent online. Worth moving quickly this month.
+
+Fieldwork Studio

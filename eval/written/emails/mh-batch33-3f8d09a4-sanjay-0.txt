@@ -1,0 +1,65 @@
+To: sanjay (Founder-CEO of Bruno’s Bowl, a UK fresh dog food subscription. Mostly browses on his iPhone 14 Pro between warehouse runs; opens laptop late evening for deeper reads. Blunt, numbers-first, impatient with fluff, sceptical of agencies but open to tight 90‑day tests.)
+Judge: 20/25 (specific 4, useful 4, voice 4, fits 4, reply 4) PROMISES 1
+Worst: It doesn’t tie the tracking schema to Shopify + Recharge ID stitching or the post‑trial churn problem, so it reads like a solid but generic UTM hygiene checklist rather than a Bruno’s Bowl‑specific plan.
+! Will send a one‑page source‑to‑sale tracker map tailored to Bruno’s Bowl’s flow if Sanjay replies asking for it.
+
+Subject: Bruno’s Bowl: the 3 fixes that un-break attribution (UTMs, click IDs, consent)
+
+Sanjay —
+
+You wrote “Can’t tell what’s working.” I took a quick look through Bruno’s Bowl this morning.
+
+What’s blocking clean attribution right now (from what’s publicly visible):
+- The “Build your plan” flow collects dog details + email + postcode before pricing, but there’s no sign it captures or persists any source data (UTMs, click IDs, referrer, landing URL) at that key step.
+- The conversion flow doesn’t surface any hidden fields for source/medium or click IDs.
+- No visible analytics scripts or consent banner across public pages, which suggests minimal tracking or unclear consent handling.
+
+If that matches what you’re seeing internally, here’s a paste-ready ticket to unblock it today. Forward this to whoever owns your forms with “please add these hidden fields”.
+
+1) Capture the right fields on first touch and never lose them
+- Hidden inputs on the first form in the flow (your “Build your plan” form):
+  utm_source, utm_medium, utm_campaign, utm_term, utm_content
+  gclid, fbclid, ttclid, msclkid
+  referrer, landing_page_url
+  first_touch_timestamp, last_touch_timestamp
+  first_page_url, first_utm_source/medium/campaign, last_utm_source/medium/campaign
+- Persistence: write these to storage (e.g., localStorage + cookies) when a visitor lands with UTMs/click IDs; do not overwrite first_* once set; always update last_*.
+
+2) Pass source data through every step until order/subscription exists
+- On each form submit, populate hidden inputs from storage and include them in the payload.
+- Carry the same fields into checkout/order metadata and customer profile so they are queryable after purchase (covers both one-off orders and subscriptions).
+- If your checkout is on a different domain/subdomain, ensure the storage method survives the hop (fallback cookie + URL param handoff if needed).
+
+3) Emit events that your tools can actually attribute
+- Fire events at three minimum moments with the source fields attached as parameters/properties:
+  plan_started (first form submit), checkout_started, purchase (order created / subscription started).
+- Ensure these events map cleanly in your analytics/ad platforms so revenue can be tied back to the captured first/last touch.
+
+QA pass (15‑minute sanity check)
+- Open a clean browser, hit the homepage with test UTMs (e.g., utm_source=test&utm_campaign=oct12).
+- Start “Build your plan,” confirm hidden fields are populated.
+- Continue to checkout; verify the same fields are present in the payload and stored on the order/customer record.
+- Confirm your analytics/ad platforms receive the three events with the same values.
+
+One sharp question to align the schema: where does your “source of truth” for a first purchase live today (the order system or the subscription platform), and do subscriptions and one-offs share an order/customer ID? That answer decides which IDs and events we attach the source data to.
+
+If useful, I can send a one‑page source‑to‑sale tracker map tailored to this flow (field list, persistence method, event schema, and QA steps) so your team can implement without guesswork. Reply with “send the tracker map” and which tools you want it shaped for.
+
+Fieldwork Studio
+
+==== Sent before (12/25 (specific 2, useful 3, voice 3, fits 2, reply 2) INVENTED 2)
+Subject: Bruno’s Bowl: one‑page fix for attribution
+
+Sanjay —
+
+Here’s the one‑page tracker map we promised.
+
+1) Capture on first arrival: campaign/source from the URL or referrer, plus any ad platform click ID.
+2) Save a “first arrival” once; update a “last arrival” on new entrances; store both as soon as the plan flow starts.
+3) Pass those values through each step and into checkout, and stamp them on the final order or subscription record (hidden fields + order metadata).
+4) Log a few milestones with the same context: plan started, price shown, checkout started, purchase/subscription created.
+5) QA in one pass: arrive with test parameters, start the flow, finish a test checkout, confirm the same values appear on the order/subscription.
+
+This closes the loop from ad to order without a redesign; it’s usually a day’s work once you know where those fields live.
+
+Fieldwork Studio

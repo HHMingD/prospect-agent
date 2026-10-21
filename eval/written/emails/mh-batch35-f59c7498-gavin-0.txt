@@ -1,0 +1,144 @@
+To: Gavin Kerr (Co-owner at Bruntsfield Wine Co., a neighbourhood wine merchant in Edinburgh. Handles corporate accounts and seasonal marketing. Browses on a 13" MacBook in the shop office; checks links on his iPhone on the tram. Pragmatic, time-poor, wary of agency fluff, wants specifics and dates.)
+Judge: 25/25 (specific 5, useful 5, voice 5, fits 5, reply 5)
+Worst: It never acknowledges scope/price/timeline delivery from your side, so while the teardown is excellent, it doesn’t tie the fixes to a fixed-cost, early‑November go‑live you care about.
+
+Subject: Bruntsfield Wine — 1‑page teardown: 3 fixes for /corporate-gifting + 2 B2B ad angles
+
+Hi Gavin —
+
+You said: Q4 corporate gifting is converting at 1.2%, CPCs spike, and you’re losing leads to calls/email with a 2–3 day proposal delay. Below is a tight teardown with 3 page fixes and 2 B2B ad angles you can use now. No fluff.
+
+Where the page leaks today
+- Above‑the‑fold is generic (“Say thank you with wine”), so ad traffic doesn’t see a single promise tied to Q4 needs.
+- Friction: minimum 20 gifts + spreadsheet upload + 2–3 day proposal + payment only after approval. No instant quote or order, so urgency dies and people bail to phone/email.
+- Mixed pricing signals: “Bottles from £12–£38 · Mixed cases from £65,” but no clear tiers to anchor budgets.
+
+3 page fixes (fast, specific)
+1) Bundled hero + reserve slot
+- Replace the generic hero with a single‑promise module that matches your offer specifics.
+- Pasteable hero copy:
+  - Headline: Corporate Christmas wine gifts, UK‑wide
+  - Sub: Minimum 20 gifts. From £12 per bottle. Branded note cards included. Delivery in 5–10 working days after payment.
+  - Primary CTA: Get instant VAT‑quoted proposal (PDF)
+  - Secondary CTA: Reserve a November–December delivery window
+  - Tertiary link: Fewer than 20? Shop mixed cases
+- Add three visible “bundle” tiles (not price lists, just decision anchors) that map to common budgets; beneath each, show what changes (producer tier, add‑ons) and reiterate lead time and minimum 20.
+
+2) Instant quote with VAT‑itemised PDF (replaces the 2–3 day wait)
+- On click of the primary CTA, show a short step‑one form (see fix 3). On submit, generate a branded PDF proposal instantly with:
+  - Line items: e.g., quantity × bottle/mixed case, add‑ons (hamper, chocolate/cheese), branded note cards (included).
+  - Totals: subtotal (ex VAT), VAT, courier/shipping, total due.
+  - Delivery: “Lead time 5–10 working days after payment.”
+  - Notes: “Prices exclude VAT and courier.” “Delivery windows 1 Nov – 20 Dec.” “Minimum order 20 gifts.”
+  - Next step copy on the PDF footer: “Approve by reply to receive invoice the same day.”
+- This lets procurement forward a VAT‑clear proposal internally the minute they’re warm, without waiting for your team.
+
+3) Split the form: capture intent first, spreadsheet later
+- Move the heavy lift (recipient spreadsheet) to step two, after they’ve got the instant PDF.
+- Step‑one (above the fold or modal):
+  - Full name, Company, Work email, Phone (optional), Number of recipients (min 20), Budget band, Preferred delivery window.
+  - Microcopy under the upload: “No spreadsheet now? We’ll collect addresses after approval.”
+- After submit, show: “Download your VAT‑itemised proposal (PDF)” + reminder of next steps. Then invite spreadsheet upload as an optional second step.
+- Keep phone/email available in FAQ, but don’t present them as parallel CTAs in the hero—channel the click into the quote flow first to reduce leakage.
+
+Wireframe snippet (mobile > desktop)
+[Hero]
+  Corporate Christmas wine gifts, UK‑wide
+  Min 20 • From £12/bottle • Branded notes • 5–10 working days after payment
+  [ Get instant VAT‑quoted proposal (PDF) ]
+  [ Reserve Nov–Dec delivery window ]   Fewer than 20? Shop mixed cases →
+[Bundle tiles]
+  Thoughtful →  |  Signature →  |  Reserve →
+   key inclusions • lead time • “From £12/bottle” reminder
+[How it works]
+  1) Choose budget/style  2) Instant proposal (PDF)  3) Approve & pay  4) Upload addresses  5) UK‑wide delivery (1 Nov–20 Dec)
+[Form step‑one]
+  Name • Company • Work email • Recipients (≥20) • Budget band • Delivery window
+  “No spreadsheet now? We’ll collect addresses after approval.”
+[FAQs]
+  Keep phone/email here for questions.
+
+2 B2B ad angles for Q4 (Facebook/Instagram/Off‑site)
+Angle A — Instant VAT‑quoted proposal
+- Primary text: Corporate wine gifts, minimum 20. Get a VAT‑itemised proposal instantly — forwardable for approval.
+- Supporting facts: From £12 per bottle; UK‑wide; delivery 5–10 working days after payment.
+- Headline: Instant corporate gifting proposal (PDF)
+- CTA: Get instant quote
+- Creative: Screen capture of the instant‑proposal flow + three bundle tiles; overprint “Minimum 20 • UK‑wide • 5–10 working days”.
+
+Angle B — One invoice, UK‑wide in 5–10 working days after payment
+- Primary text: One invoice, branded notes included, multi‑address shipping via spreadsheet. Delivery to UK addresses in 5–10 working days after payment.
+- Supporting facts: Delivery windows 1 Nov–20 Dec. Prices exclude VAT and courier.
+- Headline: One invoice. UK‑wide gifting made easy.
+- CTA: Reserve your delivery window
+- Creative: Product + packaging stack with a calendar overlay highlighting Nov–Dec.
+
+7‑day validation plan (keeps theory out, proves lift fast)
+- Day 1–2: Ship the hero swap (Fix 1) and the split form (Fix 3). Stencil the instant PDF (Fix 2) using your current price ranges and standard notes (“Prices exclude VAT and courier”).
+- Day 3: Launch two ad sets (or campaigns) with Angles A and B, each with 3 creative variants, pointed only at the revised /corporate-gifting page. Keep your current best performer running separately as a frozen baseline for comparison.
+- Day 4–7: Measure page→lead conversion vs your 1.2% baseline, instant‑PDF downloads, completed approvals, and call/email leakage (clicks to tel:/mailto:). If the variant beats baseline on page→lead and approvals, start moving budget toward the winning angle/creative combo.
+- What “good” looks like: clear uplift vs 1.2%, a higher share of leads entering via the instant‑proposal CTA, and fewer first‑touch calls/emails.
+
+If you could only ship one change before Friday, which would you pick: A) the instant VAT‑quoted PDF, or B) the bundles hero + reserve slot?
+
+Fieldwork Studio
+
+==== Sent before (24/25 (specific 5, useful 5, voice 5, fits 4, reply 5) PROMISES 1)
+Subject: Bruntsfield Wine — corporate gifting: 3 page fixes + 2 B2B ad angles (ready to use)
+
+Gavin — your /corporate-gifting page asks for an uploaded spreadsheet and says “We aim to reply within 2–3 working days.” That’s where 1.2% and the call/email leak live. Earn trust first (instant quote + reserve week), ask for the CSV second.
+
+3 page fixes (fast, specific):
+1) Hero that sells outcomes + reserves a week
+   - Primary CTA: “Get instant quote (VAT itemised)”
+   - Secondary CTA: “Reserve delivery week”
+   - Keep your decision facts visible (your words): “Minimum order 20 gifts • Delivery windows 1 Nov–20 Dec • UK‑wide shipping • Lead time: 5–10 working days after payment • Branded note cards included • Multi‑address delivery via spreadsheet upload • Prices exclude VAT and courier.”
+
+2) Instant quote (downloadable PDF)
+   - Right‑side calculator: Gifts [ ] × Budget per gift [ ] → totals with a VAT line and a courier line.
+   - Buttons: “Download quote (PDF)” and “Email me this quote.” Procurement box ticked before anyone calls.
+
+3) Two‑step form (contact first; spreadsheet later)
+   - Step 1 (short): Name, Company, Work email, Gift count, Budget band, Preferred delivery week.
+   - Auto‑send the quote PDF + a link to pick a week on submit. Only then ask for the recipient CSV (or offer a template).
+   - For paid sessions, push phone/email lower to reduce leaks; keep them prominent for organic.
+   - Optional: link “Under 20 gifts? Shop curated bundles” to route small buyers.
+
+2 B2B ad angles (built from your proof points):
+A) Headline: “Get an instant quote for corporate wine gifts.”
+   Subline: “Minimum order 20 gifts. UK‑wide shipping. Lead time: 5–10 working days after payment. Branded note cards included. Multi‑address delivery via spreadsheet upload. Prices exclude VAT and courier.”
+   CTA: Get instant quote.
+
+B) Headline: “Reserve your November–December delivery window.”
+   Subline: “Delivery windows 1 Nov–20 Dec. Minimum order 20 gifts. UK‑wide shipping.”
+   CTA: Reserve your week.
+
+Wireframe (text sketch)
+[Hero]
+Corporate Christmas gifts, sorted.
+Minimum order 20 gifts • Delivery windows 1 Nov–20 Dec • UK‑wide shipping • Lead time: 5–10 working days after payment
+[Chips] Classic | Elevated | Signature
+[Buttons] Get instant quote (VAT itemised)  |  Reserve delivery week
+[Trust strip] Branded note cards included • Multi‑address delivery via spreadsheet upload • Prices exclude VAT and courier
+
+[Right panel] Instant quote
+Gifts: [  ]   Budget per gift: [  ]
+Subtotal £… | VAT £… | Courier £… | Total £…
+[Download quote PDF]  [Email me this quote]
+
+[Form – Step 1]
+Name, Company, Work email, Gift count, Budget band, Preferred delivery week
+[Get proposal + reserve week]
+
+[Step 2]
+Upload recipients (CSV)  |  Send me a template  |  I’ll do this later
+
+7‑day validation plan (no rebuild):
+Day 1: Duplicate /corporate-gifting to /corporate-gifting/christmas; add hero, instant‑quote module, step‑1 form.
+Day 2: Track: quote starts/PDFs, step‑1 submits, delivery‑week clicks, call/email clicks.
+Day 3: Send paid B2B traffic to the new variant; keep the current page for organic/direct.
+Days 4–7: Success = quote starts per session up, call/email leak down, and lead quality stable or better.
+
+If you want the exact module specs your developer can drop in this week, say so and I’ll send them.
+
+Fieldwork Studio

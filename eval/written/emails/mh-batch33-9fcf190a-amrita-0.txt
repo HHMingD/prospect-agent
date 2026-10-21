@@ -1,0 +1,120 @@
+To: Amrita Shah (Founder of Sprout & Stitch, a UK kids’ clothing brand. She splits time between the studio and a small warehouse. Skims on her iPhone first, opens laptop only if it’s worth it. Direct, impatient with fluff, numbers-first but creative-savvy. Skeptical of long retainers; likes clear experiments and visible outputs.)
+Judge: 25/25 (specific 5, useful 5, voice 5, fits 5, reply 5) PROMISES 1
+Worst: The P.S. plug for an influencer marketing workshop feels like filler and slightly off‑brief for someone asking for immediate creative and landing tests.
+! If you reply with the chosen proof (knee slide or seam close‑up), I’ll shape the hero accordingly.
+
+Subject: Amrita — quick Playproof fixes you can ship today (and a 502 heads‑up)
+
+Hi Amrita —
+
+Thanks for introducing yourself. You’re on our Oatside Kitchen page; the short version of that lesson: moving paid traffic off the homepage to promise‑driven landing pages lowered first‑order cost by 38%.
+
+One fast heads‑up first: sproutandstitch.co.uk is returning a 502 Bad Gateway right now. If any Meta or remarketing links point at the .co.uk domain, today’s spend and pixel signal are getting burned. Quick fix: temporarily route ads to a working Playproof page (even a bare Canvas page), or pause until the .co.uk is back up.
+
+Urgent checks to forward
+- Are any active ads or emails linking to sproutandstitch.co.uk rather than a working page? If yes, swap links now.
+- Is Meta Pixel/CAPI firing on add‑to‑cart and purchase on the working pages? Spot‑check in Events Manager.
+- Does the “Play Club” discount arrive instantly? A 5‑minute delay tends to leak buyers hunting an immediate code; consider instant reveal or auto‑apply.
+
+Where your current pages leave money on the table
+- Above the fold you lead with GOTS cotton, reinforced knees, same‑day dispatch, pay‑later, and free returns. Clear, but there’s no visual Playproof proof. Make proof the hero: a 5‑second grass‑stain knee slide loop or a stitched‑seam macro under load; one CTA; no header nav.
+- Product grid is strong (size pickers, quick add). Add a tiny loop badge (“30‑day knee test: pass”) or a 2–3s clip on each Playproof SKU tile to separate from generic organic‑cotton offers.
+- Cart/checkout repeats returns/dispatch/Klarna but not Playproof. Add a small durability proof tile near payment: seam macro or knee‑slide loop. Credibility at the last step wins low‑awareness buyers.
+- Email capture: the 5‑minute discount delay risks abandonment. For paid clicks, consider on‑click reveal or auto‑apply at checkout to keep momentum.
+
+A Playproof landing you can spin up in Canvas
+- Hero (video or loop): 5s knee slide on grass; overlay: “Playproof kidswear, built for knee slides, tree climbs and lots of washes.”
+- Three proof points: reinforced knees; seam close‑up; GOTS organic cotton badge.
+- Social proof: 2–3 short parent quotes about surviving school/playground.
+- Quick buy: Size selector for the hero SKU + Add to bag right on the page.
+- Cost‑per‑wear: show price ÷ expected wears to anchor value.
+- “How it’s made”: durability callouts and close‑ups.
+- FAQ: sizing, washing, returns.
+- Single CTA repeated: “Shop Playproof trousers.”
+
+Three ad variants to feed GEM today
+- Kid‑in‑action (15s)
+  Hook (0–2s): Knee slide into frame; grass stains visible.
+  VO/captions: “Knee‑slide approved.” 
+  Proof (3–10s): Slow‑mo seam/stitch macro under stretch; overlay “Reinforced knees.”
+  Close (10–15s): Smiling kid jumps up; product on plain background + CTA “Shop Playproof.”
+- Parent VO (15s)
+  Hook: Laundry basket dump; pair still intact.
+  VO: “We buy fewer trousers now.” On‑screen: “30‑day knee test.”
+  Proof: Quick playground montage.
+  Close: Product + CTA.
+- Side‑by‑side (15s)
+  Hook: Two knees on rough concrete: “High‑street” vs “Playproof.”
+  Proof: 5s rub test; high‑street frays, Playproof holds.
+  Close: Overlay “Fewer replacements. More play.” Product + CTA.
+
+GEM, Canvas, Composer cadence (three‑week rule)
+- GEM: One campaign, three creatives with distinct UTMs; let GEM optimise placements across FB/IG/Reels/Stories; cull any creative with three consecutive weeks of declining CTR and no conversion lift. Meta’s GEM is reporting up to 18.9% more conversions and 12% higher CTR platform‑wide—feed it clear variants.
+- Canvas: Duplicate your best product page into a Playproof offer page; strip global nav; keep one CTA; ship it fast so you have a safe destination while .co.uk recovers.
+- Composer: Ask Composer to audit flows for “viewed Playproof but didn’t add to cart” and “added Playproof but didn’t purchase,” and to draft a two‑email nudge using the knee‑test proof and cost‑per‑wear.
+
+Why this works
+- The promise lives in proof, not copy. When Oatside moved paid traffic from home to offer pages, first‑order cost dropped 38%. Same principle for Playproof: send cold clicks to proof, not to browse.
+
+One question for you
+- If you could only show one Playproof proof in the first five seconds, would you pick the knee slide or the seam close‑up? Reply with your pick and I’ll shape the hero accordingly.
+
+Also, quick confirm: are any live ads still pointing at sproutandstitch.co.uk right now? If yes, this is worth forwarding to whoever owns the links.
+
+Fieldwork Studio
+
+P.S. If influencer‑led creative is on your mind, IMK London runs a half‑day workshop on 28 Oct in Central London. Handy if “ads feel stale” is the brief.
+
+==== Sent before (25/25 (specific 5, useful 5, voice 5, fits 5, reply 5) PROMISES 1)
+Subject: Sprout & Stitch: urgent fix first, then a Playproof page, ads and a 7‑day plan
+
+Amrita —
+
+First, urgent: sproutandstitch.co.uk is returning a 502. Until it’s back, pause any paid or point it to a fast Playproof page (Shopify Canvas draft is fine). Outages kill conversion and your pixel signal, which breaks new‑creative learning.
+
+10‑point teardown (sproutandstitch.example)
+1) Above the fold needs proof, not claims: 5‑sec loop of a grass‑stain knee slide or a seam macro under strain; one line “Playproof clothes for real play.” One CTA.
+2) Route ads to a Playproof page, not home/shop. One ad, one promise, one page.
+3) Keep reassurance, but after the demo: GOTS, same‑day dispatch, free returns as three chips below the hero.
+4) “Play Club” code after a delay risks drop‑off. Make discounts instant (auto‑apply in cart) or move to post‑purchase.
+5) Add a simple cost‑per‑wear calc near price to anchor value to durability.
+6) PDP/cart: add micro‑proof (looped fabric/knee test and stitching close‑up) next to size and CTA.
+7) Reviews: surface ones that mention lasting through play. Filter/tag by “durable” and sort to top.
+8) Size guide above the fold; sticky add‑to‑cart on scroll.
+9) Checkout: repeat Playproof proof as a tiny loop/icon row; keep dispatch/returns visible.
+10) Measurement: each ad concept gets its own URL param; track hero CTA clicks → add‑to‑cart → purchase so you can cut by concept, not just audience.
+
+Playproof landing page wireframe (Canvas)
+- Hero: 5‑sec demo loop + “Playproof clothes for real play” + size/colour + single CTA.
+- Why it lasts: reinforced areas, fabric spec, stitching detail (short copy, big visuals).
+- Social proof: reviews that mention durability; UGC tiles of kids in action.
+- Value: cost‑per‑wear calc; care/wash note.
+- Offer/reassurance: same‑day dispatch, free returns, pay‑later.
+- FAQ: sizing, repairs/care, stains.
+- Sticky add‑to‑cart; footer with materials and certifications.
+
+Three ad scripts (each ships in at least three variants)
+1) Kid‑in‑action (hook: “Prove it in 5 seconds”): knee slide → climb → tumble; overlaid “Playproof”; end frame: product + price + “Shop Playproof”. Variants: angles, tempo, captions.
+2) Parent VO (hook: “Lasted all term”/“Fewer wardrobe emergencies”): ripped‑knee problem → reinforced seam close‑up → kid back to play. Variants: VO lines, music, end card.
+3) Side‑by‑side test: other trousers vs Playproof under the same scuff; macro on wear pattern; clear end card. Variants: surfaces, duration, label style.
+
+Creative cadence (three‑week rule)
+- New concept weekly; at least three variants per concept.
+- Anything with three weeks of falling CTR retires; anything still climbing stays.
+- Keep a queue so nothing goes dark when you pause losers.
+
+Tracking checks
+- Meta pixel + server‑side events deduped; verify ViewContent, AddToCart, InitiateCheckout, Purchase fire from the Playproof page.
+- Each ad → its own UTM and its own section on the page to read concept‑level performance.
+- Klaviyo: browse/cart abandonment and post‑purchase flows reference Playproof benefit, not generic copy.
+
+7‑day kidswear test plan (Canvas + Meta GEM + Klaviyo Composer)
+Day 0‑1: Build the Playproof Canvas page (wireframe above). Add micro‑proof loops.
+Day 2: Launch Meta with three creative variants pointing only to this page; let GEM optimise placements.
+Day 3: Composer audit of welcome, browse, and cart flows; add a 3‑email “Playproof Proof” sequence (demo → reviews → care/value).
+Day 4: Cut any ad variant < account median CTR or weak add‑to‑cart rate; duplicate the winner with a new hook.
+Day 5‑7: Expand winners to one adjacent audience; ship one fresh variant; keep all paid pointed to the Playproof page.
+
+If you want the wireframe and scripts as editable docs (Canvas section IDs, copy blocks, and shot lists), reply and I’ll send them.
+
+Fieldwork Studio

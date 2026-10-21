@@ -1,0 +1,162 @@
+To: liam (Marketing Director at FlexTown Fitness, an 8-location gym chain. Reads on a 13" MacBook in the office; checks ads on his phone while commuting. Numbers-first, time-poor, politely skeptical of agencies; wants plans and proofs, not vibes.)
+Judge: 25/25 (specific 5, useful 5, voice 5, fits 5, reply 5) INVENTED 1
+Worst: The only shaky element is the very specific placement safe‑zone pixel margins, which feel arbitrary without a source and could invite pushback from a numbers‑first team.
+! Specific pixel ‘safe zone’ overlays (≥250px for 9:16; ≥120px for 4:5; ≥90px for 1:1) are stated without provided source/support.
+
+Subject: FlexTown dev one‑pager: launch page spec + 50/50 test plan
+
+Liam —
+
+As asked—here’s a concrete one‑pager your dev can build as‑is, plus a light 50/50 test plan against /join. It’s written to maximise same‑day paid sign‑ups with price/promise clarity.
+
+FlexTown launch page v1 — “Join for £1” (campaign variant)
+
+Goal and primary KPI
+- Purpose: turn paid clicks into paid joins the same day.
+- Primary KPI: CPA on paid joins from UTM‑tagged clicks only. Secondary: Paid‑Join Rate (paid joins ÷ unique paid clicks).
+
+URL and page frame
+- URL suggestion: /join-for-1 (or /join/campaign). No top nav, no footer CTAs, no 7‑Day Pass on this page. Leave T&Cs in the footer only.
+- Meta title: “Join for £1 — Instant confirmation. Access card in 5 minutes.”
+
+Above the fold (does the whole job)
+- Headline: “Join for £1 — [Nearest club]”
+- Sub: “No contract. Instant confirmation by email. Access card ready in 5 minutes during staffed hours.”
+- Inputs inline: [Postcode]  [Club dropdown]
+- Primary CTA: [Start in 60 seconds]
+- Price clarity line (visible before form): “Pay today: £1 + joining fee £0/£15 (this club).”
+- Local proof: 2–3 reviews from the selected club only (short; stars optional).
+- Staffed badge, right by the CTA: “Staffed now: collect card in 5 minutes” or “Collect from 9am”. If not live, show the rule.
+- Escape hatch: Tiny, muted link below the fold only: “Prefer a tour?”
+
+Flow and order
+- Progress bar: “Choose club • Plan • Pay” (3 steps max).
+- Step order: Club → Plan & Today’s total → Details → Card.
+- Plan selection: Pre‑select the plan that matches the ad (e.g., Anytime). Hide other plans on this page; keep upsells (PT/sauna) post‑payment or in the welcome email.
+
+“Good to know” microcopy (near the plan step)
+- “Freeze any time (£5/mo). Cancel with 30 days’ notice.”
+- “£15 joining fee may apply at some clubs.”
+
+Tracking events (name + useful props)
+- StartJoinClicked {club_id, plan_from_ad, utm_source, utm_campaign}
+- PlanSelected {club_id, plan_id}
+- PaymentCompleted {value_gbp, club_id, plan_id, promo_code, utm_source, utm_campaign}
+
+Accessibility and speed
+- Keep LCP under ~2s on mobile; all steps keyboard‑navigable.
+
+A/B test plan (current /join vs campaign variant)
+- Split: 50/50 from all paid “Join for £1” campaigns. One destination per creative concept.
+- Freeze: keep pricing and creative constant during the read to avoid drift.
+- Read window: check once you have roughly 500 paid clicks per variant and ~100 total paid joins, or ~7 days—whichever lands later. Use this as a guardrail rather than a hard rule.
+- Primary read: CPA = media spend ÷ paid joins (from UTM’d clicks only). Secondary: Paid‑Join Rate. Ignore view‑through for the decision.
+- Cut by club, then roll up. If a single club skews, note it but don’t let it override the total unless it dominates spend.
+
+Creative and placement consistency (Meta GEM)
+- Keep the on‑frame line identical across 9:16, 4:5, 1:1: “Join for £1. Start in 60 seconds.”
+- Placement‑proof overlays (practical guardrails): keep core text clear of edges (roughly ≥250px top/bottom safe zone on 9:16; ≥120px on 4:5; ≥90px on 1:1) so price/CTA survive Reels/Stories UI.
+- One destination per concept to help GEM optimise; avoid mixed CTAs on the same ad set.
+- Useful yardstick: Meta reports up to 18.9% more conversions and 12% higher CTR with GEM across placements; consistency helps you capture that.
+
+Benchmarks to set expectations (not promises)
+- −38% CPA after moving ads off a homepage onto focused offer pages.
+- +74% paid revenue with a focused finder.
+- ROAS 1.6 → 3.1 when creative testing + new pages worked together.
+
+Optional 72‑hour placement read (quick audit)
+- For each placement: log spend, clicks, paid joins, CPA; check share of spend vs share of joins; pause the bottom ~20% by CPA once each has at least 3 joins.
+
+Paste‑ready bits for your dev
+- H1: “Join for £1 — [Nearest club]”
+- Sub: “No contract. Instant confirmation by email. Access card ready in 5 minutes during staffed hours.”
+- CTA: “Start in 60 seconds”
+- Price line: “Pay today: £1 + joining fee £0/£15 (this club).”
+- Progress: “Choose club • Plan • Pay”
+- Tiny link: “Prefer a tour?” (muted; below the fold)
+
+If this is useful, forward it straight to your dev. If there’s one line your team will push back on, tell me which and I’ll make the trade‑off explicit so you can ship without debate.
+
+Fieldwork Studio
+
+==== Sent before (24/25 (specific 5, useful 4, voice 5, fits 5, reply 5) PROMISES 2)
+Subject: FlexTown join page — dev one‑pager + A/B test plan
+
+Liam —
+
+Here’s the concrete one‑pager for your devs plus a head‑to‑head test plan.
+
+Dev one‑pager (campaign join page)
+Goal
+- Maximise same‑day paid joins from paid clicks. First screen carries promise and price; no detours.
+
+URL and routing
+- Dedicated URL (e.g. /join-offer?jan). Do not index.
+- Send paid traffic for this offer to that URL only; keep /join for organic/site nav.
+
+Hero (above the fold)
+- Headline: “Join for £1.”
+- Subhead: “Instant email. Access card in 5 minutes during staffed hours.”
+- Location first, inline: [Postcode] → [Club dropdown] (auto‑suggest nearest if you can).
+- Primary CTA: “Start in 60 seconds.” One CTA only.
+- Price line under CTA: “Pay today: £1 + joining fee £0/£15 (this club). No contract.”
+- Remove global nav and secondary CTAs on this page; place a muted “Prefer a tour?” link below the fold.
+
+Flow order (single, linear)
+1) Confirm club → 2) Choose plan (preselect the plan that matches the ad) with Today’s total visible → 3) Details → 4) Card.
+- Move upsells (PT, sauna) post‑payment or into the welcome email.
+- Progress labels: “Choose club • Plan • Pay”.
+
+Staffed‑hours promise
+- If within staffed hours for the chosen club: “Staffed now: collect card in 5 minutes.”
+- Else: “Collect during staffed hours: [next staffed window]” (or a clear rule if live hours aren’t available).
+
+Local proof (still visible on first screen on mobile)
+- 2–3 short reviews from the selected club only. Fallback to generic if fewer than two.
+
+Friction trims specific to your current /join
+- Resolve price before form fields: show Today’s total immediately after club selection.
+- Keep DOB and full address where they are, but only after Today’s total; enable postcode lookup to shorten typing.
+- On paid sessions, suppress the 7‑Day Pass path entirely on the campaign page to avoid cannibalising the offer.
+
+Tracking (use these names as‑is)
+- PageViewOffer {ab_variant, club_id}
+- StartJoinClicked {club_id, club_name, utm_source, utm_campaign, ab_variant}
+- ClubSelected {club_id, club_name, postcode_partial, ab_variant}
+- PlanSelected {plan_id, plan_name, today_total_gbp, joining_fee_gbp, ab_variant}
+- PaymentCompleted {value_gbp, club_id, plan_id, ab_variant, utm_source, utm_campaign, transaction_id}
+Counting rule: decide on paid joins and CPA only; attribute PaymentCompleted to the last eligible paid click in‑session; carry ab_variant through checkout and fire it with PaymentCompleted.
+
+UI/performance notes
+- Mobile first; large tap targets; numeric keypad for number fields; labels outside inputs; inline, specific errors.
+- One hero image (compressed), inline critical CSS for the first screen; defer everything non‑essential.
+
+A/B test plan (/join vs campaign page)
+Variants
+- A: Current /join (unchanged).
+- B: New campaign page above, handing into the same payment step (or a mirrored flow) so PaymentCompleted is identical across both.
+
+Traffic and assignment
+- 50/50 split on paid traffic only. One destination per ad concept; no mixing.
+- Append ?ab=a / ?ab=b, set a first‑party cookie/session, and persist ab_variant to checkout and PaymentCompleted.
+
+Metrics and guardrails
+- Primary: Paid‑join rate per paid click; CPA = paid spend ÷ paid joins.
+- Secondary: Drop‑off from StartJoinClicked to PaymentCompleted; median time to complete.
+- Freeze promo copy, pricing and fees during the test window; keep creative consistent per concept and destination.
+- Run long enough to cover weekday/weekend behaviour; don’t stop on a single day’s swing.
+
+Reporting (daily)
+- For each variant and per club: paid clicks, paid joins, join rate, spend, CPA. Include ab_variant in every export to sanity‑check routing.
+
+Directional yardsticks (context, not promises)
+- Oatside Kitchen: cost per first order down 38% after moving ads off the homepage onto focused offer pages.
+- Tallow & Thyme: 4.8% conversion on a focused finder vs 1.9% on the product grid.
+- Glow Theory: ROAS 1.6 → 3.1 over two 90‑day blocks once creative testing and new pages worked together.
+
+Creative note
+- Keep the exact same on‑frame line across formats: “Join for £1. Start in 60 seconds.” One destination per concept keeps the read honest. If safe‑margin overlays for 9:16, 4:5 and 1:1 would help your team, I can include them in a PDF version.
+
+If you want this as a single‑page PDF checklist your devs can tick off, say the word and I’ll package it cleanly with example copy blocks and safe‑margin overlays.
+
+Fieldwork Studio

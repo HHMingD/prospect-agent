@@ -1,0 +1,172 @@
+name: gen_amrita
+starts_at: '2026-10-12T09:00:00Z'
+runs_for: P21D
+max_wakes: 200
+people:
+- key: amrita
+  name: Amrita Shah
+  email: amrita@sproutandstitch.example
+  profile: "Founder of Sprout & Stitch, a UK kids\u2019 clothing brand. She splits time between the studio and a small warehouse.\
+    \ Skims on her iPhone first, opens laptop only if it\u2019s worth it. Direct, impatient with fluff, numbers-first but\
+    \ creative-savvy. Skeptical of long retainers; likes clear experiments and visible outputs."
+  facts:
+  - "Sells bright, durable, organic-cotton clothes for ages 2\u201310; DTC with a few boutique stockists."
+  - "Last 12 months: ~\xA34m revenue; spends ~\xA370k/mo on paid, Meta-first with some Google Shopping."
+  - "Her words: \u201COur Meta creative is tired. CPA drifted from \xA318 to \xA332; frequency ~5+; comments say they\u2019\
+    ve seen these ads.\u201D"
+  - "Budget: can do a 90-day sprint \xA320\u2013\xA335k if it\u2019s creative + landing tests with weekly learnings."
+  - Will share email for a concrete teardown of her ads/LP with 3 testable concepts and roughs, or a kids-apparel case study
+    with numbers.
+  - "Won\u2019t share email for generic ebooks, newsletters, or a discovery call without specifics."
+  - Their business's website is sproutandstitch.example; whenever asked for it they give exactly sproutandstitch.example.
+  working_hours:
+    timezone: Europe/London
+    opens: 08:00
+    closes: '22:00'
+  reply_within:
+    min: PT3H
+    max: P2D
+  reply:
+    kind: answers
+- key: newsroom
+  name: The trade press
+  email: newsroom@press.example
+  profile: Not a visitor. Reports what happens in marketing; never on the site and never writes to the agent.
+happenings:
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P2D
+  inputs:
+    fact: "Meta announced new AI creative tools at Advertising Week NY: Ads Creative Studio is expanding, Advantage+ creative\
+      \ can generate videos from static images, and catalog advertisers can auto-create product videos \u2014 all aimed at\
+      \ faster iteration and performance insights."
+    source: https://about.fb.com/br/news/2026/10/advertising-week-new-york-2026-novas-capacidades-de-ia-para-guiar-campanhas-e-alcancar-clientes/amp/
+    published: '2026-10-06'
+    topic: 'a change on a platform brands buy or build on: Meta, Google, TikTok, Pinterest, Shopify, Klaviyo'
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P5D
+  inputs:
+    fact: Google introduced new channel-priority and budget-allocation controls for Shopping and Performance Max, letting
+      advertisers set channel priorities and cap budget to lower-priority inventory; rolling out globally over the coming
+      months.
+    source: https://blog.google/products/ads-commerce/channel-prioritization-budget-allocation/?ref=noticemesenpai.com
+    published: '2026-10-14'
+    topic: 'a change on a platform brands buy or build on: Meta, Google, TikTok, Pinterest, Shopify, Klaviyo'
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P8D
+  inputs:
+    fact: "BRC-KPMG September data: UK total retail sales +1.3% YoY; clothing/footwear were weak (warm weather delayed autumn\
+      \ buys). Online non-food sales +0.7% YoY; online penetration 38.3% (vs 37.9% a year earlier). Period covers 30 Aug\u2013\
+      3 Oct 2026."
+    source: https://brc.org.uk/news-and-events/news/corporate-affairs/2026/ungated/sluggish-sales-as-shoppers-look-for-budget-boost/
+    published: '2026-10-14'
+    topic: 'go-to-market news: what consumer brands are doing, a shift in how people buy, a season''s numbers'
+- kind: uses
+  person: amrita
+  inbox: site
+  use: views
+  inputs:
+    page: /
+    title: Home
+  after: PT0S
+- kind: uses
+  person: amrita
+  inbox: site
+  use: picks
+  inputs:
+    page: /
+    question: biggest headache
+    answer: Creative feels stale
+  gap:
+    min: PT3S
+    max: PT12S
+- kind: uses
+  person: amrita
+  inbox: site
+  use: asks
+  inputs:
+    page: /
+    label: Roast my site
+    text: https://sproutandstitch.example
+  gap:
+    min: PT6S
+    max: PT24S
+- kind: uses
+  person: amrita
+  inbox: site
+  use: views
+  inputs:
+    page: /work
+    title: Work
+  gap:
+    min: PT4S
+    max: PT16S
+- kind: uses
+  person: amrita
+  inbox: site
+  use: picks
+  inputs:
+    page: /work
+    question: show me work for
+    answer: DTC
+  gap:
+    min: PT3S
+    max: PT12S
+- kind: uses
+  person: amrita
+  inbox: site
+  use: views
+  inputs:
+    page: /work/oatside-kitchen
+    title: Oatside Kitchen case study
+  gap:
+    min: PT2S
+    max: PT10S
+- kind: uses
+  person: amrita
+  inbox: site
+  use: reads
+  inputs:
+    page: /work/oatside-kitchen
+    how: about 90 seconds, scrolled 60%
+  gap:
+    min: PT47S
+    max: PT190S
+- kind: uses
+  person: amrita
+  inbox: site
+  use: views
+  inputs:
+    page: /pricing
+    title: Pricing
+  gap:
+    min: PT3S
+    max: PT14S
+- kind: uses
+  person: amrita
+  inbox: site
+  use: picks
+  inputs:
+    page: /pricing
+    question: pricing toggle
+    answer: Project
+  gap:
+    min: PT4S
+    max: PT18S
+- kind: uses
+  person: amrita
+  inbox: site
+  use: leaves
+  inputs:
+    page: /pricing
+  gap:
+    min: PT9S
+    max: PT36S

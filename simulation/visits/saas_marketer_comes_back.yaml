@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Alknoma/minutehand/integration-main/schemas/scenario.schema.json
+# Sam heads growth at a B2B software company. First visit: the Ledgerly case study and the landing-page post. Back
+# two to four days later: pricing, then a question in the chat. Times between steps drawn per seed.
+name: saas_marketer_comes_back
+starts_at: 2026-10-13T08:20:00Z
+runs_for: P21D
+max_wakes: 200
+people:
+  - key: sam
+    name: Sam Weller
+    email: sam@quillstack.example
+    profile: >-
+      Head of growth at Quillstack, a 40-person B2B software company. Methodical, compares agencies over several days before talking to any.
+    facts:
+      - Quillstack sells invoicing software to small accountancy firms; its website is quillstack.example.
+      - Its paid search sends traffic to the homepage, and demo bookings have fallen for two quarters.
+      - Sam has a budget of about £7,000 a month and is comparing three agencies.
+      - Sam needs a case study from B2B software before taking anything to the CEO.
+    working_hours: {timezone: Europe/London, opens: "08:00", closes: "18:30"}
+    reply_within: {min: PT3H, max: P2D}
+    reply: {kind: answers}
+  - key: newsroom
+    name: The trade press
+    email: newsroom@press.example
+    profile: Not a visitor. Reports what happens in marketing; never on the site and never writes to the agent.
+happenings:
+  - {kind: uses, person: newsroom, inbox: world, use: publishes, after: P4D,
+     inputs: {fact: "BankiFi's chief executive Mark Hartley says banks should become the gateway for small businesses, giving them everything they need to run their business, invoicing included, from within their bank's mobile and online banking; he cited research that 51 per cent of UK SMEs use between five and ten different applications.",
+              source: "https://thefintechtimes.com/bankifis-hartley-on-banks-becoming-the-sme-gateway/",
+              published: "2026-10-05", topic: "go-to-market news: what consumer brands are doing, a shift in how people buy, a season's numbers"}}
+  - {kind: uses, person: sam, inbox: site, use: views, after: PT0S, inputs: {page: /work/ledgerly, title: Ledgerly case study}}
+  - {kind: uses, person: sam, inbox: site, use: reads, gap: {min: PT2M, max: PT4M}, inputs: {page: /work/ledgerly, how: "about three minutes, scrolled 100%"}}
+  - {kind: uses, person: sam, inbox: site, use: views, gap: {min: PT1S, max: PT3S}, inputs: {page: /journal/landing-pages-not-homepages, title: Stop sending ads to your homepage}}
+  - {kind: uses, person: sam, inbox: site, use: reads, gap: {min: PT1M30S, max: PT3M}, inputs: {page: /journal/landing-pages-not-homepages, how: "about two minutes, scrolled 95%"}}
+  - {kind: uses, person: sam, inbox: site, use: leaves, gap: {min: PT1S, max: PT5S}, inputs: {page: /journal/landing-pages-not-homepages}}
+  - {kind: uses, person: sam, inbox: site, use: views, gap: {min: P2D, max: P4D}, inputs: {page: /pricing, title: Pricing}}
+  - {kind: uses, person: sam, inbox: site, use: picks, gap: {min: PT5S, max: PT20S}, inputs: {page: /pricing, question: pricing toggle, answer: Retainer}}
+  - {kind: uses, person: sam, inbox: site, use: writes, gap: {min: PT30S, max: PT2M}, inputs: {text: "Have you done landing pages for B2B software, not just consumer brands? We'd be sending paid search to them."}}
+  - {kind: uses, person: sam, inbox: site, use: leaves, gap: {min: PT2M, max: PT6M}, inputs: {page: /pricing}}

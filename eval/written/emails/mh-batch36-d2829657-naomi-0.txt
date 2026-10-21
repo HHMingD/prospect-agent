@@ -1,0 +1,131 @@
+To: Naomi Fletcher (CFO at a UK DTC mattress brand. Reviewing agencies on behalf of the CEO. Laptop reader with 12 tabs open, numbers-first, brief, sceptical about agency promises, expects immediate evidence and clear commercials.)
+Judge: 23/25 (specific 5, useful 5, voice 5, fits 4, reply 4) PROMISES 1
+Worst: It doesn’t include the 2–3 draft landing pages, a quick forecast, or clear commercials Naomi asked for in exchange for sharing her email.
+! Will adapt the Oatside case study specifically for Nook’s CEO deck and tune the event keys to Nook’s stack if Naomi replies with KPIs.
+
+Subject: Naomi — your Classic PDP has 3 discount paths; here’s the 1‑page event map to make AUTUMN40 attributable
+
+Naomi — thanks for introducing yourself.
+
+I took a fast pass over Nook’s Classic PDP and the home/header promos. What’s great for shoppers is noisy for attribution: on Classic you’ve got “Use code AUTUMN40 at checkout. Ends Sunday.”, a 5% email capture on home, 10% off via SMS on the PDP, a “Not sure? Take the quiz”, and two primary CTAs (“Add to Basket” and “Buy Now”). Below is a 1‑page teardown with the exact events and coupon‑to‑channel plan that will let you prove which path actually drives first orders — the thing your CEO will ask for.
+
+1) Source‑of‑truth event map (separates quiz / add‑to‑basket / buy‑now)
+- page_view
+  - page_type: pdp | product: Classic
+- offer_banner_seen
+  - offer_code: AUTUMN40 | surface: pdp_banner | exposure_ms: 3000
+- lead_capture_view
+  - surface: email_footer | incentive: 5_percent
+- lead_capture_view
+  - surface: sms_pdp | incentive: 10_percent
+- quiz_start
+  - origin: pdp_classic
+- quiz_complete
+  - recommended_model: classic | confidence: (num)
+- cta_click
+  - cta: add_to_basket | product: Classic | location: pdp
+- cta_click
+  - cta: buy_now | product: Classic | location: pdp
+- add_to_cart
+  - product_sku: (sku) | qty: (n) | path: cart | discount_intent: (autumn40|email5|sms10|none)
+- begin_checkout
+  - path: buy_now | product: Classic | discount_intent: (…)
+- discount_apply_attempt
+  - coupon_code: (string) | coupon_source: (see plan below) | success: true|false
+- purchase
+  - order_id: (id) | new_customer: true|false | coupon_code: (string) | coupon_source: (string)
+  - path: cart|buy_now | quiz_origin: yes|no | revenue: (num)
+
+Why this matters: these become the clean join keys for cost‑per‑first‑order, by path and by offer surface (pdp banner vs email vs sms) without model hand‑waving.
+
+2) Coupon‑to‑channel tagging plan (so AUTUMN40 tells you where it was introduced)
+Option A — mirrors (best):
+- Create channel‑scoped mirrors of AUTUMN40 and reserve them going forward:
+  - AUT40_SITE (PDP/banner and on‑site surfaces)
+  - AUT40_EM (email flows/broadcasts)
+  - AUT40_SMS (SMS)
+  - AUT40_FB / AUT40_IG / AUT40_TTD / AUT40_PINT (paid breakouts you actually buy)
+- Map coupon_source directly from code at checkout: e.g., AUT40_EM → coupon_source=email.
+
+Option B — source tag (if you can’t mirror mid‑event):
+- Set coupon_introduced_by when a shopper:
+  - sees the PDP banner for ≥3s → pdp_banner
+  - submits the email 5% form → email_capture
+  - opens the SMS drawer or submits → sms_capture
+  - clicks a paid ad/offer page link with ?offer=AUTUMN40&intro=fb|ig|...
+- Persist coupon_introduced_by in localStorage and append to begin_checkout / discount_apply_attempt / purchase as coupon_source. If a mirrored code later exists, that takes precedence.
+
+3) Offer pages as your attribution anchor
+- Closest precedent we’ve published: Oatside Kitchen dropped cost per first order by 38% after moving ads off the homepage onto three offer pages. The lesson wasn’t “more pages”; it was “a single, unambiguous source‑of‑truth event per offer.”
+- For Nook, your equivalent is dedicated offer pages for first‑order incentives (e.g., Classic/Hybrid/Luxe intro offers) with an offer_page_view event that carries offer_id and channel, and that all paid traffic lands on. Everything downstream inherits that offer_id unless explicitly changed by a new surface.
+
+4) Cross‑domain checkout checklist (if your checkout runs on a different domain/subdomain)
+- Ensure your analytics/attribution tool links domains so the session and client ID persist across nooksleep.example → checkout.* → thank‑you.
+- Pass UTMs + offer_id + coupon_source across domains via URL or storage; re‑hydrate them on checkout steps.
+- Exclude payment providers as referrers to avoid last‑click overwrite on return from PSPs.
+- Fire purchase from the thank‑you page with the same customer/session IDs used on PDP/offer pages.
+
+5) 10‑minute validation you can run today
+- In DevTools Network, click: quiz start → quiz complete → Add to Basket → apply AUTUMN40 → Buy Now.
+- Confirm you see distinct events for cta_click (add_to_basket vs buy_now), discount_apply_attempt with a coupon_source, and that coupon_source survives through purchase.
+- If coupon mirrors aren’t live yet, check that coupon_introduced_by persists from the PDP banner/form to purchase.
+
+What this unlocks for your CEO deck
+- % of AUTUMN40 redemptions introduced on‑site vs off‑site (email/SMS/paid), not just last‑applied.
+- Cost per first order by path (buy_now vs cart) and by surface (pdp banner vs email vs sms).
+- Offer‑page vs PDP traffic efficiency, apples‑to‑apples.
+
+One sharp question
+- If 100 orders use AUTUMN40 this week, can you show how many first encountered the offer on the PDP banner vs email vs SMS vs paid? If not, your blended CAC and “email pays for itself” story are almost certainly misallocated.
+
+If you want, I can adapt the Oatside write‑up exactly the way an attribution‑obsessed DTC team would show it to a CEO and tune the event keys to the stack you already use — just reply with the two KPIs that matter most for your Q4 board slide.
+
+— Fieldwork Studio
+
+==== Sent before (19/25 (specific 5, useful 4, voice 4, fits 3, reply 3) PROMISES 1)
+Subject: Nook Sleep tracking teardown: event map + coupon‑source plan
+
+Naomi —
+
+Here’s the 1‑page teardown you asked for.
+
+What’s noisy now
+- Three discount paths on Classic (AUTUMN40 banner, 5% email, 10% SMS) + two CTAs (“Add to Basket”, “Buy Now”) + a quiz/compare link. Great UX, hard attribution.
+
+Event map to make it measurable
+Define one source‑of‑truth event: purchase (or first_order) with these properties:
+- promo_source: seasonal_autumn40 | email_welcome5 | sms_join10 | none
+- checkout_path: buy_now | add_to_cart
+- product_family: classic | hybrid | luxe
+- size: single | double | king | super_king
+- pillows_added: true/false
+- delivery_band: next_day | 2_5_days | 3_7_days (from postcode estimate)
+- finance_selected: true/false (Klarna)
+Up‑funnel events to feed diagnostics:
+- quiz_started / quiz_completed (from Not sure? Take the quiz), compare_opened
+- size_selected, postcode_checked, add_pillows_clicked
+- add_to_cart, buy_now_clicked
+- coupon_applied with coupon_code and inferred promo_source
+Echo promo_source and checkout_path onto purchase so reports tie back.
+
+Quick fixes (no redesign)
+- Distinct tagging: set promo_source when a visitor enters via each path:
+  - URL param on the AUTUMN40 banner links (e.g. ?promo=autumn40) sets coupon field and promo_source=seasonal_autumn40.
+  - Email/SMS links set promo_source=email_welcome5 or sms_join10 regardless of the code used.
+- Pre-apply vs manual: capture whether the code was auto‑applied or typed; shoppers who type borrowed codes behave differently.
+- Split CTAs: attach checkout_path=buy_now or add_to_cart at click, and persist it through checkout into purchase.
+- Delivery promise: when postcode returns next-day, set delivery_band=next_day immediately and carry it to purchase; you can later test surfacing that promise earlier.
+- One purchase signal: ensure only one purchase fires per order with stable event_id for dedup across pixels and server events.
+
+Cross‑domain/checkout checklist (use if any step leaves your domain)
+- Keep the same user/session identifiers across domains; pass click IDs through checkout and back to the thank‑you page.
+- Send server‑side purchase with the same event_id as the client event.
+- Pass coupon_code, promo_source, and checkout_path on every checkout step so failure states don’t lose the trail.
+
+Why this matters
+- You’ll be able to compare discount paths side‑by‑side (“seasonal vs email vs SMS”) and see which one drives first orders at the best cost, not just which one gets used most.
+- When you do move paid traffic onto single‑promise offer pages, the purchase event already knows which promise and path won.
+
+If you want, I’ll add a one‑pager showing how we turned this into cleaner cost‑per‑first‑order decisions on a food DTC brand.
+
+Fieldwork Studio

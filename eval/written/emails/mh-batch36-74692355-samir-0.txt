@@ -1,0 +1,117 @@
+To: Samir Patel (Head of Growth at SparrowHR (25-person B2B HR SaaS). Reads on a 14-inch MacBook Pro in Chrome with 10 tabs open. Analytical, impatient with fluff, polite but skeptical of agencies. Comfortable in GA4, Looker, and ad platforms; wants crisp test plans and proof.)
+Judge: 25/25 (specific 5, useful 5, voice 5, fits 5, reply 5) PROMISES 1
+Worst: It doesn’t tie the test readouts to GA4/channel-level reporting or quantify impact against SparrowHR’s own baseline numbers, so the estimates stay generic percentages rather than business-sized deltas.
+! If you want me to sketch the import screen or pricing hero, Priya Nair can send it over.
+
+Subject: SparrowHR: 3 sharp tests for “Import employees” + Pricing (with impact ranges and paste‑ready copy)
+
+Hi Samir —
+
+Thanks for the context. I read your homepage, pricing, and the flow you describe (signup → “import employees” with CSV or Gusto; tiers priced per employee; 14‑day trial with no card to start; demo form replies in 1–3 business days). Here are three specific, high‑impact tests aimed exactly at the two leaks you called out.
+
+Test 1 — “Explore first” path at Import (A/B)
+- What changes: On the first import screen after signup, add a primary action to explore before importing, and demote import to secondary.
+  • Primary: “Explore SparrowHR without importing”  
+  • Secondary: “Import employees (CSV or connect Gusto)”  
+  • Tertiary link: “Load sample data (5 employees)” and “I’ll do this later”
+- Why: You currently nudge users straight from account creation into import (“How it works” step 2). Many trials stall when the first task feels heavy. Letting them see checklists, PTO, and reviews working removes the unknowns and earns the import.
+- How to measure: % of new trials that reach a clear activation event (e.g., create a PTO policy, start a review cycle draft, or invite a manager) within Day 0; eventual import completion within 7 days; trial→paid.
+- Impact estimate: +12–20% more Day‑0 activations; downstream +5–10% trial→paid. 
+- Instrument quickly: fire events Trial_Started, Import_View, Explore_Click, Activation_Event, Import_Completed, Trial_Converted.
+
+Paste‑ready microcopy for the page header:
+- Header: “See how onboarding, PTO, and reviews work — import anytime.”
+- Subtext: “Take a look first, then import with CSV or connect Gusto when you’re ready.”
+
+Test 2 — Reduce uncertainty on the Import step (copy + layout)
+- What changes: Reframe the import panel with value, time, reassurance, and a visible template.
+  • Above the fold: three bullets tied to your stated features:
+    – “Guided onboarding assigns checklists to IT, HR, and managers.”
+    – “Time‑off syncs to Google & Outlook.”
+    – “Review templates are ready to run.”
+  • Add a progress hint: “Step 1 of 3.”
+  • Add a time hint to test: “Takes about 2–5 minutes for most teams.”
+  • Prominent link: “Download CSV template.”
+  • Reassurance (if true in your flow): “No emails are sent to employees until you confirm.”
+- Why: Trials abandon when a step feels open‑ended or risky. Value-first framing plus an honest time range and a safety net typically moves hesitant admins through the step.
+- How to measure: Among users who view the import screen, % who start → % who finish; abandon rate; time to completion.
+- Impact estimate: +8–15% higher completion among those who start import; −10–20% abandon rate.
+
+Paste‑ready structure for the import panel:
+- Title: “Import employees”
+- Left column: the three bullets above
+- Right column: [CSV upload dropzone]  
+  “or connect Gusto” (secondary button)
+- Footer row: “Step 1 of 3 · Takes about 2–5 minutes”  
+  Links: “Download CSV template” · “I’ll do this later”
+
+Test 3 — Pricing page hooks + faster Pro demos (A/B/C multivariate is fine)
+- What changes:
+  • Move this line into the pricing hero: “14‑day free trial. No credit card to start.” (you use this on the homepage; mirror it here.)
+  • Add a one‑sentence outcome above each tier’s CTA (non‑quantified, aligned to your copy):
+    – Starter: “Stand up core HR and PTO in hours, not months.”
+    – Growth: “Automate PTO and run your first review cycle fast.”
+    – Pro: “SSO, roles, and audit log for teams that need control.”
+  • Place “Trusted by Finchly, Aurora Labs, and North & Co.” directly beneath the plan CTAs (logo row inline is fine). 
+  • For Pro only, replace “Talk to sales” + form (1–3 business day reply) with a “Book a walkthrough” button that opens a self‑serve calendar; keep the form as a fallback.
+- Why: Your pricing currently lists features with CTAs but little immediate context or proof near the buttons, and the Pro path adds time friction. Outcome hooks and instant booking tend to lift click‑through and demo completion.
+- How to measure: Pricing→Trial CTR; Pro click→confirmed meeting rate; view→trial start; view→demo booked; median time from view to booked.
+- Impact estimate: +10–18% lift in pricing→trial clicks; +20–35% more Pro demos booked; shorter time‑to‑meeting.
+
+Quick run notes
+- Target new trials and pricing visitors only; exclude returning users from the same session to keep attribution clean.
+- Let each run reach directional confidence (e.g., 300–500 qualified sessions per variant) or two weeks, whichever comes first.
+- If Tests 1 and 2 both win, keep both: they solve different barriers (skip path vs. clarity for those who proceed now).
+
+One question so I can tighten the ranges: do you have current step‑to‑step numbers for Import_View → Import_Started → Import_Completed and Pricing_View → Trial_Click → Trial_Start/Demo_Submit? Even rough figures will help size the upside precisely.
+
+If you want me to sketch the import screen with the copy above, or block in the pricing hero with the outcome lines, Priya Nair on our side can send it over.
+
+— Fieldwork Studio
+
+==== Sent before (19/25 (specific 4, useful 4, voice 4, fits 4, reply 3) PROMISES 1)
+Subject: SparrowHR: 3 focused tests for Import Employees + Pricing (with impact math you can plug in)
+
+Samir —
+
+You said the stall is at “import employees” and the pricing page. Looked only there. Three tests you can run fast, plus how to size impact against your own baselines.
+
+1) Import: add an “Explore first” path before CSV/HRIS import (with sample data)
+What to change
+- On the first screen after signup, make “Explore SparrowHR” the primary action; keep “Import employees” secondary and always visible in nav.
+- Offer “Try with sample data” so core screens (PTO, Reviews, Org) render immediately.
+- Add a short reassurance line near Import; link your Security/DPA pages. If applicable, clarify what is or isn’t saved until confirmation.
+Why it should help
+- Reduces perceived commitment at the very first step and lets new users see value before doing admin work.
+How to measure
+- Import start and completion rates; Day‑1 activation (e.g., first PTO policy or first review cycle created); time‑to‑first key action.
+Impact math (plug your numbers)
+- Recaptured completes = visitors reaching import prompt × (drop‑off at that prompt) × (share who take Explore then return to import).
+- Activation lift = recaptured completes × current post‑import activation rate.
+
+2) Import: template‑first, visible auto‑mapping, and preview before commit
+What to change
+- Put “Download CSV template” and “Connect Gusto” upfront; show a mapping helper that auto‑detects columns with explicit, on‑screen confirmations.
+- Allow a partial upload/preview to validate mapping and show a few rows before committing.
+Why it should help
+- Removes ambiguity (“will this field map?”) that causes abandonment or support pings.
+How to measure
+- Drop‑off on mapping; error rate per import attempt; retries per user; help‑chat volume on import topics.
+Impact math
+- Potential gain through mapping = visitors who start mapping × (drop‑off on mapping) × (share who succeed with preview + clearer mapping).
+
+3) Pricing: swap “Prefer a walkthrough?” form for an immediate calendar; surface trial de‑risking at the CTAs
+What to change
+- Replace the multi‑field request form (which says replies take 1–3 business days) with a self‑serve calendar; keep the form as a fallback.
+- Put “No credit card to start” copy directly beside each “Start 14‑day trial” button (you already use this line on Home); keep the “credit card required to activate after trial” note where it is.
+Why it should help
+- Removes the waiting period for high‑intent evaluators and reduces hesitation at the trial click.
+How to measure
+- From Pricing: click‑through to trial; booked‑demo rate; calendar no‑show rate vs. form submit rate.
+Impact math
+- Trial uplift potential = pricing visitors who reach tier CTAs × (non‑clickers at those CTAs) × (share influenced by adjacent de‑risk copy).
+- Demo uplift potential = visitors who view the walkthrough block × (non‑submitters) × (share who book when a time is available now).
+
+If you want the above as A/B specs (events, variants, and decision thresholds) we can write them to your current instrumentation in one pass. You’ll just need to drop in your step‑level baselines.
+
+Fieldwork Studio

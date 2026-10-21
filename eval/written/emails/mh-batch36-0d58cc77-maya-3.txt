@@ -1,0 +1,65 @@
+To: Maya Bains (Solo UGC + ad-creative freelancer for small DTC brands. Uses a cracked iPhone 12 mini on 4G between shoots; opens laptop only at night. Fast, skeptical, frugal, hates fluff but hungry for practical tips. Juggles client work and prospecting; not a real buyer here—fishing for ideas she can DIY.)
+Judge: 25/25 (specific 5, useful 5, voice 5, fits 5, reply 5)
+Worst: It asks a small preference question at the end (client slug) without adding more value—minor friction on mobile, but otherwise tight.
+
+Subject: For your next pack: paste‑ready VAR_ID + UTM formulas and a 9:16/1:1 mapping checklist
+
+Maya —
+
+Loved your note. Since you’re DIY’ing the sheet, here are two drop‑ins to make the next variant sprint cleaner in Ads Manager and clearer in reporting. Context you already clocked: Ads Manager now defaults to Advantage+ placements, and manual placement selection is being removed for most conversion objectives; Asset Customisation is where you map per‑placement creative and copy.
+
+1) Paste‑ready formulas for your sheet
+Use with the header you’re already running: Concept | Hook | VAR_ID | Aspect (9:16/1:1/16:9) | Length (s) | Cut (A/B/C) | Reels/Stories (Y/N) | Feeds (Y/N) | Primary Text A | Primary Text B | Headline (feeds) | CTA | Landing URL | UTM | Outcome to track
+
+A. VAR_ID (put this in C2; fill down)
+- Quick literal (replace CLIENT with your slug):
+  =UPPER("CLIENT" & "-" & SUBSTITUTE(A2," ","") & "-" & SUBSTITUTE(B2," ","") & "-" & D2 & "-" & F2 & "-v1")
+- Dynamic (if you prefer a single cell for the slug): put your client code in Z1, then:
+  =UPPER($Z$1 & "-" & SUBSTITUTE(A2," ","") & "-" & SUBSTITUTE(B2," ","") & "-" & D2 & "-" & F2 & "-v1")
+
+B. UTM stub (put this in N2; fill down)
+  ="?utm_source=meta&utm_medium=paid-social&utm_campaign=" & LOWER(IFERROR($Z$1,"client") & "-" & TEXT(TODAY(),"yymm") & "-" & SUBSTITUTE(A2," ","")) & "&utm_content=" & LOWER(C2)
+
+Optional: Final URL column (combine M + N)
+  =M2 & N2
+
+2) GEM‑era asset‑mapping checklist (per row/variant)
+- Keep Advantage+ placements on for conversion campaigns.
+- In Asset Customisation, attach your 9:16 to Reels + Stories and your 1:1 (or 4:5) to Feeds; don’t rely on auto‑squish.
+- Add two Primary Text variants; add a Feed‑only Headline.
+- Name each ad exactly as the VAR_ID from the sheet (so reporting lines up).
+- Upload native files per aspect (e.g., …_9x16_A_v1.mp4 and …_1x1_A_v1.mp4). Keep safe‑area text, and add captions (burn‑in or SRT) so the hook reads without sound.
+
+3) Quick reporting view (so winners are obvious)
+- Compare like‑for‑like by Aspect first (9:16 vs 1:1), then by Hook within each Concept.
+- Pick the winner by the Outcome to track you set per row (e.g., ThruPlay, CTR, Cost/Result). Note the winner back in the sheet so the next sprint starts from it.
+
+One small watch‑out that matches your repositioning: with manual placement selection going away on Sales/Leads/Engagement/App, coverage now lives in the assets you upload and map, not a toggle later—your sheet (and filenames) are the source of truth.
+
+If you keep one thing from this: give every variant a VAR_ID and map 9:16 to Reels/Stories + 1:1 to Feeds in Asset Customisation; Ads Manager will do the rest.
+
+Curious: what client slug are you standardising on in VAR_IDs (e.g., TEA, SERUM, BAR)?
+
+Fieldwork Studio
+
+==== Sent before (25/25 (specific 5, useful 5, voice 5, fits 5, reply 5))
+Subject: GEM‑era preflight: 60‑second QA + VAR_ID formula
+
+Maya —
+
+Love that this helps. Since you were letting Meta squash 9:16 into feeds, here’s a 60‑second preflight that stops coverage gaps now that manual placements are gone:
+
+- Map per placement in Asset Customisation: upload 9:16 for Reels/Stories and a feed version (1:1 or 4:5) for Feeds. Don’t rely on auto‑crop.
+- Attach two Primary Text variants and a Feed‑only Headline. Keep the same CTA across placements.
+- Name the Ad = your VAR_ID, and put the VAR_ID in the file name too (or slate the first frame with a tiny code) to prevent post/upload mix‑ups.
+- Use Preview > Placements to confirm each mapped asset renders; no greyed‑out slots.
+- Post‑launch: pivot by VAR_ID after 48–72 hours to spot early laggards; retire anything with three weeks of falling CTR.
+
+Sheets bonus (auto‑build the VAR_ID):
+Assuming columns A=Client, B=Concept, C=Hook, D=Aspect, E=Cut, F=Version:
+=UPPER(A2&"-"&B2&"-"&C2&"-"&D2&"-"&E2&"-v"&F2)
+
+Optional UTM stub (add this in your sheet’s UTM column):
+?utm_source=meta&utm_medium=paid_social&utm_campaign=CLIENT_CONCEPT&utm_content=VAR_ID
+
+Fieldwork Studio

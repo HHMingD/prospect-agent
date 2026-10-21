@@ -1,0 +1,52 @@
+{
+ "name": "mh-batch33-3f8d09a4-sanjay-0",
+ "run": "3f8d09a4ec04",
+ "person": {
+  "key": "sanjay",
+  "name": "sanjay",
+  "email": "sanjay@brunosbowl.example",
+  "title": null,
+  "profile": "Founder-CEO of Bruno’s Bowl, a UK fresh dog food subscription. Mostly browses on his iPhone 14 Pro between warehouse runs; opens laptop late evening for deeper reads. Blunt, numbers-first, impatient with fluff, sceptical of agencies but open to tight 90‑day tests.",
+  "account": "member",
+  "facts": [
+   "We sell gently cooked fresh dog meals via subscription; 80% of signups come from Meta ads to a £12 trial box.",
+   "~£400k/month revenue; ~11,500 active subs; 58% cancel before the second box within 30 days. CPA for the trial averages £38.",
+   "I think churn is sticker shock on full price, freezer space/delivery issues, and portions feeling off vs what we promise on the trial page.",
+   "Stack: Shopify + Recharge + Klaviyo; attribution murky post‑iOS; hard to join ad clicks to Recharge cancels without manual exports.",
+   "Budget up to £25k for a 90‑day sprint focused on expectation-setting creative and LP tests to reduce post‑trial cancels. No long retainers.",
+   "I’d give my email for a specific teardown of /meals/trial with a 90‑day test matrix and projected impact; not for generic newsletters or ebooks."
+  ],
+  "stale_facts": [],
+  "reply": {
+   "delay": {
+    "shortest": "PT6H",
+    "longest": "P2DT18H"
+   },
+   "helpfulness": "full",
+   "voice": null,
+   "model": null,
+   "temperature": 0.6,
+   "history_turns": 30,
+   "kind": "answers"
+  },
+  "reply_within": {
+   "min": "PT3H",
+   "max": "P2D"
+  },
+  "fact_changes": [],
+  "reminded": null,
+  "working_hours": {
+   "timezone": "Europe/London",
+   "opens": "08:00:00",
+   "closes": "22:00:00",
+   "weekdays_only": true
+  },
+  "absences": [],
+  "early_follow_ups": 2,
+  "credential": null,
+  "takes": []
+ },
+ "shown": "Why you were woken: they just introduced themselves on the site\n\nNow: Monday 12 October 2026 09:00:30 UTC (2026-10-12T09:00:30+00:00)\nVisitor sanjay: known, Sanjay <sanjay@brunosbowl.com>, their own business's website: https://brunosbowl.com\nOn the site right now: yes. Visits so far: 1.\nDevice unknown, timezone unknown, first came from direct\nWhat is believed about them: Sanjay runs Bruno's Bowl, a DTC dog food brand, and wants to fix broken marketing attribution.\nWhat the main agent is preparing for them: Full teardown checklist: field list (UTMs, click IDs, first/last touch), persistence method, event schema, and QA steps; ready to email as a one-page tracker map if they accept the offer.\nThe main agent has worked on them 1 time(s). Its next wake: none set\nTheir business: unknown\nWhat research found so far:\n- 12 Oct: Bruno’s Bowl’s homepage 'Build your plan' form collects dog details, email, and postcode before showing pricing or plan options, but does not clearly indicate if/where any marketing source (like UTM, click ID, or referrer) is captured in this key step. (http://brunosbowl.example/)\n- 12 Oct: The 'Build my plan' conversion flow does not transparently show how attribution or source tracking is handled—even basic query parameters or hidden fields for source/medium are not visible anywhere in the copy or CTA. (http://brunosbowl.example/)\n- 12 Oct: No mention of analytics, pixels, or tracking consent banners appears on any public-facing page (home, meals, how it works, pricing, reviews, blog), suggesting minimal or missing web analytics scripts or unclear user consent. (http://brunosbowl.example/)\nWhat the studio's desk found lately, for anyone (events, platform changes, go-to-market news):\n- [event, Wed 28 Oct 2026; for: Ads got expensive, Traffic but no sales] IMK London (Influencer Marketing Klub), a half-day event with influencer marketing workshops and panels, is scheduled for 28 October 2026 in Central London. (https://www.influencermarketingklub.com/event/imk-london, 2026-09-25)\n- [platform; for: Creative feels stale, Big launch coming] Shopify introduced Canvas, a new AI-powered visual storefront editor, in October 2026 that lets brands use conversational prompts to quickly redesign pages without a developer. (https://www.shopify.com/news/introducing-canvas, 2026-10-01)\n- [platform; for: Ads got expensive, Creative feels stale, Can't tell what's working] Meta introduced their unified Generative Ads Model (GEM) in October 2026, which uses one large-scale AI model to optimize ad placements and creative across Facebook, Instagram, Reels, and Stories, resulting in up to 18.9% more conversions and 12% higher click-through rates. (https://engineering.fb.com/2026/10/13/ml-applications/generative-ads-model-gem-scaling-frontier-ads-ai/, 2026-10-13)\n- [platform; for: Creative feels stale, Traffic but no sales] Pinterest launched AI-powered Beauty Guides in October 2026, letting users turn hair and nail Pins into actionable steps, salon requests, price guides, and maintenance advice—bridging inspiration and conversion for beauty brands. (https://newsroom.pinterest.com/news/pinterest-launches-beauty-guides-to-turn-inspiration-into-action/, 2026-10-06)\n- [event, Fri 13 Nov 2026; for: Traffic but no sales, Creative feels stale, Can't tell what's working] AI in Ecommerce Day by EcommerceCamp, focused on real-world AI in e-commerce, takes place 13 November 2026 in Manchester (The Lowry Hotel) with virtual options. (https://ecommercecamp.co.uk/upcoming-ecommerce-camp/, 2026-10)\n- [platform; for: Creative feels stale, Can't tell what's working, Big launch coming] Klaviyo Composer, an AI-driven marketing agent for campaign creation, analytics, and reusable workflows, became generally available in October 2026, letting brands automate analytics and campaign workflows with natural language. (https://www.klaviyo.com/blog/composer-marketing-agent, 2026-10-13)\n- [platform; for: Can't tell what's working, Big launch coming] Klaviyo integrated with Meta Muse in September 2026, letting brands use natural language chat to review campaign performance, create campaigns, and schedule sends directly in Muse using real Klaviyo data and flows. (https://www.klaviyo.com/blog/klaviyo-meta-muse-connector, 2026-09-29)\n- [gtm; for: Traffic but no sales, Big launch coming] UK retail footfall declined by 2.9% year-on-year in September 2026, with shopping centres and high streets experiencing the largest drops—signalling softer in-store traffic ahead of Q4. (https://brc.org.uk/news-and-events/news/corporate-affairs/2026/ungated/budget-must-deliver-for-shoppers-as-footfall-drops/, 2026-10-10)\nEverything that happened, oldest first:\n- Mon 12 Oct 09:00:00 they view / \"Home\"\n- Mon 12 Oct 09:00:04 they signal / [biggest headache] \"Can't tell what's working\"\n- Mon 12 Oct 09:00:07 they request / [Roast my site] \"brunosbowl.example\"\n- Mon 12 Oct 09:00:07 YOU said on the site (not shown yet: they left before it arrived): I'm reading brunosbowl.example now for a teardown focused on why it's hard to track what's working. I'll be back with specifics.\n- Mon 12 Oct 09:00:07 YOU said on the site (not shown yet: they left before it arrived) (offered to email them a one-page source-to-sale tracker map if they introduce themselves): Your ‘Build your plan’ form doesn’t clearly show if UTMs, click IDs, or other marketing sources are captured or persisted, and there’s no visible analytics/consent—so it’s unclear how sales are attributed. Add hidden fields for first/last touch, persist them to checkout, and fire the events your tools expect.\n- Mon 12 Oct 09:00:13 they more [note-1]\n- Mon 12 Oct 09:00:13 YOU said in the chat (not shown yet: they left before it arrived) (offered to email them A one-page source-to-sale tracker map for your own stack. if they introduce themselves): Your form isn’t showing any sign it captures UTMs or click IDs, or even has analytics scripts running. If that’s what’s blocking attribution, I have a one-page checklist for reliably capturing and passing source data—should I email it over?\n- Mon 12 Oct 09:00:14 they view /work \"Work\"\n- Mon 12 Oct 09:00:19 they signal /work [show me work for] \"DTC\"\n- Mon 12 Oct 09:00:19 YOU said on the site (not shown yet: they left before it arrived): Tracking gaps cost more than most notice—Oatside Kitchen dropped cost per first order 38% by sending ads to dedicated offer pages instead of the homepage. Your site's 'Build your plan' flow does not clearly show if it captures marketing source data.\n- Mon 12 Oct 09:00:30 they identify [introduced themselves]\n\nThe page in front of them: /work, opened 16s ago. It already shows them: Case study grid with a 'show me work for: DTC / B2B / Retail' filter: Glow Theory, Tallow & Thyme, Oatside Kitchen, Ledgerly.\nThe last remark on the site was 11s ago. Since then: identify introduced themselves. Remarks on the site so far: 4; reactions or replies: 0.\n\nYour research for this wake:\nTheir business: Bruno’s Bowl is a direct-to-consumer (DTC) dog food and treats brand offering handcrafted, human-grade dog treats and meal toppers, with a mix of subscriptions and one-off purchases. Their site collects customer, product, and subscription info at checkout but does not visibly capture or persist marketing source/UTM data in the core conversion flows, and shows no sign of analytics or tracking consent.\n- nothing real turned up",
+ "sent_subject": "Bruno’s Bowl: one‑page fix for attribution",
+ "sent": "Sanjay —\n\nHere’s the one‑page tracker map we promised.\n\n1) Capture on first arrival: campaign/source from the URL or referrer, plus any ad platform click ID.\n2) Save a “first arrival” once; update a “last arrival” on new entrances; store both as soon as the plan flow starts.\n3) Pass those values through each step and into checkout, and stamp them on the final order or subscription record (hidden fields + order metadata).\n4) Log a few milestones with the same context: plan started, price shown, checkout started, purchase/subscription created.\n5) QA in one pass: arrive with test parameters, start the flow, finish a test checkout, confirm the same values appear on the order/subscription.\n\nThis closes the loop from ad to order without a redesign; it’s usually a day’s work once you know where those fields live.\n\nFieldwork Studio"
+}

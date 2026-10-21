@@ -1,0 +1,116 @@
+To: Maya Rudd (Co-owner/GM of Fell View House, a 26-room family-run hotel near Ambleside. Splits days between front desk and supplier calls. Checks sites on an iPhone 13 while walking between rooms; laptop only after 9pm. Practical, polite, cost-aware, skeptical of agency fluff, wants numbers and fast tests.)
+Judge: 21/25 (specific 5, useful 4, voice 5, fits 3, reply 4)
+Worst: It never delivers the 3 testable ad+landing ideas with expected lift she asked for (and no numbers), so it stops short of the proof Maya needs to act today.
+
+Subject: Maya — 10-point conversion teardown for Fell View House (paste-ready fixes inside)
+
+Hi Maya,
+
+You said “traffic but no sales.” I read Fell View House’s Home and Rooms pages just now. Here’s a targeted, paste‑ready teardown of the places people wobble—and the smallest changes that unlock bookings.
+
+The principle: one ad, one promise, one page. Send traffic to /rooms#availability, not Home. Make the date picker the star, and remove reasons to hesitate right where people choose dates.
+
+10-point conversion teardown for Fell View House
+
+1) Price transparency + minimum-stay clarity
+- What happens now: Room tiles say “From £129 BB,” while “some weekends require a 2‑night minimum” is easy to miss until later.
+- Do this: Put the min‑stay rule where eyes already are—on each room tile and next to the date picker.
+- Paste-ready copy (Rooms, directly under the date inputs): “Some weekends require a 2‑night minimum—you’ll see any rules before you choose a room. Flexible cancellation.” [link “Flexible cancellation” to your policy]
+- Paste-ready copy (on each tile, under price): “From £129 • BB • 2‑night minimum on some weekends”
+
+2) Surface live availability/rates on room tiles
+- What happens now: All tiles show a static “From £” and a generic “Select dates.”
+- Do this: When dates are chosen, change the CTA and label per tile: “See availability & price,” “2 rooms left,” or “Sold out for your dates.” If the portal can’t push availability to tiles, still change the CTA to “See availability & price.”
+- Paste-ready CTA text: Replace “Select dates” with “See availability & price.”
+
+3) Above‑the‑fold trust and urgency
+- What happens now: Your direct‑booking perks are great (10% off, flexible cancellation, breakfast cooked to order), but there’s no reviews/urgency near the date picker.
+- Do this: Add a slim trust strip directly under the hero and again just above the date picker on Home and Rooms.
+- Paste-ready trust strip: “Flexible cancellation • Book direct: 10% off • Free parking • Dog‑friendly rooms • Breakfast cooked to order”
+- Optional test (if your portal supports it): show “High demand on most weekends” or “Only X left on your dates” during peak periods.
+
+4) Cancellation reassurance at the decision point
+- What happens now: “Complete booking on our secure portal” appears, but flexibility isn’t reinforced where dates are chosen.
+- Do this: Put “Flexible cancellation—see policy” directly by the Check availability/Search button.
+- Paste-ready microcopy: “Flexible cancellation—see policy” [link to policy]
+
+5) Booking‑flow friction fixes
+- What happens now: Home “Book Now” goes to Rooms; Rooms shows “Complete booking on our secure portal.” Good. The CTAs still feel like commitment.
+- Do this: Soften primary CTAs to reduce risk perception.
+- Paste-ready CTA text: Home hero and Rooms button → “Check availability.” Room tiles → “See availability & price.”
+
+6) Exit‑intent capture that matches intent
+- What happens now: “VIP midweek offers” capture is tucked at the bottom of Home, away from the booking journey.
+- Do this: Show it when someone views rates or moves to exit on Rooms.
+- Paste-ready modal (headline + body + button):
+  - Headline: “Not ready to book?”
+  - Body: “Get occasional midweek offers and last‑minute availability from Fell View House.”
+  - Button: “Send me midweek offers”
+
+7) Room‑tile info hierarchy that answers pre‑booking questions
+- What happens now: Price leads; details sit behind “More info.”
+- Do this: On each tile, bring up what matters before price: sleeps/bed type, breakfast included, dog‑friendly (if applicable). Keep price, then CTA.
+- Paste-ready bullets under each room title:
+  - “Sleeps 2 • King bed” (or “Sleeps up to 4” on Family)
+  - “Breakfast included (BB)”
+  - “Dog‑friendly rooms available”
+
+8) Availability/calendar UX guardrails
+- Do this: Ensure adults default to 2 (already does), block past dates, and, when a weekend with min‑stay is selected, show the rule inline before room selection. If a date is sold out, suggest the next available date.
+- Microcopy near the date picker: “Tip: Selecting Fri–Sun may require a 2‑night stay.”
+
+9) Mobile first: speed and tap targets
+- Do this today: Make the “Check availability” button full‑width, ensure date inputs and +/- controls are at least 44px tall, compress hero/gallery images, and lazy‑load below‑the‑fold images on Home and Rooms.
+
+10) Email capture placement + incentive tests
+- What happens now: Capture sits far from the booking decision.
+- Do this: Add a small inline form right under the date picker on Rooms.
+- Paste-ready inline block:
+  - “Get Lake District midweek deals (occasional only).” [email field] [“Subscribe”]
+  - Fine print: “We’ll email occasionally; unsubscribe anytime.”
+
+Three edits you can ship in under an hour
+- Rooms, under the Arrive/Depart bar: add “Some weekends require a 2‑night minimum—you’ll see any rules before you choose a room. Flexible cancellation.” [link “Flexible cancellation”]
+- Replace every “Select dates” with “See availability & price,” and Home “Book Now” with “Check availability.”
+- Add the trust strip under the hero on Home and again above the date picker on Rooms: “Flexible cancellation • Book direct: 10% off • Free parking • Dog‑friendly rooms • Breakfast cooked to order.”
+
+Where to send traffic
+- Use: fellviewhouse.example/rooms#availability for paid/social/partners—make the date picker the landing anchor.
+
+One question so I can tailor the next set of fixes: which booking portal powers your checkout? That determines what we can surface (availability and live rates) on your room tiles without heavy development.
+
+If you forward this to whoever controls the booking engine or CMS, they’ll know exactly what to try first.
+
+—Fieldwork Studio
+
+==== Sent before (19/25 (specific 5, useful 4, voice 4, fits 3, reply 3))
+Subject: Fell View House: 10‑point conversion teardown (first 48‑hour fixes)
+
+Maya —
+
+You’re getting the clicks; the blockers are clarity (min‑stay/real rate by dates) and trust (reviews/flexibility) not living where people decide to search.
+
+Here’s the 10‑point shortlist, ordered by speed to impact:
+
+48‑hour fixes
+1) Put “Most weekends: 2‑night minimum” visibly on the Rooms page and each room tile; repeat the note next to the date picker.
+2) Move “Why book direct” perks to sit beside the date picker and the portal hand‑off; add “Flexible cancellation” in plain words there.
+3) Add a reviews strip above the fold: 2–3 recent lines with source badges and a link to the source.
+4) Change “From £129 BB” to “From £129 BB (typical midweek)” and swap the CTA on tiles to “View availability” to cue date‑first behaviour.
+
+Two‑week tests
+5) If your portal exposes it, surface live availability (and an indicative rate) on room tiles for selected dates; pre‑fill dates on click either way.
+6) Show “Only X rooms left for your dates” and “Secure booking, free cancellation” next to the date picker; include your phone number there for last‑minute callers.
+7) Booking flow friction: keep people in the same tab, preserve a clear “Back to rooms” link, keep dates pre‑filled, and show a simple progress indicator.
+
+Page structure and UX
+8) Room tiles: tighten hierarchy—name, sleeps, breakfast included, 2–3 hero amenities, then price; keep secondary details behind “More info.”
+9) Calendar UX: grey out impossible single nights when a 2‑night minimum applies and explain the rule inline so it feels like guidance, not an error.
+10) Mobile: compress the hero, make the date picker and CTAs thumb‑sized, and add a sticky “Book now” that carries selected dates across pages.
+
+Measurement to prove it worked
+- In your analytics, track a simple funnel: Availability search -> Room tile clicks -> Portal start -> Confirmation. Use it to read where fall‑off improves as you ship the fixes.
+
+If you want, I can share wireframe examples for the room tiles, date picker block, and the reviews strip we’ve used with bookings‑led brands.
+
+Fieldwork Studio

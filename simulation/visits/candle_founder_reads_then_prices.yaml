@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Alknoma/minutehand/integration-main/schemas/scenario.schema.json
+# Maya runs a £2m candle brand whose Meta ads have gone stale. Her browsing is scripted (the pages and choices are
+# fixed; how long she spends between them is drawn per seed); how she reacts to what the agent shows her, and whether and how she answers its email,
+# is a model playing her from her profile and facts. Watched for three weeks: the agent may write to her only when
+# something real changes in her world.
+name: candle_brand_visit
+starts_at: 2026-10-12T09:00:00Z  # a Monday, inside her working hours
+runs_for: P21D
+max_wakes: 200
+people:
+  - key: maya
+    name: Maya Rao
+    email: maya@emberandwick.example
+    profile: >-
+      Founder of Ember & Wick, a UK candle brand doing about £2m a year, most of it from Meta ads. Busy, sceptical of
+      agencies, reads on her phone between other work.
+    facts:
+      - Ember & Wick sells soy candles and reed diffusers; its website is emberandwick.example.
+      - Its Meta ads have stopped working since the summer; the same three videos have run for months.
+      - She has about £6,000 a month to spend on outside help, and would rather try a short project than sign a retainer.
+      - Christmas is the biggest season; she plans it from early October.
+      - She gives her email only for something specific to her brand, never for a generic newsletter.
+    working_hours: {timezone: Europe/London, opens: "08:00", closes: "22:00"}
+    reply_within: {min: PT3H, max: P2D}
+    reply: {kind: answers}
+  - key: newsroom
+    name: The trade press
+    email: newsroom@press.example
+    profile: Not a visitor. Reports what happens in marketing; never on the site and never writes to the agent.
+happenings:
+  - {kind: uses, person: newsroom, inbox: world, use: publishes, after: P8D,
+     inputs: {fact: "Sensormatic Solutions predicts the Saturday after Black Friday (28 November 2026) will be the busiest day for store visits of Peak Trading 2026, followed by Boxing Day and Super Saturday (19 December 2026).",
+              source: "https://retailtimes.co.uk/sensormatic-solutions-predicts-the-uks-busiest-2026-christmas-shopping-days/",
+              published: "2026-10-13", topic: "go-to-market news: what consumer brands are doing, a shift in how people buy, a season's numbers"}}
+  - {kind: uses, person: newsroom, inbox: world, use: publishes, after: P12D,
+     inputs: {fact: "A survey of 2,000 adults for the Christmas savings club Park found families expect to spend an average of £1,502 on Christmas, including £693.80 on presents.",
+              source: "https://metro.co.uk/2026/10/12/eye-watering-sum-average-family-will-shell-this-christmas-29700374/",
+              published: "2026-10-12", topic: "go-to-market news: what consumer brands are doing, a shift in how people buy, a season's numbers"}}
+  - {kind: uses, person: newsroom, inbox: world, use: publishes, after: P3D,
+     inputs: {fact: "Meta has been removing manual ad placement options, so advertisers can no longer choose where their ads appear across Meta's placements; on 12 October 2026 it published guidance on keeping some control.",
+              source: "https://www.socialmediatoday.com/news/meta-offers-updated-ad-placement-control-guidance/832791/",
+              published: "2026-10-12", topic: "a change on a platform brands buy or build on: Meta, Google, TikTok, Pinterest, Shopify, Klaviyo"}}
+  - {kind: uses, person: maya, inbox: site, use: views, after: PT0S, inputs: {page: /, title: Home}}
+  - {kind: uses, person: maya, inbox: site, use: picks, gap: {min: PT10S, max: PT40S},
+     inputs: {page: /, question: biggest headache, answer: Creative feels stale}}
+  - {kind: uses, person: maya, inbox: site, use: views, gap: {min: PT5S, max: PT30S},
+     inputs: {page: /journal/three-week-rule, title: The three-week creative rule}}
+  - {kind: uses, person: maya, inbox: site, use: reads, gap: {min: PT1M, max: PT3M},
+     inputs: {page: /journal/three-week-rule, how: "about two minutes, scrolled 90%"}}
+  - {kind: uses, person: maya, inbox: site, use: views, gap: {min: PT1S, max: PT3S},
+     inputs: {page: /work/tallow-and-thyme, title: Tallow & Thyme case study}}
+  - {kind: uses, person: maya, inbox: site, use: lingers, gap: {min: PT15S, max: PT50S},
+     inputs: {page: /work/tallow-and-thyme, label: "image: the gift finder"}}
+  - {kind: uses, person: maya, inbox: site, use: views, gap: {min: PT15S, max: PT50S}, inputs: {page: /pricing, title: Pricing}}
+  - {kind: uses, person: maya, inbox: site, use: picks, gap: {min: PT5S, max: PT20S},
+     inputs: {page: /pricing, question: pricing toggle, answer: Retainer}}
+  - {kind: uses, person: maya, inbox: site, use: picks, gap: {min: PT5S, max: PT20S},
+     inputs: {page: /pricing, question: pricing toggle, answer: Project}}
+  - {kind: uses, person: maya, inbox: site, use: writes, gap: {min: PT20S, max: PT1M30S},
+     inputs: {text: "We're a candle brand doing about £2m a year and our Meta ads have gone stale. Is a project enough?"}}
+  - {kind: uses, person: maya, inbox: site, use: leaves, gap: {min: PT2M, max: PT6M}, inputs: {page: /pricing}}

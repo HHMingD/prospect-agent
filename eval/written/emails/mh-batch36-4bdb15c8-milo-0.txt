@@ -1,0 +1,88 @@
+To: Milo (Founder of Warm Current, a 6-person paid social + creative studio. Reads on a MacBook Pro between client calls, lots of tab-hopping. Dry sense of humor, competitive, skeptical; today he’s pretending to be a DTC brand marketer to see how the studio’s agent behaves.)
+Judge: 22/25 (specific 4, useful 5, voice 4, fits 5, reply 4)
+Worst: It keeps treating Milo as the Sundrift buyer after he introduced himself with his Warm Current details, so it reads a touch templated/misattributed despite otherwise sharp, actionable advice.
+
+Subject: Sundrift is 502 — paste this fallback today. And our answer on ROAS for £120k/mo.
+
+Milo —
+
+Thanks for introducing yourself just now. Quick, practical note because timing matters:
+
+1) Your launch site is down right now
+- As of this morning (12 Oct), sundriftdrinks.example is returning 502 Bad Gateway — which means buyers, press, and reviewers can’t see or buy. Turning on ads in this state will burn every click.
+- Immediate play: pause paid until there’s at least a resilient single‑offer fallback live, plus multi‑region uptime checks.
+
+2) Paste‑today fallback landing page (one clear thing to do before January)
+Use one page, one offer, one emotion/occasion. Keep it light, fast, and resilient.
+- Hero (headline): “[Drink] for [occasion/emotion]” (e.g., energy, sociability, wellness — the launches winning in 2026 are selling occasions and feelings, not ingredients.)
+- Subhead: “Launching January. Be first to try.”
+- Primary CTA: “Get early access” (email capture only). 
+- Secondary block (50–80 words): What it does for me in plain English; zero jargon. 
+- Proof-of-life: Founder line or tiny origin note (1–2 lines), not a manifesto.
+- Footer: Press/retail contact mailto.
+
+Copy you can lift this afternoon
+- Headline: “A better [drink type] for [occasion]”
+- Subhead: “Launching January. Join early access for day‑one drops and tasting slots.”
+- Body: “Made to help with [benefit in human words]. Built for [moment/use case]. First batch lands in January — join the list and we’ll send the launch date and how to get the first run.”
+- CTA button: “Get early access”
+
+Resilience first (pre‑launch QA starter)
+- Multi‑region uptime checks (home + fallback + checkout) and alerts.
+- 404/500 safety net: route any error to the fallback page, not a dead end.
+- CDN caching on the fallback; keep it static, tiny, and fast.
+- Pixels/events: fire only on successful views/submits; confirm UTMs persist to email capture.
+- Checkout dry‑runs: cards, Apple/Google Pay, shipping/tax, and confirmation emails.
+- Ad click path: every top ad lands on a message‑matched section, not a generic hero.
+
+3) Ad/offer-to-page alignment for a DTC drinks launch
+Pick one launch idea and run it everywhere (TV/social/creators/retail media/email) so paid and page tell the same story:
+- If “Energy”: Ads open with the moment (2 p.m. slump). Page hero mirrors the promise; offer = early access + first‑week perk. Creative = UGC first‑sip reaction, 6–8s cut.
+- If “Sociability”: Ads show the ritual (post‑work wind‑down). Page hero invites the moment; offer = early access + limited tasting invites. Creative = pairs/serves at home.
+- If “Wellness”: Ads anchor to feeling (calm focus). Page hero repeats the feeling; offer = early access + launch‑day bundle preview. Creative = simple ingredients POV.
+
+4) Your ROAS question on £120k/mo
+- We don’t guarantee ROAS; we work in focused blocks with clear accountability so you can call time if results aren’t there. That’s how we protect large budgets while moving fast.
+- As I said in chat, we’ve taken brands like Glow Theory from 1.6 to 3.1 ROAS in two 90‑day blocks — the point isn’t the number, it’s the operating cadence: tight creative testing, weekly readouts, message‑matched landers, and ad‑to‑offer discipline.
+
+Two fast things that would let us sharpen the roast the moment Sundrift’s site is back up
+- What platform are you on (Shopify, custom, etc.)? If Shopify, the new Canvas editor (Oct ’26) can get that fallback live quickly without a developer.
+- Of the three emotions above — wellness, energy, sociability — which feels truest for January?
+
+Side note: UK retail footfall fell 2.9% YoY in September. If store traffic softens into Q4, your web uptime and email capture become the shock absorbers for launch.
+
+If you forward this, the top three to do today are: get a static fallback live, route errors to it, and turn on multi‑region uptime checks. Everything else ladders up from there.
+
+Fieldwork Studio
+
+==== Sent before (12/25 (specific 2, useful 3, voice 2, fits 3, reply 2) PROMISES 1)
+Subject: Sundrift launch: 502 fix, fallback page, and day-one QA
+
+Milo —
+
+We checked sundriftdrinks.example: it’s returning 502. If you run paid, every click burns. Here’s the prioritised fix you can ship today:
+
+1) Resilience first
+- Turn on multi‑region uptime monitoring with instant alerts.
+- Front the site with a CDN/WAF and sanity‑check DNS; separate a lightweight fallback page on a different host/subdomain so it stays up even if the main app falls over.
+
+2) Fallback landing page (one ad, one promise, one page)
+- Hero: the launch promise, pack visual, primary CTA to buy (or waitlist if checkout isn’t ready).
+- Social proof: 2–3 tight proof points (press/early testers).
+- FAQs: ingredients, pack size, delivery/returns, who it’s for.
+- Single path to checkout; no header nav or side exits.
+
+3) Pre‑launch QA (mobile first)
+- Full add‑to‑cart → checkout → confirmation flow, including promo codes, shipping, taxes, OOS states, and graceful 404/500 fallbacks.
+- Validate that purchase events fire once and reconcile with orders in your analytics and ad platforms.
+- Trigger post‑purchase comms off an order; test transactional emails/SMS.
+- Basic speed passes on the fallback page and images; compress and lazy‑load below the fold.
+
+4) Offer‑to‑page alignment for a January drinks launch
+- Build around one campaign idea that sells an occasion (wellness reset, sociability, focus) rather than ingredients; run variants of the same idea across channels.
+- If you’re in functional/alt/premium RTD, plan a subscribe‑and‑save or loyalty hook from day one; repeat is the margin.
+- Don’t send ads to the homepage. Oatside Kitchen cut first‑order CPA 38% by moving to three offer pages; same play here.
+
+We don’t guarantee ROAS; we work in 90‑day blocks so you can stop if results aren’t there. If you want, we can turn this into a one‑page pre‑launch checklist you can drop into a sprint board.
+
+Fieldwork Studio

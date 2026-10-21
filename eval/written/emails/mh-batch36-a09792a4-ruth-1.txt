@@ -1,0 +1,165 @@
+To: Ruth Patel (Owner-operator of Three Oaks Books (3 indie bookshops in Devon). Juggles shop floor and ops; reads the web on her phone between customers, laptop after close. Pragmatic, deadline-driven, skeptical of agency fluff, cares about cashflow and delivery cut-offs.)
+Judge: 23/25 (specific 5, useful 5, voice 4, fits 5, reply 4) INVENTED 3 PROMISES 1
+Worst: She asked for a short homepage/Christmas teardown video; this email delivers the copy but omits the teardown she wanted to see to move fast.
+! “Add a note in checkout; our team will include it.” (gift-message capability isn’t shown anywhere on the site snapshot)
+! “Three to start; new picks each week.” (weekly rotation promise isn’t supported by any given info)
+! “Nothing new needs wiring in.” (one proposed element — gift message in checkout — may require enabling/config, so this blanket claim isn’t supported)
+! Offers to rewrite any section in a different tone on request
+
+Subject: Three Oaks — paste‑ready copy for Signed First Editions, Cosy Crime, and Kids’ Christmas Box
+
+Ruth — 
+
+As asked, here are paste‑ready copy blocks for the three gift pages, written for undecided buyers and the week‑before‑Christmas crunch. They reuse details already on your site so nothing new needs wiring in.
+
+How to use
+- Drop each block into a simple landing template (Hero, Picks/Product, Info bar, FAQ, CTAs repeated). 
+- Point any signed‑book ads and your next email to the specific page, not the category. Run your side‑by‑side against the existing category/listing and keep the winner.
+
+— Page 1: Signed First Editions
+Hero
+- Headline: Signed first editions, in time for Christmas.
+- Subhead: Order by Mon 18 Dec (Standard) or Thu 21 Dec (Express). Click & Collect usually ready in 2 hours. Choose your store at checkout.
+- Primary CTAs: Buy for delivery • Reserve for Click & Collect
+
+Featured picks (3 only)
+- Lead‑in: Three to start; new picks each week. 
+- Card microcopy (under title/author): Signed by [Author]. Limited runs from local and national authors. While stocks last.
+- Button on each card: Add to basket
+
+Info bar (one line)
+- Royal Mail 48 £2.99 | 24 £4.99 • Free local delivery (3 miles) over £30 • Gift wrap available at checkout (+£3) • Returns: see Delivery & Returns
+
+FAQ (short)
+- When will Click & Collect be ready? Usually within 2 hours. We’ll email when it’s ready.
+- What are the Christmas cut‑offs? Order by Mon 18 Dec (Standard) or Thu 21 Dec (Express) for Christmas delivery.
+- Are these limited? Yes — limited runs from local and national authors; availability can change quickly.
+
+End cap (repeat CTAs)
+- Buy for delivery • Reserve for Click & Collect
+
+— Page 2: Cosy Crime Gift Bundle
+Hero
+- Headline: Cosy Crime Gift Bundle
+- Subhead: A bookseller‑curated gift for mystery lovers. Order by Mon 18 Dec (Standard) or Thu 21 Dec (Express). Click & Collect usually ready in 2 hours.
+- Primary CTAs: Add to basket • Reserve for Click & Collect
+
+Options block (above the fold)
+- Label: Choose format
+- Options: Paperback • Hardback
+
+What’s inside
+- Copy: A hand‑picked cosy crime bundle, curated by our booksellers for easy gifting. Gift wrap available at checkout (+£3).
+
+Info bar (one line)
+- Royal Mail 48 £2.99 | 24 £4.99 • Free local delivery (3 miles) over £30 • Returns: see Delivery & Returns
+
+FAQ (short)
+- Can I Click & Collect? Yes — choose your store at checkout; we’ll email when it’s ready.
+- Christmas cut‑offs? Order by Mon 18 Dec (Standard) or Thu 21 Dec (Express).
+
+End cap (repeat CTAs)
+- Add to basket • Reserve for Click & Collect
+
+— Page 3: Kids’ Christmas Box
+Hero
+- Headline: Kids’ Christmas Box
+- Subhead: A festive pick tailored by age. Click & Collect usually ready in 2 hours.
+- Price note (where your platform supports it): From £15.00
+- Primary CTAs: Add to basket • Reserve for Click & Collect
+
+Options block (above the fold)
+- Label: Choose age
+- Options: 3–5 • 6–8 • 9–12
+
+Parents’ reassurance
+- Copy: Curated by our booksellers for each age band. Gift wrap available at checkout (+£3). Order by Mon 18 Dec (Standard) or Thu 21 Dec (Express) for Christmas delivery.
+
+Info bar (one line)
+- Royal Mail 48 £2.99 | 24 £4.99 • Free local delivery (3 miles) over £30 • Returns: see Delivery & Returns
+
+FAQ (short)
+- Can I add a gift message? Add a note in checkout; our team will include it. 
+- How quickly is Click & Collect? Usually within 2 hours; we’ll email when it’s ready.
+
+End cap (repeat CTAs)
+- Add to basket • Reserve for Click & Collect
+
+Optional swaps you can paste in today (helps undecided gift buyers land and act)
+- Homepage hero swap (first screen)
+  - Headline: Not sure what to get? Start here.
+  - Subhead: Order by Mon 18 Dec (Standard) or Thu 21 Dec (Express). Click & Collect usually ready in 2 hours.
+  - Buttons: Signed First Editions • Cosy Crime Gift Bundle • Kids’ Christmas Box
+
+- /christmas first screen swap
+  - Headline: Christmas gifts, simplified.
+  - Subhead: Three easy gifts — or browse everything below.
+  - Buttons: Signed First Editions • Cosy Crime Gift Bundle • Kids’ Christmas Box • Browse all Christmas gifts
+  - Move the Sort/Filter controls below the first row so the promise and primary actions are the first thing people see.
+
+How to run the side‑by‑side (quick refresher)
+- Send ad/email traffic only to the new page for that offer. Leave organic nav pointing to your existing category.
+- After three days, compare in Shopify: sessions, reached checkout, and purchases for each path. Keep the winner and redirect the loser.
+
+If you want a variant of any block in a different tone (shorter, more bookseller‑y, or more gift‑guide), say the word and I’ll rewrite the section you need.
+
+Fieldwork Studio
+
+==== Sent before (24/25 (specific 5, useful 5, voice 4, fits 5, reply 5))
+Subject: Three Oaks — paste‑ready copy for Signed, Cosy Crime, Kids’ Box
+
+Ruth —
+
+Here are paste‑ready copy blocks for the three pages. One promise per page, delivery/C&C up top, variants for quick tests.
+
+— Signed First Editions
+H1
+Signed First Editions — in time for Christmas.
+
+Subhead
+Order by Mon 18 Dec (Standard) or Thu 21 Dec (Express). Click & Collect usually ready in 2 hours.
+
+Support lines
+Limited runs from local and national authors. While stocks last.
+Gift wrap can be added at checkout (+£3). Free local delivery (3 miles) over £30.
+
+Headline test variants
+• Signed editions, ready to gift
+• Last‑chance signed copies for Christmas
+• Signed books they’ll keep forever
+
+— Cosy Crime Gift Bundle
+H1
+Cosy Crime Gift Bundle
+
+Subhead
+Choose Paperback or Hardback. Order by Mon 18 Dec (Standard) or Thu 21 Dec (Express). Click & Collect available.
+
+Support lines
+Gift wrap can be added at checkout (+£3). Free local delivery (3 miles) over £30.
+
+Headline test variants
+• Cosy Crime Gift Bundle — ready to unwrap
+• Gentle whodunits for winter evenings (Paperback or Hardback)
+• The cosy mystery gift
+
+— Kids’ Christmas Box
+H1
+Kids’ Christmas Box — from £15.00
+
+Subhead
+Choose 3–5, 6–8, or 9–12. Order by Mon 18 Dec (Standard) or Thu 21 Dec (Express). Click & Collect usually ready in 2 hours.
+
+Support lines
+Gift wrap can be added at checkout (+£3). Free local delivery (3 miles) over £30. Stock levels vary by store; online shows central stock.
+
+Headline test variants
+• Kids’ Christmas Box — books they’ll actually read
+• A box of books they’ll open first
+• Screen‑free smiles for Christmas morning
+
+— Quick measurement
+• Use unique URLs/UTMs per page (e.g. utm_campaign=christmas_signed / cosy_crime / kids_box; utm_content=h1_a/b/c)
+• Compare Checkout Starts and Purchases for these pages vs the existing category pages after 3 days of traffic; keep the winner.
+
+Fieldwork Studio

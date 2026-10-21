@@ -1,0 +1,124 @@
+{
+ "name": "Fieldwork Studio",
+ "city": "London",
+ "lead_name": "Priya Nair",
+ "lead_email": "priya@fieldwork.example",
+ "what_we_do": "A 14-person marketing studio for consumer brands doing £1m-£30m a year: paid social, search, creative that is made to be tested, and the landing pages those ads point at. We work in 90-day blocks, never longer contracts.",
+ "facts": [
+  "Founded in 2017 by Priya Nair (ex-Meta agency partnerships) and Tom Okafor (ex-creative director at a mid-size London agency).",
+  "14 people: 5 media buyers, 4 creatives, 2 developers for landing pages, 3 strategists.",
+  "About 60% of clients are beauty, food and drink, and home brands; the rest are mixed DTC and a few B2B software companies.",
+  "Engagements run in 90-day blocks. A project (a single audit or launch) starts at £8,000; retainers start at £6,500 a month plus ad spend.",
+  "Every ad concept we make ships with at least three variants so the account can learn which one works; we retire creative after about three weeks of falling click-through.",
+  "First two weeks of every engagement are an audit: ad account, tracking, landing pages and the last 12 months of spend.",
+  "We do not do influencer management, PR or TV.",
+  "Our honest view: most brands under £5m a year need two things done well (creative testing and the landing page), not nine services.",
+  "Clients we can name: Glow Theory (skincare), Tallow & Thyme (candles), Oatside Kitchen (food), Ledgerly (B2B software)."
+ ],
+ "pages": [
+  {
+   "path": "/",
+   "title": "Home",
+   "what": "Headline 'Ads that learn, pages that convert'. Three client logos, a 'what's your biggest headache?' row of chips, a 'roast my site' field.",
+   "studio_take": "The headache chips are there because the honest answer to 'what do you do' depends on which one you pick: each has its own article and its own case."
+  },
+  {
+   "path": "/services",
+   "title": "Services",
+   "what": "Nine services in a grid: paid social, search, creative production, landing pages, CRO, tracking, analytics, email, strategy.",
+   "studio_take": "We know nine boxes is too many. Most clients only ever need two of them."
+  },
+  {
+   "path": "/work",
+   "title": "Work",
+   "what": "Case study grid with a 'show me work for: DTC / B2B / Retail' filter: Glow Theory, Tallow & Thyme, Oatside Kitchen, Ledgerly."
+  },
+  {
+   "path": "/work/glow-theory",
+   "title": "Glow Theory case study",
+   "what": "Skincare brand. Paid social and new product pages. Big hero image of a serum bottle in a cold sink.",
+   "behind_the_scenes": "The serum-in-a-cold-sink shot was a phone photo from the founder's kitchen; it beat the £12k studio shoot by a mile in testing.",
+   "client": "Glow Theory"
+  },
+  {
+   "path": "/work/tallow-and-thyme",
+   "title": "Tallow & Thyme case study",
+   "what": "Candle brand. Christmas launch, search and paid social, a gift-finder landing page.",
+   "behind_the_scenes": "The gift finder was built in four days after the first Christmas ads sent people to a product grid they bounced off.",
+   "client": "Tallow & Thyme"
+  },
+  {
+   "path": "/work/ledgerly",
+   "title": "Ledgerly case study",
+   "what": "B2B accounting software. LinkedIn and search, a demo-booking page.",
+   "behind_the_scenes": "We cut their LinkedIn targeting from eleven audiences to two; cost per demo halved. The demo page took seven versions; the one that won opened with the question finance leads asked first on sales calls.",
+   "client": "Ledgerly"
+  },
+  {
+   "path": "/pricing",
+   "title": "Pricing",
+   "what": "Toggle between Project (from £8,000) and Retainer (from £6,500/month plus spend). FAQ on contracts.",
+   "studio_take": "The retainer-vs-project toggle is a bit of a false choice: most clients start with a project and only then decide."
+  },
+  {
+   "path": "/about",
+   "title": "About",
+   "what": "Founders, team photo, the 90-day block idea.",
+   "behind_the_scenes": "The team photo is missing whoever was on holiday that week, and the caption admits it."
+  },
+  {
+   "path": "/journal",
+   "title": "Journal",
+   "what": "List of articles."
+  },
+  {
+   "path": "/journal/why-your-meta-costs-went-up",
+   "title": "Why your Meta costs went up",
+   "what": "Article: rising costs usually come from creative fatigue, not the auction; an account running four ads for six months has nothing new to learn from. Links to Glow Theory.",
+   "studio_take": "It reads a little smug. Glow Theory came to us running the same four ads since spring, so we have seen exactly this, and the fix was more to test, not more budget."
+  },
+  {
+   "path": "/journal/landing-pages-not-homepages",
+   "title": "Stop sending ads to your homepage",
+   "what": "Article: one ad, one promise, one page; homepages lose about half of paid traffic in the first five seconds. Links to Oatside Kitchen.",
+   "behind_the_scenes": "Oatside Kitchen's offer from the ad was three scrolls down their homepage; moving the ads to three offer pages cut cost per first order 38%."
+  },
+  {
+   "path": "/journal/three-week-rule",
+   "title": "The three-week creative rule",
+   "what": "Article: we retire creative after about three weeks of falling click-through, not three weeks from launch; every concept ships in at least three variants. Links to Glow Theory.",
+   "behind_the_scenes": "The rule is the one we ran on Glow Theory: 27 creative variants in the first 90 days, anything whose click-through fell for three weeks retired."
+  },
+  {
+   "path": "/work/oatside-kitchen",
+   "title": "Oatside Kitchen case study",
+   "what": "Food brand. Ads moved off the homepage onto three offer pages, one per promise.",
+   "client": "Oatside Kitchen",
+   "behind_the_scenes": "The plainest of the three offer pages, a photo of the tub and the price, beat the other two; the founder had wanted to cut it."
+  },
+  {
+   "path": "/journal/when-the-numbers-disagree",
+   "title": "When your numbers disagree",
+   "what": "Article: Meta, Google and the shop each count differently; the first two weeks of every engagement are an audit; count the sale, first order or booked demo, not the click. Links to Ledgerly.",
+   "behind_the_scenes": "Ledgerly is the example: once booked demos were what got counted, search budget moved to the terms that booked them."
+  }
+ ],
+ "results": [
+  {
+   "client": "Glow Theory",
+   "said": "return on ad spend went from 1.6 to 3.1 over two 90-day blocks."
+  },
+  {
+   "client": "Tallow & Thyme",
+   "said": "Christmas revenue from paid up 74% on the year before; the gift finder converted at 4.8% against 1.9% for the product grid."
+  },
+  {
+   "client": "Oatside Kitchen",
+   "said": "cost per first order down 38% after moving ads off the homepage onto three offer pages."
+  },
+  {
+   "client": "Ledgerly",
+   "said": "cost per booked demo halved, from £410 to £205."
+  }
+ ]
+}

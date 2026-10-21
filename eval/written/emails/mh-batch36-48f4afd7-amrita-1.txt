@@ -1,0 +1,204 @@
+To: Amrita Shah (Founder of Sprout & Stitch, a UK kids’ clothing brand. She splits time between the studio and a small warehouse. Skims on her iPhone first, opens laptop only if it’s worth it. Direct, impatient with fluff, numbers-first but creative-savvy. Skeptical of long retainers; likes clear experiments and visible outputs.)
+Judge: 24/25 (specific 5, useful 5, voice 4, fits 5, reply 5) PROMISES 1
+Worst: It doesn’t include a kidswear-specific case study with numbers, which she explicitly asked for as category proof.
+! Offer to package the roughs into a copy doc + simple wireframes if she confirms which two pages to prioritise.
+
+Subject: Sprout & Stitch — ad + LP roughs you can paste today (Mud Wins, Rain, Hand‑Me‑Down)
+
+Amrita —
+
+Thanks for the clear brief. Here are the roughs you asked for: paste‑ready ad copy, headlines, and three single‑promise landing page wireframes. At the end, I’ve noted the only quantified case we can stand behind today, plus two platform shifts relevant to your tests.
+
+Ad roughs (3 concepts × multiple formats)
+— Concept A: Mud Wins (playproof bottoms)
+• Visuals
+  - Video (3–5s): tight close‑up of knees post‑slide/scooter, wipe to show reinforced panel; cut to quick smile/run.
+  - Static macro: reinforced knee panel with visible texture; optional split “muddy vs. clean.”
+  - Carousel: 1) macro knee panel 2) on‑playground mid‑shot 3) product flat.
+• Primary text (pick 1–2 lines)
+  - Reinforced knees. Playground ready. 30‑day free returns.
+  - Mud loses. Knees win. Built to be handed down.
+  - Bright, tough, planet‑kind kidswear.
+• Headlines
+  - Playproof bottoms
+  - Reinforced knees, playground ready
+• CTA
+  - Shop playproof bottoms
+• Destination
+  - Promise page: Playproof Bottoms (rough below)
+
+— Concept B: Rain Test (Splash Raincoat + rainwear)
+• Visuals
+  - Video: water beading on Splash Raincoat; shake‑dry moment; kid heads back to play.
+  - Static: close‑up of hood/zip with droplets; mid‑shot in drizzle.
+  - Carousel: 1) water close‑up 2) full jacket 3) matching rainwear.
+• Primary text
+  - Dry kids = longer play. Free UK returns.
+  - Rain‑ready layers for real‑world play.
+  - Bright, tough, planet‑kind.
+• Headlines
+  - Dry kids = longer play
+  - Rain‑ready layers
+• CTA
+  - Get the Splash Raincoat
+• Destination
+  - Promise page: Rain (rough below)
+
+— Concept C: Hand‑Me‑Down (brand promise)
+• Visuals
+  - Static: two sizes of the same piece side‑by‑side; or a neat year‑1/2/3 stack.
+  - Video: older sibling to younger hand‑off; quick cut to play.
+• Primary text
+  - Built to be handed down. 30‑day free returns.
+  - Buy bright. Play hard. Hand it on.
+• Headlines
+  - Built to be handed down
+  - Bright today, theirs tomorrow
+• CTA
+  - Shop bestsellers
+• Destination
+  - Promise page: Hand‑Me‑Down (optional) or send to a curated set of durable staples.
+
+Paste‑ready promise page roughs (wireframe + copy blocks)
+Notes
+- Keep each page to one promise. Use your Leeds Lookbook frames in the first screen.
+- Include delivery/returns in the first screen. Keep other reassurance minimal.
+
+1) Playproof Bottoms (Rough‑and‑Tumble)
+• Hero
+  - H1: Reinforced knees. Playground ready.
+  - Sub: Bright, tough bottoms built for play.
+  - First‑screen reassurance: 30‑day free returns • UK delivery 2–4 days
+  - Primary CTA: Shop playproof bottoms
+• Proof strip (3 cells)
+  - Macro: Reinforced knee panel — copy: Tough where it counts.
+  - Macro: Inside seam — copy: Reinforced seams for repeat wear.
+  - Macro: Fabric texture — copy: Soft feel, built to last.
+• Fit & sizing microcopy (above grid)
+  - [Fit cue here: “True to size”] • [Add quick height guide in cm alongside ages]
+• Product grid
+  - Only bottoms that meet the “reinforced” promise.
+• Social proof
+  - [Parent quote about durability]
+• FAQ (3 accordions)
+  - Are the knees reinforced? • How do they wash? • What’s the returns policy?
+• Closing CTA
+  - Ready for rough‑and‑tumble → Shop bottoms
+
+2) Rain (Splash Raincoat + rainwear)
+• Hero
+  - H1: Dry kids = longer play.
+  - Sub: Rain‑ready layers for real‑world weather.
+  - Reassurance: 30‑day free returns • UK delivery 2–4 days
+  - CTA: Get the Splash Raincoat
+• Proof strip
+  - Macro: Water on fabric — copy: Beads, shakes, back to play.
+  - Detail: Hood/zip — copy: Designed for drizzle days.
+  - Lifestyle: Leeds Lookbook frame — copy: As seen in our Lookbook.
+• Fit & sizing microcopy
+  - [Add simple size guidance + height hint]
+• Product grid
+  - Splash Raincoat first, then matching rain layers only.
+• Social proof
+  - [Parent quote on keeping kids dry/playing]
+• Closing CTA
+  - Ready for rain → Shop rainwear
+
+3) Party (colour‑pop sets and dresses)
+• Hero
+  - H1: Party‑bright, play‑ready.
+  - Sub: Colour that keeps up with the dancing and the dash.
+  - Reassurance: 30‑day free returns • UK delivery 2–4 days
+  - CTA: Party‑ready outfits
+• Proof strip
+  - Lifestyle: twirl/colour pop (Lookbook)
+  - Macro: soft fabric texture (cotton styles)
+  - Detail: seam/finish close‑up
+• Fit & sizing microcopy
+  - [Add “true to size” cue once verified] • [Height guide in cm]
+• Product grid
+  - Only party‑bright pieces that still pass the “play‑ready” bar.
+• Social proof
+  - [Parent note on comfort + no‑itch seams]
+• Closing CTA
+  - Make it bright → Shop party
+
+Set‑up notes (so the account can learn)
+- One ad, one promise, one page. Route each ad only to its matching page; keep a small homepage holdout as a benchmark.
+- Variants to ship per concept: 1 video, 1 macro static, 1 carousel. Retire anything that falls for 3 weeks on CTR; keep anything still climbing.
+- Naming & UTM convention (example)
+  - Campaign: S&S_Q4_Promise_Playproof
+  - Ad set: Meta_Broad_UK_Prospecting
+  - Ad: MudWins_V1_Video_9x16
+  - URL params: utm_source=meta&utm_medium=paid&utm_campaign=Q4_promise_playproof&utm_content=mudwins_v1_video
+
+What we can quantify today
+- Closest relevant number we’ve run: for Oatside Kitchen (DTC food), moving spend from a homepage to focused offer pages (each matching the ad promise) cut cost per first order by 38%. We don’t have a kidswear‑specific quantified case we can share yet.
+
+Platform shifts worth using with these variants
+- Meta: their Generative Ads Model (GEM) launches with a unified model that optimises across Facebook, Instagram and Reels, with Meta citing up to 18.9% more conversions and 12% higher CTR across surfaces (Meta Engineering, 13 Oct 2026). These single‑promise variants are a good fit for letting GEM find the best surface per creative.
+- Shopify: Canvas (Oct 2026) lets teams redesign pages with Sidekick prompts without a developer. If you’re on Shopify, it’s a fast path to spin up these promise pages.
+
+If there’s one to start with, “Playproof Bottoms” is the sharpest proof‑first candidate. If you’d like these roughs packaged for your team (copy doc + simple wireframes), say which two pages you’d prioritise first.
+
+Fieldwork Studio
+
+==== Sent before (24/25 (specific 5, useful 5, voice 5, fits 4, reply 5) PROMISES 1)
+Subject: Sprout & Stitch — ad + landing page roughs (mud wins, rain test)
+
+Amrita —
+
+Here are the roughs you asked for. One practical thing we noticed on your site that should move CPA: ages show on cards but there’s no quick height/cm cue in the first screen. Add a single height hint and a fit cue (“true to size” or “size up for room‑to‑grow”—whichever your returns data supports) on any paid LP and the related cards.
+
+Ad roughs (ship each in three variants)
+1) Mud Wins — playproof bottoms
+- Visual: 3–5s clip: muddy knees → quick cut to reinforced knee panel; alt: macro static of stitching with mud flecks; alt: carousel (macro → full outfit → knee panel).
+- Hooks to test: “Reinforced knees. Playground proof.” / “Mud’s fine. These survive.” / “Built to be handed down.”
+- CTA: Shop playproof bottoms
+- Variants: 9:16 video, 4:5 macro static, 1:1 carousel (with/without price overlay).
+
+2) Rain Test — Splash Raincoat + rainwear
+- Visual: hose or drizzle beading on fabric; shake‑dry moment; alt: macro still of water beading.
+- Hooks: “Dry kids = longer play.” / “Rain on. Play on.” / “Free UK returns.”
+- CTA: Get the Splash Raincoat
+- Variants: 9:16 clip, 4:5 macro static, 1:1 GIF/loop.
+
+3) Hand‑Me‑Down — longevity/planet
+- Visual: sibling hand‑off or year‑1/2/3 stack of the same piece.
+- Hooks: “Built to be handed down.” / “Planet‑kind, playproof.” / “GOTS organic cotton.”
+- CTA: Shop bestsellers built to last
+- Variants: 9:16 video, 1:1 carousel, 4:5 single image.
+
+Landing page wireframes (one ad, one promise, one page)
+A) Rough‑and‑Tumble (bottoms)
+- Hero: macro knee panel + headline “Reinforced knees. Playground ready.”
+- Sub: “GOTS organic cotton. 30‑day free returns.” Primary CTA: Shop playproof bottoms.
+- Proof: close‑up panel callouts (stitching, double layer); optional 8–10s loop clip.
+- Fit help: age + height/cm hint in first screen; quick size/returns note.
+- Social proof: 2 short parent quotes.
+- Grid: bottoms only, pre‑filtered to in‑stock sizes; cards show size/height hint.
+- FAQ: care, durability, returns.
+
+B) Rain (rainwear)
+- Hero: water‑beading macro + “Dry kids = longer play.”
+- Sub: “30‑day free returns.” CTA: Get the Splash Raincoat.
+- Proof: seams/zip guard detail; optional shake‑dry loop.
+- Fit help + quick care note.
+- Social proof, grid, brief FAQ as above.
+
+C) Party (bright sets/dresses)
+- Hero: twirl/colour pop + “Party‑bright, play‑ready.”
+- Sub: “GOTS organic cotton. 30‑day free returns.” CTA: Party‑ready outfits.
+- Proof: colourfast/care note; fit cue; grid of party pieces.
+
+How to test (keeps it clean and attributable)
+- Map each ad concept only to its matching page; keep a 10% homepage holdout for benchmark.
+- Count cost per first order by page. Retire any creative after three weeks of falling click‑through; keep anything still climbing.
+- Use your existing Lookbook frames for hero visuals while you capture the short proof clips.
+
+Kids’ apparel case study with numbers
+- We don’t have a published kidswear case we can share yet. Closest quantified analogue in our work: Oatside Kitchen (DTC food) cut cost per first order by 38% by moving ads from the homepage to promise‑specific pages. Same testing pattern here: one ad, one promise, one page.
+
+If you want these turned into final assets/pages, say the word and we’ll scope it as a 90‑day block. Otherwise, this gives you a tight plan you can run in‑house.
+
+Fieldwork Studio

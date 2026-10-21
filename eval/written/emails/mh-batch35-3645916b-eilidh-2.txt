@@ -1,0 +1,89 @@
+To: Eilidh MacLeod (Founder of Heather & Pine, a two-product skincare microbrand in Glasgow. Solo operator most days; sister helps on weekends. Reads on iPhone first while on the bus or in the workshop; opens laptop late evening for decisions. Pragmatic, frugal, a bit sceptical of agencies but open if shown specifics and quick tests.)
+Judge: 25/25 (specific 5, useful 5, voice 5, fits 5, reply 5) INVENTED 2
+Worst: It drops a specific 10–15% uplift expectation without Heather & Pine data to back it, risking over‑promising in an otherwise tight, credible note.
+! Claims a likely 10–15% uplift in add‑to‑cart from browse emails without supporting data for Heather & Pine
+! States ‘cart preservation on Shopify’ in checkout recovery without evidence provided in the brief that this is configured or available for their theme
+
+Subject: Klaviyo Composer is live today: 3 lean flows to catch your TikTok serum traffic
+
+Eilidh —
+
+Composer goes GA today. Here’s the concise, post‑viral flow setup to pair with your serum lander A/B (lander vs PDP) so TikTok traffic doesn’t die on the vine. Built to be fast, mobile‑first, and measurable.
+
+First, give Composer the guardrails (paste as brand kit notes)
+- Voice: clear, plainspoken, no fluff. Scottish, friendly, confident.
+- Product truths to use: Sea Buckthorn Glow Serum. Fragrance‑free. Sea buckthorn, squalane, vitamin E. Hand‑poured in Glasgow. Seen by 2.3M on TikTok. 30ml in stock; 15ml is OOS (do not promote 15ml).
+- Convenience chips: Apple Pay and PayPal available. Royal Mail 48. Dispatch Mon/Wed/Fri. Free UK delivery over £40. 10% off first order for new subscribers.
+- Links: always deep‑link to the serum offer page variant (not the PDP) for welcome and browse flows; pre‑select 30ml. For the A/B test, make sure browse‑abandon emails link back to the variant the visitor originally saw, so the test stays clean.
+
+Segment to keep it honest
+- TikTok segment: last session UTM source contains “tiktok” OR clicked from your TikTok bio link.
+- Exclusions: purchased in last 7 days; added 15ml to cart (when back in stock later) if you want to steer to 30ml first.
+
+The three lean flows
+1) Post‑viral Welcome (for TikTok sign‑ups only)
+- Trigger: Subscribed to list AND source = TikTok.
+- Email 0 (immediate): Deliver 10% code. CTA: Shop Glow Serum (30ml pre‑selected) on the serum offer page. Proof chip row: “Fragrance‑free • Seen by 2.3M on TikTok • Dispatch Mon/Wed/Fri.”
+  Subject lines: “Welcome to glow that actually behaves.” / “Your code + the serum TikTok saw.”
+  Body (pasteable): “Our Sea Buckthorn Glow Serum is a simple, brightening oil‑serum with sea buckthorn, squalane and vitamin E. No fragrance. Hand‑poured in Glasgow. Tap to start with 30ml.”
+- Email 1 (T+24h, only if no Add to Cart): “3 reasons it works on sensitive skin” with scan‑lines: Brightening, fragrance‑free, non‑greasy finish. CTA back to the offer page (30ml).
+
+2) Social‑proof Browse (serum page viewers who didn’t add)
+- Trigger: Viewed serum offer page; no Add to Cart within 2h; source = TikTok.
+- Email 1 (T+2h): “Still deciding? What you’ll notice first.”
+  Subject lines: “Glow without the fuss.” / “Why we kept it to 4 ingredients.”
+  Body (pasteable): “Start with 2–3 drops on damp skin. Brightens without fragrance. Seen by 2.3M on TikTok. Apple Pay and PayPal at checkout.” CTA to the same page variant they saw.
+- Email 2 (T+24h, only if no Checkout Started): FAQ hits: Sensitive skin? With retinol? Shipping & returns. Chip: “Royal Mail 48 • Free UK over £40.”
+
+3) Checkout Recovery (started checkout, no purchase)
+- Trigger: Started Checkout; no purchase; source = TikTok.
+- Email 1 (T+45m): “Your 30ml Glow Serum is still in your bag.”
+  Subhead: “Royal Mail 48 • Dispatch Mon/Wed/Fri • Apple Pay and PayPal ready.” CTA to resume checkout (cart preservation on Shopify).
+- Email 2 (T+20h): “Ready when you are.”
+  Body (pasteable): “A brightening, fragrance‑free oil‑serum with sea buckthorn, squalane and vitamin E. Hand‑poured in Glasgow. Finish your order in two taps.”
+
+Composer prompts you can drop in today
+- “Draft a 150–200 word welcome email for new TikTok subscribers using this brand kit. Keep copy scannable for mobile with one primary CTA to the serum offer page (30ml selected). Include a short proof chip row: ‘Fragrance‑free • Seen by 2.3M on TikTok • Royal Mail 48’.”
+- “Create a browse‑abandon email for visitors who viewed the serum offer page but didn’t add to cart. 100–140 words. Lead with benefit, then ingredients, then convenience chips. No discounts.”
+- “Write a checkout‑recovery email in 80–120 words. Empathetic, zero pressure. Emphasize Apple Pay/PayPal and dispatch timing. One CTA to return to checkout.”
+
+QA checklist (keep Composer honest)
+- Links: point to the correct page variant (match the A/B arm they came from); pre‑select 30ml.
+- Mobile first: hero under 120KB, body 14–16px, single CTA above the fold.
+- Compliance: correct from‑name, reply‑to, physical address, unsubscribe.
+- Tracking: UTM source=klaviyo, medium=email, campaign=[flow‑name]; carry the original A/B arm tag so reporting isn’t polluted.
+
+What to watch this week
+- Welcome: code redemption rate; click‑to‑ATC.
+- Browse: browse→ATC uplift vs holdout (even a 10–15% lift on ATC will show quickly at TikTok volumes).
+- Checkout: recovery rate and recovered revenue per started checkout.
+- Overall: keep the serum lander vs PDP split even for TikTok traffic; flows link back to the same variant to keep the test fair.
+
+One‑line decision that helps me keep this tight: prefer the browse‑abandon delay at 2h or 4h for TikTok traffic?
+
+Fieldwork Studio
+
+==== Sent before (22/25 (specific 5, useful 4, voice 5, fits 4, reply 4) PROMISES 1)
+Subject: Today: lean post‑viral flows for your serum test (Composer‑ready)
+
+Eilidh —
+
+Klaviyo’s Composer goes GA today. Here’s a lean trio to bolt onto your serum offer‑page vs PDP A/B:
+
+Checkout recovery — shortest path to revenue
+- Reassure on delivery (“Royal Mail 48; poured weekly”) and link only to the serum offer page. Avoid highlighting the 15ml while it’s OOS.
+
+Welcome (TikTok spike)
+- Open with the hook (over 2M views), state the simple promise (“fragrance‑free, brightening oil‑serum”), include your 10% first‑order code, and send to the serum offer page with 30ml as the default.
+
+Social proof nudge
+- Two‑line recap + ingredients line (sea buckthorn, squalane, vitamin E), optional creator credit; one link back. Skip empty Reviews.
+
+Using Composer fast
+- Paste a mini brand kit (voice and claims to avoid), a tight QA checklist (no 15ml mentions; delivery line accurate; links hit the offer page), and ask Composer for two copy variants per email, then keep the winner.
+
+After the first few days, compare add‑to‑cart rate and first‑order cost between the offer page and the PDP, then retire the loser.
+
+If helpful, I can send all three as a one‑pager of ready‑to‑paste Composer prompts.
+
+Fieldwork Studio

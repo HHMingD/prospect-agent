@@ -1,0 +1,52 @@
+To: Mira Patel (Growth Lead at SproutBox Meals (vegan meal kits). Browses on a 13" laptop, trackpad-only, 12 tabs open. Time-poor, analytical, skeptical of agency fluff, wants numbers and fast experiments. Pragmatic: can ship tests without pulling her full dev team.)
+Judge: 22/25 (specific 4, useful 5, voice 5, fits 4, reply 4) PROMISES 1
+Worst: It leans on Meta’s "up to" GEM stats and doesn’t tie the change directly to Sproutbox’s CAC target or quantified impact, which a skeptical, time-poor lead may see as platform fluff unless anchored to expected CAC movement.
+! Provide a quick fit check if Mira replies with a 7-day placement breakdown export and a preview/click-through recording of the quiz→box→checkout
+
+Subject: Meta just removed manual placements. One change Sproutbox can make today.
+
+Mira—
+
+A quick update you’ll care about, with one change to adopt today.
+
+What changed
+- Meta removed manual placement selection for most campaign objectives. GEM (their unified ads model) will now push your ads across Feed, Reels and Stories based on performance. Meta reports up to 18.9% more conversions and 12% higher CTR when creative matches what the model favors.
+
+Why it matters to Sproutbox
+- You can’t route around weak placements anymore. If Reels or Stories underperform, the fix is fit‑for‑format creative, not exclusions—especially with GEM deciding distribution.
+
+The one change to adopt today
+- Ship every concept as a 3‑up pack, purpose‑built for Feed, Reels and Stories. Treat them as different ads, not resizes.
+  • Feed: 1080×1350, benefit headline in‑frame, tight product close‑up; 1–2 line caption; hook in first 2s.
+  • Reels: 9:16 full‑frame, motion in the first 0.3s, bold subtitles; 6–12s cut; clear on‑screen CTA.
+  • Stories: 9:16, safe zones respected, top‑line promise + price in first second; edge‑to‑edge visuals.
+
+Cadence (so GEM has fresh, placement‑fit options)
+- 3 new concepts each week × 3 variants each; keep 1–2 proven evergreens in rotation.
+- Kill any variant that shows a 3‑day CTR slide with rising CPA; refresh the opener or framing, not just a crop.
+- Tag assets by concept, placement and hook so you can actually read which GEM winners to scale.
+
+Example 3‑up pack you could ship against your quiz→box flow
+- Feed static: headline “Build your week in 60s,” grid of 3–6 meals, clear price line, CTA “Start the quiz.”
+- Reels UGC: tap through 3 quiz questions → auto‑built Starter Box → swap one item → price reveal; VO: “I answered three, it built my week.”
+- Story sequence (3 frames): 1) Promise + diet badge (Vegetarian / High‑Protein) 2) Swap demo with live total 3) Choose delivery day + “No surprises at checkout.”
+
+If you want a quick fit check, reply with a 7‑day placement breakdown export from Ads Manager (by placement, CTR and CPA) and a preview link or click‑through recording of quiz→box→checkout. I couldn’t open sproutbox.example just now—if there’s a better preview URL, send it over.
+
+Fieldwork Studio
+
+==== Sent before (17/25 (specific 3, useful 4, voice 4, fits 3, reply 3))
+Subject: Meta placement change: one tweak to your creative tests this week
+
+Mira—
+
+Meta removed manual placement selection for most campaign objectives in October; placement customisation now lives at the creative level, not the ad set. With GEM routing across surfaces, the practical lever is fit‑for‑placement assets.
+
+One change to adopt this week (no dev needed): make placement‑specific cuts mandatory for every new concept.
+- Reels: 9:16, <15s, hook in 1s, captions on‑screen; CTA “Build your box.”
+- Feed (4:5/1:1): price chip in the first screen; show the quiz→box motion; product close‑up.
+- Stories: 9:16, native captions/stickers; progress bar (“Step 1 of 4”).
+
+Ship three variants per cut and retire any that fall for three weeks. Watch placement‑level CAC and quiz starts. GEM’s reported uplifts only materialise when each surface gets an asset made for it.
+
+Fieldwork Studio

@@ -1,0 +1,116 @@
+To: Maya Rudd (Co-owner/GM of Fell View House, a 26-room family-run hotel near Ambleside. Splits days between front desk and supplier calls. Checks sites on an iPhone 13 while walking between rooms; laptop only after 9pm. Practical, polite, cost-aware, skeptical of agency fluff, wants numbers and fast tests.)
+Judge: 19/25 (specific 4, useful 4, voice 4, fits 3, reply 4) PROMISES 2
+Worst: It never quantifies expected lift or outline a believable 90‑day path to +10% direct share, and adds friction by asking her to reply for the teardown instead of just sending it.
+! If you reply “teardown,” Priya Nair will send an annotated teardown with screenshots and click‑path notes.
+! If you reply “GEM,” the team will share a quick checklist for hospitality creative mix, placements, and measurement under Meta’s GEM.
+
+Subject: Maya — three paste‑in fixes for Fell View House (and the landers to stop paid from bouncing)
+
+Hi Maya,
+
+Thanks for introducing yourself just now — you flagged “Traffic but no sales.” Here’s the fast, practical version for Fell View House.
+
+What’s costing you seconds on the homepage
+- Static hero, no single primary CTA, and no availability/date picker or from‑price in the first screen
+- Direct‑booking benefits are there, but not tied to the booking action
+- Navigation offers many choices; the booking CTA isn’t sticky
+- No above‑fold review/rating; booking completes on an external portal
+
+Why this matters: as our piece says, homepages lose about half of paid traffic in the first five seconds. Oatside Kitchen’s plainest offer page — a tub, the price, and nothing else — beat the others in testing. Simpler, faster choices win.
+
+Paste‑in first screen (ship this today)
+- Headline: Fell View House, Ambleside
+- Sub‑headline (left of the image, above the form): Book direct: 10% off, flexible cancellation, free parking
+- Form + primary CTA (make the CTA sticky on scroll):
+  • Dates [   ]  Guests [   ]  [Check availability]
+  • From‑price label under the CTA: Rooms from £[lowest flexible nightly rate]
+- Proof row in the hero (three quick cues): ★ [rating or badge] • Free parking • Lake District setting near Ambleside
+- Navigation: trim to essentials and keep one contrasting “Check availability” or “Book direct” button; hide the rest behind a menu
+
+Three single‑promise landers (send paid here, not home)
+Each page should match one ad promise, show a from‑price, and let guests start a search in one tap. Pass dates/guests through to your booking portal.
+
+1) Romantic weekend in the Lakes
+- Headline: A romantic weekend at Fell View House
+- Sub: Book direct: 10% off, flexible cancellation, free parking
+- From‑price: Stays from £[from_price]
+- Date/guests picker + [Check availability]
+- Three reasons section (keep generic if you prefer): Quiet country‑house stay • Near Ambleside & the fells • Free parking
+- Review snippet: “[short 5★ line]” — [Name]
+
+2) Family rooms and stays
+- Headline: Family stays near Ambleside
+- Sub: Flexible cancellation, free parking, 10% off direct
+- From‑price: From £[from_price]
+- Date/guests picker + [See rooms & rates]
+- “What families like here” bullets (edit to fit your rooms): Space to unwind • Steps to Lake District attractions • Easy parking
+
+3) Last‑minute deals
+- Headline: Last‑minute rooms — tonight through [X days out]
+- Sub: Book direct for 10% off + flexible cancellation
+- From‑price: Tonight from £[from_price]
+- Date/guests picker + [Check availability]
+- Trust row: ★ [rating/badge] • Free parking • Ambleside location
+
+A/B plan for this week (measure what matters)
+- Test 1: Hero layout — left‑aligned copy vs split image/form
+- Test 2: CTA copy — “Check availability” vs “See rooms & rates”
+- Test 3: Review placement — badge in hero vs directly under the primary CTA
+- Success metric: booking‑engine sessions and search‑starts per 100 paid visits (not CTR). Secondary: bounce and time to first search.
+
+Click‑path (make it this simple)
+- Current: Home → Book Now → External secure portal
+- Proposed: Hero search‑start or sticky CTA on Home/Landers → External portal with dates/guests prefilled and UTMs preserved
+
+UTM carry‑through + prefill checklist (dev‑ready)
+- Persist utm_source, utm_medium, utm_campaign, utm_content, utm_term (and any click_id) into all internal links
+- Map and append booking params your portal accepts (examples to adapt): checkin=YYYY‑MM‑DD, checkout=YYYY‑MM‑DD, adults=2, children=0
+- On landers, on form submit: build the portal URL with dates/guests + UTMs; open in same tab
+- QA: click a paid ad with UTMs → lander → submit → confirm dates/guests are prefilled and UTMs are visible in the portal URL
+- Log: track search‑starts and hand‑offs to the portal as events so you can calculate “search‑starts per 100 paid visits”
+
+Forward‑this blurb
+- “Please ship this above‑the‑fold: date picker + from‑price + ‘Book direct: 10% off, flexible cancellation, free parking,’ one sticky ‘Check availability,’ trimmed nav, review badge in the first screen. Send paid to three single‑promise pages (Romantic, Family, Last‑minute) that prefill dates and pass UTMs.”
+
+One question for you
+- If someone clicks a “Romantic weekend” ad on mobile at 8pm, can they see a from‑price and start a date search in under three seconds?
+
+If you want the annotated teardown with screenshots and click‑path notes, reply “teardown” and Priya Nair at our side will send it where you want it.
+
+PS: Meta’s new Generative Ads Model (GEM) lands this week; it’s built to optimise creative and placements across Facebook, Instagram, Reels, and Stories, with reported lifts in conversions and CTR. If you’re running paid social, reply “GEM” and we’ll share the quick checklist for hospitality on creative mix, placements, and how to judge lift on bookings/search‑starts, not clicks.
+
+Fieldwork Studio
+
+==== Sent before (17/25 (specific 4, useful 4, voice 3, fits 4, reply 2))
+Subject: Fell View House: fast homepage fixes for direct bookings
+
+Hi Maya —
+
+Thanks for introducing yourself. Quick teardown:
+
+- Static hero with many exits; no single primary CTA to start a booking.
+- No review badge or booking start above the fold.
+- Handoff to an external booking portal (watch attribution drop on the hop).
+
+Do this first
+- Put an availability module in the hero beside one primary CTA (“Check availability”). Keep the CTA sticky on scroll.
+- State “Book direct: 10% off, flexible cancellation, free parking” in the hero.
+- Add a compact review/rating badge above the fold.
+- Trim header nav to essentials; push the rest to the footer.
+
+For paid clicks
+- Use single‑promise landers (e.g., Romantic weekend, Family rooms, Last‑minute) that keep the ad’s promise on the first screen with availability and one CTA, then pass UTMs through to the portal.
+
+Measure
+- Booking‑engine sessions per 100 paid visits.
+- Search‑starts per 100 visits.
+- Drop‑off from CTA click to portal session.
+
+A/B next
+- Hero layout: split image + form vs form‑left, image‑right.
+- CTA copy: “Check availability” vs “See rooms & rates.”
+- Social proof placement: badge in hero vs just below it.
+
+Why: as we write in our Journal, homepages built for everyone lose about half of paid traffic in the first five seconds. These changes make the first screen do bookings, not browsing.
+
+Fieldwork Studio

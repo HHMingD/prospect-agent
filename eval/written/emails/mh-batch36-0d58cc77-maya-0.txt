@@ -1,0 +1,101 @@
+To: Maya Bains (Solo UGC + ad-creative freelancer for small DTC brands. Uses a cracked iPhone 12 mini on 4G between shoots; opens laptop only at night. Fast, skeptical, frugal, hates fluff but hungry for practical tips. Juggles client work and prospecting; not a real buyer here—fishing for ideas she can DIY.)
+Judge: 25/25 (specific 5, useful 5, voice 5, fits 5, reply 5) INVENTED 1 PROMISES 1
+Worst: It assumes you already show three client logos to “keep,” which your site doesn’t show — a small but obvious miss in an otherwise tight teardown.
+! Says to “keep the three client logos beside/under the CTA” — Maya’s site content shown doesn’t include client logos.
+! If you reply with “screens,” we’ll share marked‑up screenshots of the homepage and Packages page with exact placements circled.
+
+Subject: Maya — 4 leaks on mayabainscreative.example and the paste‑in fixes (today)
+
+Maya — thanks for introducing yourself. I took a fast pass through mayabainscreative.example. Your offers are clear and your results are real; the leaks are choice, proof, and friction. Here’s the smallest change set to make the homepage sell your Ad Testing Pack.
+
+What to change
+1) One path home (Ad Testing Pack)
+- Make the homepage a product page for Ad Testing Pack. One CTA only.
+- Move “See Packages,” “Book a call,” and “Free UGC Brief Template” out of the hero. Put the template on exit/thank‑you instead so it doesn’t compete with the buy path.
+
+2) Proof at the click
+- Swap the grid of micro‑metrics for one clip + one outcome right under the CTA.
+  • Example you already have: “Tea brand — CTR 1.2% → 2.1% (20s cut)” or “Serum demo — 5.8% watch‑through.” Pick one; that single proof at the buying moment will do more than three small stats.
+- Keep the three client logos beside/under the CTA.
+
+3) Frictionless brief
+- Collapse Quick Brief to two fields + a note: Name, Email, “What do you need?”
+- Merge “Project Enquiry” and “Book a quick call” into one start‑here brief. If a call’s needed, link to it after the brief — drop the on‑page time‑picker and the “DM if no times show” detour.
+
+4) Timing you can live with
+- Ad Testing Pack says “Delivery in 10–14 days” on Packages; homepage footer says “Turnaround in 7–10 days.” Pick one and print it everywhere (hero, pack, footer, enquiry reply). Consistency calms buyers.
+
+5) Pricing + rights at the point of action
+- Put price next to the primary CTA: “Get the Ad Testing Pack — £1,200.”
+- Keep “Add whitelisting +£200” with the pack. Move usage rights text (“Organic + paid social for 30 days unless extended”) to the FAQ so it doesn’t slow the click.
+- On /packages, add a “Most chosen” tag to Ad Testing Pack.
+
+Paste‑in copy (today)
+- Hero H1: Ad Testing Pack for CPG, beauty and food
+- Sub: 4 scripts. 6 hooks. 3 edits each. Delivery in 10–14 days. I reply within 48 hours, Mon–Fri.
+- Primary button: Get the Ad Testing Pack — £1,200
+- Proof block (choose one):
+  • Tea brand UGC — CTR 1.2% → 2.1% (20s)
+  • Serum demo — 5.8% watch‑through (20s)
+- Quick Brief (inline):
+  • Name
+  • Email
+  • What do you need? (one box)
+- FAQ (consolidate): Payment: 50% to book, 50% on delivery. Usage: Organic + paid social for 30 days (extendable). Remote‑friendly; product shipping required.
+
+A simple 7‑day check
+- Run the one‑CTA homepage for a week; route all header CTAs to the same path.
+- Track: primary‑CTA clicks, briefs started, briefs completed. Judge success by “briefs per 100 visits.”
+
+Why these swaps
+- Right now above the fold you’re asking people to choose between “See Packages,” “Book a call,” a multi‑field Quick Brief, and a free template. Each is reasonable; together they soak up intent.
+- Your strongest commercial offer is the Ad Testing Pack (£1,200). Centering it with price + turnaround at the click reduces bounce and shortens the decision.
+- A single clip with a clear outcome beats micro‑metrics at the money moment.
+
+If you want, reply with “screens” and which proof clip you’d lead with — we’ll share marked‑up screenshots of the homepage and Packages page with the exact placements circled.
+
+Fieldwork Studio
+
+==== Sent before (24/25 (specific 5, useful 5, voice 4, fits 5, reply 5) INVENTED 1 PROMISES 1)
+Subject: Maya Bains Creative — homepage teardown (one path, fewer leaks)
+
+Maya — here’s the teardown you asked for. It focuses on stopping choice friction and timing/rights confusion so more visitors start the one thing you actually want.
+
+Priority fixes (in order):
+1) Make Ad Testing Pack the single path on the homepage
+- Replace “See Packages” + “Book a call” with one button: “Ad Testing Pack — £1,200”.
+- Sample hero copy:
+  Headline: Ads your algorithm can learn from.
+  Subhead: Ad Testing Pack — 4 scripts, 6 hooks, 3 edits. £1,200. Turnaround: 7–10 days (or 10–14 — pick one and use it everywhere).
+  CTA: Start with a 2‑field brief.
+
+2) Replace Quick Brief with two fields
+- Keep only Name + Email on first click. Ask brand/URL/budget after they’ve opted in.
+- Micro‑choice removal here is the biggest lift.
+
+3) Put proof at the click
+- Swap the creator grid near the hero for one 20s best clip plus a single outcome line, e.g. “Top cut hit 5.8% watch‑through” or “Tea brand CTR 1.2% → 2.1%”. Choose one and place it beside the primary button.
+
+4) Unify timings and rights language
+- Homepage says 7–10 days; Ad Testing Pack says 10–14. Pick one and use the same phrasing across hero, Packages, FAQ, and enquiry confirmations.
+- Standardise “Rush +25%” wording and where it applies.
+- Keep “30‑day usage” in FAQ; offer an “extend usage” add‑on there rather than front‑loading fine print.
+
+5) De‑dupe paths to contact
+- Merge “Book a quick call” and “Project Enquiry” into one flow: 2‑field brief first, then show live call slots.
+- Drop the DM detour at the decision point; keep Instagram in the footer.
+
+6) Package emphasis
+- Default the Packages page to Ad Testing Pack with a small “Most chosen” tag.
+- Make the CTA “Start Ad Testing Pack”. Keep Starter UGC and Monthly UGC as secondary choices.
+
+7) Small CRO details
+- Print price and turnaround next to every primary CTA, not just once.
+- If no calendar slots are open, collect email rather than showing a timezone picker and fixed times.
+
+Quick test plan
+- Ship the one‑path homepage as Variant B, split traffic 50/50 for 7 days, and compare: primary CTA clicks, brief starts, and booked calls. Keep the winner; iterate the proof block next.
+
+If it’s useful, I can turn the hero/pack notes above into paste‑ready copy blocks.
+
+Fieldwork Studio

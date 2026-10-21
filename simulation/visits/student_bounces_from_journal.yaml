@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Alknoma/minutehand/integration-main/schemas/scenario.schema.json
+# Lee is a marketing student who found a journal post through search, skimmed it and left. Nothing about them is a
+# buyer: the agent should say little or nothing, and never write to them. Times between steps drawn per seed.
+name: student_bounces_from_journal
+starts_at: 2026-10-14T13:10:00Z
+runs_for: P21D
+max_wakes: 200
+people:
+  - key: lee
+    name: Lee Park
+    email: lee.park@uni.example
+    profile: >-
+      A marketing student writing an essay about rising ad costs. Not running a business and not buying anything.
+    facts:
+      - Lee is studying marketing at university and has no business or budget.
+      - Lee found the post through a search for why Meta costs went up.
+      - Lee wants a quotable explanation for an essay, nothing more.
+    working_hours: {timezone: Europe/London, opens: "09:00", closes: "23:00"}
+    reply_within: {min: PT3H, max: P2D}
+    reply: {kind: answers}
+happenings:
+  - {kind: uses, person: lee, inbox: site, use: views, after: PT0S, inputs: {page: /journal/why-your-meta-costs-went-up, title: Why your Meta costs went up}}
+  - {kind: uses, person: lee, inbox: site, use: reads, gap: {min: PT20S, max: PT1M}, inputs: {page: /journal/why-your-meta-costs-went-up, how: "about 40 seconds, scrolled 35%"}}
+  - {kind: uses, person: lee, inbox: site, use: leaves, gap: {min: PT1S, max: PT5S}, inputs: {page: /journal/why-your-meta-costs-went-up}}

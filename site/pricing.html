@@ -1,0 +1,10 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pricing — Fieldwork Studio</title><link rel="stylesheet" href="/style.css"></head><body>
+<header><a class="logo" href="/">Fieldwork</a><nav><a href="/services">Services</a><a href="/work">Work</a><a href="/pricing">Pricing</a><a href="/journal">Journal</a><a href="/about">About</a></nav></header>
+<main><h1>Pricing</h1><div class="toggle" id="t"><button class="on">Project</button><button>Retainer</button></div>
+<div id="p"><p class="price">from £8,000</p><p class="sans">A single audit or a launch. Usually 90 days.</p></div>
+<h2>Questions</h2><p class="sans"><b>How long are contracts?</b> 90-day blocks. Never longer.</p><p class="sans"><b>Is ad spend included?</b> No, you pay the platforms directly.</p>
+<p class="sans"><b>What happens first?</b> Two weeks of audit: ad account, tracking, landing pages, last 12 months of spend.</p>
+<script>const P={Project:['from £8,000','A single audit or a launch. Usually 90 days.'],Retainer:['from £6,500/mo','Plus ad spend. 90-day blocks, then we decide together.']};
+document.querySelectorAll('#t button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#t button').forEach(x=>x.classList.remove('on'));b.classList.add('on');
+document.querySelector('#p').innerHTML=`<p class="price">${P[b.textContent][0]}</p><p class="sans">${P[b.textContent][1]}</p>`;fwSignal('pricing toggle',b.textContent)})</script></main><script src="/agent.js"></script></body></html>

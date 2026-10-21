@@ -1,0 +1,191 @@
+To: Nina (Marketing Manager at Fenmoor & Vale Estate Agents (6-branch regional agency). She works on a 13" work laptop with too many tabs open. Pragmatic, sceptical of agencies, KPI-first, short on time, and under pressure from the sales director about lead quality.)
+Judge: 25/25 (specific 5, useful 5, voice 5, fits 5, reply 5) INVENTED 1 PROMISES 1
+Worst: She asked for example screenshots/mockups; this delivers only a text wireframe and copy—no actual visuals—making internal buy‑in harder.
+! “Sales: typical fee 1.0% + VAT” (her site states “from 1.0% + VAT,” not that 1.0% is the typical fee)
+! “If anything here blocks sign-off … we’ll adjust the wording without changing the mechanics.”
+
+Subject: Fenmoor & Vale valuation flow — pasteable copy, wireframe, and GA4 events (ready for your brief)
+
+Nina —
+
+You’re right: the promise and the delivery need to meet on-page. Below is a concise, forwardable pack your web team and compliance can work from today: pasteable copy, a text wireframe of the two-step flow, valuation banding/confidence logic that avoids “black box” vibes, and a GA4 event map that won’t slow the form.
+
+Pasteable copy blocks
+- Pre-field fee transparency (meets CMA upfront rule)
+  “Sales: typical fee 1.0% + VAT (no sale, no fee). Lettings: tenant-find from 8% + VAT • fully managed from 12% + VAT.”
+  Placement: slim banner above Step 1 fields; visible without scrolling.
+
+- Progress labels
+  Step label (top-left): “Step 1 of 2: Your property” → after price reveal, switches to “Step 2 of 2: Your details”.
+
+- Primary CTA (Step 1)
+  Button: “See your guide price now”
+  Proof line directly under button: “Trusted by 3,200+ local sellers and landlords • 4.7★ Reviews”
+
+- Secondary CTA (fallback)
+  “Prefer to talk? 01926 555 210”  |  Link: “Request a call back”
+
+- Guide price panel (shown immediately after Step 1 submit; stays visible through Step 2)
+  Header: “Your guide price”
+  Price format: “£[low]–£[high]”
+  Subtext (always-on): “Guide only. Not a formal valuation. Confirm in a free in‑person appraisal.”
+  Confidence line (one of):
+  • High: “Confidence: High — clear match to similar local properties.”
+  • Standard: “Confidence: Standard — based on typical homes like yours nearby.”
+  • Low: “Confidence: Low — range widened; a quick appraisal will firm this up.”
+
+- Next-step prompt (when price is shown)
+  “Continue to book your free in‑person appraisal”
+  Small print (beneath): “We won’t share your price publicly. You can skip the call‑back if you prefer email only.”
+
+Two-step wireframe (text layout your devs can mirror)
+- Step 1: Your property
+  • Pre-field fee banner (see copy above)
+  • Fields: Postcode → Address finder; Property type; Bedrooms; Intent (Sell/Let)
+  • Button: “See your guide price now”
+  • Below button: Proof line; Secondary CTA (phone/callback) as clearly secondary
+
+- On submit of Step 1 (no personal details yet)
+  • Inline DOM reveal (same route, no page change): Guide price panel appears above the fold
+  • Progress label flips to “Step 2 of 2: Your details”
+  • Details fields slide in beneath (First name, Last name, Email, Mobile, Timeframe, How did you hear about us?)
+  • Price panel remains pinned/visible while Step 2 is in view
+
+- Step 2: Your details (with price pinned)
+  • Primary action: “Book my free appraisal” (or “Continue”) 
+  • Optional callback checkbox near phone: “Tick if you’d like a call today”
+  • Consent remains plain and adjacent to phone; reCAPTCHA on submit, not blocking typing
+
+Valuation banding and confidence logic (transparent, non‑algorithmic feel)
+- Banding
+  • Take the internal numeric estimate and round to sensible anchors (e.g., nearest £5k or £10k) and present as a range.
+  • Default range width: 4–6% of mid-point for Standard confidence; narrow to ~3% for High; widen to 8–10% for Low.
+  • Never show a single exact figure; ranges reduce perceived false precision and compliance risk.
+
+- Confidence (deterministic UI rules; no “AI” language)
+  • High when: postcode + full address resolved, property type + bedrooms provided.
+  • Standard when: postcode + property type present; bedrooms optional.
+  • Low when: missing type/bedrooms, unusual property category, or out-of-area postcode.
+  • Copy avoids model claims; keep it human: “based on typical homes nearby.”
+
+- Privacy/compliance hygiene
+  • Do not display or transmit full address with the price until consent; display area only (e.g., outward postcode like “CV32”).
+  • Keep the fee banner visible pre-fields. Keep the “Guide only” line locked to the price panel.
+  • If the range exceeds a threshold (e.g., >10%), prompt: “This range is wide — a quick in‑person appraisal will confirm.”
+
+GA4 event map (names, triggers, and safe params)
+- valuation_start
+  Trigger: first interaction with Step 1 fields.
+  Params: flow_version, intent (sell/let), property_type, bedrooms (if selected), postcode_outward (e.g., “CV32”), utm_source/medium/campaign, step: 1.
+
+- valuation_property_submitted
+  Trigger: successful Step 1 submit (before price render).
+  Params: same as above + submit_latency_ms.
+
+- guide_price_shown
+  Trigger: DOM update that renders the price panel.
+  Params: price_low, price_high, confidence (“high|standard|low”), postcode_outward, intent, flow_version.
+
+- contact_step_view
+  Trigger: Step 2 fields become visible.
+  Params: flow_version, intent.
+
+- contact_submitted
+  Trigger: Step 2 submit (details captured).
+  Params: lead_id (internal or hashed), intent, branch (if known), communication_pref (“call|email”), consent:true/false.
+
+- callback_clicked / callback_requested
+  Trigger: click on fallback link / successful callback form submit.
+  Params: same as contact_submitted minus price; add requested_timeslot if present.
+
+- valuation_booked
+  Trigger: confirmed appraisal booking (online or logged from CRM sync).
+  Params: appointment_datetime (ISO), channel (“online|phone”), branch, lead_id.
+
+Implementation notes
+- Fire via GTM dataLayer.push to avoid blocking the UI. Example on price reveal:
+  dataLayer.push({
+    event: 'guide_price_shown',
+    price_low: 325000,
+    price_high: 345000,
+    confidence: 'standard',
+    postcode_outward: 'CV32',
+    intent: 'sell',
+    flow_version: 'v2'
+  });
+- Avoid PII in GA4: no full address, no phone/email; use outward postcode and non-identifying property attributes.
+- Map to Meta ads where useful: contact_submitted → Lead; valuation_booked → Schedule; include event_id for CAPI dedup. Meta’s new GEM is rolling out; we’re monitoring early local lead‑gen guidance (Meta reports up to 18.9% more conversions from GEM’s unified model across FB/IG placements).
+
+What this gives you
+- CMA/DMCCA-safe upfront fee visibility, an on-page value moment that reduces bounce, and measurement that isolates the price reveal from the lead step.
+- A fallback call route that feels helpful but secondary, so “info‑seekers” aren’t pushed to phone.
+
+One decision to make now
+- Do you want the guide price panel pinned at the top on mobile (collapsible) or just above Step 2 fields? Either works; pinning typically keeps people moving without scrolling back.
+
+If anything here blocks sign-off (especially the banner copy or confidence labels), reply with the redlines and we’ll adjust the wording without changing the mechanics.
+
+Fieldwork Studio
+
+==== Sent before (24/25 (specific 5, useful 4, voice 5, fits 5, reply 5) PROMISES 1)
+Subject: Fenmoor & Vale valuation: guide price screen copy, progress bar, price bands + GA4 map
+
+Nina —
+
+You asked for concrete examples and how to keep the guide price compliant without looking overly algorithmic. Below are pasteable copy blocks, wireframes-in-text, price-band logic, and a GA4 event map you can brief straight to devs.
+
+Copy blocks (use as-is)
+- Pre-form fee banner (visible before any field):
+  "Sales: from 1.0% + VAT (no sale, no fee) • Lettings: Tenant-find from 8% + VAT • Fully managed from 12% + VAT"
+- H1: "Get your free valuation"
+- Progress labels: "Step 1 of 2: Your property" → "Step 2 of 2: Your details"
+- Primary CTA (end of Step 1): "See your guide price now"
+- Price panel header: "Your guide price"
+- Price disclosure: "Guide only. Not a formal valuation. For an accurate price, book a free in‑person appraisal."
+- Proof line under Step‑1 CTA: "Trusted by 3,200+ local sellers and landlords • 4.7★ Reviews"
+- Secondary option (lighter): "Prefer to talk? 01926 555 210" and link: "Request a call today"
+
+Wireframes (annotated)
+Step 1 • Your property
+[Progress: Step 1 of 2]
+H1
+Fee banner (full‑width, subtle)
+Fields: Postcode → Address lookup • Property type • Bedrooms • Intent (Sell/Let)
+Primary CTA: See your guide price now
+Small proof directly below CTA (one line)
+Secondary (text link): Prefer to talk? … • Request a call today
+
+Step 2 • Your details
+[Progress: Step 2 of 2]
+Sticky price panel at top:
+  Your guide price for [Town]
+  £[min]–£[max]   Confidence: [High|Medium|Low]  (link: How we estimate)
+  Guide only. Not a formal valuation…  (fees reminder line, light)
+Form: First name • Last name • Email • Mobile • Timeframe • Consent (next to phone: "Tick if you’d like a call")
+Primary CTA: Book your free in‑person appraisal
+Secondary (text link): No thanks — email me the summary
+
+On‑page price logic (keeps it indicative, not deterministic)
+- Show a range band (e.g., £[min]–£[max]) rather than a single figure; avoid decimals.
+- Use a simple confidence label (High/Medium/Low) tied to depth of recent local comparables; explain via a "How we estimate" note in plain English.
+- Keep the guide price visible in Step 2 so the promise remains clear while details are completed.
+- Reduce scraping/PII risk by showing only town or area with the price (e.g., "Your property in [Town]") and not the full address near the figure.
+- Keep your fee info visible pre‑form (banner) and lightly reiterated near the price panel.
+
+"How we estimate" microcopy (pasteable)
+"We combine recent local sales and your property details to suggest a guide price. It’s indicative, not a valuation. A local valuer will confirm in person and can adjust up or down."
+
+GA4 event map (names + triggers; no PII)
+- valuation_start — on first interaction with a Step‑1 field (focus/change). params: intent, page_location, device.
+- fee_banner_viewed — once when the banner enters viewport on Step 1. params: banner_version.
+- see_price_click — on Step‑1 primary CTA click. params: intent, property_type, bedrooms.
+- guide_price_shown — when the price panel renders (DOM visible after Step 1). params: price_band (e.g., "250k-300k"), confidence ("high|medium|low"), intent.
+- details_submit — on Step‑2 submit (before network). params: appointment_preference ("visit|phone|email_summary").
+- callback_requested — on "Request a call today". params: intent.
+- outbound_call_click — on tel link click. params: intent.
+- appraisal_booked — on booking confirmation. params: appointment_type ("in‑person|phone"), booking_lead_time_days.
+Implementation note: fire events off user actions/DOM updates (dataLayer.push) to avoid extra network time; keep all PII (name, email, phone, full address) in your CRM, not GA4.
+
+If you want PNGs of these two screens (plus a one‑page funnel schematic for your deck), say the word and I’ll send them.
+
+Fieldwork Studio

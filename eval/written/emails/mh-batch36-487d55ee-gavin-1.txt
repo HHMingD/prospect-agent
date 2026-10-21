@@ -1,0 +1,185 @@
+To: Gavin Kerr (Co-owner at Bruntsfield Wine Co., a neighbourhood wine merchant in Edinburgh. Handles corporate accounts and seasonal marketing. Browses on a 13" MacBook in the shop office; checks links on his iPhone on the tram. Pragmatic, time-poor, wary of agency fluff, wants specifics and dates.)
+Judge: 25/25 (specific 5, useful 5, voice 5, fits 5, reply 5) PROMISES 1
+Worst: It buries the one decision he needs to make (budget bands) and never explicitly opens with a short TL;DR confirming timeline/next steps, which would help a time‑poor phone reader.
+! If timings are needed, Priya Nair will reply with the details.
+
+Subject: Bruntsfield — paste‑ready picker copy + wireframe, and a pre‑peak test guide
+
+Gavin —
+
+Here’s the paste‑ready annotated copy and a simple wireframe outline for the 3‑question corporate gift picker, plus a short guide to pre‑peak testing. All copy below matches what’s on your site now (pricing, delivery windows, process) so your dev can drop it in.
+
+1) Corporate Gifting above‑the‑fold (replace current hero module)
+- H1: Corporate wine gifts from £12/bottle.
+- Sub: 1 Nov–20 Dec delivery • UK‑wide • Multi‑address in one upload.
+- Support bullets:
+  • Minimum order 20 gifts.
+  • Bottles £12–£38; mixed cases from £65.
+  • Personalised note cards included; custom sleeves POA.
+  • Lead time: 5–10 working days after payment.
+  • Prices exclude VAT and courier.
+- Primary CTA: Get a price
+- Secondary CTA: Download brochure (PDF)
+- Utility link (beside primary CTA): Download CSV template
+- Reassurance line (small text under CTAs): Questions? 0131 555 0192 · corporate@bruntsfieldwine.example
+
+2) 3‑question gift picker (quick start module)
+Placement: Directly below the hero; opens inline on the page. No site header on paid landers.
+
+Field set A — Number of recipients
+- Label: Number of recipients
+- Input: Numeric (min 20)
+- Help text: An estimate is fine — we’ll confirm before invoicing.
+- Error: Please enter 20 or more recipients.
+
+Field set B — Budget per gift
+- Label: Budget per gift (ex VAT)
+- Preset buttons: £12–£18 • £20–£25 • £30–£38 • Custom
+- If Custom selected: Numeric input with help text “We’ll propose options within ±£2.”
+- Error: Please enter a budget between £12 and £38, or choose a preset.
+
+Field set C — Preferred delivery window
+- Label: Preferred delivery window
+- Options: 1–10 Nov • 11–20 Nov • 21–30 Nov • 1–10 Dec • 11–20 Dec • Not sure
+- Help text: UK‑wide shipping; we’ll confirm exact dates on proposal.
+- Error: Please select a window inside 1 Nov–20 Dec.
+
+Action
+- Primary button: See options
+- Secondary: Talk to a human (0131 555 0192)
+- Micro‑assurance (below buttons): We reply next business day. Prices exclude VAT and courier. (If you can’t meet next‑day replies, keep your current “We aim to reply within 2–3 working days.”)
+
+Results state (after “See options”)
+Show 2–3 option cards generated from the inputs. Suggested structure and copy:
+- Card title examples: Classic Red • Mixed Discovery • Hampers with add‑ons
+- Each card includes:
+  • Price band: “Within your £20–£25 budget” (or “From £12/bottle” if they chose the lowest band)
+  • What’s included: “[X] bottles from small producers” · “Personalised note card” · “Branded sleeves available (POA)”
+  • Delivery note: “Fits your [chosen window]”
+  • CTA: Start your order
+  • Utility: Download CSV template (link)
+
+Start your order (on click)
+- Opens your existing Enquire form with prefilled values for recipients, budget, delivery window.
+- Above the form, show: “Multi‑address delivery via spreadsheet upload” and link the CSV template.
+- Keep the phone number visible.
+
+Empty/edge states
+- If recipients < 20: Inline message “Minimum order is 20; call us if you have a smaller list.”
+- If budget outside £12–£38: Nudge to presets; disable continue until valid.
+- If “Not sure” delivery: Default to next available November slot and flag “We’ll confirm exact dates in the proposal.”
+
+3) CSV template (columns to include)
+- First name | Last name | Company (optional) | Address line 1 | Address line 2 | Town/City | Postcode | Country (UK only) | Phone (for courier) | Gift message
+- Filename: bruntsfield‑recipients‑template.csv
+- Place links: Beside “Get a price” and on the results cards.
+
+4) Wireframe (text outline your dev can follow)
+- Section 1: Hero
+  • Left: H1, sub, bullets
+  • Right: Picker module (desktop); on mobile, picker follows hero text
+  • CTAs row: Primary, Secondary, CSV link
+  • Trust strip: “UK‑wide • Multi‑address via spreadsheet • Personalised notes”
+- Section 2: Results (revealed after input)
+  • 2–3 option cards grid
+  • “What’s included” block
+- Section 3: How it works (your 5 steps exactly as on page)
+- Section 4: FAQs (keep current)
+- Section 5: Contact line and opening hours
+- Paid‑social landers: remove global header; keep slim footer only.
+
+5) Pre‑peak testing guide (fast, decision‑oriented)
+Objectives
+- Corporate: increase “Picker started” and “Proposal submitted.”
+- Mixed cases: increase first order from paid landers.
+
+What to A/B first (one change per test)
+- Hero copy on Corporate Gifting: “Corporate wine gifts from £12/bottle” vs “Corporate wine gifts, UK‑wide, from £12/bottle.”
+- Primary CTA: “Get a price” vs “See options & get a price.”
+- CSV link placement: Beside primary CTA (inline) vs below the hero as a text link.
+- Proof block: Packaging/fulfilment reassurance module (see note below) vs no module.
+- Reply‑time promise: If ops can support it, “We reply next business day” vs current “We aim to reply within 2–3 working days.”
+
+Decision rules and cadence
+- Run each test until one variant clearly wins on your primary event (picker started for corporate; add‑to‑cart/checkout start for cases). Kill losers fast; keep a fresh creative variant queued.
+- Tag everything: distinct UTM_content per ad variant; ensure “picker_started” and “proposal_submitted” are events in analytics and ads.
+- Retain only the change that moves the primary event by a meaningful margin; don’t ship neutral wins.
+
+Ads and Meta GEM (when live this week)
+- One campaign per goal: Cases (Sales) and Corporate (Leads).
+- Use multi‑asset creative; keep price and delivery window in the first two lines of copy.
+- Map events: Cases → Purchase; Corporate → Lead (or a custom “PickerStarted” if you use it for optimization).
+- Simple retargeting: site visitors in last 30 days with creative showing price + delivery window.
+- Context: Meta’s unified Generative Ads Model (GEM) launched in October 2026; Meta reports up to 18.9% more conversions and 12% higher CTR from the model optimizing creative/placements across Feed, Reels and Stories. Source: Meta Engineering, 13 Oct 2026.
+
+Two quick additions worth making now
+- Packaging reassurance: If you use premium or recyclable protection, show it. Retail packaging is a B2B confidence driver this season (Kite Packaging launched wine‑specific honeycomb sleeves and bottle‑packing sets for 2026 peak; presentation and courier‑proof delivery matter). Source: Grocery Trader, 13 Oct 2026.
+- Early‑order nudge: Market cut‑offs are creeping earlier (one new hamper range advises B2B orders by 31 Oct to guarantee December delivery). Consider adding your own cut‑off and an “Reserve your window early” note to the hero and ads. Source: Retail Times, 14 Oct 2026.
+
+Why this will land with buyers
+- UK consumers expect to spend more on wine this Christmas (27% “significantly more”, 39.8% “slightly more”; 43.8% expect to buy more bottles). Source: Harpers, 12 Oct 2026.
+- Recipient‑choice systems with admin control are now standard in corporate gifting; your 3‑question picker gets you there without heavy build. Source: CILOO, 16 Sep 2026.
+
+If you want any of this adapted to your CMS or ad account structure, reply with where the picker will live in the template and what form fields you want prefilled from the quick start. If you need timings confirmed, Priya Nair on our side can reply with the details.
+
+One question to unblock dev: do you want the budget presets exactly as £12–£18, £20–£25, £30–£38, or should we mirror your most common bands from last year’s orders?
+
+Fieldwork Studio
+
+==== Sent before (25/25 (specific 5, useful 5, voice 5, fits 5, reply 5) INVENTED 1 PROMISES 1)
+Subject: Bruntsfield Wine — picker copy + wireframe, plus a pre‑peak testing guide
+
+Gavin —
+
+Two fast additions before peak that will lift corporate confidence:
+- Show packaging reliability: a line under the hero, e.g. “Courier‑safe, recyclable sleeves. Breakages replaced, no quibble.” If you have a pack shot, add it to the trust row.
+- Publish an early ordering cut‑off on page and in ads (several gifting brands are pushing B2B orders by end‑Oct this year). Set the date that ops can stand behind and make it prominent.
+
+3‑question picker — annotated copy
+Q1. Number of recipients
+- Label: “How many recipients?”  Placeholder: “e.g. 25”
+- Help: “You can upload a spreadsheet next.”
+- Validation: under 20 → show a note: “For fewer than 20, our mixed cases are fastest.” (link to cases)
+
+Q2. Budget per gift
+- Label: “Budget per gift”  Options: £12 • £15 • £20 • £25 • Custom
+- Help: “Prices exclude VAT and courier.”
+- Validation: if Custom < £12 → “Minimum £12/bottle.”
+
+Q3. Delivery window
+- Label: “Preferred delivery window”  Options: 1–15 Nov • 16–30 Nov • 1–10 Dec • 11–20 Dec • Other date
+- Help: “We’ll confirm stock and courier capacity.”
+
+Results module (after Q3)
+- Show 2–3 packages with: name (e.g. Classic Red), what’s included, per‑recipient price, lead time.
+- Primary CTA: “Start your order” (opens full form with fields prefilled).
+- Beside CTA: “Download CSV template” link (visible at all times).
+- Secondary: “Email me this proposal” (for buyers who need sign‑off).
+- Keep the phone line visible; small print: “Prices exclude VAT and courier.”
+
+Wireframe outline (mobile‑first)
+- Hero: “Corporate wine gifts from £12/bottle.”  Sub: “1 Nov–20 Dec delivery · UK‑wide · Multi‑address in one upload.”
+- CTAs: “Get a price” (primary), “Download brochure (PDF)” (secondary).
+- Picker module (Q1 → Q2 → Q3) with progress dots; summary chips of chosen answers.
+- Options grid (2–3 cards) with “What’s included” toggles and lead time.
+- Trust row: packaging photo + line on recyclable sleeves/breakage policy.
+- How it works (your 5 steps), FAQs, contact line.
+- No site header on ad landers; slim footer only.
+
+Pre‑peak testing guide (quick wins)
+- What to test first (one change per variant):
+  1) Hero promise line (price + dates vs. generic “say thank you with wine”).
+  2) Primary CTA label (“Get a price” vs. “Start your order”).
+  3) CSV template visibility (inline beside primary CTA vs. below the picker).
+  4) Trust row (with packaging/delivery guarantee vs. none).
+  5) Header vs. no header on the lander.
+- How to judge:
+  • Pick one primary action per page (“Get a price started” for corporate; first order for mixed cases). Split traffic evenly. 
+  • Make decisions on the primary action, not clicks. When one variant is consistently ahead over a short window at your normal weekday volume, promote it and queue the next change.
+- Ads:
+  • Keep three creative concepts in play per page; retire anything after ~three weeks of falling click‑through; queue a fresh variant.
+  • When Meta’s new GEM/Advantage+ Creative switch flips this week, enable it and include price and delivery window in the first two lines so assets can mix well across placements.
+
+If you want this packaged as a one‑pager for your dev brief, say and we’ll format it today.
+
+Fieldwork Studio

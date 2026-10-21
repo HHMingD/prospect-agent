@@ -1,0 +1,90 @@
+To: Milo (Founder of Warm Current, a 6-person paid social + creative studio. Reads on a MacBook Pro between client calls, lots of tab-hopping. Dry sense of humor, competitive, skeptical; today he’s pretending to be a DTC brand marketer to see how the studio’s agent behaves.)
+Judge: 25/25 (specific 5, useful 5, voice 5, fits 5, reply 5) PROMISES 2
+Worst: It asks for an occasion choice before showing a quick wireframe or committing to a 24‑hour turnaround on the one‑pager, which could slow an immediate reply from a skimming, skeptical founder.
+! “Reply with one word, and I’ll align the page variant and asset kit to that choice.”
+! “If you want this turned into a one‑pager you can drop into a sprint board (wireframe + asset matrix + QA checks), Priya Nair on our side can pick it up.”
+
+Subject: GEM just landed — what to change for Sundrift’s January launch (creative testing + placements)
+
+Milo —
+
+Meta’s Generative Ads Model (GEM) dropped this morning: one model optimising creative and placements together across Facebook, Instagram, Reels, and Stories, with Meta reporting up to 18.9% more conversions and 12% higher CTR. Here’s what that changes for a January drinks launch, and how I’d adapt testing so Sundrift benefits from the broader learning loop.
+
+What changes (practical, week-one moves)
+- Test ideas, not micro-edits: GEM rewards distinct concepts over tiny hook/crop tweaks. Think “occasion concepts” rather than headline A/Bs.
+- Feed the model breadth, not chaos: For each concept, supply a tight asset matrix that naturally spans surfaces (1:1, 4:5, 9:16) and modes (UGC, creator POV, short product demo, static). That’s how GEM explores placements without you hand-splitting.
+- Signal quality trumps placement tinkering: Keep placements open; put effort into clean conversion signals (single purchase event firing once, strong match quality, cAPI dedupe), so GEM can learn the right creative/placement pairings.
+- Map ads to purpose-built pages: GEM can find surfaces; it can’t fix message scent. Send each ad promise to its own page. Our Oatside Kitchen shift (off homepage onto three offer pages) cut cost per first order by 38%; the “plainest” page won because it matched the ad’s job.
+- Keep the fallback live: Sundrift’s site threw 502s yesterday. A lightweight, single-offer fallback page on a separate host/subdomain is still the safety net for paid/social/PR.
+
+January drinks structure (built for GEM’s broader context)
+- Anchor to one campaign idea that sells an occasion/emotion across channels (wellness reset, energy/focus, sociability), not ingredients. This is how the strongest UK DTC drinks launches have won this year: one idea across TV, social, creators, retail media, and email.
+- If you’re in functional/alt/premium RTD territory, bake in subscribe-and-save or loyalty from day one; hybrid DTC+retail launches are winning repeat on infrastructure, not promotions.
+
+Ad-to-offer mapping (three-idea kit you can run)
+For each of these, keep placements open and let GEM route — you control creative truth + landing intent.
+1) Wellness reset
+  - Assets: 9:16 UGC morning routine; 1:1 static pack + “feel X, not Y” promise; 4:5 short demo (pour/pack). 
+  - Page: Plain offer page with a single CTA, brief Who/When/How, 2–3 tight proof points, and FAQs (ingredients, delivery, returns). Add a simple subscribe-and-save variant.
+2) Energy/focus
+  - Assets: Creator POV “before/after my 3 p.m. slump”; 6–10s product-in-use; static with benefit headline.
+  - Page: Proof-heavy variant: lead with the benefit, layer credible reviews, transparent FAQs, and any credible evidence you can publish. Keep it single-path to checkout.
+3) Sociability
+  - Assets: Creator “mini-hosting kit” reel; UGC cheers moment; 1:1 static multipack visual.
+  - Page: Chooser variant if you truly have meaningful options (pack sizes/flavours), but still one page. If not, stick to a frictionless multipack offer.
+
+Testing order (fits a ~£120k/mo envelope without fighting GEM)
+- Phase 1 — Concept screen: 3 distinct occasion ideas, light but complete asset sets. Placements open, broad audiences. Keep budgets even; look for clear separation on first-purchase CPA and hold-out AOV.
+- Phase 2 — Asset breadth on the top 1–2 ideas: Add creator variants, alt hooks, and additional aspect ratios. Kill micro-edits that don’t change the story.
+- Phase 3 — Page intent split: For the winning idea, run plain vs proof-heavy vs chooser page head-to-head. Keep message scent identical from ad to page; compare sCR, CPA, and AOV.
+- Guardrails: Event fires once; purchase attribution reconciles with orders; watch latency on cAPI; avoid manual placement exclusions unless there’s brand safety risk.
+
+Where frictionless loses (patterns and exceptions you’re hunting)
+- High-consideration or configurable (luxury, mattresses, custom home): focused campaign/editorial pages convert only when they also let buyers research — comparisons, detailed specs, financing, logistics, and layered reviews. A short, single-action page can depress conversion when risk isn’t addressed.
+- Home goods nuance: Campaign pages beat homepages when aligned to room/collection/offer; but for higher-ticket or custom, a plain promo page underperforms unless shoppers can compare or understand delivery/assembly.
+
+Why this fits GEM (and why placements don’t need micromanaging now)
+- GEM uses cross-platform context to allocate creative and placements together. Your leverage is in sharp concepts, asset variety that spans surfaces, and clean conversion data — not in splitting feeds vs reels or hand-pruning placements.
+
+One-line decision I’m asking you for today
+- Which single occasion do you want to lead with first: wellness reset, energy/focus, or sociability? Reply with one word, and I’ll align the page variant and asset kit to that choice.
+
+If you want this turned into a one-pager you can drop into a sprint board (wireframe + asset matrix + QA checks), Priya Nair on our side can pick it up.
+
+Fieldwork Studio
+
+==== Sent before (14/25 (specific 2, useful 3, voice 2, fits 4, reply 3) INVENTED 2 PROMISES 1)
+Subject: Meta’s GEM just rewrote Meta testing; here’s the January play for drinks
+
+Milo —
+
+Meta just rolled its unified Generative Ads Model (GEM): one model now allocates creative and placements across Facebook, Instagram, Reels and Stories using broader cross‑surface context. Meta claims up to 18.9% more conversions and 12% higher CTR from GEM (source: https://engineering.fb.com/2026/10/13/ml-applications/generative-ads-model-gem-scaling-frontier-ads-ai/).
+
+What to change for a January drinks launch:
+
+1) Test fewer, bolder concepts
+- Build around 2–3 occasion‑led ideas (e.g., wellness reset, sociability, focus) rather than ingredient lists. 
+- Every concept ships in at least three variants so the account can learn; retire losers, keep a queue ready.
+
+2) Give GEM a full asset matrix
+- Native cuts per surface: 9:16 video first, plus 4:5/1:1. Include at least one motion and one plain static per concept.
+- First 3 seconds: pack + promise (or price/offer). Add a UGC take and a product demo take.
+
+3) Let placements float
+- Stop splitting budget or campaigns by placement. Use one conversion objective with open placements and only hard guardrails (geo/age/brand safety). GEM learns faster with fewer constraints.
+
+4) Consolidate delivery, widen targeting
+- Fewer ad sets, broader audiences; let creative variety (not micro audience splits) drive learning. Creative fatigue, not the auction, is usually the rising‑cost culprit.
+
+5) Tighten the signal
+- Pick one counted event (first purchase or subscription start). Ensure pixel + server events dedupe, fire once, and reconcile to orders daily for week one.
+
+6) Map ads to pages
+- Skip the homepage. Build one page per promise; ship the plain offer first. Oatside Kitchen: moving ads to three offer pages cut cost per first order 38%.
+
+7) Launch cadence
+- Soft open with two concepts 5–7 days pre‑peak; add the third at launch. Refresh 1–2 variants weekly so GEM isn’t stuck on fatigued creative.
+
+If it helps, we can send a one‑page GEM‑oriented test plan and asset brief you can drop straight into a sprint board.
+
+Fieldwork Studio

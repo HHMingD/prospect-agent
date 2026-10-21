@@ -1,0 +1,107 @@
+To: Eilidh MacLeod (Founder of Heather & Pine, a two-product skincare microbrand in Glasgow. Solo operator most days; sister helps on weekends. Reads on iPhone first while on the bus or in the workshop; opens laptop late evening for decisions. Pragmatic, frugal, a bit sceptical of agencies but open if shown specifics and quick tests.)
+Judge: 23/25 (specific 5, useful 5, voice 5, fits 4, reply 4) INVENTED 1 PROMISES 1
+Worst: She asked for a screenshot or URL; you gave only a relative path (“/work/glow-theory”) instead of a clickable full link or attachment, adding friction on mobile.
+! Offering “Priya can share the PDF” (no prior evidence a PDF exists or that Priya will personally send it)
+! Will share a static PDF of the Glow Theory before/after via Priya
+
+Subject: Glow Theory before/after + your 7‑day TikTok landing test (Sea Buckthorn)
+
+Eilidh —
+
+Here’s the reference you asked for, then the fastest way to trial the stripped‑back page.
+
+Glow Theory before/after (beauty, DTC)
+- Case study page: /work/glow-theory (mobile screenshots mid‑page; shows the move from homepage traffic to two single‑promise product pages and the ROAS lift from 1.6 → 3.1 over two 90‑day blocks). If you’d like a static file, Priya can share the PDF.
+
+One‑liner for Q4 context
+- UK retail footfall fell 2.9% YoY in September (BRC). Softer high‑street traffic tends to spill online—tight, mobile‑first landing will catch it.
+
+Your 7‑day TikTok landing‑page test (mobile‑first)
+- Goal: lift first‑order conversion from TikTok traffic while 15ml is OOS.
+
+Day 0–1: Build the “fast” variant (no frills)
+- Above the fold only: 
+  - Title + one‑line promise
+  - Bottle shot
+  - Price
+  - Primary CTA: “Buy 30ml — £24”
+  - Express pay buttons under the primary CTA (Apple Pay/PayPal)
+  - Micro‑proof tucked by the CTA: “As seen by 2M+ on TikTok” • “No fragrance” • “Free UK delivery over £40”
+  - Line of origin: “Hand‑poured in Glasgow”
+- Below the fold (tight): How to use • Ingredients • Shipping & returns • FAQs. Hide anything that scrolls the buy button out of sight on first screen.
+- If you’re on Shopify, Canvas (launched Oct ’26) lets you do this quickly via chat + instant preview—handy for iterating without code.
+
+Day 2: Route traffic and tag it
+- Point TikTok ads and bio links to the fast variant; keep organic on the current PDP for a clean A/B read.
+- Use clean UTMs for TikTok. Track adds‑to‑cart, checkouts started, and purchases.
+
+Days 3–7: Iterate only the hero and CTA copy
+- Swap hero image once if needed (in Glow Theory, a phone shot beat a £12k studio image). Don’t change layout.
+- Keep 30ml as the default. Bury the 15ml selector while it’s OOS.
+- If 15ml returns mid‑test, keep 30ml default and re‑introduce 15ml as a low‑emphasis option (see CTA micro‑variants below).
+
+Paste‑ready copy for the fast variant
+- H1: Sea Buckthorn Glow Serum
+- Sub: Simple, brightening oil‑serum with sea buckthorn, squalane and vitamin E. No fragrance. Hand‑poured in Glasgow.
+- Price/CTA: £24 • Buy 30ml — £24
+- Micro‑proof: As seen by 2M+ on TikTok • Free UK delivery over £40 • Sensitive‑skin friendly
+
+CTA micro‑variants (use one, depending on stock)
+- While 15ml is OOS: 
+  - Primary: “Buy 30ml — £24”
+  - Size note below: “15ml — £14 (Back in 2 weeks)” (no button; plain text)
+- When 15ml is back:
+  - Primary: “Buy 30ml — £24”
+  - Secondary (text link under primary): “Or try 15ml — £14”
+
+QA checklist (90 seconds, on a phone)
+- First screen shows bottle, price, primary CTA—no scroll needed.
+- Tap targets >44px; Apple Pay/PayPal visible under the main CTA.
+- Variant selector collapsed or 15ml pushed below the fold while OOS.
+- Reviews: if you’re showing “No reviews yet”, hide that block until you have a handful.
+
+Bonus (only if you have it turned on): TikTok’s native commerce formats (Buy Direct / TikTok Shop) are shortening the path from click to purchase. Worth a parallel test alongside on‑site checkout, with UTMs to split the results.
+
+Quick question to tune the CTA line today: is 15ml still OOS this week? If yes, I’d stick with the OOS variant above and point TikTok traffic straight at it.
+
+Fieldwork Studio
+
+==== Sent before (24/25 (specific 5, useful 5, voice 5, fits 5, reply 4) PROMISES 1)
+Subject: Glow Theory before/after link + your 7‑day TikTok landing test (mobile‑first)
+
+Eilidh —
+
+Here’s the Glow Theory case with the mobile references you asked for: /work/glow-theory (scroll for the mobile screenshots; the winning hero is the simple “serum in a cold sink” shot).
+
+A 7‑day TikTok landing test you can run now (mobile‑first):
+
+1) Build the fast variant (Day 0–1)
+- First screen only: bottle shot, “£24”, primary CTA “Buy 30ml — £24”.
+- Put “As seen by 2M+ on TikTok • No fragrance • Free UK delivery over £40” directly under the CTA.
+- Default size to 30ml. Hide the size selector while 15ml is OOS; show a small line under the fold: “15ml back in ~2 weeks”.
+- Make the Add to Cart sticky at the bottom on scroll.
+- Hide global nav and any popups on this URL; leave a simple back link (“← Home”).
+- Remove the empty Reviews block until you have a few—“No reviews yet” is a quiet conversion killer.
+
+2) Two quick hero variants (Day 1)
+- A: Plain bottle on clean background (price and CTA tight up top).
+- B: Cropped UGC-style frame‑grab (what TikTok saw), same price/CTA. Keep everything else identical.
+
+3) Route and measure (Days 2–5)
+- Point TikTok bio and ad links to the fast URL only; keep organic traffic on the current product page.
+- Watch add‑to‑cart rate and first orders from TikTok sessions specifically. Don’t optimise to clicks.
+
+4) Micro‑copy tests (Days 3–5)
+- CTA: “Buy 30ml — £24” vs “Buy 30ml — Ships now”.
+- Sub‑proof under CTA: “No fragrance, sensitive‑skin friendly” vs “Hand‑poured in Glasgow”.
+
+5) Decide and roll (Days 6–7)
+- Keep the winning hero + CTA combo, retire the other. If the fast page beats the current page on first orders from TikTok, send all TikTok traffic there.
+
+When 15ml restocks
+- Keep 30ml preselected. Re‑introduce the size selector below the CTA, with a small nudge: “Most start with 30ml; 15ml is for trying it out.”
+- Swap the OOS line for “Both in stock—choose your size.”
+
+If you want, I can send this as a one‑page checklist you can hand to whoever is building the variant.
+
+Fieldwork Studio

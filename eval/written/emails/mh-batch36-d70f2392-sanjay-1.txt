@@ -1,0 +1,125 @@
+To: sanjay (Founder-CEO of Bruno’s Bowl, a UK fresh dog food subscription. Mostly browses on his iPhone 14 Pro between warehouse runs; opens laptop late evening for deeper reads. Blunt, numbers-first, impatient with fluff, sceptical of agencies but open to tight 90‑day tests.)
+Judge: 25/25 (specific 5, useful 5, voice 5, fits 5, reply 5) PROMISES 1
+Worst: It doesn’t plug Bruno’s actual numbers into the sheet or show a one‑row example of projected lift, so the impact isn’t illustrated immediately.
+! If you reply, Priya Nair will share the cohort sheet as a Google Sheet in your preferred format.
+
+Subject: Bruno’s Bowl: cohort holdout sheet (paste‑ready) + pre‑renewal reminder copy
+
+Sanjay —
+
+Appreciate the quick reply. Here’s the cohort holdout calculator you asked for, in paste‑ready form. It mirrors the trial→first and second renewal metrics we outlined and lets you read GEM vs holdout by region in a CEO‑clean way. I’ve also dropped in paste‑ready copy for the pre‑renewal reminder.
+
+How to use this (2 minutes)
+- Paste the headers into a sheet. Add one row per weekly cohort x region x channel (GEM vs Holdout).
+- Fill the input columns only; formulas calculate the rest. Pivot by Channel (GEM vs Holdout) and by Region to compare.
+
+Cohort sheet skeleton (columns A–O)
+A cohort_week (e.g., 2026‑W42)
+B region (e.g., UK‑North)
+C channel (GEM | Holdout)
+D trials_T
+E pre_cancel_C0
+F first_renewals_R1_count
+G second_renewals_R2_count
+H B1_trial_total  [£ total revenue from trial boxes]
+I B2_first_box_total  [£ total revenue from first renewals]
+J B3_second_box_total  [£ total revenue from second renewals]
+K CAC_total  [£ ad cost for the cohort; optional]
+L R1_rate  [formula]
+M R2_rate  [formula]
+N Rev90d_per_acq  [formula]
+O Payback90d  [formula]
+
+Formulas (paste into row 2 and copy down)
+- L2 (R1_rate): =IF(D2=0,0,F2/D2)
+- M2 (R2_rate): =IF(F2=0,0,G2/F2)
+- N2 (Rev90d_per_acq): =IF(D2=0,0,(H2/D2) + L2*(I2/D2) + (L2*M2)*(J2/D2))
+- O2 (Payback90d): =N2 - IF(D2=0,0,K2/D2)
+
+Reading lift (example)
+- Uplift in 90‑day revenue per acquired: =(Variant_Rev90d_per_acq − Holdout_Rev90d_per_acq) / Holdout_Rev90d_per_acq
+- R1 rate delta: =Variant_R1_rate − Holdout_R1_rate
+Optional significance check on R1 (per cohort or pooled):
+- SE_variant = SQRT(Variant_R1_rate*(1−Variant_R1_rate)/Variant_trials)
+- SE_holdout = SQRT(Holdout_R1_rate*(1−Holdout_R1_rate)/Holdout_trials)
+- z = (R1_delta) / SQRT(SE_variant^2 + SE_holdout^2)
+
+GEM test notes (to make attribution clean)
+- Define cohorts by start week and region. Hold out 10–20% of prospecting in each region from GEM for the test window so you can read lift without mix shifts.
+- Persist source across quiz/checkout so the cohort row inherits Channel and Region at signup. (Your site currently shows no evidence of UTM persistence across the flow.)
+- Primary readouts: R1_rate, Rev90d_per_acq. Secondary: pre_cancel_C0 rate, delay‑vs‑cancel at reminder, support contacts on timing/portioning.
+
+Paste‑ready assets you can ship this week
+1) Trial hero line (clarity up front)
+- “£12 trial today. Typical plan £49–£89/mo after trial. First renewal on [DATE]; we’ll remind you 48h before. Pause/cancel anytime.”
+
+2) Pre‑renewal reminder (48h before first renewal)
+Subject: Your Bruno’s Bowl renewal is in 48 hours
+
+Hi [Name] —
+Your trial meals end soon. To keep [DogName] on schedule, your plan renews on [DATE] for approximately [£XX–£YY/month based on your plan].
+
+Need to adjust? One click does it:
+- Delay 1 week → [delay_link]
+- Switch recipes → [recipes_link]
+- Pause → [pause_link]
+
+If you’re happy, there’s nothing to do. We’ll prep and deliver on ice as usual.
+— Bruno’s Bowl
+
+3) Billing save (add to your 90‑day matrix given industry failure rates)
+Subject: Quick fix to keep [DogName]’s meals coming
+
+Hi [Name], your payment didn’t go through. Use this secure link to update your card: [update_link]. We’ll retry in 24 hours to avoid gaps in [DogName]’s meals.
+
+Why include this: across food/bev subscriptions, annual churn ranges 27%–81% (median 63.6%), and first‑attempt payment success is ~86%. Tightening dunning flows can save a surprising share of at‑risk first renewals.
+
+Compliance angle you can lean on
+- New UK subscription rules coming into force from January 2027 require clear pre‑trial pricing, advance renewal reminders, and simple online cancellation. Your hero‑level price/timing clarity and the pre‑renewal reminder aren’t just good practice; they put you ahead of that curve and build trust.
+
+If you’d prefer this as a Google Sheet, reply and Priya Nair can share it in your format.
+
+Fieldwork Studio
+
+==== Sent before (23/25 (specific 4, useful 5, voice 5, fits 5, reply 4) PROMISES 1)
+Subject: Bruno’s Bowl cohort sheet (paste‑ready) + billing‑failure save test
+
+Sanjay —
+
+Thanks. Here’s the cohort calculator in paste‑ready format for Google Sheets.
+
+Sheet layout (one row per weekly trial cohort)
+- Week
+- Trials (T)
+- Trial CVR %
+- Pre‑renewal cancels (C0, % of T)
+- First‑renewal retention (R1, 0–1)
+- Second‑renewal retention (R2, 0–1)
+- First paid box value (B2, £)
+- Second paid box value (B3, £)
+- CAC (optional, £)
+- Payment failures at first renewal (PF1, % of attempts)
+- Recovered within 7 days (REC1, % of PF1)
+- Variant notes (what this cohort saw)
+
+Formulas (per row)
+- 90‑day revenue per acquired trialist:
+  = 12 + R1*B2 + R1*R2*B3
+- 90‑day payback (if CAC entered):
+  = (12 + R1*B2 + R1*R2*B3) / CAC
+- Net churn from billing at first renewal:
+  = PF1 * (1 - REC1)
+- Lift vs control:
+  = (VariantRev - ControlRev) / ControlRev
+
+New, high‑leverage add: billing‑failure saves
+- Track PF1 and REC1. Benchmark: first‑attempt payment success in DTC food/bev is ~86% this year; if you’re below that, fixing billing can move R1 faster than any headline change.
+- Variant: 48‑hour “card expiring/charge due” heads‑up + wallet alternative + three smart retries (day 0, +3, +7) with clearer descriptor copy. Success = lower net churn from billing with stable support contacts.
+
+Optional read on GEM without attribution fights
+- Run GEM vs holdout with the same creative and landing; measure 90‑day revenue per acquired trialist by cohort.
+- Early waypoint (day 14): compare estimated R1 and PF1/REC1 between GEM and holdout. Treat any GEM lift primarily as CAC improvement unless 90‑day revenue per trialist is flat or up.
+
+If you’d prefer this as a live sheet with example rows and a simple cohort chart, say and I’ll share it.
+
+Fieldwork Studio

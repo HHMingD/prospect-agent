@@ -1,0 +1,94 @@
+To: Maya Bains (Solo UGC + ad-creative freelancer for small DTC brands. Uses a cracked iPhone 12 mini on 4G between shoots; opens laptop only at night. Fast, skeptical, frugal, hates fluff but hungry for practical tips. Juggles client work and prospecting; not a real buyer here—fishing for ideas she can DIY.)
+Judge: 23/25 (specific 5, useful 5, voice 4, fits 5, reply 4) PROMISES 1
+Worst: It gives copy and structure but no drop-in embed or platform-specific steps (e.g., Tally/Typeform/Webflow code), so implementing tonight still takes extra work.
+! If you reply with the brand type, I'll send a headline variant tailored to that vertical.
+
+Subject: Paste-in hero + slim form for this week’s test
+
+Maya,
+
+Here’s the paste-in you asked for—kept to plain text so you can drop it in and A/B today.
+
+Hero (pick one H1 for your A/B)
+- H1 A: Get creator-shot UGC that converts—delivered fast, with proof up front.
+- H1 B: Get creator-shot UGC—delivered fast.
+- H1 C: UGC ads your customers actually watch.
+
+Subhead (under the H1)
+Short-form ads and simple product photos for DTC, beauty and food brands. Shot on iPhone, edited fast.
+
+Proof strip (in the first screen, above the fold)
+Use three thumbnails from Work with short overlays:
+- Tea brand UGC — CTR 1.2% → 2.1%
+- Serum demo — top cut 5.8% watch-through
+- Protein bar taste test — 4 hooks, 2 winners
+Add a small link at the end: See more work →
+
+Primary CTA (button)
+Get a cost + start date
+
+Secondary path (tiny line under the button)
+Prefer a call? Request times—no calendar.
+
+Trust microcopy (right beside the button and on submit state)
+I reply within 48 hours, Mon–Fri.
+
+Slim form (route the hero and package CTAs here)
+- Email (required)
+  Placeholder: name@brand.com
+- Brand website (required)
+  Placeholder: brand.com
+- Project goal (required)
+  Placeholder: e.g., “4 UGC videos to test 6 hooks”
+
+Submit button
+Get my cost + start date
+
+Helper line (under the fields)
+No budget or deadline yet—I’ll ask after I reply.
+
+Success message (after submit)
+Thanks—check your inbox. I’ll reply within 48 hours with cost + earliest start date.
+
+Fallback for calls (no calendar dead-ends)
+If you keep calls, replace the live calendar in the hero with a simple “Request times” click that opens a 2-field mini-form (Email, What do you want to discuss?). Confirmation text: “I’ll propose two options by email.”
+
+Where to place what (fast win order)
+1) Single primary CTA site-wide to the slim form above.
+2) Proof strip in the hero (thumbnails + short metrics), then your packages.
+3) Keep the Free UGC Brief Template as a secondary path (footer or sidebar), not in the hero.
+
+30‑minute test plan for this week
+- Test 1 (CTA copy): “Get a cost + start date” vs “Get a start date”. Measure form starts and completions.
+- Test 2 (proof position): Proof strip in the first screen vs current. Measure form starts.
+- Test 3 (form friction): Slim form above vs Quick Brief. Measure completion rate and 48‑hour replies sent.
+
+If you want one more headline variant tuned to a specific vertical (beauty vs food), reply with the brand type you’ll pitch first and I’ll send a version tailored to that.
+
+Fieldwork Studio
+
+==== Sent before (22/25 (specific 4, useful 5, voice 4, fits 5, reply 4))
+Subject: Paste‑in hero copy + slim form (ready to test)
+
+Maya,
+
+As asked—plain text you can paste and A/B this week.
+
+Hero option A
+Headline: Short‑form ads your customers actually watch.
+Subhead: Creator‑shot UGC for CPG, beauty and food. Shot on iPhone, edited fast. Turnaround in 7–10 days.
+Primary CTA: Get a cost + start date
+
+Hero option B
+Headline: Creator‑shot UGC for CPG, beauty and food brands.
+Subhead: Vertical videos and simple product photos. Shot on iPhone, edited fast. Turnaround in 7–10 days.
+Primary CTA: Get a cost + start date
+
+Slim form (use for all CTAs)
+- Email
+- Brand website
+- Project goal (e.g., “4 UGC videos to test 6 hooks”)
+
+Confirmation line: I reply within 48 hours with a simple estimate and next steps.
+
+Fieldwork Studio

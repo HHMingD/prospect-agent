@@ -1,0 +1,96 @@
+To: Priya Malhotra (Marketing Lead at a 5-location London yoga studio chain. Splits time between HQ and Shoreditch studio. Starts research on a 13" MacBook Pro, continues on iPhone on the Overground. Pragmatic, number-driven, wary of fluffy agency talk; wants clear tests and fast feedback.)
+Judge: 24/25 (specific 5, useful 5, voice 4, fits 5, reply 5)
+Worst: It’s a bit long for a phone and could use a quick visual or concrete tracking instrumentation steps (e.g., GA4/GTM events, example Mindbody deep-link format) to make the next action utterly frictionless.
+
+Subject: Ember’s homepage, fixed for bookings: paste‑ready copy, flow, and trust fixes
+
+Priya —
+
+You flagged “Traffic but no sales.” I took a hard look at Ember’s homepage and booking flow (Mindbody, 5 London studios; Intro Offer: 30 days for £39). Right now the path to that offer runs through filters and a new Mindbody tab, the homepage has almost no real studio/class imagery, and the £ symbol renders as “Â£” in places — all classic conversion leaks.
+
+Here’s a teardown you can use today.
+
+1) Turn the hero into a starter flow by location
+- Replace the generic hero with a single decision: “Start 30 days for £39 in…” and a simple picker for Shoreditch / Hackney / Battersea / Camden / Peckham.
+- Primary CTA: “Start 30 days in [Studio].” Secondary: “See timetable.”
+- Keep it one screen; no scroll required to understand what to do next.
+
+Paste‑ready hero copy
+- H1: “30 days of yoga for £39.”
+- H2: “Start in Shoreditch, Hackney, Battersea, Camden or Peckham. New clients only. Activates on first visit.”
+- Buttons: “Start in Shoreditch” • “Start in Hackney” • “Start in Battersea” • “Start in Camden” • “Start in Peckham”
+
+2) Create one Intro Offer page per studio (template you can duplicate)
+Use a simple, repeatable layout so paid and organic traffic land here instead of the homepage.
+- H1: “30 days for £39 in [Studio]”
+- Subcopy: “Start anytime. New clients only. Activates on first visit. Excludes workshops and courses.”
+- How it works (3 steps):
+  1) Buy your 30‑day pass for [Studio]
+  2) Book any Hot, Vinyasa, Yin or Beginner class across your 30 days
+  3) We’ll help you pick the right pass after your month
+- What’s included (trust copy you already use): “Small classes, expert teachers. Showers, towels, mats available (mat hire £2). Classes from 6am to 10pm.”
+- Social proof: bring 2–3 lines up front (you already have these): “Best hot studio in London.” — Alex; “Booked my lunch break class in 2 minutes.” — Pri
+- Primary CTA: “Start 30 days in [Studio]” (deep‑link straight to Mindbody with the Intro Offer preselected for that studio)
+- Secondary CTA: “See [Studio] timetable” (keeps the studio context persistent)
+- Footer trust: “We accept ClassPass and Drop‑ins. Gift cards available. Questions? hello@emberyoga.example • 020 0000 0000”
+
+3) Cut the Mindbody friction (and prove clicks become bookings)
+- Deep‑link directly to the Intro Offer purchase for each studio. Take the exact Mindbody purchase URL your flow produces once the offer is selected and use that as the target behind “Start 30 days in [Studio].”
+- Stop opening booking in a new tab; keep users in one flow to reduce drop‑off.
+- Track proof: treat “Start 30 days” click‑outs as a primary micro‑conversion by studio/source in your analytics. For hard proof, mirror this with a per‑studio Intro Offer link in Mindbody (or a distinct price link per studio if available) so purchase counts can be pulled by studio. If that’s not available, a simple interim is a 2‑week period where front‑desk tags new‑client purchases as “Web Intro Offer – [Studio]” so you can reconcile clicks to passes sold.
+- Persist location across the site: when someone picks a studio, save it (for example, in localStorage) and default all timetables/CTAs and nav links to that studio so users never have to re‑choose.
+
+4) Fix the trust wobbles on the homepage
+- Currency bug: your “£” is rendering as “Â£” in places. Ensure the site declares UTF‑8 (meta charset="utf-8") and, if needed, use the HTML entity &pound; in static copy. Tiny bug, outsized trust impact.
+- Real imagery: replace abstract graphics with photography of real classes, teachers and spaces from Shoreditch/Hackney/etc. Put one strong image in the hero and one in each studio’s offer page. People buy the room they’ll be in.
+- CTA/nav tidy: make “Start 30 days” the primary CTA throughout; demote “Book a class” to secondary. Remove duplicate “Claim offer” vs “Intro Offer” language — one name everywhere.
+
+5) A quick, low‑risk test plan
+- This week: ship the hero swap + per‑studio Shoreditch offer page only. Point any paid traffic for Shoreditch (and your homepage hero Shoreditch button) to that page. Measure: homepage bounce rate, “Start 30 days in Shoreditch” click‑outs, and Intro Offer purchases tagged for Shoreditch.
+- If metrics move the right way, duplicate for the other four studios.
+
+Why this works
+- Moving paid traffic off a generic homepage to promise‑matched pages is how we cut first‑order costs 38% for Oatside Kitchen — closest analogue to your Intro Offer challenge on our side. Same principle applies here.
+
+If you only change two things today
+- Swap the hero to the location‑picker “30 days for £39” flow.
+- Fix the £ rendering.
+
+One question to move this forward today: if you were to run this for a single studio first, which would you pick?
+
+Fieldwork Studio
+
+==== Sent before (21/25 (specific 5, useful 4, voice 4, fits 4, reply 4))
+Subject: Ember Yoga: homepage teardown — turn “30 days for £39” into bookings you can count
+
+Priya —
+
+Quick teardown with fixes that prove a click became a booking.
+
+What’s leaking
+- Intro Offer sits behind filters and opens Mindbody in a new tab — attribution and intent drop there.
+- No real class/studio photos on key screens; feels abstract.
+- Currency renders as “Â£” — small glitch, outsized trust wobble.
+
+Fix, in this order
+1) Make the offer the hero
+- Homepage hero: “Start 30 days for £39” with a studio picker (Shoreditch, Hackney, Battersea, Camden, Peckham).
+- Each choice → a per‑studio Intro Offer page (one screen, minimal nav).
+
+2) Per‑studio Intro Offer page
+- Sections: headline + terms (your copy), class types at that studio, how activation works, three short quotes, one real class/studio photo.
+- One primary CTA only: “Claim 30 days.”
+
+3) Booking handoff + counting
+- Use Mindbody deep‑links to preselect the studio and Intro Offer (where possible).
+- Persist the chosen studio across your site.
+- Send users back to an on‑site “Booking complete” page after checkout to fire a booking event (with studio and source).
+
+4) Trust tidy‑ups
+- Fix the “Â£” encoding to £ site‑wide.
+- Limit CTAs in the offer flow to reduce exits.
+
+Why this moves bookings
+- When ads land on a page built for one promise, they convert more. Oatside Kitchen’s shift from homepage to offer pages cut first‑order cost 38% — same principle here: one ad, one promise, one page.
+
+Fieldwork Studio

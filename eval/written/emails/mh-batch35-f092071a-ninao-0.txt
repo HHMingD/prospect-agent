@@ -1,0 +1,121 @@
+To: Nina Petrovic (Only marketer at a 18-person B2B cybersecurity startup in London. Title: Growth & Marketing Lead. She’s on a MacBook Pro with way too many tabs, often on coffee shop Wi‑Fi. Analytical, skeptical, impatient with fluff; polite but direct. She has to convince two technical founders and a sales lead, fast.)
+Judge: 24/25 (specific 5, useful 5, voice 4, fits 5, reply 5) PROMISES 1
+Worst: It calls itself a teardown but has no in‑situ annotations or screenshots—just copy blocks—so it may need visuals to win over the technical founders fast.
+! If you reply with constraints (e.g., no calendar, legal requires phone), I’ll tune the variants.
+
+Subject: LayerLock /request-demo: mobile teardown + 3 tests
+
+Nina —
+
+You asked for specifics. Here’s a mobile‑first teardown of layerlock.example/request-demo with paste‑ready copy and three concrete tests, centered on the hero and the form.
+
+What’s leaking on mobile now
+- Hero: “See LayerLock in action” doesn’t say what buyers get from the demo or who it’s for.
+- Form: 10+ required fields pre‑submit (incl. phone, employees, cloud providers, annual spend, use case, compliance, referral) before anyone can talk to you.
+- Friction copy: “We review submissions within 3–5 business days. If qualified…” plus “Work emails only.” No calendar. All of this slows pipeline and drives mobile drop‑off.
+
+Test 1 — Outcome‑first hero that names clouds and compliance
+Control: “See LayerLock in action”
+Variant A
+- H1: Ship faster, stay compliant — no agents, no downtime.
+- Subhead: Live walkthrough of agentless posture management, policy guardrails, auto‑remediation, and data flow mapping across AWS, GCP, and Azure. Out‑of‑the‑box SOC 2, ISO 27001, and PCI dashboards.
+- CTA: Get the walkthrough
+Variant B
+- H1: Agentless cloud security for AWS, GCP, and Azure.
+- Subhead: See how LayerLock catches misconfigurations, maps PII lineage, enforces policy guardrails, and auto‑remediates — with SOC 2, ISO 27001, and PCI coverage.
+- CTA: Get the walkthrough
+Placement notes
+- Keep the “Live 45‑minute Zoom with a Solutions Architect” line, but move it below the CTA on mobile so the value comes first.
+- Add micro‑trust under the CTA: “Now SOC 2 Type I. ISO 27001 in progress.”
+Measurement
+- Primary: mobile hero‑to‑form‑start rate.
+- Secondary: click‑through on “Get the walkthrough.”
+
+Test 2 — Cut to a 2‑field form, then schedule
+Control: current single long form
+Variant: 2‑field gate + calendar, move qualifiers post‑submit
+- Step 1 (above the fold):
+  • Work email*
+  • Company*
+  • CTA: Continue
+  • Microcopy under email: “Work emails only.”
+  • Micro‑trust below CTA: “Now SOC 2 Type I. ISO 27001 in progress.”
+- After submit: show a calendar to pick a time for the “Live 45‑minute Zoom with a Solutions Architect.”
+- Optional, after the booking (or on the confirmation page): single‑select chips for “Primary use case” and “Cloud providers,” plus an open note. Make phone, employees, annual spend, and compliance focus optional here, not required up front.
+Measurement
+- Primary: mobile form‑submit rate and calendar‑book rate.
+- Secondary: time‑to‑book and drop‑off by field (if you instrument field‑level abandons).
+
+Test 3 — Remove the waiting message and reframe expectations
+Control: “We review submissions within 3–5 business days. If qualified, a rep will reach out to schedule.”
+Variant: replace with next‑step clarity without the delay language
+- Copy option 1: “Next step: pick a time for a live walkthrough with a Solutions Architect.”
+- Copy option 2 (if you must keep review language): “Next step: our team follows up quickly with a time that works.”
+Placement notes
+- If a calendar isn’t feasible right now, still run this copy test. The aim is to keep momentum on mobile.
+Measurement
+- Primary: mobile form‑start to submit rate.
+- Secondary: replies to the confirmation email and time‑to‑first‑response.
+
+Paste‑ready elements (mobile)
+- H1 (choose A or B above)
+- Subhead (as above)
+- CTA: “Get the walkthrough”
+- Trust line: “Now SOC 2 Type I. ISO 27001 in progress.”
+- Below‑the‑fold “What you’ll see” bullets:
+  • Agentless posture management across AWS/GCP/Azure
+  • Real‑time policy guardrails and auto‑remediation
+  • Data flow mapping and PII lineage
+  • Out‑of‑the‑box SOC 2, ISO 27001, PCI dashboards
+
+Instrumentation checklist
+- Track: hero_impression, cta_click, form_start, field_focus per field, form_submit, calendar_open, calendar_book, confirm_view.
+- Segment by device and traffic source; evaluate mobile separately.
+
+If you can only run one change first, do Test 2 on mobile. It removes the biggest choke point without touching your funnel logic.
+
+One question to pressure‑test the hero: when Sales opens a first call, what’s the very first question they get 8 times out of 10 — speed, compliance, or cloud coverage? Pick one; that’s your H1.
+
+If this is useful, forward it to whoever owns the form. If there’s a constraint I should account for (no calendar; legal requires phone), reply with that and I’ll tune the variants.
+
+Fieldwork Studio
+
+==== Sent before (25/25 (specific 5, useful 5, voice 5, fits 5, reply 5) PROMISES 1)
+Subject: LayerLock demo page: 3 mobile tests to lift bookings
+
+Nina — precise teardown, mobile-first.
+
+What’s breaking flow on mobile now (observed)
+- Hero is generic: “See LayerLock in action” with no outcome or stack specifics in the first screen.
+- 10+ required fields before any time is shown. Then: “We review submissions within 3–5 business days. If qualified…” No calendar.
+- Required qualifiers (“How did you hear about us?”, use case, compliance focus) and exits beside the CTA (“Prefer email?”, one‑pager download).
+
+Three concrete tests
+1) Outcome-led hero vs. generic
+   - Variant A (CSPM): “Find and fix cloud misconfigurations in minutes — agentless across AWS, GCP, Azure.”
+     Subhead: “Live 45‑minute walkthrough with a Solutions Architect. See guardrails, auto‑remediation, data‑flow mapping.”
+   - Variant B (Compliance): “Pass SOC 2 faster without slowing releases.”
+     Subhead: “Agentless across AWS/GCP/Azure with out‑of‑the‑box SOC 2/ISO/PCI dashboards.”
+   - Measure: mobile form‑start and booked‑meeting rate per variant.
+
+2) 2‑field + instant calendar vs. long gate
+   - Show only Work email + Company. On submit, reveal an inline calendar to book immediately.
+   - Move clouds/size/compliance/phone/referral to an after‑booking page as optional tailoring.
+   - Microcopy above calendar: “Meet a Solutions Architect for 45 minutes. Bring a workload—we’ll show it agentless.”
+   - Measure: bookings per mobile session, time‑to‑meeting, show‑rate.
+
+3) Gate + link treatment
+   - Replace “3–5 business days/if qualified” with speed + trust: “Pick a time now. You’ll meet a Solutions Architect.” Add: “Now SOC 2 Type I; ISO 27001 in progress.”
+   - Collapse “Prefer email?” and the one‑pager below the fold on mobile (or move to confirmation).
+   - Measure: drop‑off at final step; exits to email/download.
+
+Execution details that help on mobile
+- Sticky “Book a demo” anchoring to the calendar section.
+- Correct input modes (email keyboard for email; numeric if phone ever shown). Default Country from IP.
+- Pull homepage proof (logos + “cut audit prep from weeks to days” quote) adjacent to the calendar.
+
+Success metric: confirmed calendar bookings / unique mobile sessions on /request‑demo, with show‑rate tracked separately.
+
+If you want, I’ll send a marked‑up version with placements and screenshots.
+
+Fieldwork Studio

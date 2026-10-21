@@ -1,0 +1,122 @@
+To: Gavin Kerr (Co-owner at Bruntsfield Wine Co., a neighbourhood wine merchant in Edinburgh. Handles corporate accounts and seasonal marketing. Browses on a 13" MacBook in the shop office; checks links on his iPhone on the tram. Pragmatic, time-poor, wary of agency fluff, wants specifics and dates.)
+Judge: 25/25 (specific 5, useful 5, voice 5, fits 5, reply 5)
+Worst: It skips budgets/scope and a clear date plan, so he can brief dev but still can’t see the spend or a fixed package that maps to his £12–£15k and early‑Nov go‑live.
+
+Subject: Bruntsfield — dev‑ready one‑pager: gifting checklist + 10‑day GEM test
+
+Gavin —
+
+Thanks for the note. Here’s a dev‑ready, copy‑paste brief you can forward today: the core page changes plus a 10‑day GEM ad test for DTC mixed cases and the corporate picker.
+
+Copy/paste for dev brief
+
+1) Corporate Gifting page — above the fold
+- Hero: “Corporate wine gifts from £12/bottle.”
+- Sub: “1 Nov–20 Dec delivery · UK‑wide · Multi‑address in one upload.”
+- Primary CTA: “Get a price” (opens the 3‑question picker). Secondary: “Download brochure (PDF)”.
+- Place a plain “Download CSV template” link immediately beside the primary CTA.
+- Keep “Prices exclude VAT and courier.” visible in small print.
+
+2) Quick‑start picker — functional notes (3 questions)
+- Q1: How many recipients? (help: “You can upload a spreadsheet next.”)
+- Q2: Budget per gift (buttons £12 • £15 • £20 • £25 • Custom; validate Custom ≥ £12; show “Prices exclude VAT and courier.”)
+- Q3: Preferred delivery window (1–15 Nov • 16–30 Nov • 1–10 Dec • 11–20 Dec • Other date)
+- After Q3: show 2–3 options with name, what’s included, per‑recipient price, lead time.
+- CTAs in results: “Start your order” (opens full form prefilled) + “Email me this proposal”. Keep “Download CSV template” visible beside the primary CTA.
+- Mobile‑first; progress dots; summary chips for chosen answers.
+
+3) Trust + operational signals (new row under the picker)
+- Packaging line: “Courier‑safe packaging for bottles; recyclable sleeves; presentation‑ready.”
+- Add a packaging photo in this row if available.
+- Delivery reassurance: “We confirm dates before payment. Duty to NI handled (allow extra time).”
+- Ordering cut‑off: add a prominent line: “Order by [ops‑confirmed date] to guarantee December delivery.” (Peak B2B deadlines are moving earlier; one major hamper launch now recommends 31 Oct. Source: Retail Times, 14 Oct 2026.)
+- Keep the phone number and corporate@ email visible.
+
+4) Tracking to add (events + UTM hygiene)
+- Fire events: Picker Started, Options Viewed, CSV Downloaded, Proposal Submitted, Phone Clicked.
+- Give every ad/variant a distinct utm_content. Primary success events: Corporate = Picker Started + Proposal Submitted; DTC = First Order.
+
+5) DTC “Mixed cases” paid‑social lander (for Meta traffic)
+- Hero: “Mixed cases from £65, delivered UK‑wide.”
+- Sub: “Thoughtful bottles from small producers.”
+- Bullets: “Pick red, white or mixed” · “Free local delivery over £50 (Edinburgh)” · “No subscription required”.
+- CTA: “Shop mixed cases”. Below: three case tiles (from‑price + 3 bullets), one short customer quote (“Bruntsfield always pick winners. Fast delivery.”), delivery terms. No site header; slim footer only.
+
+6) 10‑day Meta GEM test — structure (corporate picker + DTC cases)
+- Objective & measurement
+  • Corporate: optimise to “Picker Started”; report “Proposal Submitted”.
+  • DTC: optimise to first purchase.
+- Campaigns
+  • Corporate Prospecting: broad UK business audiences; Advantage+ placements; enable GEM/Advantage+ Creative. Exclude recent corporate leads if you have a list.
+  • Corporate Retargeting: visitors to /corporate-gifting, brochure downloaders, video engagers.
+  • DTC Prospecting: send to the “Mixed cases” lander; enable GEM/Advantage+ Creative.
+  • DTC Retargeting: product and cart visitors (site), recent purchasers excluded.
+- Creatives (both tracks)
+  • Keep price and delivery window in the first two lines of copy so GEM can remix assets across Feed/Reels/Stories.
+  • Run 3 concepts × 3 variants: product shot; case stack with ribbon; note‑card close‑up with price/dates overlaid. Refresh any ad after ~3 weeks of falling CTR.
+- Daily operating rhythm (Mon–Fri)
+  • Day 1–2: launch; check events firing; kill obvious outliers on CTR or CPC if they stall delivery.
+  • Day 3–5: promote the top 1–2 ads per ad set by primary event rate; pause laggards.
+  • Day 6–10: keep budget with winners; test one new headline or image variant per concept.
+- Reporting cadence (lightweight)
+  • Log daily: spend, CTR, cost per primary event (Picker Started / First Order), proposals submitted (corporate), and top UTM_content.
+
+7) Pre‑peak page tests (one change per variant)
+- Price+dates vs. generic hero; “Get a price” vs. “Start your order”; CSV link beside CTA vs. below; trust row present vs. none; header vs. no header.
+- Judge on the primary action, not clicks; split traffic evenly; when one variant is consistently ahead at normal weekday volume, promote it and queue the next change.
+
+Why act now (for the internal email thread)
+- Meta’s new Generative Ads Model (GEM) unifies creative/placement optimisation across Facebook, Instagram, Reels, Stories and has shown up to 18.9% more conversions and 12% higher CTR. Source: Meta Engineering, 13 Oct 2026.
+- UK consumers expect to spend more on wine this Christmas (27% “significantly more”, 39.8% “slightly more”; 43.8% expect to buy more bottles). Source: Harpers, 12 Oct 2026.
+- Packaging and courier‑proof delivery are now a visible B2B concern; showing packaging quality is a differentiator. Source: Grocery Trader, 13 Oct 2026.
+- Retail footfall fell 2.9% YoY in Sept, signalling softer in‑store ahead of Q4 — paid + conversion‑ready landers matter. Source: BRC, 10 Oct 2026.
+
+Two quick calls to make today
+- What’s the ops‑approved December delivery cut‑off to publish on page and in ads?
+- Are you happy to switch the primary CTA label to “Get a price” for the picker test?
+
+If you paste the above into your dev brief as‑is, nothing’s missing for a go‑live. If anything here doesn’t fit how you work, reply with the tweak and we’ll adjust.
+
+Fieldwork Studio
+
+==== Sent before (17/25 (specific 2, useful 5, voice 2, fits 4, reply 4) PROMISES 1)
+Subject: Bruntsfield Wine — CSV template spec + paste‑ready copy for cut‑off and trust row
+
+Gavin —
+
+Here are paste‑ready blocks your dev can drop in today.
+
+1) Recipient CSV template (header row)
+RecipientName,Company(optional),AddressLine1,AddressLine2(optional),Town/City,County/Region(optional),Postcode,Country(GB/NI),Phone(optional),GiftMessage(short note),PreferredDeliveryDate(DD/MM/YYYY),InternalNotes(optional)
+
+Sample row
+Alex MacLeod,,12 Bruntsfield Place,,Edinburgh,,EH10 4XX,GB,,Thanks for a great year!,12/12/2026,
+
+Validation hints
+- Accept .csv (UTF‑8) with a header row.
+- Postcode: UK format; if it starts BT, show a note like “NI deliveries may take longer” (use your wording).
+- Preferred date must fall inside the chosen window (or leave blank).
+- Show clear success/failure messages; keep the CSV template link visible beside the primary CTA.
+
+2) Cut‑off banner (choose dates your ops can stand behind)
+Banner: “Order by [DATE] to guarantee delivery between [DATE–DATE].”
+Sub‑line: “Later orders accepted subject to stock and courier capacity.”
+
+3) Packaging/assurance line (edit to match what you do)
+Option A: “Courier‑safe, recyclable packaging. Any breakage replaced fast.”
+Option B: “Gift‑ready presentation, courier‑proof packing, and a straight‑through replacement policy.”
+
+4) Microcopy for the picker
+- Under Q1: “You can upload a spreadsheet next.”
+- Beside primary CTA: “Download CSV template.”
+- Under form headline: “Prices exclude VAT and courier.”
+
+5) Event hooks (tool‑agnostic)
+- When someone completes Q3 and sees options: fire “picker_viewed_options”.
+- When they click “Start your order”: fire “picker_started_order”.
+- When they submit the full form: fire “proposal_submitted”.
+Give each ad variant a distinct UTM_content; that’s enough to judge winners quickly.
+
+If you later want this packaged as a one‑pager for the dev brief, say and we’ll format it.
+
+Fieldwork Studio

@@ -1,0 +1,73 @@
+To: Maya Bains (Solo UGC + ad-creative freelancer for small DTC brands. Uses a cracked iPhone 12 mini on 4G between shoots; opens laptop only at night. Fast, skeptical, frugal, hates fluff but hungry for practical tips. Juggles client work and prospecting; not a real buyer here—fishing for ideas she can DIY.)
+Judge: 22/25 (specific 4, useful 5, voice 4, fits 5, reply 4) PROMISES 1
+Worst: Great template, but on a cracked-phone workflow it’s fiddly to copy a CSV from email and it skips her key early-signal metric (first-hour comments).
+! If you tell me the three metrics you care about most, I’ll tune the header/columns for you.
+
+Subject: Maya — GEM is live. Here’s your Sheets asset‑map + labels (plus one Ads Manager setup tip)
+
+Maya —
+
+Meta’s advertiser-facing GEM guidance is now public. Two points that matter for how you sell and run your Ad Testing Pack:
+- GEM isn’t a toggle in Ads Manager; it’s the unified AI optimizing creative and placement across FB/IG/Reels/Stories using broad, outcome-based data. Meta reports up to 18.9% more conversions and 12% higher CTR system‑wide with GEM. (Meta engineering post, 13 Oct ’26)
+- Manual placement controls are gone for most conversion objectives; Ads Manager now defaults to Advantage+ placements with per‑placement asset customization (crop, captions, alternate copy) in a single workflow. (Meta help updates, 25 Oct ’26)
+
+So the asset map has to assume GEM coverage from the start: every variant ships in the right shapes with labeled hooks, copy, and crops ready to go.
+
+Sheets-ready asset‑map + labels (paste into a blank Google Sheet)
+
+CSV starts
+Label,Client,Campaign,Concept,Hook,Aspect Ratio (9x16|1x1|16x9),Placement Coverage (Reels|Stories|Feed),Cut (A|B|C),Version (v1|v2),Duration (s),Primary Text A,Primary Text B,Headline,CTA Button,Caption Style (Sub|Open|None),Audio (UGC|Track),Thumbnail Note,Asset File Link,Alt Crops Added? (Y/N),Per‑Placement Copy Added? (Y/N),UTM Code,Launch Date,Readout Window,3s Play Rate,ThruPlay Rate,CTR,CVR,CPA,Outcome Note,Verdict (Win|Hold|Drop),Next Action
+TEA/TasteTest/PriceDrop/9x16/A/v1,CLIENT,Prospecting,Pricing Proof,Price Drop,9x16,Reels|Stories|Feed,A,v1,15,"Primary A copy","Primary B copy","Headline","Shop Now",Sub,UGC,"Thumbnail frame note","Drive/Dropbox link",Y,Y,utm_source=meta&utm_medium=paid&utm_campaign=prospecting,YYYY‑MM‑DD,First clean readout window,,,,,,,
+CSV ends
+
+Label pattern (for easy search and export)
+- CLIENT/Concept/Hook/Ratio/Cut/Version  
+  Example: TEA/TasteTest/PriceDrop/9x16/A/v1
+
+Column notes (the only ones that really move the needle)
+- Aspect Ratio + Placement Coverage: ship 9x16, 1x1, and 16x9 for every Cut. If you don’t have a native square/horizontal, note the crop plan before upload.
+- Primary Text A/B: write per‑placement alternates in‑sheet (Feed can take longer copy; Reels/Stories need a front‑loaded first 80 chars). 
+- Verdict: Win = scale/edit more hooks; Hold = needs new open; Drop = retire and log the lesson in Outcome Note.
+
+Two‑week variant sprint outline (repeatable loop)
+- Week 1
+  - Mon: Pick 1 concept, map 6 hooks in the sheet; pre‑write A/B primary texts.
+  - Tue: Shoot UGC + grab alt thumbnails.
+  - Wed: Cut A/B/C in 9x16; plan 1x1 and 16x9 crops.
+  - Thu: QC, captions, upload assets; fill Label, Coverage, and Copy fields.
+  - Fri: Launch with broad conversion objective; mark Launch Date.
+- Week 2
+  - Early: First readout window; fill 3s/ThruPlay/CTR and Outcome Note; set Verdict.
+  - Mid: Spin winner into v2 (new hook or new open 2s); generate square/horizontal if missing.
+  - Fri: Relaunch updated set; archive Drops with a one‑line why.
+
+One concrete Ads Manager setup tip (do this at the ad level)
+- Leave placements on Advantage+. Open Asset Customization and attach all three shapes (9x16, 1x1, 16x9) to the same ad, then assign alternate primary text per placement. Don’t force placements for conversion objectives; let GEM route delivery across FB/IG/Reels/Stories. This increases learning coverage and reduces setup friction.
+
+Why this aligns to GEM
+- GEM optimizes across surfaces from a single model; giving it labeled hooks, shapes, and per‑placement copy up‑front matches how Meta now learns and distributes ads.
+
+If you want me to slim or expand the columns to match how you track proof, say which three metrics you care about most in readouts and I’ll tune the header.
+
+Fieldwork Studio
+
+==== Sent before (20/25 (specific 3, useful 5, voice 4, fits 4, reply 4) PROMISES 1)
+Subject: GEM‑era asset map (Sheets‑ready) + one setup tip
+
+Maya —
+
+Ads Manager now defaults to Advantage+ placements for conversion campaigns, and Asset Customisation lets you assign crops and copy per placement in one workflow. Docs: https://www.facebook.com/business/help/1546753450586085/ and https://www.facebook.com/business/help/1044825198987622?id=369787570424415
+
+Setup tip to use on your next pack:
+- Leave Advantage+ placements on; in Asset Customisation map 9:16 to Reels/Stories and 1:1 to Feeds. Attach two Primary Text variants and a Feed‑only Headline. Name each ad exactly as in your sheet (VAR_ID) so reporting lines up.
+
+Sheets‑ready asset‑map header (paste into a new Google Sheet):
+Concept | Hook | VAR_ID | Aspect (9:16/1:1/16:9) | Length (s) | Cut (A/B/C) | Reels/Stories (Y/N) | Feeds (Y/N) | Primary Text A | Primary Text B | Headline (feeds) | CTA | Landing URL | UTM | Outcome to track
+
+Variant naming (use as the Ad name):
+CLIENT-Concept-Hook-Aspect-Cut-v1
+Example: TEA-TasteTest-PriceDrop-9x16-A-v1
+
+If you want, tell me the opening concept and I’ll drop you a clean starter with prefilled VAR_IDs and UTM stubs.
+
+Fieldwork Studio

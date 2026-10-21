@@ -1,0 +1,107 @@
+To: Milo (Founder of Warm Current, a 6-person paid social + creative studio. Reads on a MacBook Pro between client calls, lots of tab-hopping. Dry sense of humor, competitive, skeptical; today he’s pretending to be a DTC brand marketer to see how the studio’s agent behaves.)
+Judge: 22/25 (specific 4, useful 5, voice 4, fits 5, reply 4) PROMISES 1
+Worst: It doesn’t include a fresh uptime check or on‑site teardown today and, while strong, much of the plan could still apply to any January drinks launch rather than Sundrift specifically.
+! If you want this as a sprint card set (assets/pages/QA), I’ll format it exactly that way.
+
+Subject: Sundrift January: GEM‑oriented creative test plan + asset matrix (one‑pager)
+
+Milo —
+
+Quick context before the plan: we saw Sundrift returning 502 on 12 Oct, and there’s been no indexed relaunch/update in October press. Sharing the GEM‑oriented test plan and asset matrix you can drop into sprint today; if uptime’s still flaky, see the fallback section at the end.
+
+Why this now (GEM change): Meta’s new Generative Ads Model (GEM) optimises creative and placements across FB/IG/Reels/Stories from one model; Meta reports up to +18.9% conversions and +12% CTR (source: https://engineering.fb.com/2026/10/13/ml-applications/generative-ads-model-gem-scaling-frontier-ads-ai/). Translation for January: fewer campaigns, broader delivery, stronger concept diversity, and clean signals.
+
+January drinks launch — GEM test plan (one page)
+1) Concepts to test (2–3 total)
+- Build around occasions/emotions, not ingredients: e.g., Wellness Reset, Sociability, Focus.
+- Each concept ships with motion + static + UGC so GEM can allocate across surfaces.
+
+2) Asset matrix GEM can learn from (per concept)
+- 9:16 UGC (talk‑to‑camera): pack in first 3s + the promise (“Morning swap that actually sticks”).
+- 9:16 product demo: pour + texture + price/offer end card.
+- 4:5 static price card: pack + price/launch offer + one proof line.
+- 1:1 variant of strongest asset (static or motion cutdown).
+- 9:16 founder/brand VO (why it exists) as a credibility angle.
+- Optional: 9:16 creator remix (same script, different face) to extend life.
+
+3) Delivery and placements
+- One conversion objective; open placements. No budget splits by placement. Fewer ad sets; broad audiences. Let creative, not micro‑audiences, drive learning.
+
+4) Signals and QA (week one)
+- Pick one counted event (first purchase or subscription start). Ensure pixel + server dedupe, fire once, reconcile to orders daily. Validate promo codes, taxes, OOS, refunds, and that thank‑you fires once.
+
+5) Ad‑to‑offer mapping (don’t send to homepage)
+- One page per promise; plain offer first. Oatside Kitchen: moving ads to three offer pages cut cost per first order 38% vs homepage.
+- Let ads “find their page”: duplicate winning ads into each mapped page and keep only the pairings that win.
+
+6) Cadence
+- Soft open 5–7 days pre‑peak with two concepts; add the third at launch. Refresh 1–2 variants weekly; kill losers early; keep a reload queue.
+
+7) Cross‑category pattern (where plain wins and where it doesn’t)
+- Plain offer can win: skincare single‑promise pages took ROAS 1.6→3.1 (Glow Theory). A 3‑question finder beat a 60‑SKU grid 4.8% vs 1.9% (Tallow & Thyme). A question‑led demo page halved cost per demo (Ledgerly).
+- When frictionless underperforms: high‑consideration/configurable (jewelry, luxury, mattresses) need deeper detail—comparisons, layered reviews, financing, logistics. In home goods, promo pages underperform if shoppers need research or comparisons (Shopify, 2026‑07‑01).
+
+Plain vs proof‑heavy vs chooser — quick rubric
+- Plain offer page (default for launch traffic): pack + promise + price + single CTA; minimal exits; lightweight FAQs; delivery/returns; payment badges. Use when AOV is lower and risk is obvious/covered.
+- Proof‑heavy variant: add review tiles, press quotes, structured comparison (vs coffee/energy), ingredient callouts, and a short founder proof. Use when claims are functional/new‑to‑category or price premium needs justification.
+- Chooser/finder: 2–3 question picker when >3 flavours/SKUs or gifting/bundles. Keep defaults sensible; always preserve a direct “Buy Now” path.
+
+Fallback if site stability isn’t there yet (can live on a separate host)
+- Uptime resilience: multi‑region uptime alerts; front with CDN/WAF; keep a single‑offer fallback on a separate subdomain so paid never 502s.
+- Fallback wireframe: hero (promise + pack + primary CTA) → 2–3 proof points (press/early testers) → essentials FAQ (ingredients, pack size, delivery/returns, who it’s for) → single path to checkout. No header nav. Build fast with Shopify Canvas if you’re on Shopify (launched Oct ’26).
+
+If you want this as a sprint card set (assets/pages/QA), say the word and I’ll format it exactly that way.
+
+Fieldwork Studio
+
+==== Sent before (21/25 (specific 4, useful 5, voice 4, fits 4, reply 4) PROMISES 1)
+Subject: Sundrift January: GEM test plan + asset matrix (1‑pager)
+
+Milo —
+
+Quick check: I still can’t see any Sundrift relaunch notes in the trades; assuming uptime hardening is still in flight. Here’s the one‑pager you can drop straight into sprint.
+
+Objective + signal
+- Optimise to one conversion event (first purchase or subscription start). Dedupe pixel/server events; reconcile to orders daily in week one so GEM learns the right lesson.
+
+Concept set (2–3 total)
+- Build around distinct occasions/use‑cases (emotion > ingredient). One promise per concept, stated in frame 1 and line 1. Keep concepts separable in naming and UTMs.
+
+Asset matrix per concept (minimum viable)
+- Video (9:16): two core hooks — (a) pack + promise in 0–3s; (b) demo/pour/mix. Cut each to 4:5 and 1:1.  
+- Static (4:5): (a) plain offer (pack + price/launch deal), (b) proof‑led (quote/rating + pack).  
+- Story/Reel sequence: 3–4 frames — hook, benefit, offer, CTA.  
+- Creator variant: same beats, different face.  
+- Copy: one price‑forward, one payoff‑forward. UTM by concept → matched page.
+
+Campaign design for GEM
+- One CBO conversion campaign, open placements. 2–3 ad sets total (geo/age/safety guardrails only). Don’t split by placement; let the model allocate surface + creative.
+- Broad targeting; creative variety drives learning, not micro audience splits.
+
+Pacing for ~£120k/mo
+- Prospecting majority; hold a modest launch‑day surge; keep remarketing lean until the pool builds (first 7–10 days), then scale if CPA holds.
+
+Cadence + decision rules
+- Add 1–2 fresh variants weekly so nothing gets stale. If a variant declines for three consecutive reads, rotate it out; promote winners at the concept level (not just the asset).
+
+Ad → page mapping (build order)
+- Ship three pages matched to the three promises:  
+  1) Plain offer (hero pack + price/offer, singular CTA) — first live.  
+  2) Proof‑heavy (reviews/nutrition/comparison/FAQs) — for risk/novelty.  
+  3) Chooser (3‑step) — for bundles/gifting.  
+- Call a winner per concept after 500–1,000 qualified sessions or 3 days (whichever first), then route spend accordingly.
+
+Readiness gates (day‑zero)
+- Multi‑region uptime monitoring + CDN/WAF; keep a lightweight fallback page on a separate host.  
+- If main app isn’t rock‑solid for 48h, point ads to the fallback; switch over once stable.
+
+Reporting + naming
+- Daily cut by concept → surface → asset; avoid audience‑level noise.  
+- Naming example: sd_jan_c1_reset_v2_45 (brand_month_concept_variant_aspect).
+
+Delivery checklist (for 3 concepts)
+- 6 core videos (9:16) + 12 cuts (4:5/1:1), 6 statics, 3 Story sequences, 3 creator variants, 6 copy blocks (2 per concept). Total: 30+ deployable units with clear IDs.
+
+If helpful, I can follow with a one‑pager fallback landing wireframe and the ad‑to‑offer mapping rubric.
+
+Fieldwork Studio

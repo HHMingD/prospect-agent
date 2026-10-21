@@ -1,0 +1,82 @@
+To: Amrita Shah (Founder of Sprout & Stitch, a UK kids’ clothing brand. She splits time between the studio and a small warehouse. Skims on her iPhone first, opens laptop only if it’s worth it. Direct, impatient with fluff, numbers-first but creative-savvy. Skeptical of long retainers; likes clear experiments and visible outputs.)
+Judge: 25/25 (specific 5, useful 5, voice 5, fits 5, reply 5) INVENTED 1
+Worst: It never quantifies expected impact (or even repeats Oatside’s 38% stat), which Amrita wants to prioritise tests fast.
+! Saying Shopify Canvas enables a “same‑day test” (speed is implied by the news, but ‘same‑day’ isn’t stated)
+
+Subject: Sprout & Stitch: three fast wins (freshness, offer pages, creative queue)
+
+Hi Amrita —
+
+Thanks for introducing yourself while you were on the Oatside Kitchen page. You asked us to roast sproutandstitch.example, so here’s a tight 1‑pager you can act on today.
+
+What we saw in 5 minutes
+- Freshness reads flat: New In mirrors Home; no live sense of what’s just dropped. 
+- Seasonally locked: Lookbook is still Summer 2026 and static (no video/story), so autumn energy isn’t coming through.
+- Trust dings: odd â/Â£ characters around prices and hyphens make the UI feel a bit broken.
+- Strong promise (GOTS organic cotton, reinforced knees, 30‑day free returns) isn’t reinforced at the Add to Bag moment.
+
+Three quick tests (in order)
+1) Freshness signals on Home + New In
+- Swap the hero to an autumn clip (puddle‑jumps, knees in action) or a short loop.
+- Add small “Added this week” badges on product tiles; date‑stamp a “Just dropped” tile that links to the newest set.
+- Put the Lookbook link on ice until the autumn set is live; a 15–30s montage does more for recency than a static gallery.
+
+2) Offer pages for acquisition (echoing the Oatside approach: ads off the homepage, one page per promise)
+- Rain‑Ready: lead with Splash Raincoat and wet‑weather picks; include a 10–15s demo clip and delivery/returns badges near the first CTA.
+- Knee‑Proof Play: focus on bottoms with reinforced knees; show a close‑up of the reinforcement and a quick “built for hand‑me‑downs” proof.
+- Under £20: a clean, filterless grid anchored by Dino Tee (£16) and Rainbow Leggings (£18). Great for prospecting and email clicks.
+
+3) Creative testing queue + rule
+- Angles to start: Playproof demo; Planet‑kind (GOTS/hand‑me‑down); Parent‑easy (free returns, order by 2pm for same‑day dispatch, Klarna).
+- Rule: if CTR is falling week‑on‑week, retire or refresh within three weeks. Keep three active variants per angle.
+
+Paste‑ready bits
+- Home hero line: “Playproof for puddle season.”
+  Sub: “GOTS organic. Reinforced where it counts. Built to be handed down.”
+
+- Rain‑Ready intro: “Dry kids, happy walks. Our rain picks are tough, lightweight and ready for sudden showers.”
+
+- Knee‑Proof intro: “More scoots, fewer holes. Reinforced knees and seams built for play.”
+
+- PDP reassurance (place beside Add to Bag): “Free UK returns • Order by 2pm for same‑day dispatch • UK delivery 2–4 days”
+
+Small but urgent fixes
+- Encoding: the â/Â£ glyphs around hyphens/prices undermine trust. Check theme/fonts/UTF‑8 settings and replace smart hyphens with standard en‑/em‑dashes.
+- Mirror issue: ensure New In is a real feed of newest SKUs, not a duplicate of Home.
+
+If you’re on Shopify: Canvas (launched this month) lets you spin up these offer pages with prompts—useful for a same‑day test without a developer.
+
+Why the offer‑page push: the Oatside Kitchen case you’re on shows the pattern—moving traffic from the homepage to three specific promise pages concentrates attention and lifts conversion.
+
+One question to pick the starting line: which page would you put live first—Rain‑Ready, Knee‑Proof, or Under £20?
+
+Fieldwork Studio
+
+==== Sent before (24/25 (specific 5, useful 5, voice 5, fits 5, reply 4))
+Subject: Sprout & Stitch: three fast fixes and a landing‑page plan to test this week
+
+Amrita —
+
+A tight teardown from a fresh look at sproutandstitch.example this morning, focused on what moves first orders fastest.
+
+Fix now (under 90 minutes)
+- Character rendering: £ and dashes are showing as odd symbols in nav/cards — fix the encoding site‑wide; it quietly dents trust.
+- Put delivery + free returns right beside Add to bag on product pages (not just in bars/footers) to remove last‑second hesitation.
+- Make “new” actually read as new: sort newest‑first on Home and New In; add a small “Added this week” badge.
+
+Build this week (promise‑led, not homepage‑led)
+- Create three landing pages and point ads/emails to them:
+  1) Rain‑Ready — coats + layers; one CTA; tight grid.
+  2) Knee‑Proof — reinforced bottoms; proof up top (close‑up knees, short copy).
+  3) Under £20 — gift‑friendly picks; price‑forward; quick add.
+- One ad, one promise, one page. In our audits, homepages lose about half of paid traffic in the first five seconds.
+
+Keep ads efficient
+- We retire most creative after about three weeks of falling click‑through. Not three weeks from launch.
+- Every concept should ship with at least three variants so the account can learn which one works. On Glow Theory, a phone photo beat a £12k studio shoot.
+- Oatside Kitchen saw cost per first order down 38% after moving ads off the homepage onto three offer pages; in that test, the plainest page won.
+
+Measure it
+- Judge by add‑to‑bag and first‑order rate versus your Home baseline; don’t let click‑throughs decide.
+
+Fieldwork Studio

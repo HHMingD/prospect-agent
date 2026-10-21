@@ -1,0 +1,12 @@
+.venv/
+.minutehand/
+__pycache__/
+*.db
+.env
+desk_stock.json
+hosting/
+*.db-shm
+*.db-wal
+.DS_Store
+.ruff_cache/
+simulation/**/.agent.*.yaml

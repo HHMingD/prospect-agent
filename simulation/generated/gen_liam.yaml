@@ -1,0 +1,175 @@
+name: gen_liam
+starts_at: '2026-10-12T09:00:00Z'
+runs_for: P21D
+max_wakes: 200
+people:
+- key: liam
+  name: liam
+  email: liam@flextownfitness.example
+  profile: Marketing Director at FlexTown Fitness, an 8-location gym chain. Reads on a 13" MacBook in the office; checks ads
+    on his phone while commuting. Numbers-first, time-poor, politely skeptical of agencies; wants plans and proofs, not vibes.
+  facts:
+  - "We sell monthly and annual gym memberships, day passes, PT add-ons and sauna access; January promo is Join for \xA31\
+    \ then \xA329.99/mo, no contract."
+  - "8 gyms across the West Midlands, ~14,200 active members; FY revenue ~\xA39.6m; team of 3 marketers plus me."
+  - "Biggest problem: Jan CPL on Meta jumped from \xA312 to \xA328 and ~55% drop off on /join after picking a location; attribution\
+    \ between trials and paid members is muddy."
+  - "Budget: \xA380k for Jan\u2013Mar across paid social/search and a join-page rebuild; can scale if blended CAC stays under\
+    \ \xA340."
+  - "I\u2019d give my email for a concrete teardown of flextownfitness.example/join with 3\u20135 fixes, a 90-day Jan plan\
+    \ with creative testing matrix, and a spend/capacity forecast."
+  - "I won\u2019t give my email for generic ebooks, newsletters, or a calendar link before any value; also not for a vague\
+    \ \u2018audit\u2019 that hides obvious points."
+  - Their business's website is flextownfitness.example; whenever asked for it they give exactly flextownfitness.example.
+  working_hours:
+    timezone: Europe/London
+    opens: 08:00
+    closes: '22:00'
+  reply_within:
+    min: PT3H
+    max: P2D
+  reply:
+    kind: answers
+- key: newsroom
+  name: The trade press
+  email: newsroom@press.example
+  profile: Not a visitor. Reports what happens in marketing; never on the site and never writes to the agent.
+happenings:
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P2D
+  inputs:
+    fact: "Oct 6, 2026: Meta announced new AI capabilities in Ads Manager \u2014 a business assistant to guide planning/optimization/measurement,\
+      \ expanded Advantage+ creative (including auto-generating videos from images), and upgraded audience discovery via natural\
+      \ language; Meta says advertisers using the assistant\u2019s recommendations achieved 5% more conversions at the same\
+      \ cost."
+    source: https://about.fb.com/br/news/2026/10/advertising-week-new-york-2026-novas-capacidades-de-ia-para-guiar-campanhas-e-alcancar-clientes/
+    published: '2026-10-06'
+    topic: 'a change on a platform brands buy or build on: Meta, Google, TikTok, Pinterest, Shopify, Klaviyo'
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P5D
+  inputs:
+    fact: "Oct 14, 2026: Google Ads rolled out new campaign priority and flexible budget allocation controls \u2014 letting\
+      \ advertisers set channel priorities and cap the maximum percent of daily budget that can be spent by a channel or grouping,\
+      \ to better guide spend distribution."
+    source: https://blog.google/products/ads-commerce/channel-prioritization-budget-allocation/?ref=noticemesenpai.com
+    published: '2026-10-14'
+    topic: 'a change on a platform brands buy or build on: Meta, Google, TikTok, Pinterest, Shopify, Klaviyo'
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P8D
+  inputs:
+    fact: "Sep 28, 2026: UK gyms are in a growth run but facing higher acquisition costs \u2014 90% of operators report growing\
+      \ membership and 72% improved profit margins, yet 82% say customer-acquisition costs are rising; 74% say corporate-wellness\
+      \ platforms help reach audiences they struggle to access via their own marketing (Wellhub Fitness Business Growth Report)."
+    source: https://www.leisureopportunities.co.uk/news/Wellhub-uk-fitness-2026-strong-growth-bigger-opportunity-ahead/363635
+    published: '2026-09-28'
+    topic: 'go-to-market news: what consumer brands are doing, a shift in how people buy, a season''s numbers'
+- kind: uses
+  person: liam
+  inbox: site
+  use: views
+  inputs:
+    page: /
+    title: Home
+  after: PT0S
+- kind: uses
+  person: liam
+  inbox: site
+  use: picks
+  inputs:
+    page: /
+    question: biggest headache
+    answer: Big launch coming
+  gap:
+    min: PT3S
+    max: PT14S
+- kind: uses
+  person: liam
+  inbox: site
+  use: views
+  inputs:
+    page: /work
+    title: Work
+  gap:
+    min: PT4S
+    max: PT18S
+- kind: uses
+  person: liam
+  inbox: site
+  use: picks
+  inputs:
+    page: /work
+    question: show me work for
+    answer: Retail
+  gap:
+    min: PT3S
+    max: PT12S
+- kind: uses
+  person: liam
+  inbox: site
+  use: views
+  inputs:
+    page: /work/oatside-kitchen
+    title: Oatside Kitchen case study
+  gap:
+    min: PT2S
+    max: PT10S
+- kind: uses
+  person: liam
+  inbox: site
+  use: reads
+  inputs:
+    page: /journal/landing-pages-not-homepages
+    how: about two minutes, scrolled 80%
+  gap:
+    min: PT20S
+    max: PT80S
+- kind: uses
+  person: liam
+  inbox: site
+  use: views
+  inputs:
+    page: /pricing
+    title: Pricing
+  gap:
+    min: PT6S
+    max: PT24S
+- kind: uses
+  person: liam
+  inbox: site
+  use: picks
+  inputs:
+    page: /pricing
+    question: pricing toggle
+    answer: Project
+  gap:
+    min: PT4S
+    max: PT16S
+- kind: uses
+  person: liam
+  inbox: site
+  use: asks
+  inputs:
+    page: /
+    label: Roast my site
+    text: flextownfitness.example
+  gap:
+    min: PT7S
+    max: PT30S
+- kind: uses
+  person: liam
+  inbox: site
+  use: leaves
+  inputs:
+    page: /
+  gap:
+    min: PT2S
+    max: PT10S

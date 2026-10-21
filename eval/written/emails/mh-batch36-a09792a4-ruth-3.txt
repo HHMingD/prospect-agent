@@ -1,0 +1,85 @@
+To: Ruth Patel (Owner-operator of Three Oaks Books (3 indie bookshops in Devon). Juggles shop floor and ops; reads the web on her phone between customers, laptop after close. Pragmatic, deadline-driven, skeptical of agency fluff, cares about cashflow and delivery cut-offs.)
+Judge: 24/25 (specific 5, useful 5, voice 5, fits 4, reply 5)
+Worst: You still haven’t delivered the short video teardown she asked for within 48 hours; this email offers bullet points instead of the concrete walkthrough she explicitly requested.
+
+Subject: Three Oaks — paste‑ready cutoff bar + stock note today; 3 fixes for homepage/Christmas
+
+Ruth —
+
+Great on running the Click & Collect–first split. That will show whether speed + certainty beats the current Add to Basket flow for undecided gift buyers.
+
+Paste‑ready modules you can drop in today
+
+1) Christmas cutoff/urgency bar (site‑wide or at least on Home, /christmas, and the three gift pages)
+• A: Order by Mon 18 Dec (Standard) or Thu 21 Dec (Express). Click & Collect usually ready in 2 hours.
+• B: In time for Christmas: Standard by Mon 18 Dec • Express by Thu 21 Dec • Click & Collect usually ready in 2 hours.
+Small print link: Delivery cut‑offs may vary by item. See Delivery & Returns.
+
+2) Store‑level stock note (place directly under the primary CTA on mission pages)
+• Stock varies by store; choose your store at checkout. Online shows central stock.
+• We’ll email when Click & Collect is ready.
+
+3) CTA labels on mission pages (align copy to the action)
+• Primary: Reserve for Click & Collect (Usually ready in 2 hours)
+• Secondary: Buy for delivery
+Repeat both mid‑page and at the end.
+
+Three fast page fixes for gift buyers
+
+Homepage
+• Put the full cutoff message in the first screen (match /christmas): “Order by Mon 18 Dec (Standard) or Thu 21 Dec (Express). Click & Collect usually ready in 2 hours.”
+• Give gift buyers one obvious path: make “Shop Christmas” the primary button; add a secondary “Signed First Editions” button.
+• Pull key confidence into the first screen: Royal Mail 48 £2.99 | 24 £4.99; Gift wrap +£3; Free local delivery (3 miles) over £30.
+
+Christmas page (/christmas)
+• Pin the three gift missions at the top as large cards with C&C‑first buttons: Winter Tales (Signed), Cosy Crime Gift Bundle, Kids’ Christmas Box.
+• Collapse sort/filters into a single “Refine” toggle beneath the first row so the promise and CTAs are what buyers see first.
+• Add a compact info block beside/under the first row: Royal Mail 48 £2.99 | 24 £4.99 • Gift wrap +£3 • Free local delivery (3 miles) over £30.
+
+Measuring the current C&C‑first test cleanly
+• Keep a 50/50 split for three days (duplicate page or alternate days).
+• Compare Checkout Starts and Purchases for the variants. If it’s within ~5% either way after three days, keep the simpler version.
+• Use UTMs per variant (e.g. utm_campaign=christmas_signed | cosy_crime | kids_box; utm_content=cta_cc_first vs cta_add_to_basket).
+
+Next test to line up (quick, independent of the CTA outcome)
+• Persistent cutoff/urgency bar vs. no bar on /christmas and the three gift pages. Same three‑day 50/50; keep the winner.
+
+Tooling note you can forward internally
+• Shopify Canvas and Typeform’s AI Landing Pages both launched this month and are useful for spinning variants fast. There aren’t published retailer before/after conversion outcomes yet, so treat them as speed tools and measure with UTMs rather than leaning on external benchmarks.
+
+Six‑minute teardown hits (what I’d show on a short walkthrough)
+• Home: lead with the Christmas promise + two actions (Shop Christmas; Signed First Editions). Move delivery prices/gift‑wrap/free‑local into the hero. Keep the mailing‑list block off the first screen.
+• /christmas: elevate the three missions, C&C‑first on each tile, push filters down, and repeat the cutoff + delivery info where the decision happens.
+
+One question for you
+• Do you want the cutoff bar site‑wide through 21 Dec, or only on the mission pages? If gift is the primary Q4 mission, site‑wide tends to reduce uncertainty.
+
+If this is useful, feel free to forward it to whoever is building the pages today.
+
+Fieldwork Studio
+
+==== Sent before (22/25 (specific 5, useful 5, voice 4, fits 4, reply 4) PROMISES 1)
+Subject: After C&C‑first goes live: how to read it + two tiny modules to add now
+
+Ruth —
+
+Great—here’s how to get a clean read on the C&C‑first test and what to do next.
+
+- Keep the split clean: duplicate page, send roughly equal traffic, keep promo bars/pop‑ups identical, and tag primary CTAs so you can see cc_primary vs add_primary in events/UTMs. Compare Checkout Starts and Purchases only.
+
+- How to act on the result:
+  • If C&C‑first wins, mirror it on the Christmas hub and homepage tiles, and turn /christmas into a simple four‑card gift hub (Signed First Editions, Cosy Crime, Kids’ Christmas Box, Gift Card) with Reserve for Click & Collect first on each card. Drop Sort/Filter controls there—they add friction when there are only a few choices.
+  • If it’s close, keep C&C‑first on mission pages and run a quick follow‑up: add a sticky cutoff bar (below) vs no bar.
+
+- Paste‑ready microcopy modules you can add now:
+  • Cutoff bar (site‑wide or gift pages): “Order by Mon 18 Dec (Standard) or Thu 21 Dec (Express). Click & Collect usually ready in 2 hours.”
+  • Stock note (near CTAs): “Stock varies by store; online shows central stock. We’ll email when your Click & Collect is ready.”
+  • CTA cluster (repeat near top, mid‑page, end): Primary “Reserve for Click & Collect” with “Usually ready in 2 hours” directly beneath; secondary “Buy for delivery”.
+
+- Two fast page tweaks for gift buyers:
+  • Homepage: swap the generic “Books for everyone on your list” section for three mission cards linking straight to Signed First Editions, Cosy Crime, and Kids’ Christmas Box, each with Reserve/Buy buttons.
+  • /christmas: make it the four‑card hub above, with the delivery cutoff line directly under the headline.
+
+Reply with anything that blocks the split and I’ll adjust the plan.
+
+Fieldwork Studio

@@ -1,0 +1,160 @@
+name: gen_mayap
+starts_at: '2026-10-12T09:00:00Z'
+runs_for: P21D
+max_wakes: 200
+people:
+- key: mayap
+  name: Maya Rudd
+  email: mayap@fellviewhouse.example
+  profile: Co-owner/GM of Fell View House, a 26-room family-run hotel near Ambleside. Splits days between front desk and supplier
+    calls. Checks sites on an iPhone 13 while walking between rooms; laptop only after 9pm. Practical, polite, cost-aware,
+    skeptical of agency fluff, wants numbers and fast tests.
+  facts:
+  - "Sell: rooms, weekend walking packages, and a small bistro add-on (DBB). ~\xA31.25m annual revenue at ~63% OCC."
+  - Direct bookings slid from 45% to 28% in 18 months; Booking.com and Expedia now set the pace on price/perception.
+  - "Problem in her words: \u201CPeople browse our site then book us on Booking.com for \xA33 less or because the checkout\u2019\
+    s quicker on mobile.\u201D"
+  - "Budget: can ringfence \xA36\u20137k for a 90\u2011day test if it shows a believable path to +10% direct share; can\u2019\
+    t change PMS/booking engine until winter."
+  - "Will share email for a concrete teardown of her rooms/booking flow with 3 testable ad+landing ideas and expected lift;\
+    \ won\u2019t for a newsletter or a generic \u2018discovery call\u2019."
+  - "Knows they get most searches on \u2018fell view house lake district\u2019 + \u2018rooms ambleside\u2019, mobile-heavy;\
+    \ brand PPC currently on but poor ROAS."
+  - Their business's website is fellviewhouse.example; whenever asked for it they give exactly fellviewhouse.example.
+  working_hours:
+    timezone: Europe/London
+    opens: 08:00
+    closes: '22:00'
+  reply_within:
+    min: PT3H
+    max: P2D
+  reply:
+    kind: answers
+- key: newsroom
+  name: The trade press
+  email: newsroom@press.example
+  profile: Not a visitor. Reports what happens in marketing; never on the site and never writes to the agent.
+happenings:
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P2D
+  inputs:
+    fact: "Google Ads introduced new priority and allocation features that let advertisers set spending limits with flexible\
+      \ budget allocation and cap the share of spend for low\u2011priority channels."
+    source: https://blog.google/products/ads-commerce/channel-prioritization-budget-allocation/?ref=noticemesenpai.com
+    published: '2026-10-14'
+    topic: 'a change on a platform brands buy or build on: Meta, Google, TikTok, Pinterest, Shopify, Klaviyo'
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P5D
+  inputs:
+    fact: "Expedia\u2019s Anniversary Sale offered One Key members and app users up to 30% off selected hotels and holiday\
+      \ homes for stays from 1 Sep 2026 to 31 Mar 2027; book by 7 Oct 2026 (plus \xA320 in OneKeyCash for a flight booked\
+      \ by 5 Oct, per terms)."
+    source: https://www.expedia.com/deals?afmcid=nav.exp.ext.expedia-coupons
+    published: '2026-10-06'
+    topic: 'go-to-market news: what consumer brands are doing, a shift in how people buy, a season''s numbers'
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P8D
+  inputs:
+    fact: "Airbnb is pushing into hotels via a curated, application\u2011based model focused on independent and boutique properties,\
+      \ positioning it as a potential multi\u2011billion\u2011dollar business distinct from traditional OTAs."
+    source: https://skift.com/2026/09/21/airbnbs-pivot-inside-its-new-push-into-hotels/
+    published: '2026-09-21'
+    topic: 'go-to-market news: what consumer brands are doing, a shift in how people buy, a season''s numbers'
+- kind: uses
+  person: mayap
+  inbox: site
+  use: views
+  inputs:
+    page: /
+    title: Home
+  after: PT0S
+- kind: uses
+  person: mayap
+  inbox: site
+  use: reads
+  inputs:
+    page: /
+    how: about 35 seconds, scrolled 60%
+  gap:
+    min: PT17S
+    max: PT70S
+- kind: uses
+  person: mayap
+  inbox: site
+  use: picks
+  inputs:
+    page: /
+    question: biggest headache
+    answer: Traffic but no sales
+  gap:
+    min: PT2S
+    max: PT10S
+- kind: uses
+  person: mayap
+  inbox: site
+  use: asks
+  inputs:
+    page: /
+    label: Roast my site
+    text: fellviewhouse.example
+  gap:
+    min: PT4S
+    max: PT16S
+- kind: uses
+  person: mayap
+  inbox: site
+  use: views
+  inputs:
+    page: /journal/landing-pages-not-homepages
+    title: Stop sending ads to your homepage
+  gap:
+    min: PT2S
+    max: PT8S
+- kind: uses
+  person: mayap
+  inbox: site
+  use: reads
+  inputs:
+    page: /journal/landing-pages-not-homepages
+    how: about two minutes, scrolled 75%
+  gap:
+    min: PT60S
+    max: PT240S
+- kind: uses
+  person: mayap
+  inbox: site
+  use: views
+  inputs:
+    page: /pricing
+    title: Pricing
+  gap:
+    min: PT1S
+    max: PT6S
+- kind: uses
+  person: mayap
+  inbox: site
+  use: writes
+  inputs:
+    text: "Do you work with hotels? We\u2019re 26 rooms in the Lakes. Need direct bookings up without OTAs undercutting us.\
+      \ Would a 90\u2011day project around \xA36\u20137k be meaningful?"
+  gap:
+    min: PT12S
+    max: PT50S
+- kind: uses
+  person: mayap
+  inbox: site
+  use: leaves
+  inputs:
+    page: /pricing
+  gap:
+    min: PT1S
+    max: PT4S

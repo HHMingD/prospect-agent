@@ -1,0 +1,173 @@
+name: gen_gavin
+starts_at: '2026-10-12T09:00:00Z'
+runs_for: P21D
+max_wakes: 200
+people:
+- key: gavin
+  name: Gavin Kerr
+  email: gavin@bruntsfieldwine.example
+  profile: Co-owner at Bruntsfield Wine Co., a neighbourhood wine merchant in Edinburgh. Handles corporate accounts and seasonal
+    marketing. Browses on a 13" MacBook in the shop office; checks links on his iPhone on the tram. Pragmatic, time-poor,
+    wary of agency fluff, wants specifics and dates.
+  facts:
+  - "Sells curated wine cases and Christmas hampers for corporate gifting (20\u2013500 recipients), with handwritten notes\
+    \ and UK-wide delivery via a multi-address spreadsheet."
+  - "~\xA31.8m revenue; 7 staff; Q4 is ~45% of turnover and corporate gifts are a third of the year."
+  - 'Problem (his words): "CPCs jump in Nov, our corporate gifting page converts ~1.2%, and we lose leads to phone/email.
+    Need a clean landing page + ads that survive Q4 CPMs."'
+  - "Budget: \xA312k\u2013\xA315k for a tight 90-day push (Sept\u2013Dec). Wants fixed scope and go-live by early Nov."
+  - Will share his email for a quick, specific teardown video of /corporate-gifting with 3 fixes and 2 ad angles for B2B gifting.
+  - "Won\u2019t give email for newsletters, generic \u2018ultimate guides\u2019, or booking a call before he\u2019s seen relevant\
+    \ work and ballpark pricing."
+  - Their business's website is bruntsfieldwine.example; whenever asked for it they give exactly bruntsfieldwine.example.
+  working_hours:
+    timezone: Europe/London
+    opens: 08:00
+    closes: '22:00'
+  reply_within:
+    min: PT3H
+    max: P2D
+  reply:
+    kind: answers
+- key: newsroom
+  name: The trade press
+  email: newsroom@press.example
+  profile: Not a visitor. Reports what happens in marketing; never on the site and never writes to the agent.
+happenings:
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P2D
+  inputs:
+    fact: "Google Ads rolled out \u201Cchannel prioritization\u201D and \u201Cbudget allocation\u201D on 2026-10-14, letting\
+      \ advertisers mark inventory High or Low priority and cap Low\u2011priority channels by % of daily budget (including\
+      \ 0% for Display/partners in supported setups) across Search, Shopping, Performance Max and soon Demand Gen."
+    source: https://blog.google/products/ads-commerce/channel-prioritization-budget-allocation/
+    published: '2026-10-14'
+    topic: 'a change on a platform brands buy or build on: Meta, Google, TikTok, Pinterest, Shopify, Klaviyo'
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P5D
+  inputs:
+    fact: "Royal Mail\u2019s 2026 peak-season surcharge for business accounts is reported at 12p per item on Royal Mail 24/48\
+      \ and Tracked 24/48 Parcels, running from 2026-11-02 to 2027-01-10; capacity for business collections is capped at up\
+      \ to 3\xD7 normal usage through Nov\u2013Dec."
+    source: https://www.nembol.com/blog/holiday-shipping-surcharges
+    published: '2026-10-05'
+    topic: 'go-to-market news: what consumer brands are doing, a shift in how people buy, a season''s numbers'
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P8D
+  inputs:
+    fact: "At Advertising Week New York (announced 2026-10-06), Meta outlined new AI ad capabilities: generative video for\
+      \ Advantage+ creative, product\u2011catalog video generation in Commerce Manager (beta), and new audience/targeting\
+      \ guidance rolling out into Ads Manager."
+    source: https://about.fb.com/br/news/2026/10/advertising-week-new-york-2026-novas-capacidades-de-ia-para-guiar-campanhas-e-alcancar-clientes/amp/
+    published: '2026-10-06'
+    topic: 'a change on a platform brands buy or build on: Meta, Google, TikTok, Pinterest, Shopify, Klaviyo'
+- kind: uses
+  person: gavin
+  inbox: site
+  use: views
+  inputs:
+    page: /
+    title: Home
+  after: PT0S
+- kind: uses
+  person: gavin
+  inbox: site
+  use: picks
+  inputs:
+    page: /
+    question: biggest headache
+    answer: Ads got expensive
+  gap:
+    min: PT3S
+    max: PT12S
+- kind: uses
+  person: gavin
+  inbox: site
+  use: asks
+  inputs:
+    page: /
+    label: Roast my site
+    text: bruntsfieldwine.example
+  gap:
+    min: PT4S
+    max: PT16S
+- kind: uses
+  person: gavin
+  inbox: site
+  use: reads
+  inputs:
+    page: /journal/why-your-meta-costs-went-up
+    how: about two minutes, scrolled 85%
+  gap:
+    min: PT10S
+    max: PT40S
+- kind: uses
+  person: gavin
+  inbox: site
+  use: views
+  inputs:
+    page: /work
+    title: Work
+  gap:
+    min: PT6S
+    max: PT24S
+- kind: uses
+  person: gavin
+  inbox: site
+  use: picks
+  inputs:
+    page: /work
+    question: show me work for
+    answer: B2B
+  gap:
+    min: PT3S
+    max: PT14S
+- kind: uses
+  person: gavin
+  inbox: site
+  use: reads
+  inputs:
+    page: /work/ledgerly
+    how: about a minute, scrolled 60%
+  gap:
+    min: PT9S
+    max: PT36S
+- kind: uses
+  person: gavin
+  inbox: site
+  use: views
+  inputs:
+    page: /pricing
+    title: Pricing
+  gap:
+    min: PT5S
+    max: PT20S
+- kind: uses
+  person: gavin
+  inbox: site
+  use: picks
+  inputs:
+    page: /pricing
+    question: pricing toggle
+    answer: Project
+  gap:
+    min: PT4S
+    max: PT18S
+- kind: uses
+  person: gavin
+  inbox: site
+  use: leaves
+  inputs:
+    page: /pricing
+  gap:
+    min: PT2S
+    max: PT10S

@@ -1,0 +1,87 @@
+To: liam (Marketing Director at FlexTown Fitness, an 8-location gym chain. Reads on a 13" MacBook in the office; checks ads on his phone while commuting. Numbers-first, time-poor, politely skeptical of agencies; wants plans and proofs, not vibes.)
+Judge: 22/25 (specific 5, useful 4, voice 5, fits 4, reply 4) PROMISES 2
+Worst: It stops short of a true teardown of flextownfitness.example/join with 3–5 named fixes on that URL, leaning on a polished launch‑page template instead of diagnosing the exact friction in the current flow.
+! A concise, hard‑edged launch page checklist and a paste‑ready first screen in this email
+! Will review the first screen he pastes in if he sends it back ("I’ll keep it tight and specific")
+
+Subject: Liam — the 5‑point launch page and a first‑screen you can paste today
+
+Liam,
+
+You introduced yourself while looking at Oatside Kitchen, so here’s the promise I made on-site: a concise, hard-edged launch page checklist and a first-screen you can lift straight into a page today.
+
+Why you’ll like this: FlexTown’s join flow already does what the best retail launches do—one path, one decision, instant payoff. Let’s make your launch landing page behave the same way.
+
+5‑point retail launch landing page checklist
+- One promise, one offer, one action above the fold. Treat the page like your best floor associate—no tour, no detours. If you must offer a secondary path (e.g. “Prefer a tour first?”), make it a text link under the primary button.
+- Fold-to-form: the primary button jumps directly to the first input of the buying flow (not a generic page). Progress is visible and finite (like your Join steps 1–4).
+- Answer the three objections next to the button: contract/flexibility, fees, and “how fast do I get it?”. You already have strong copy for this: “No contract. Freeze any time.” and “Instant confirmation by email. Access card ready to collect within 5 minutes during staffed hours.”
+- Social proof that matches the promise, not the brand. Put one short proof point or quote within the first screen (e.g. “Clean kit and no waiting even at 6pm.” — Jade) and save the rest for later.
+- Strip leaks. Remove top navigation on the launch template. Keep legal, support, and T&Cs in the footer. In a softer traffic climate (UK footfall fell 2.9% YoY in Sept), the page has to close faster.
+
+First‑screen wireframe (paste-ready)
+- Utility bar: [Logo]                            [Offer badge: Ends 31 Jan]
+- Headline (one-sentence promise): “Join in minutes with instant access”
+- Subhead (offer + what’s inside): “Join for £1 — No contract. Freeze any time. 24/7 in most clubs. Free parking at selected sites.”
+- Primary button (single action): “Start your 4‑step join”
+  - Microcopy under button: “Instant confirmation by email. Access card ready to collect within 5 minutes during staffed hours.”
+- Proof strip (3 tight bullets):
+  - “Anytime, Off‑Peak, Student options”
+  - “Cancel with 30 days’ notice”
+  - ““Clean kit and no waiting even at 6pm.” — Jade”
+- Secondary (link only): “Prefer a tour first?”
+- Fine print (link): “T&Cs”  (If a joining fee may apply, show it here: “£15 joining fee may apply at some clubs.”)
+
+How to make this page convert like your Join flow
+- Route paid traffic here, not to the homepage. If you’re running multiple promises (e.g. “Join for £1,” “7‑Day Pass”), use separate pages so each has one action.
+- Anchor the primary button to Step 1 (Location) and show a visible 1/4 progress bar.
+- Default sensible choices to reduce friction (e.g. pre-select the closest gym once postcode is entered; keep optional add-ons collapsed until step 3).
+- Keep the “tour” path de-emphasised (text link only) to protect the primary action.
+
+30‑minute test to run this week
+- Create a stripped header variant of your existing launch/offer page with: no top nav, the headline + subhead above, the “Start your 4‑step join” button anchored to your existing Step 1, and the three objection-killers beside the button. Measure click‑through to Step 1 and completion rate vs your current landing.
+
+One question for you
+- What is the single action you want cold traffic to take on launch day: start the join flow, claim a 7‑day pass, or book a tour? Pick one; the page should be built around it.
+
+If you want a second set of eyes on the first screen you paste in today, send it back—I’ll keep it tight and specific.
+
+Fieldwork Studio
+
+==== Sent before (21/25 (specific 5, useful 4, voice 5, fits 3, reply 4) PROMISES 1)
+Subject: Three fixes for your FlexTown launch page
+
+Liam —
+
+Looked at flextownfitness.example and /join. Here are three changes we’d make for a launch page that turns paid clicks into same‑day sign‑ups.
+
+1) Make the first screen do all the work
+- One promise: “Join for £1. Instant email. Access card in 5 minutes.” Put this where “Join for £1” sits now; keep it literal.
+- One action: “Start in 60 seconds”. Kill global nav and secondary CTAs on the campaign page (no top nav, no 7‑day pass). Keep a faint “Prefer a tour?” below the fold.
+- Location first, inline: postcode field + club select in the hero, then the button.
+
+2) Resolve price and fees before the form
+- After club select, show “Pay today: £1 + joining fee £0/£15 (this club)” — no surprises at payment.
+- Preselect the plan that matches the ad (e.g. Anytime). Hide the others on this page; upsells (sauna/PT) come after payment or in the welcome email.
+
+3) Tighten the flow and proof
+- Order: Club → Plan & Today’s total → Details → Card. Add a 3‑step progress bar (“Choose club • Plan • Pay”).
+- Pull your best local proof into the first screen: 2–3 reviews from that club only, not generic.
+- Right by the button: “Staffed now: collect card in 5 minutes” or “Collect from 9am”; if you can’t make it live, state the rule clearly.
+
+A bare‑bones first screen
+--------------------------------------------------
+Join for £1 — [Nearest Club]
+No contract. Instant confirmation by email. Access card ready in 5 minutes during staffed hours.
+[Postcode]  [Club dropdown]
+[Start in 60 seconds]
+Small print: “Pay today: £1 + joining fee £0/£15 (this club). Cancel any time.”
+Tiny link (muted): Prefer a tour?
+Local reviews (2–3, short)
+--------------------------------------------------
+
+Why this matters for you: your /join flow is already fast; the campaign page should match it and remove every detour, with price certainty up front. That’s what stops drop‑off between click and card.
+
+If you want, I’ll turn this into a one‑pager you can hand to your developer.
+
+Fieldwork Studio

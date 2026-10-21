@@ -1,0 +1,112 @@
+To: Eilidh MacLeod (Founder of Heather & Pine, a two-product skincare microbrand in Glasgow. Solo operator most days; sister helps on weekends. Reads on iPhone first while on the bus or in the workshop; opens laptop late evening for decisions. Pragmatic, frugal, a bit sceptical of agencies but open if shown specifics and quick tests.)
+Judge: 22/25 (specific 5, useful 4, voice 5, fits 4, reply 4)
+Worst: It skips expected‑impact numbers for each fix—the one thing she asked for in exchange for her email.
+
+Subject: Eilidh — your Serum page, tightened for Q4 (paste‑ready copy inside)
+
+Hi Eilidh,
+
+You introduced yourself on our site a minute ago. You flagged “Traffic but no sales,” and you’re right to look at landing pages first. Here are the three fixes I promised—tailored to Heather & Pine—and a CEO-proof one‑pager you can drop into a deck today.
+
+1) Serum offer page v1 (one promise, one action, proof early)
+Use this above the fold on a focused paid landing page (or as the top of the current PDP):
+
+— Headline
+Sea Buckthorn Glow Serum
+
+— Subhead (promise that mirrors your ads)
+A simple, brightening oil‑serum with sea buckthorn, squalane and vitamin E. Fragrance‑free. Hand‑poured in Glasgow.
+
+— Early proof chip
+As seen by 2M+ on TikTok — thanks for the love!
+
+— Primary action (single CTA)
+Add to bag — 30ml £24
+
+— Trust row (keeps the buyer on the rails)
+Free UK delivery over £40 • Royal Mail 48 • Returns within 14 days on unopened items
+
+— Dispatch note by the CTA (make Q4 expectations explicit)
+We pour weekly; during busy periods dispatch can take up to 5 business days. Order‑by for holiday delivery: [add your cut‑off once set].
+
+Under the fold:
+- How to use: After cleansing, press 2–3 drops into damp skin, morning or night.
+- Ingredients: Squalane, Hippophae Rhamnoides (Sea Buckthorn) Oil, Prunus Armeniaca (Apricot) Kernel Oil, Tocopherol.
+- Routine pair: Oat Cleansing Bar — 2‑step mini routine: cleanse + glow. “Ready to gift.”
+
+2) Friction trims that pay back quickly
+- Default to in‑stock 30ml. Show 15ml as “Back soon” with email capture, not as the default. (Your page shows 15ml “Back in 2 weeks.”)
+- Keep Apple Pay/PayPal, but place wallet buttons below the primary Add to Bag so there’s one clear action.
+- Hide the empty Reviews section for now; swap in one UGC pull‑quote (lift a TikTok comment/caption with permission) and your TikTok stat as social proof.
+- Answer the top FAQ inline near the subhead: “Suitable for sensitive skin?” If yes, say it plainly there; leave the longer FAQ below.
+- Put “UK only via Royal Mail 48” and returns policy near the CTA (you already state both, but they’re buried).
+
+3) Q4 merchandising nudge: mini routine set
+Gift‑ready, simple skincare sets are trending this quarter. Bundle Glow Serum + Oat Cleansing Bar as a 2‑step “Cleanse + Glow” mini routine with “Ready to gift” language and recognizable actives called out (sea buckthorn, squalane, vitamin E, oat). Place it:
+- as a section 1–2 scrolls down on the Serum page, and
+- as a cart cross‑sell for orders under £40 (to help push to your free‑shipping threshold).
+
+Home speed/IG quick win
+Your home shows “On Instagram Loading…”—that embed often slows first paint. Swap it for a static 3–6 image grid that links out; load the script on tap only. It’s a small change that keeps paid traffic moving.
+
+A simple test to run next week
+- Variant A: current Serum PDP.
+- Variant B: the focused offer layout above (single promise, single CTA, early proof, dispatch by CTA, wallets below).
+Track: ad‑click to ATC, ATC to checkout start, and conversion. The goal is to lift page‑level ATC rate and reduce bounce from wallets competing with your main button.
+
+Why this is CEO‑proof in Q4 (one‑pager you can paste)
+- Context: UK retail footfall fell 2.9% YoY in September 2026—stores are softer; the page must sell.
+- Principle: one promise, one action, proof early. Hide dead ends (empty reviews, OOS default).
+- Proof of approach: with Glow Theory, ROAS increased from 1.6 to 3.1 after shipping 27 creative variants and building two focused product pages.
+- Guardrails: default to in‑stock 30ml; show dispatch and order‑by at the CTA; keep wallets under the primary action; bundle a simple “ready‑to‑gift” mini routine.
+- What’s changed in the stack: Shopify introduced Canvas (AI‑powered visual editor) in October 2026; if it’s in your admin, it helps ship page tweaks fast. Pinterest launched AI‑powered Beauty Guides in October—useful for turning a “cleanse + glow” routine into in‑platform steps. Klaviyo’s new Composer (October) can help a lean team build/QA seasonal flows from prompts.
+
+If you only do one thing today
+Default the Serum page to 30ml and move the wallet buttons under the main CTA. It’s quick, reduces choice paralysis, and makes every paid click clearer.
+
+One question for you
+Which single promise are your best‑performing Serum ads making right now? Put that exact line in the subhead above the CTA. It’s the simplest way to stop paying for message mismatch.
+
+If this is useful, feel free to forward it to your CEO as-is.
+
+Fieldwork Studio
+
+==== Sent before (22/25 (specific 5, useful 4, voice 5, fits 4, reply 4) INVENTED 1 PROMISES 1)
+Subject: Heather & Pine Q4 landing‑page fixes (CEO‑proof teardown)
+
+Eilidh —
+
+Here’s the short version that moves paid results fastest, with minimal dev. Then a one‑pager you can drop in front of your CEO.
+
+1) Serum offer page (not the PDP)
+- Promise match: H1 repeats the ad’s exact promise. Sub: “Fragrance‑free, sensitive‑skin safe.”
+- Above the fold: bottle image, 30ml pre‑selected, one Add to cart. Apple Pay/PayPal stay but styled secondary.
+- Proof early: “As seen by 2M+ on TikTok” + ingredient line: sea buckthorn, squalane, vitamin E.
+- Friction cuts: hide “Estimate shipping,” collapse long sections, add a mobile sticky Add to cart, and swap the Instagram embed for a static tile on paid landers.
+
+2) Variant and dispatch hygiene
+- Default to 30ml; move the 15ml (Back in 2 weeks) behind a “Notify me”.
+- Surface dispatch next to the CTA: “Poured Mon/Wed/Fri • Royal Mail 48.” Add a seasonal “Order by [date] for Christmas delivery” as cut‑offs approach.
+
+3) Reviews and social proof
+- Hide empty Reviews. Replace with one UGC pull‑quote or creator credit if you have it; otherwise keep the TikTok reach badge near the CTA.
+
+4) Mini‑routine gift set (Q4)
+- Create a “Cleanse + Glow” set (Oat Bar + Serum) with a single promise and one CTA on its own page.
+- Price or bonus it to hit your £40 free‑shipping threshold out of the box.
+- Pin ingredients people recognise in scan‑lines: “Sea buckthorn, squalane; oat beta‑glucan.”
+
+5) Measurement in 7 days
+- Run serum traffic 50/50 to: a) this offer page, b) the current PDP.
+- Watch: click‑to‑ATC rate, checkout starts, first‑order CPA.
+- Retire the loser; keep creating variants of the winner weekly.
+
+CEO one‑pager (pasteable)
+- One ad, one promise, one page.
+- The page keeps the ad’s promise in the first screen and gives one action.
+- Early proof beats long copy. Remove anything that makes the buyer think.
+- We’ll know it worked in a week from ATC rate and CPA.
+
+If you want, I’ll sketch the serum page wireframe we’d test first.
+
+Fieldwork Studio

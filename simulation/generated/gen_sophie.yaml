@@ -1,0 +1,173 @@
+name: gen_sophie
+starts_at: '2026-10-12T09:00:00Z'
+runs_for: P21D
+max_wakes: 200
+people:
+- key: sophie
+  name: Sophie Allen
+  email: sophie@holbeckroasters.example
+  profile: Co-founder/ops at Holbeck Roasters in Leeds. Juggles roasting schedule, two barista shifts a week, and all marketing.
+    Skims on her phone on the train; digs in on a 13" MacBook Air late evening. Practical, numbers-first, skeptical of shiny
+    agency decks, but open if you show working steps and payback.
+  facts:
+  - We roast seasonal single origins and a house espresso blend; launching a wholesale line for cafes/offices across West
+    Yorkshire with optional training and equipment.
+  - "TTM revenue ~\xA31.6m; 7 staff; wholesale needs to become 30% of revenue within 12 months."
+  - "Problem in my words: DMs, form fills, calls and a trade show spreadsheet feed Pipedrive, but UTMs break and I can\u2019\
+    t tell if Google Ads or Instagram are doing owt."
+  - "I can put \xA38k\u2013\xA312k into a 90\u2011day push if there\u2019s a clear path to sub\u2011\xA3250 CAC per wholesale\
+    \ account inside the quarter."
+  - "I\u2019d share my email for a concrete tracking plan or a 10\u2011minute Loom teardown of our wholesale funnel; won\u2019\
+    t for a newsletter or a generic discovery call."
+  - "Stack: Shopify for retail; wholesale enquiry form via a Shopify app that emails hello@; GA4 half\u2011set; Meta pixel\
+    \ only on checkout; lots of IG DMs."
+  - Their business's website is holbeckroasters.example; whenever asked for it they give exactly holbeckroasters.example.
+  working_hours:
+    timezone: Europe/London
+    opens: 08:00
+    closes: '22:00'
+  reply_within:
+    min: PT3H
+    max: P2D
+  reply:
+    kind: answers
+- key: newsroom
+  name: The trade press
+  email: newsroom@press.example
+  profile: Not a visitor. Reports what happens in marketing; never on the site and never writes to the agent.
+happenings:
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P2D
+  inputs:
+    fact: "On 2026-10-13, Google announced \u201CBuild your data strength\u201D updates: a new Data Strength Uplift metric\
+      \ is launching in Google Ads to show conversion gains from first\u2011party data, and Data Manager is expanding into\
+      \ Google Analytics and Display & Video 360 alongside broader first\u2011party data integrations."
+    source: https://blog.google/products/ads-commerce/demand-gen-drop-october-2026/
+    published: '2026-10-13'
+    topic: 'a change on a platform brands buy or build on: Meta, Google, TikTok, Pinterest, Shopify, Klaviyo'
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P5D
+  inputs:
+    fact: MediaPost reported on 2026-10-07 that, at Advertising Week New York, Meta unveiled an enhanced AI Business Assistant
+      and automated ad tools, including AI-enabled audience discovery and image-to-video generation in Advantage+ creative,
+      with in-chat checkout also highlighted in the rollout roadmap.
+    source: https://www.mediapost.com/publications/article/418580/meta-unveils-enhanced-ai-business-assistant-autom.html
+    published: '2026-10-07'
+    topic: 'a change on a platform brands buy or build on: Meta, Google, TikTok, Pinterest, Shopify, Klaviyo'
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P8D
+  inputs:
+    fact: Manchester Coffee Festival 2026 is scheduled for Friday 20 to Sunday 22 November 2026 at B.E.C. Arena, Trafford
+      Park, Manchester, per a UK coffee events guide published 2026-09-19.
+    source: https://roasterlist.co.uk/uk-coffee-festivals/
+    published: '2026-09-19'
+    topic: 'an event a brand''s founder or marketer could go to: a conference, meetup, workshop or webinar'
+- kind: uses
+  person: sophie
+  inbox: site
+  use: views
+  inputs:
+    page: /
+    title: Home
+  after: PT0S
+- kind: uses
+  person: sophie
+  inbox: site
+  use: picks
+  inputs:
+    page: /
+    question: biggest headache
+    answer: Can't tell what's working
+  gap:
+    min: PT3S
+    max: PT12S
+- kind: uses
+  person: sophie
+  inbox: site
+  use: reads
+  inputs:
+    page: /services
+    how: about one minute, scrolled ~70%
+  gap:
+    min: PT37S
+    max: PT150S
+- kind: uses
+  person: sophie
+  inbox: site
+  use: views
+  inputs:
+    page: /work
+    title: Work
+  gap:
+    min: PT6S
+    max: PT24S
+- kind: uses
+  person: sophie
+  inbox: site
+  use: picks
+  inputs:
+    page: /work
+    question: show me work for
+    answer: B2B
+  gap:
+    min: PT2S
+    max: PT8S
+- kind: uses
+  person: sophie
+  inbox: site
+  use: reads
+  inputs:
+    page: /work/ledgerly
+    how: about one and a half minutes, scrolled ~80%
+  gap:
+    min: PT47S
+    max: PT190S
+- kind: uses
+  person: sophie
+  inbox: site
+  use: reads
+  inputs:
+    page: /journal/when-the-numbers-disagree
+    how: about two minutes, scrolled ~90%
+  gap:
+    min: PT65S
+    max: PT260S
+- kind: uses
+  person: sophie
+  inbox: site
+  use: views
+  inputs:
+    page: /
+    title: Home
+  gap:
+    min: PT10S
+    max: PT40S
+- kind: uses
+  person: sophie
+  inbox: site
+  use: asks
+  inputs:
+    page: /
+    label: Roast my site
+    text: holbeckroasters.example
+  gap:
+    min: PT5S
+    max: PT20S
+- kind: uses
+  person: sophie
+  inbox: site
+  use: leaves
+  inputs:
+    page: /
+  gap:
+    min: PT1S
+    max: PT6S

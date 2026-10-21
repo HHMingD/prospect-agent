@@ -1,0 +1,144 @@
+To: Maya Rudd (Co-owner/GM of Fell View House, a 26-room family-run hotel near Ambleside. Splits days between front desk and supplier calls. Checks sites on an iPhone 13 while walking between rooms; laptop only after 9pm. Practical, polite, cost-aware, skeptical of agency fluff, wants numbers and fast tests.)
+Judge: 19/25 (specific 5, useful 4, voice 4, fits 3, reply 3) INVENTED 2
+Worst: It never delivers the three testable ad+landing ideas with an expected lift toward +10% direct share that Maya asked for, so it misses what matters most to her now.
+! Claims guests must scroll to find booking on the homepage (the page shows Arrive/Depart search in the hero)
+! States there is no persistent action on mobile view (no evidence provided from the given research)
+
+Subject: Maya — your annotated Fell View House teardown (9 fixes you can ship today)
+
+Hi Maya —
+
+You left “traffic but no sales,” read our note on why homepages leak sales, and introduced yourself. As promised, here’s the annotated teardown for Fell View House’s homepage and booking flow, written so you can ship changes today.
+
+High‑impact fixes first (above the fold)
+1) Put live availability + a price where eyes land first
+- What we see: “Wake up to fell views” hero, but guests must scroll to find booking, and “Book Now” lands on a rooms grid.
+- Why it leaks: every extra click is a chance to leave; our article shows homepages lose about half of paid traffic in the first five seconds.
+- Fix: in the hero, show Arrive/Depart, Guests, a prominent “Check availability” button, and display a next‑available price snippet inline (e.g., “Next available: Classic Double from £129 BB”). Keep availability on‑site as long as possible.
+
+2) Make your direct‑booking perks sticky
+- What you already have (great): “Book Direct & Save 10% • Flexible cancellation • Free parking • Dog‑friendly rooms • Breakfast cooked to order.”
+- Fix: turn these into a slim sticky bar under the header (mobile and desktop). They should travel with the guest through the first scroll and into search.
+
+3) Change the primary CTA and destination
+- What we see: “Book Now” in the nav sends to a rooms grid, then on to a portal.
+- Fix: change CTA to “Check availability” and anchor to the hero search block or an on‑page availability section, not the grid. If you must hand off to the portal, delay it until after dates/guests are set and a price is visible.
+
+Leaks to plug (quick wins)
+4) Hide the promo code field until checkout
+- What we see: “Promo code” visible in the search on Home and Rooms.
+- Why it leaks: non‑coupon guests feel they’re missing out and bounce.
+- Fix: replace with a small “Have a code?” link that reveals the field later (ideally at checkout).
+
+5) Remove the warning tone around the hand‑off
+- What we see: “You’ll be taken to our secure booking portal to complete checkout.”
+- Fix: replace with reassurance tied to value, not a warning. Example microcopy: “Instant availability and live rates. Best Rate Promise.”
+
+6) Fix the character encoding
+- What we see: prices and bullets render as “Â£” and “â€¢” (e.g., “From Â£129 BB,” “Call 015394 77777 â€¢ hello@…”; “2â€‘night minimum”).
+- Why it leaks: trust. It looks broken at the precise moment money is discussed.
+- Fix: ensure UTF‑8 is set server‑side and via <meta charset="utf-8"> so £ and bullets render correctly.
+
+7) Surface your Best Rate Promise earlier
+- What we see: “If you spot a lower public rate… we’ll match it” sits low on Rooms.
+- Fix: bring “Best Rate Promise” into the hero area and near the first price.
+
+8) Keep the 2‑night minimum near the calendar
+- What we see: “Rates change daily and some weekends require a 2‑night minimum.”
+- Fix: repeat this next to the date picker to reduce dead‑end searches.
+
+9) Mobile‑first: add a sticky “Check availability” bar
+- What we see: no persistent action on mobile view.
+- Fix: add a bottom sticky bar: “Arrive • Depart • Guests • Check availability,” with perks condensed above it.
+
+Copy you can paste this afternoon
+- Hero block
+  Headline: Wake up to fell views
+  Subhead: Book direct for 10% off, flexible cancellation and free parking.
+  CTA: Check availability
+  Support: Best Rate Promise • Instant availability and live rates
+
+- Sticky perks bar
+  10% off best rate • Flexible cancellation • Free parking • Dog‑friendly rooms • Breakfast cooked to order
+
+- Promo code treatment
+  Replace the field with: Have a code? (expands at checkout)
+
+Rooms page tweaks (keep them on‑site longer)
+- Show a live price preview next to each room card once dates are selected (e.g., “3 nights: £XXX BB”).
+- After dates are set, keep guests on /rooms long enough to compare rooms with prices before any portal hand‑off.
+- Repeat Best Rate Promise and the 2‑night minimum note within the availability block.
+
+What to change first (one‑week micro‑plan)
+Today (20 minutes)
+- Swap “Book Now” to “Check availability.”
+- Hide the promo code behind “Have a code?”
+- Remove “You’ll be taken to our secure booking portal…”; replace with “Instant availability and live rates. Best Rate Promise.”
+
+Mid‑week
+- Add the sticky perks bar and a sticky “Check availability” bar on mobile.
+
+By week’s end
+- Add a next‑available price snippet to the hero once dates are entered, and mirror it on the Rooms cards.
+
+Why this works
+- One ad, one promise, one page: you’re reading this in our journal now for a reason—homepages leak when they make people work for a price.
+- When Oatside Kitchen moved their ads from the homepage to offer pages, cost per first order dropped 38%. Different category, same principle: show the next step, then the price, then reduce surprises.
+
+Notes from your pages (so you know we looked)
+- Home: “You’ll be taken to our secure booking portal to complete checkout.”
+- Rooms: “Rates change daily and some weekends require a 2‑night minimum.” and “From Â£129 BB,” “Â£15 per stay.”
+- Perks: “Book Direct & Save 10% • Flexible cancellation • Free parking • Dog‑friendly rooms • Breakfast cooked to order.”
+
+If you do only one thing today, make “Check availability” the one promise and first action, then hide the promo code. Both are reversible and measurable within a week.
+
+Question for you: which of the nine fixes above feels shippable today at Fell View House?
+
+Fieldwork Studio
+
+==== Sent before (20/25 (specific 5, useful 4, voice 4, fits 3, reply 4))
+Subject: Fell View House: homepage + booking flow teardown (quick wins)
+
+Maya —
+
+Short version: your two biggest leaks are (1) no live availability/price in the first screen, and (2) a warning about leaving to a portal. Both make people hesitate before they ever see a room.
+
+What to change first (top to bottom)
+
+1) Hero = live booking, not brochure
+- Put Arrive, Depart, Guests and a bold “Check availability” in the hero on desktop and mobile.
+- Show a price immediately: “From £… for your dates” or, if full, “Next available … from £…”. Seeing a concrete price keeps people moving.
+- Under the button, keep your three direct-booking perks in a single sticky row: “10% off · Flexible cancellation · Free parking”. That row should follow the user as they scroll on mobile.
+- Keep a secondary link: “See rooms”. Primary action is always availability.
+
+2) Stop warning about the portal; reassure instead
+- Replace “You’ll be taken to our secure booking portal…” with a small lock icon + “Secure checkout”. Warnings look like exits.
+- If your booking engine must be off-site, delay any redirect until after dates are chosen and a room type is visible. The decision point should happen on your domain.
+
+3) Make prices feel real for the visitor
+- On Rooms, swap the static “From £129 BB” labels for dynamic prices for the selected dates. If dates aren’t chosen yet, pull a real “from” for the next 30 days or prompt to pick dates.
+- When a date is unavailable, offer the nearest available dates inline with a one-tap option to switch.
+
+4) Hide the promo code until it’s asked for
+- Move the promo code into a collapsed “Have a promo code?” link that expands the field. Visible empty code boxes make non‑code guests go hunting (and often leave).
+
+5) Fix the currency symbols (trust leak)
+- I’m seeing “Â£” instead of “£” in several places. Ensure the site declares UTF‑8 in the <head> and via the server header, and avoid double‑encoding £ in templates.
+
+6) Mobile-first friction removers
+- Add a sticky bottom bar on mobile: “Check availability” that jumps to (or opens) the date picker.
+- Keep the phone number tap‑to‑call, but reduce its visual weight vs. the booking action.
+
+Copy you can lift
+- Hero header: “Wake up to fell views.”
+- Sub: “Book direct for 10% off, flexible cancellation and free parking.”
+- CTA: “Check availability”  |  Secondary: “See rooms”
+- Trust note near the CTA: “Secure checkout”.
+
+How to tell it’s working (no ad platform needed)
+- Track: views of the hero availability module, availability searches started, room selection, checkout start (redirect), and booking complete (if your engine can ping back).
+- Success is an increase in “search started → room selected” and “room selected → checkout start”. Baseline these this week, then compare after the hero change.
+
+If you do one thing this week: move a live availability + price block into the first screen and make your perks sticky on mobile. That alone will lift intent without redesigning the site.
+
+Fieldwork Studio

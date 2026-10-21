@@ -1,0 +1,97 @@
+To: Ruth Patel (Owner-operator of Three Oaks Books (3 indie bookshops in Devon). Juggles shop floor and ops; reads the web on her phone between customers, laptop after close. Pragmatic, deadline-driven, skeptical of agency fluff, cares about cashflow and delivery cut-offs.)
+Judge: 23/25 (specific 5, useful 5, voice 5, fits 4, reply 4) INVENTED 1
+Worst: It doesn’t offer the concrete 48‑hour video teardown of the homepage/Christmas page + checkout Ruth wants as proof before engaging, so it may not clear her bar.
+! Saying these specific offers are “already selling” without evidence
+
+Subject: Ruth — a one‑week landing sprint for Three Oaks’ Christmas offers (Canvas or Typeform)
+
+Hi Ruth —
+
+Thanks for introducing yourself just now.
+
+Your shop has what people want before Christmas (signed editions, gift bundles, Click & Collect, local delivery), but every route to buy currently runs through catalogue pages and a multi‑step checkout. When ad traffic or email clicks land on broad listings, a lot leaks. One ad, one promise, one page converts better.
+
+A fast way to prove it this week
+
+- Pick one or two single offers already selling: Cosy Crime Gift Bundle (£29), Kids’ Christmas Box (from £15), or Winter Tales (Signed) (£18.99).
+- Build one single‑offer page per pick using either:
+  - Shopify Canvas (new in Oct): prompt‑based page build and quick redesigns without a developer.
+  - Typeform AI Landing Pages (launched this month): generate branded, high‑conversion pages from a prompt with built‑in forms, payments, and instant analytics.
+- Put the delivery promise and Click & Collect in the first screen. UK footfall is down 2.9% YoY (Sept), so the click has to carry the sale.
+- Drive one source per page (one Meta ad set or one email block). Measure page, not site.
+
+Copy you can paste this afternoon
+
+Cosy Crime Gift Bundle — single‑offer page
+- Headline: Cosy Crime Gift Bundle
+- Subhead: A hand‑picked winter mystery bundle from Three Oaks Books. £29.00
+- Options: Choose format: Paperback / Hardback
+- Delivery promise (first screen):
+  - Click & Collect: choose your store at checkout; usually ready in 2 hours. We’ll email when it’s ready.
+  - Delivery: Royal Mail 48 £2.99 | 24 £4.99. Order by Mon 18 Dec (Standard) or Thu 21 Dec (Express).
+  - Free local delivery over £30 within 3 miles.
+- Extras: Gift wrap available at checkout (+£3)
+- CTA: Add to basket
+- FAQs:
+  - Can you gift wrap? Yes — add gift wrap (+£3) at checkout.
+  - When is Click & Collect ready? Usually within 2 hours; we’ll email when it’s ready.
+  - Stock: Online shows central stock; store stock may vary.
+
+Kids’ Christmas Box — single‑offer page
+- Headline: Kids’ Christmas Box
+- Subhead: Age‑perfect picks for festive reading. From £15.00
+- Options: Choose age: 3–5 / 6–8 / 9–12
+- Delivery promise (first screen): same as above
+- Extras: Gift wrap available at checkout (+£3)
+- CTA: Add to basket
+- FAQs: same set as above
+
+Winter Tales (Signed) — single‑offer page
+- Headline: Winter Tales (Signed)
+- Subhead: Limited signed copies from local and national authors. £18.99 — while stocks last
+- Delivery promise / Extras / CTA / FAQs: same pattern as above
+
+How to run it in one week
+- Today: pick the offer(s) and write one promise each (e.g., “Signed winter stories, wrapped and ready for Click & Collect”).
+- Tue: generate the page in Canvas (if you’re on Shopify) or Typeform AI Landing Pages. Keep it single‑purpose: headline, price/options, delivery promise, CTA, FAQs.
+- Wed–Thu: send one email block to your list and/or one Meta ad set per page. If you’re on Meta, their new GEM model (Oct ‘26) optimises creative across Feed/Reels/Stories and reports up to 18.9% more conversions and 12% higher CTR — useful when you only need one page to win.
+- Fri: add a simple QR by the till and in the window that points to the page most relevant for walk‑bys (Kids’ Box for daytime; Cosy Crime for evenings).
+- Weekend: read the page’s instant analytics (Typeform) or UTM’d sessions (Canvas/GA). Keep the winner; kill the weaker one; double email exposure next week.
+
+Two timely things worth your calendar
+- IMK London — Oct 28 (Central London): a half‑day of influencer marketing workshops/panels. If you run creator gift guides or local author reels, this is the one to mine for practical tactics.
+- AI in Ecommerce Day — Nov 13 (Manchester + virtual): focused on real‑world AI in e‑commerce; useful for landing‑page, analytics and campaign workflows.
+
+Why this is likely to pay back quickly
+- Homepages/listings speak to everyone; single‑offer pages keep the ad’s promise in the first screen with one action to take. In our work, the plainest offer page we almost scrapped for Oatside Kitchen beat the fancy ones and cut cost‑per‑first‑order by 38%.
+- You already have clear, confidence‑building details customers care about (Click & Collect usually ready in 2 hours; Christmas cut‑offs; local delivery; gift wrap). Put those above the fold.
+
+A 10‑second decision I’m asking you to make today
+Which single offer gets its own page first?
+- Reply with: “Cosy Crime”, “Kids’ Box”, or “Winter Tales”.
+
+If this is relevant, feel free to forward it to the person owning Christmas across stores — the copy blocks and sequence above are ready to use.
+
+Fieldwork Studio
+
+==== Sent before (21/25 (specific 5, useful 4, voice 4, fits 4, reply 4) PROMISES 1)
+Subject: Three Oaks: one gift page to cut the scroll
+
+Ruth —
+
+Your Christmas traffic currently lands on product listings; undecided gift buyers have to sort and filter before they can act.
+
+Build one page this week for Signed First Editions:
+- Headline: “Signed first editions, in time for Christmas.”
+- Beneath: “Order by Mon 18 Dec (Standard) or Thu 21 Dec (Express). Click & Collect usually ready in 2 hours.”
+- Three featured picks only (no grid), each with Add to Basket.
+- One info block: Royal Mail 48 £2.99 | 24 £4.99; gift wrap +£3; returns.
+- Two buttons repeated: “Reserve for Click & Collect” and “Buy for delivery.”
+
+Use it:
+- Point any signed‑book ads and your next email to this page only.
+- After three days, compare checkout starts and purchases from this page vs your Signed category; keep the winner.
+
+If you want, I’ll send paste‑ready copy blocks for this and for Cosy Crime and Kids’ Christmas Box.
+
+Fieldwork Studio

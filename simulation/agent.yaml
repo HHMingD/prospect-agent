@@ -1,0 +1,290 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Alknoma/minutehand/integration-main/schemas/agent.schema.json
+# The studio's site agent under Minutehand. Every way the agent is reached, and every way it reaches out:
+#   in   site touches (/api/events)        scripted navigation: `uses` below
+#   in   what they write (/api/thread/*)   `uses` (writes, asks) and `decisions` (reply, open, dismiss)
+#   in   reactions to what it shows        `pending` + `decisions`: a model playing the visitor picks and words them
+#   in   email replies (/inbound/email)    the mail host's `replies`: the visitor's answers, written by a model
+#   in   unsubscribe link                  `uses: unsubscribes`
+#   in   its own wakes (/wake, /report)    `wakes`
+#   out  messages in the chat             `/api/shown`, read as the visitor's inbox
+#   out  emails                            mail.fieldwork.example: captured, never sent
+#   out  hand-over to the studio's CRM     crm.fieldwork.example: captured, never sent
+#   out  research                          the model API (recorded); pages it reads: passed through and kept
+#                                          (--capture-unknown reads); Apollo: passed through when a key is set
+# From prospect-agent/, with OPENAI_API_KEY, MINUTEHAND_MODEL and MINUTEHAND_MODEL_API_KEY set, every visitor of
+# visits/ in parallel, each under N seeds (`--samples`), each run on a port and database of its own:
+#   minutehand run-all simulation/visits --agent simulation/agent.yaml --samples 3 --capture-unknown reads -- \
+#     env PORT={run.port} AGENT_DB={run.dir}/agent.db MAIL_URL=https://mail.fieldwork.example/send \
+#     CRM_URL=https://crm.fieldwork.example/leads uv run python -m agent.server
+version: 1
+name: studio_site_agent
+
+wakes:
+  - kind: reported
+    wake_url: http://127.0.0.1:{run.port}/wake
+    report_url: http://127.0.0.1:{run.port}/report
+    wake_timeout: PT10M
+
+outbound:
+  - host: mail.fieldwork.example
+    name: mail
+    kind: acknowledge
+    answer: {status: 200, json_body: {ok: true}}
+    message:
+      recipients: [to]
+      text: [text]
+      subject: [subject]
+    replies:
+      url: http://127.0.0.1:{run.port}/inbound/email
+  - host: crm.fieldwork.example
+    name: crm
+    kind: acknowledge
+    answer: {status: 201, json_body: {ok: true}}
+  - host: api.apollo.io
+    name: apollo
+    kind: pass_through
+  - host: api.perplexity.ai
+    name: perplexity
+    kind: pass_through
+  - host: api.scraperapi.com
+    name: scraperapi
+    kind: pass_through
+  # The visitors' own businesses: each site as its owner runs it, served inside the run (simulation/sites/).
+  - host: emberandwick.example
+    name: site_emberandwick
+    kind: acknowledge
+    answer:
+      status: 200
+      headers: {content-type: text/html; charset=utf-8}
+      text: |-
+        <!doctype html><html><head><title>Ember &amp; Wick | Hand-poured soy candles</title><meta name="description" content="Hand-poured soy candles and reed diffusers, made in Leeds."></head><body>
+        <header><nav><a href="/shop">Shop all</a> <a href="/diffusers">Diffusers</a> <a href="/story">Our story</a> <a href="/basket">Basket (0)</a></nav></header>
+        <div class="banner">Free UK delivery over £40</div>
+        <h1>The Summer Citrus Collection</h1><p>Light, bright scents for long evenings: Lemon Verbena, Grapefruit &amp; Basil, Sea Salt Lime.</p><a href="/shop/summer">Shop the collection</a>
+        <h2>Bestsellers</h2>
+        <ul><li>Fig &amp; Cedar, 220g, £28</li><li>Smoked Amber, 220g, £28</li><li>Lemon Verbena, 220g, £24</li><li>Wild Fig Diffuser, 100ml, £32</li><li>Sea Salt Lime, 220g, £24</li><li>Tobacco &amp; Oud, 300g, £38</li></ul>
+        <a href="/shop">See all 64 products</a>
+        <h2>Why soy?</h2><p>Cleaner burn, longer life: up to 50 hours from every 220g candle. Hand-poured in small batches in our Leeds studio.</p>
+        <p>★ 4.8 from 1,240 reviews</p>
+        <footer>Instagram @emberandwick · Wholesale · Contact</footer></body></html>
+  - host: ostrogroup.example
+    name: site_ostrogroup
+    kind: acknowledge
+    answer:
+      status: 200
+      headers: {content-type: text/html; charset=utf-8}
+      text: |-
+        <!doctype html><html><head><title>Ostro | Italian kitchens in Manchester</title><meta name="description" content="Four neighbourhood Italian restaurants in Manchester."></head><body>
+        <header><nav><a href="/menus">Menus</a> <a href="/locations">Our restaurants</a> <a href="/about">About</a> <a href="/book">Book a table</a></nav></header>
+        <div class="hero-video">(autoplaying video of pasta being made, 14MB)</div>
+        <h1>Pasta, made every morning. Four kitchens across Manchester.</h1>
+        <h2>Our restaurants</h2><ul><li>Ancoats</li><li>Didsbury</li><li>Chorlton</li><li>Northern Quarter</li></ul>
+        <h2>From our kitchen</h2><p>Instagram: 18.2k followers. Our cacio e pepe was named one of Manchester's best bowls of pasta in 2025.</p>
+        <h2>Gift vouchers</h2><p>Give the gift of pasta. From £25.</p>
+        <p><small>Christmas parties 2026: now taking enquiries. <a href="/book">Enquire here</a></small></p>
+        <footer>© Ostro Group Ltd</footer></body></html>
+    routes:
+      - path: "/book*"
+        answer:
+          status: 200
+          headers: {content-type: text/html; charset=utf-8}
+          text: |-
+            <!doctype html><html><head><title>Book | Ostro</title></head><body>
+            <h1>Booking enquiry</h1><p>Fill in the form and our team will confirm your booking by email within 48 hours.</p>
+            <form>Full name* · Email* · Phone* · Restaurant* (Ancoats / Didsbury / Chorlton / Northern Quarter) · Date* · Time* · Number of guests* · Occasion · Dietary requirements · How did you hear about us? · Sign me up to the newsletter [ ] <button>Send enquiry</button></form>
+            <p>Parties of 8 or more: please call the restaurant.</p></body></html>
+  - host: quillstack.example
+    name: site_quillstack
+    kind: acknowledge
+    answer:
+      status: 200
+      headers: {content-type: text/html; charset=utf-8}
+      text: |-
+        <!doctype html><html><head><title>Quillstack | Invoicing, reimagined</title><meta name="description" content="The modern invoicing platform for modern firms."></head><body>
+        <header><nav><a href="/product">Product</a> <a href="/pricing">Pricing</a> <a href="/blog">Blog</a> <a href="/login">Log in</a> <a href="/signup">Start free trial</a></nav></header>
+        <h1>Invoicing, reimagined.</h1><p>The modern platform for modern firms. Automate, integrate, accelerate.</p><a href="/signup">Start your free trial</a>
+        <h2>Everything you need</h2><ul><li>Recurring invoices</li><li>Client portal</li><li>Xero and QuickBooks sync</li><li>Payment reminders</li><li>Multi-currency</li><li>Open API</li></ul>
+        <p>Trusted by 300+ practices.</p>
+        <h2>Pricing</h2><p>From £29 per user per month.</p>
+        <footer>Book a demo · Careers · Security · © Quillstack Ltd</footer></body></html>
+    routes:
+      - path: "/demo*"
+        answer:
+          status: 200
+          headers: {content-type: text/html; charset=utf-8}
+          text: |-
+            <!doctype html><html><head><title>Book a demo | Quillstack</title></head><body>
+            <h1>See Quillstack in action</h1>
+            <form>First name · Last name · Work email · Phone · Company · Job title · Number of employees · Current invoicing tool · Monthly invoice volume · How did you hear about us? <button>Request demo</button></form>
+            <p>A member of our sales team will be in touch within 2 working days.</p></body></html>
+  - host: brightdermis.example
+    name: site_brightdermis
+    kind: acknowledge
+    answer:
+      status: 200
+      headers: {content-type: text/html; charset=utf-8}
+      text: |-
+        <!doctype html><html><head><title>Bright Dermis | Clinical skincare, made in London</title><meta name="description" content="Clinical-strength serums and moisturisers."></head><body>
+        <div class="popup">15% off your first order. Sign up.</div>
+        <header><nav><a href="/shop">Shop</a> <a href="/science">The science</a> <a href="/reviews">Reviews</a> <a href="/basket">Basket</a></nav></header>
+        <h1>Science you can see.</h1><p>Clinical-strength actives, developed with a consultant dermatologist.</p><a href="/shop">Shop now</a>
+        <h2>The range</h2><ul><li>Niacinamide 10% Serum, 30ml, £34</li><li>Vitamin C 15% Serum, 30ml, £38</li><li>Peptide Barrier Moisturiser, 50ml, £42</li></ul>
+        <p>★ 4.6 from 380 reviews</p>
+        <p>Delivery in 3 to 5 working days. Free over £50.</p>
+        <footer>Instagram @brightdermis · Stockists · Contact</footer></body></html>
+
+inboxes:
+  - name: world
+    kind: http
+    uses:
+      - name: publishes
+        description: The trade press reports something that happened in marketing (a real article)
+        request:
+          kind: template
+          method: POST
+          url: http://127.0.0.1:{run.port}/api/world
+          body: {fact: "{input.fact}", source: "{input.source}", published: "{input.published}", topic: "{input.topic}"}
+        inputs:
+          - {name: fact, description: "What happened, as the article says it"}
+          - {name: source, description: The article's link}
+          - {name: published, description: "Its date, YYYY-MM-DD"}
+          - {name: topic, description: "One of: an event..., a change on a platform..., go-to-market news... (the desk's Topic value)"}
+  - name: site
+    kind: http
+    within: {min: PT5S, max: PT40S}
+    leaning: >-
+      A visitor sees the agent's message pop up over the page while browsing, glances at it for a few seconds, and
+      mostly ignores it or deletes it. They open the chat to read it only when it says something about their own
+      problem, write back when they have something to say, and leave their email in the form under an offer only for
+      something specific they want.
+    pending:
+      request: {kind: template, url: "http://127.0.0.1:{run.port}/api/shown?v={person.key}"}
+      items: "$.items[*]"
+      id: "$.id"
+      summary: "$.summary"
+      decisions: "$.decisions"
+    decisions:
+      - name: open
+        reads: opened the chat and read it
+        description: Opens the chat on the message and reads it, without writing anything
+        request:
+          kind: template
+          method: POST
+          url: http://127.0.0.1:{run.port}/api/thread/read
+          body: {visitor: "{person.key}", through: "{item.id}"}
+      - name: dismiss
+        reads: deleted it
+        description: Deletes the message's pop-up with its ×
+        request:
+          kind: template
+          method: POST
+          url: http://127.0.0.1:{run.port}/api/thread/dismiss
+          body: {visitor: "{person.key}", id: "{item.id}", at: "{clock.now}"}
+      - name: reply
+        reads: wrote back
+        description: Opens the chat and writes to the agent
+        request:
+          kind: template
+          method: POST
+          url: http://127.0.0.1:{run.port}/api/thread/send
+          body: {visitor: "{person.key}", text: "{input.text}", at: "{clock.now}"}
+        inputs: [{name: text, description: What they write}]
+      - name: introduce
+        reads: left their name and email
+        description: Fills in the form in the chat, under the remark that offered it, with their name, work email and website
+        request:
+          kind: template
+          method: POST
+          url: http://127.0.0.1:{run.port}/api/events
+          body:
+            visitor: "{person.key}"
+            name: "{input.name}"
+            email: "{input.email}"
+            website: "{input.website}"
+            touch: {kind: identify, at: "{clock.now}", label: introduced themselves}
+        inputs:
+          - {name: name, description: Their name}
+          - {name: email, description: Their work email}
+          - {name: website, description: Their business's website, required: false}
+    uses:
+      - name: views
+        description: Opens a page of the site
+        request:
+          kind: template
+          method: POST
+          url: http://127.0.0.1:{run.port}/api/events
+          body: {visitor: "{person.key}", touch: {kind: view, at: "{clock.now}", page: "{input.page}", title: "{input.title}"}}
+        inputs:
+          - {name: page, description: The page's path}
+          - {name: title, description: The page's title, required: false}
+      - name: reads
+        description: Leaves a page, having stayed and scrolled so far
+        request:
+          kind: template
+          method: POST
+          url: http://127.0.0.1:{run.port}/api/events
+          body: {visitor: "{person.key}", touch: {kind: read, at: "{clock.now}", page: "{input.page}", label: "{input.how}"}}
+        inputs:
+          - {name: page, description: The page's path}
+          - {name: how, description: How long they stayed and how far they scrolled}
+      - name: clicks
+        description: Touches something on a page (an image, a link, the pricing toggle)
+        request:
+          kind: template
+          method: POST
+          url: http://127.0.0.1:{run.port}/api/events
+          body: {visitor: "{person.key}", touch: {kind: click, at: "{clock.now}", page: "{input.page}", label: "{input.label}"}}
+        inputs:
+          - {name: page, description: The page's path}
+          - {name: label, description: What they touched}
+      - name: lingers
+        description: Stays on one thing on a page (an image, a result) for a few seconds
+        request:
+          kind: template
+          method: POST
+          url: http://127.0.0.1:{run.port}/api/events
+          body: {visitor: "{person.key}", touch: {kind: linger, at: "{clock.now}", page: "{input.page}", label: "{input.label}"}}
+        inputs:
+          - {name: page, description: The page's path}
+          - {name: label, description: What they stayed on}
+      - name: picks
+        description: Answers one of the page's own questions (a headache chip, "show me work for", the pricing toggle)
+        request:
+          kind: template
+          method: POST
+          url: http://127.0.0.1:{run.port}/api/events
+          body: {visitor: "{person.key}", touch: {kind: signal, at: "{clock.now}", page: "{input.page}", label: "{input.question}", text: "{input.answer}"}}
+        inputs:
+          - {name: page, description: The page's path}
+          - {name: question, description: The page's question}
+          - {name: answer, description: What they picked}
+      - name: asks
+        description: Asks the agent for something through the page (Roast my site)
+        request:
+          kind: template
+          method: POST
+          url: http://127.0.0.1:{run.port}/api/thread/send
+          body: {visitor: "{person.key}", website: "{input.text}", asked_through: "{input.label}", text: "{input.text}", at: "{clock.now}"}
+        inputs:
+          - {name: page, description: The page's path}
+          - {name: label, description: What the page calls the request}
+          - {name: text, description: What they typed}
+      - name: writes
+        description: Writes to the agent in the chat
+        request:
+          kind: template
+          method: POST
+          url: http://127.0.0.1:{run.port}/api/thread/send
+          body: {visitor: "{person.key}", text: "{input.text}", at: "{clock.now}"}
+        inputs: [{name: text, description: What they write}]
+      - name: unsubscribes
+        description: Clicks the unsubscribe link at the foot of one of the agent's emails
+        request: {kind: template, url: "http://127.0.0.1:{run.port}/api/unsubscribe?v={person.key}"}
+      - name: leaves
+        description: Moves the pointer to the tab bar, about to leave
+        request:
+          kind: template
+          method: POST
+          url: http://127.0.0.1:{run.port}/api/events
+          body: {visitor: "{person.key}", touch: {kind: leaving, at: "{clock.now}", page: "{input.page}", label: pointer to the tab bar}}
+        inputs: [{name: page, description: The page's path}]

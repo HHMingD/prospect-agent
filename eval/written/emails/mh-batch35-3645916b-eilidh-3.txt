@@ -1,0 +1,127 @@
+To: Eilidh MacLeod (Founder of Heather & Pine, a two-product skincare microbrand in Glasgow. Solo operator most days; sister helps on weekends. Reads on iPhone first while on the bus or in the workshop; opens laptop late evening for decisions. Pragmatic, frugal, a bit sceptical of agencies but open if shown specifics and quick tests.)
+Judge: 25/25 (specific 5, useful 5, voice 5, fits 5, reply 5) PROMISES 1
+Worst: It assumes Shopify Canvas may be available to her without flagging its phased rollout, which could be a speed bump if she can’t access it yet.
+! Offer to send a one‑pager of Klaviyo Composer prompts if Eilidh wants them.
+
+Subject: Heather & Pine — Cleanse + Glow mini‑set mobile wireframe (AOV + Christmas‑ready)
+
+Eilidh —
+
+Here’s the Cleanse + Glow mini‑set wireframe, mobile‑first and built to lift AOV for the Christmas push. It mirrors your serum lander flow (hook, proof chip, sticky ATC), keeps the 30ml default, and removes everything that slows a TikTok buyer.
+
+Cleanse + Glow mini‑set (Oat Cleansing Bar + Sea Buckthorn Glow Serum) — mobile wireframe
+
+Above the fold
+- H1 (hook): Cleanse + Glow in 2 steps
+- Sub: Oat Cleansing Bar + Sea Buckthorn Glow Serum (fragrance‑free). Hand‑poured in Glasgow.
+- Product shot: both items together (no lifestyle embed here; keep it fast)
+- Price target: £40–£42 to clear free UK delivery over £40
+- Primary CTA: Add Cleanse + Glow to cart
+- Wallets: Apple Pay and PayPal beneath the primary CTA, styled secondary
+- Proof chip: Seen by 2.3M on TikTok
+- Dispatch chip (right by CTA): Royal Mail 48 • Dispatch Mon/Wed/Fri
+- Sticky add‑to‑cart bar appears after the first screen
+
+First scroll
+- What’s inside: Oat Cleansing Bar; Sea Buckthorn Glow Serum 30ml (hide the 15ml entirely while OOS)
+- Benefits scan‑lines: Simple 2‑step routine • Brightening oil‑serum • No added fragrance
+- How to use: 1) Cleanse with the Oat Cleansing Bar. 2) Press 2–3 drops of serum into damp skin, morning or night.
+- Ingredients line (serum only): Sea buckthorn, squalane, vitamin E
+
+Social proof
+- If you have a creator credit or single UGC quote, place it here; otherwise keep the TikTok reach chip near the CTA
+- Hide the empty Reviews module on this page
+
+FAQ (accordion)
+- Sensitive skin? • With retinol? • Shipping & returns
+
+Speed and friction cuts
+- Remove postcode shipping estimator and any Instagram embeds from this lander
+- Keep sections collapsible; ensure image compression and mobile first paint are tight
+
+Christmas notes
+- Add a seasonal line near the CTA: Order by [date] for Christmas delivery (Royal Mail 48)
+- If you do a gift note option, keep it as a single checkbox below the CTA (not a separate step)
+
+Paste‑ready copy (drop this into the build today)
+- H1: Cleanse + Glow in 2 steps
+- Sub: Oat Cleansing Bar + Sea Buckthorn Glow Serum (fragrance‑free). Hand‑poured in Glasgow.
+- CTA: Add Cleanse + Glow to cart
+- Proof chip: Seen by 2.3M on TikTok
+- Dispatch chip: Royal Mail 48 • Dispatch Mon/Wed/Fri
+- Scan‑lines: Simple 2‑step routine • Brightening oil‑serum • No added fragrance
+- How to use: Cleanse. Then press 2–3 drops of serum into damp skin, morning or night.
+- Ingredients line: Sea buckthorn, squalane, vitamin E
+- Price note: Set priced at £40+. Free UK delivery over £40.
+
+Measurement, 7‑day read
+- Split TikTok bio/link traffic 50/50 between: a) the Cleanse + Glow set page above, b) your serum offer page
+- Watch: add‑to‑cart rate, checkout starts, AOV, first‑order CPA
+- Retire the loser; spin weekly variants of the winner (headline, first image, proof chip placement)
+
+Build notes
+- Keep the serum variant fixed to 30ml on the set page; the 15ml stays hidden/not selectable while OOS
+- Put dispatch timing beside the primary CTA; keep Apple Pay/PayPal visible but visually secondary
+- If you’re using Shopify’s new Canvas, this is a straightforward conversational build: “Create a mobile‑first landing page for a two‑product mini‑set (Oat Cleansing Bar + Sea Buckthorn Glow Serum 30ml). H1 ‘Cleanse + Glow in 2 steps’. Subline ‘Fragrance‑free serum. Hand‑poured in Glasgow.’ Add proof chip ‘Seen by 2.3M on TikTok’. Place ‘Royal Mail 48 • Dispatch Mon/Wed/Fri’ beside the CTA. Sticky ATC after first screen. Hide reviews and shipping estimator.”
+- The structure matches how Pinterest’s new Beauty Guides move people from inspiration to action: problem → why → how → proof → buy
+
+CEO snapshot (forwardable)
+- One set, one page, one action
+- First screen repeats the promise and shows the wallets; proof and dispatch sit by the button
+- We judge success in a week on ATC rate, AOV, and first‑order CPA
+
+If you want the same treatment as prompts for Klaviyo Composer (welcome, recovery, proof nudge) to anchor this A/B, say the word and I’ll send the one‑pager.
+
+Fieldwork Studio
+
+==== Sent before (24/25 (specific 5, useful 4, voice 5, fits 5, reply 5))
+Subject: Heather & Pine — Cleanse + Glow mini‑set wireframe (mobile‑first)
+
+Eilidh —
+
+Here’s the mobile‑first wireframe for a “Cleanse + Glow” mini‑set (Oat Cleansing Bar + Sea Buckthorn Glow Serum). Built to lift AOV and move fast into Christmas.
+
+Above the fold
+- H1: Cleanse + Glow mini‑set
+- Sub: Simple 2‑step routine. Fragrance‑free serum.
+- Hero: both products together (no lifestyle).
+- Price note: your site offers free UK delivery over £40 — price the set to clear that.
+- Primary CTA: Add set to cart (adds Bar + Serum 30ml).
+- Options: default to 30ml; keep 15ml behind “Notify me” while it’s OOS (“Back in 2 weeks” on your PDP).
+- Beside CTA: “Royal Mail 48 • Dispatch Mon/Wed/Fri.”
+- Proof chip: “Seen by 2.3M on TikTok.”
+- Wallets: Apple Pay / PayPal beneath, styled secondary.
+- Sticky Add to cart appears after the hero.
+
+First scroll (convince fast)
+- What’s inside:
+  • Oat Cleansing Bar — the 1‑minute cleanse.
+  • Sea Buckthorn Glow Serum 30ml — brightening oil‑serum with sea buckthorn, squalane, vitamin E. No fragrance.
+- Why it works (scan‑lines): Cleanse → seal in glow • Fragrance‑free • Hand‑poured in Glasgow.
+- How to use: 1) Cleanse; 2) Press 2–3 drops; morning or night.
+
+Proof
+- Reviews or one UGC pull‑quote/creator credit. If none, keep the TikTok reach chip near the CTA and hide the empty Reviews block on this page.
+
+Gifting (Q4)
+- “Gift‑ready” microcopy (keep it simple). If you support gift notes, link it here; otherwise omit.
+- Order‑by note near the CTA: “Order by [date] for Christmas delivery.”
+
+FAQ (accordion)
+- Sensitive skin? • With retinol? • Shipping & returns • Gifting.
+
+Speed / hygiene
+- Remove postcode shipping estimator here; compress images; avoid embeds; keep the page one promise, one action.
+
+Build notes (Shopify)
+- Create a single “mini‑set” product that, on Add to cart, adds both SKUs to cart with Serum = 30ml by default.
+- Hide 15ml on the set page while OOS.
+- Ensure the sticky bar mirrors the main CTA + delivery line; keep wallets secondary on mobile.
+
+Measurement (one‑week read)
+- Run TikTok set traffic 50/50 to: a) this set lander, b) the serum lander with a simple in‑page upsell to the set.
+- Track: add‑to‑cart rate, checkout starts, AOV, first‑order CPA. Retire the loser; iterate variants of the winner weekly.
+
+If useful next, I can send paste‑ready copy blocks for each section and a tight dev checklist so this ships in a day. If you have access to Shopify’s new Canvas, it can speed iteration on the layout (it’s rolling out in phases and desktop‑only right now); otherwise a standard Shopify product/landing template works fine.
+
+Fieldwork Studio

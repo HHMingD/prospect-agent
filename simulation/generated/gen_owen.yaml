@@ -1,0 +1,184 @@
+name: gen_owen
+starts_at: '2026-10-12T09:00:00Z'
+runs_for: P21D
+max_wakes: 200
+people:
+- key: owen
+  name: owen
+  email: owen@harbourandhearth.example
+  profile: Ecommerce Manager at Harbour & Hearth, a Bristol-made furniture brand. Works from a 13" MacBook Pro with two noisy
+    Slack channels open; checks things on an iPhone 13 on the train. Pragmatic, cost-conscious, allergic to fluff, wants dates
+    and numbers. Not precious about creative but wary of agency slideware.
+  facts:
+  - "We sell modular sofas and solid-oak dining tables; AOV ~\xA31,100; last FY revenue \xA39.8m."
+  - Black Friday is our biggest week; our new /black-friday page is bouncing on mobile and Meta ROAS slid from 3.1 to 1.9
+    in 60 days.
+  - "Our dev agency is booked until Jan; I need landing pages shipped in 2\u20133 weeks without touching the main Shopify\
+    \ theme; must play nice with Klaviyo + Meta CAPI."
+  - "I can sign off up to \xA330k for a 90\u2011day sprint if I believe we\u2019ll be live before Black Friday and can test\
+    \ 3\u20134 angles."
+  - "I would trade my email for a recorded teardown + wireframe of our Black Friday page with a test plan and uplift hypothesis;\
+    \ I won\u2019t for newsletters/ebooks or a \u2018discovery call\u2019."
+  - "We\u2019re not replacing our retained media agency before Christmas; I need project help on creative/LPs and clear measurement."
+  - Their business's website is harbourandhearth.example; whenever asked for it they give exactly harbourandhearth.example.
+  working_hours:
+    timezone: Europe/London
+    opens: 08:00
+    closes: '22:00'
+  reply_within:
+    min: PT3H
+    max: P2D
+  reply:
+    kind: answers
+- key: newsroom
+  name: The trade press
+  email: newsroom@press.example
+  profile: Not a visitor. Reports what happens in marketing; never on the site and never writes to the agent.
+happenings:
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P2D
+  inputs:
+    fact: "Search Engine Journal (Oct 6) notes Meta\u2019s Advantage+ Shopping \u201CExisting Customer Budget Cap\u201D is\
+      \ no longer available per Meta\u2019s Help Center, advising advertisers to use explicit custom\u2011audience exclusions\
+      \ or separate prospecting vs. existing\u2011customer ad sets in Advantage+ Sales; it also confirms Black Friday is November\
+      \ 27, 2026."
+    source: https://www.searchenginejournal.com/how-to-structure-a-full-funnel-ecommerce-account-for-q4/589145/
+    published: '2026-10-06'
+    topic: 'a change on a platform brands buy or build on: Meta, Google, TikTok, Pinterest, Shopify, Klaviyo'
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P5D
+  inputs:
+    fact: "On Oct 1, Shopify announced \u201CCanvas,\u201D a new AI\u2011assisted design surface rolling out over the coming\
+      \ days that lets merchants view and edit the entire storefront with Sidekick, previewing and collaborating on page designs\
+      \ more fluidly."
+    source: https://www.shopify.com/news/introducing-canvas
+    published: '2026-10-01'
+    topic: 'a change on a platform brands buy or build on: Meta, Google, TikTok, Pinterest, Shopify, Klaviyo'
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P8D
+  inputs:
+    fact: "Yahoo Finance (Oct 3) reports Adobe\u2019s 2026 holiday forecast: AI\u2011driven retail referrals up 130%, BNPL\
+      \ spend hitting $21.3B, and furniture sales expected to rise 7.3% to $33.4B year over year."
+    source: https://uk.finance.yahoo.com/news/ai-retail-referrals-set-rise-134100989.html
+    published: '2026-10-03'
+    topic: 'go-to-market news: what consumer brands are doing, a shift in how people buy, a season''s numbers'
+- kind: uses
+  person: owen
+  inbox: site
+  use: views
+  inputs:
+    page: /
+    title: Home
+  after: PT0S
+- kind: uses
+  person: owen
+  inbox: site
+  use: picks
+  inputs:
+    page: /
+    question: biggest headache
+    answer: Big launch coming
+  gap:
+    min: PT2S
+    max: PT8S
+- kind: uses
+  person: owen
+  inbox: site
+  use: reads
+  inputs:
+    page: /journal/landing-pages-not-homepages
+    how: about two minutes, scrolled 70%
+  gap:
+    min: PT9S
+    max: PT36S
+- kind: uses
+  person: owen
+  inbox: site
+  use: views
+  inputs:
+    page: /work
+    title: Work
+  gap:
+    min: PT5S
+    max: PT20S
+- kind: uses
+  person: owen
+  inbox: site
+  use: picks
+  inputs:
+    page: /work
+    question: show me work for
+    answer: DTC
+  gap:
+    min: PT3S
+    max: PT12S
+- kind: uses
+  person: owen
+  inbox: site
+  use: reads
+  inputs:
+    page: /work/oatside-kitchen
+    how: about a minute, scrolled 60%
+  gap:
+    min: PT4S
+    max: PT16S
+- kind: uses
+  person: owen
+  inbox: site
+  use: views
+  inputs:
+    page: /pricing
+    title: Pricing
+  gap:
+    min: PT3S
+    max: PT14S
+- kind: uses
+  person: owen
+  inbox: site
+  use: picks
+  inputs:
+    page: /pricing
+    question: pricing toggle
+    answer: Project
+  gap:
+    min: PT2S
+    max: PT10S
+- kind: uses
+  person: owen
+  inbox: site
+  use: asks
+  inputs:
+    page: /
+    label: Roast my site
+    text: harbourandhearth.example
+  gap:
+    min: PT6S
+    max: PT24S
+- kind: uses
+  person: owen
+  inbox: site
+  use: views
+  inputs:
+    page: /about
+    title: About
+  gap:
+    min: PT3S
+    max: PT12S
+- kind: uses
+  person: owen
+  inbox: site
+  use: leaves
+  inputs:
+    page: /about
+  gap:
+    min: PT12S
+    max: PT50S

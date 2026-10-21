@@ -1,0 +1,11 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Work — Fieldwork Studio</title><link rel="stylesheet" href="/style.css"></head><body>
+<header><a class="logo" href="/">Fieldwork</a><nav><a href="/services">Services</a><a href="/work">Work</a><a href="/pricing">Pricing</a><a href="/journal">Journal</a><a href="/about">About</a></nav></header>
+<main><h1>Work</h1><p class="sans">Show me work for:</p><div class="chips" id="f">
+<button class="chip">DTC</button><button class="chip">B2B</button><button class="chip">Retail</button></div>
+<div class="grid">
+<a class="card" href="/work/glow-theory"><small>Skincare · DTC</small><h3>Glow Theory</h3><p class="sans" style="font-size:14px">ROAS 1.6 → 3.1 in two blocks.</p></a>
+<a class="card" href="/work/tallow-and-thyme"><small>Candles · DTC &amp; retail</small><h3>Tallow &amp; Thyme</h3><p class="sans" style="font-size:14px">Christmas paid revenue +74%.</p></a>
+<a class="card" href="/work/oatside-kitchen"><small>Food · DTC</small><h3>Oatside Kitchen</h3><p class="sans" style="font-size:14px">Cost per first order down 38%.</p></a>
+<a class="card" href="/work/ledgerly"><small>Software · B2B</small><h3>Ledgerly</h3><p class="sans" style="font-size:14px">Cost per demo halved.</p></a>
+</div><script>document.querySelectorAll('#f .chip').forEach(c=>c.onclick=()=>{document.querySelectorAll('#f .chip').forEach(x=>x.classList.remove('on'));c.classList.add('on');fwSignal('show me work for',c.textContent)})</script></main><script src="/agent.js"></script></body></html>

@@ -1,0 +1,44 @@
+To: Milo (Founder of Warm Current, a 6-person paid social + creative studio. Reads on a MacBook Pro between client calls, lots of tab-hopping. Dry sense of humor, competitive, skeptical; today he’s pretending to be a DTC brand marketer to see how the studio’s agent behaves.)
+Judge: 22/25 (specific 4, useful 5, voice 4, fits 5, reply 4) PROMISES 1
+Worst: It treats “enable GEM/Advantage+ placements” and a 3‑day decision rule as straightforward switches, which may not match Meta’s UI or learning phase behaviour and could cause setup confusion.
+! If you send a staging link, I'll run the same teardown against your actual page structure.
+
+Subject: Meta GEM just landed — one tweak to Sundrift’s 14‑day launch test
+
+Milo —
+
+Quick one on Meta’s GEM announcement today.
+
+What changed
+- GEM is a unified generative model to optimise creative and placements across Facebook, Instagram, Reels and Stories. 
+- As of now, Meta hasn’t published specific conversion rate or CPA uplift for GEM. Treat it as a new optimisation to test, not an assumed lift.
+
+One action for Sundrift’s launch cadence
+Add a clean GEM vs control cell to your first 14‑day split so you can see if broader, model‑driven placements help or just move spend around.
+
+How to set it up
+- Duplicate your cold campaign. Keep audiences, budgets and bids identical.
+- Control: lock placements to Feeds + Stories; no extra automation toggles. Ads: same three‑variant cadence per concept. Destination: single‑offer page that matches the ad’s promise.
+- GEM test: enable GEM/Advantage+ placements. Keep the same creatives, copy and UTMs, and send to the same single‑offer page.
+- Call the test on CPA (first order) and first‑order conversion rate, using 7‑day click. 
+- Decision rule: if GEM trails control by >15% CPA for three consecutive days with similar click quality, shift spend back to control; if GEM beats control by >10% on CPA with stable CVR, keep it live and widen only after the landing‑page winner is clear.
+
+Keep the core page split
+- Keep the homepage vs single‑offer page A/B as the main lever. Recent real‑account outcomes: Oatside cut cost per first order by 38% moving spend from homepage to single‑offer pages; Tallow & Thyme’s single‑purpose flow converted 4.8% vs 1.9% for a product grid. That page routing typically controls more of CPA than placement choices.
+
+Side note: I still can’t open warmcurrent.co or sundriftdrinks.example. If there’s a staging link, send it and I’ll run the same teardown against your actual page structure.
+
+If Meta publishes validated GEM performance deltas, the only change here is budget weighting after this split. Until then, isolate and measure.
+
+Fieldwork Studio
+
+==== Sent before (17/25 (specific 3, useful 4, voice 4, fits 3, reply 3))
+Subject: GEM just dropped—how to test it in week one
+
+Milo —
+
+Meta has rolled out GEM, a unified model that auto‑optimises creative and placements across Facebook, Instagram, Reels and Stories. Helpful, but there’s no verified CVR/CPA uplift for food & drink yet—don’t price gains into January.
+
+One action: in week one, run a clean placement split. Ad Set A: all placements on (incl. Reels/Stories). Ad Set B: Feed‑only. Keep audience, budget and creative identical (ship variants in threes) and send both to the same single‑offer page. Hold 5–7 days (or ~50 first orders per cell), judge on first‑order CPA and page CVR by placement. Keep the cheaper placements, retire the rest, then continue the creative‑in‑threes cadence.
+
+Fieldwork Studio

@@ -1,0 +1,52 @@
+To: Ruth Patel (Owner-operator of Three Oaks Books (3 indie bookshops in Devon). Juggles shop floor and ops; reads the web on her phone between customers, laptop after close. Pragmatic, deadline-driven, skeptical of agency fluff, cares about cashflow and delivery cut-offs.)
+Judge: 24/25 (specific 5, useful 5, voice 5, fits 5, reply 4) PROMISES 1
+Worst: Recommends adding a mobile sticky footer bar, which may not be a same‑day change in her theme and slightly undercuts the “test today” framing.
+! If anything here blocks implementation, send me a screenshot of the section you’re editing and I’ll mark up exactly where to drop the line and buttons.
+
+Subject: Three Oaks — quick read: Canvas/Typeform outcomes, and one gift‑page change to test today
+
+Ruth —
+
+What we looked for this morning
+- Shopify Canvas (launched 1 Oct): no published retailer case studies with before/after conversion yet; public examples are illustrative only. (Shopify news release)
+- Typeform AI Landing Pages (launched 14 Oct): no public retailer conversion‑uplift results yet; coverage lists features, not outcomes. (Practical Ecommerce, Oct 14)
+- Board note you can use: Shopify’s “AI sessions converted 80% better with 14% higher AOV” is about AI referral/discovery traffic (April–June), not about Canvas page redesigns. Useful context if someone asks for an “AI boost” from design tools.
+
+One change to test on your gift pages today
+Make Click & Collect the default path and put delivery certainty in the first screen. Undecided gift buyers respond to immediacy + clarity.
+
+Paste this under the H1 on each gift page (Signed First Editions, Cosy Crime, Kids’ Christmas Box):
+“Order by Mon 18 Dec (Standard) or Thu 21 Dec (Express). Click & Collect usually ready in 2 hours. Royal Mail 48 £2.99 | 24 £4.99 · Free local delivery (3 miles) over £30 · Gift wrap +£3.”
+
+Then change the calls‑to‑action:
+- Primary: “Reserve for Click & Collect”
+- Secondary: “Buy for delivery”
+- Repeat both after the first product block.
+- On mobile, add a sticky footer bar with the two buttons and a short line: “Order by Mon 18 Dec | C&C ~2 hrs”.
+
+How to measure it quickly
+- A/B on one page (e.g. Signed First Editions): C&C‑first vs Delivery‑first.
+- Use unique URLs/UTMs for each variant (e.g. utm_content=cta_cc_first vs cta_delivery_first).
+- After three days, compare Checkout Starts and Purchases per session from each variant; keep the winner and roll it to the other gift pages.
+
+Why now
+- There aren’t credible, published retailer outcomes for Canvas or Typeform AI LPs yet, so you’re not behind by focusing tests on your own pages. This change is fast, visible to shoppers, and directly tied to Christmas purchase friction (certainty of timing + the easiest fulfilment path).
+
+If anything here blocks implementation, send me a screenshot of the section you’re editing and I’ll mark up exactly where to drop the line and buttons.
+
+Fieldwork Studio
+
+==== Sent before (23/25 (specific 4, useful 5, voice 5, fits 5, reply 4))
+Subject: One quick Christmas test: make Click & Collect the primary CTA
+
+Ruth —
+
+A fast win to test this week on /christmas and your three gift pages:
+
+• Make “Reserve for Click & Collect” the primary button on each tile and page, with “Usually ready in 2 hours” directly beneath. Keep “Buy for delivery” as secondary. Repeat both CTAs mid‑page and at the end.
+
+Why: undecided gift buyers act on speed and certainty; your C&C promise sits above the grid, not where the decision happens.
+
+Measure it cleanly: run a 50/50 split for three days (duplicate page or alternate days). Compare Checkout Starts and Purchases to the current Add‑to‑Basket‑first layout. If C&C‑first wins, keep it through 21 Dec and mirror it on the Christmas page tiles.
+
+Fieldwork Studio

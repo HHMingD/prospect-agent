@@ -1,0 +1,91 @@
+To: Priya Malhotra (Marketing Lead at a 5-location London yoga studio chain. Splits time between HQ and Shoreditch studio. Starts research on a 13" MacBook Pro, continues on iPhone on the Overground. Pragmatic, number-driven, wary of fluffy agency talk; wants clear tests and fast feedback.)
+Judge: 25/25 (specific 5, useful 5, voice 5, fits 5, reply 5)
+Worst: It skips Ember’s messy Mindbody tracking problem—there’s no concrete attribution/CAC plan to prove payback from the test.
+
+Subject: Ember Yoga: pause paid—site is showing “Website Expired” + your homepage fixes
+
+Hi Priya—
+
+Thanks for introducing yourself just now. Quick heads‑up: emberyoga.co.uk is currently showing a Squarespace “Website Expired” page. If any paid traffic is on, every click dies there—no one can see the 30‑day intro or book. Today’s order of play:
+
+- Pause paid campaigns until the homepage is restored.
+- Restore the site (Squarespace subscription/DNS) and, if needed, put up a one‑screen placeholder with: your 30‑day intro offer, a way to pick a studio, and one “Book your first class” button that links to your booking engine.
+
+Then: here’s the prioritized homepage plan you asked for (built for five studios and paid traffic):
+
+1) Per‑studio intro pages (one per location)
+- Above the fold: studio name, 30‑day intro offer, live timetable snippet, single primary CTA: “Book your first class”.
+- Immediately below: price/limits in plain English, what to bring/expect, and 3–5 real reviews from that studio.
+- Optional, where accurate: light availability cues for today’s classes.
+
+2) Homepage hero that matches ad intent
+- What we saw before was “Find your calm in the city.” That doesn’t answer what ad‑clickers want.
+- Paste‑ready options you can try:
+  - “Hot, Vinyasa, Yin and Beginner yoga across London. Start your 30‑day intro today.”
+  - “Yoga near you, five London studios. Begin with our 30‑day intro.”
+
+3) Surface social proof and clarity
+- Pull a short review carousel up into the first screen.
+- State intro‑offer terms clearly (who it’s for, when it applies), and link to full details once.
+
+4) Make the first class the journey
+- From every page: one primary action repeated—“Book your first class”.
+- Mobile first: minimize taps from ad to class confirmation.
+
+5) Instructor credibility
+- Real instructor photos and one‑line bios per studio increase first‑time bookings for studio brands.
+
+Why this works (and the proof you asked for)
+- When we moved paid clicks to the exact offer pages (not a generic homepage) for Oatside Kitchen, cost per first order dropped 38%.
+- Rerouting landing journeys for Tallow & Thyme lifted conversion from 1.9% to 4.8%.
+- In this category, leading yoga studio sites in 2026 convert up to 33% more visitors than legacy sites by loading fast, putting “Book trial” above the fold, mobile‑first booking, real instructor bios/photos, transparent pricing, and surfaced reviews (Yoga Studio Insider, 21 Sep 2026).
+
+A simple 7‑day test once the site is live again
+- Two ad destinations: A) nearest per‑studio intro page, B) generic homepage.
+- Same creative and budget; measure first‑class bookings and cost per booking.
+- Expectation: the per‑studio page wins if the ad promise and the first screen match.
+
+If this helps, forward it to whoever owns your site/ads with “Please fix today: emberyoga.co.uk shows ‘Website Expired’; pause paid; ship per‑studio landing.”
+
+One question for you: which of your five studios currently receives the most paid clicks? That decides the first per‑studio page to prioritize.
+
+Fieldwork Studio
+
+==== Sent before (25/25 (specific 5, useful 5, voice 5, fits 5, reply 5) PROMISES 1)
+Subject: Ember Yoga homepage teardown: the blocker to fix today + the quickest wins
+
+Priya,
+
+Your public domain (emberyoga.co.uk) is currently showing a Squarespace “Website Expired” page. Until that’s fixed, paid and organic visitors can’t see the intro offer or book.
+
+Do these in order:
+
+Today
+- Restore the site (Squarespace subscription/domain/DNS) and pause paid until live.
+- Put a simple fallback page live: studio picker, intro offer summary and terms, one “Book first class” CTA per studio, phone number, opening hours. Link it from each Google Business Profile so searchers can still book.
+- Check that conversion tracking still fires on the booking confirmation page.
+
+This week
+- Replace the generic hero (“Find your calm in the city”) with an intent headline tied to location and the intro offer, plus a single CTA. Example: “Start yoga at [Studio name] — flexible timetable for beginners. Book your first class.”
+- Above the fold: studio selector (or detect nearest), today/tomorrow timetable toggle, intro-offer price and key terms (who it’s for, duration, renewal), and one CTA.
+- Social proof: surface 3–5 recent Google reviews per studio near the CTA; show overall rating.
+- Reduce anxiety: “What to bring”, heat level, beginner-friendly badge, cancellation policy snippet.
+- Light urgency: show the next two beginner-friendly class times with seat status (e.g., Filling fast) instead of a countdown timer.
+- Create per‑studio “Intro offer” pages and send paid traffic to them. One promise, one page. This is the studio equivalent of what lifted conversion for Tallow & Thyme (4.8% vs 1.9%) and cut cost per first order 38% for Oatside Kitchen.
+
+Booking flow
+- Pre‑select studio and “Intro offer” in step one; minimise fields until after slot choice.
+- Keep the user in one view; keep price visible; show total time to book.
+- Confirmation: add‑to‑calendar, how to get there, facilities.
+
+Speed and mobile
+- Compress hero images, defer non‑essential scripts, and lazy‑load maps; target sub‑2.5s to first paint on 4G.
+- Make the CTA thumb‑reachable; de‑emphasise header links on mobile.
+
+What to measure
+- Intro‑offer purchases and first‑class bookings per 100 visits, by studio page.
+- Click‑through from hero to “Book first class” and drop‑off between studio page and booking step one.
+
+If it helps, I can sketch a quick wireframe for one studio page based on this.
+
+Fieldwork Studio

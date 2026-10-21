@@ -1,0 +1,72 @@
+To: Eilidh MacLeod (Founder of Heather & Pine, a two-product skincare microbrand in Glasgow. Solo operator most days; sister helps on weekends. Reads on iPhone first while on the bus or in the workshop; opens laptop late evening for decisions. Pragmatic, frugal, a bit sceptical of agencies but open if shown specifics and quick tests.)
+Judge:  9/25 (specific 2, useful 2, voice 3, fits 1, reply 1)
+Worst: It’s written for the wrong Heather & Pine (engraved gifts in Tahoe City) instead of your Glasgow skincare brand, so the advice and even the example copy miss what you actually need—a serum PDP teardown and TikTok-landing test.
+
+Subject: Eilidh — two leaks and three fast fixes for Heather & Pine today
+
+Hi Eilidh —
+
+Thanks for introducing yourself just now. You flagged “Traffic but no sales,” so I took a quick look while you were on our Work page.
+
+What’s leaking today
+- heatherandpine.co.uk is returning a 502 Bad Gateway. Any paid or organic clicks to that domain die there.
+- heatherandpine.com loads a simple homepage with “New products are coming soon!” and store hours. There’s no clear offer, shop button, or path to buy.
+
+Three fixes to turn cold clicks into orders (in priority order)
+1) Stop the 502 leak
+- Quick win: 301 redirect heatherandpine.co.uk to a working .com URL (even a temporary single‑offer page). If that’s not possible today, put a simple holding page on .co.uk with one button: “Shop Heather & Pine →” linking to the live page.
+
+2) Make the .com hero sell one thing
+- Replace “New products are coming soon!” with a specific first offer so a stranger knows exactly what to do next.
+- Paste-ready copy:
+  Headline: Custom‑engraved gifts from Tahoe City
+  Sub: Nature‑inspired pieces, personalized for the people you love.
+  Primary button: Start your engraving →
+  Secondary link (small): Prefer to browse?
+- Why single‑offer first? In our DTC work, the simplest offer page has often beaten “fancier” ones. Example: Oatside Kitchen’s plain photo‑and‑price page cut first‑order cost by 38%. Tallow & Thyme’s gift finder flow converted 4.8% vs 1.9% for a grid.
+
+3) Give social/ads a dedicated page that doesn’t ask them to think
+- Build a single‑offer page that a cold visitor can say yes to in under 30 seconds. If you use Shopify, Canvas (launched Oct 1, 2026) lets you spin this up quickly without a developer.
+- Keep the page this simple:
+  A. Product hero: one clean photo, price, and a 2–3 word benefit.
+  B. Personalization: options, an engraving text field, and a live preview if you have it.
+  C. Trust: 3 short reviews about engraving quality and gift‑worthiness.
+  D. Clarity: how ordering works in one line.
+  E. CTA: Add to cart / Buy now.
+- Route Instagram bio and any paid clicks to this page first; keep the homepage for brand browsing.
+
+Optional next test
+- Send half your traffic to the single‑offer page and half to a simple “gift finder” that ends on the same product. In our work, that flow has beaten generic grids (Tallow & Thyme: 4.8% vs 1.9%).
+
+One question to decide the page
+- If one product or engraving service had to earn its own traffic this week, which would you pick? Use that as the single offer above.
+
+This note is designed to be forwarded to whoever owns your domain settings and homepage copy—it has everything needed to make the fixes.
+
+Fieldwork Studio
+
+==== Sent before ( 8/25 (specific 1, useful 1, voice 4, fits 1, reply 1) INVENTED 3 PROMISES 1)
+Subject: Heather & Pine: 3 fast fixes + simple wireframes (today)
+
+Eilidh —
+
+We spotted two blockers in under a minute:
+- heatherandpine.co.uk shows a 502 (Bad Gateway). Today: 301 it to a working page so every click survives.
+- heatherandpine.com is a “new products coming soon” splash with store hours, but no clear way to buy.
+
+Three fixes to ship today (fastest first)
+1) Single‑offer hero
+Big photo • Title: Custom‑engraved [best‑seller]
+Price • Fields (Name/Initials, Style) • Button: Personalise & Buy
+Below: 3 bullets (material, sizing, care) + one trust cue (customer photo/line)
+2) Redirect .co.uk → that offer page until the UK site is healthy.
+3) Add a 3‑step Gift Finder (Who for? Budget? Style?) that returns 1–3 buyable items. This pattern lifted conversion for Tallow & Thyme (4.8% vs 1.9%).
+
+What to watch this week
+- Hero button click‑through (aim for double‑digit % of homepage visitors)
+- Add‑to‑cart rate on the offer page
+- Orders or in‑store reservations started (count this, not just visits)
+
+Reply if you want these sketched on your real content so you can paste them straight in.
+
+Fieldwork Studio

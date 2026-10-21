@@ -1,0 +1,173 @@
+name: gen_ruth
+starts_at: '2026-10-12T09:00:00Z'
+runs_for: P21D
+max_wakes: 200
+people:
+- key: ruth
+  name: Ruth Patel
+  email: ruth@threeoaksbooks.example
+  profile: Owner-operator of Three Oaks Books (3 indie bookshops in Devon). Juggles shop floor and ops; reads the web on her
+    phone between customers, laptop after close. Pragmatic, deadline-driven, skeptical of agency fluff, cares about cashflow
+    and delivery cut-offs.
+  facts:
+  - Sells books, signed editions and gift bundles; runs author events and click & collect across 3 locations.
+  - "Turnover ~\xA32.4m store-side; online did ~\xA3140k last 12 months with patchy peaks; margins tight after postage."
+  - "Problem in her words: \u201CLots of browse, baskets die at delivery step. I need online gift orders before Christmas,\
+    \ without confusing cut-offs.\u201D"
+  - "Budget: up to \xA315k for a 90\u2011day project, plus \xA35\u20137k/month in media if it\u2019s working by mid\u2011\
+    November."
+  - "Would share email for a concrete video teardown of her homepage/Christmas page + checkout with 48\u2011hour turnaround."
+  - "Won\u2019t give email for a generic newsletter, gated ebook or \u2018discovery call\u2019 until she sees proof and a\
+    \ plan for the next 3 weeks."
+  - Their business's website is threeoaksbooks.example; whenever asked for it they give exactly threeoaksbooks.example.
+  working_hours:
+    timezone: Europe/London
+    opens: 08:00
+    closes: '22:00'
+  reply_within:
+    min: PT3H
+    max: P2D
+  reply:
+    kind: answers
+- key: newsroom
+  name: The trade press
+  email: newsroom@press.example
+  profile: Not a visitor. Reports what happens in marketing; never on the site and never writes to the agent.
+happenings:
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P2D
+  inputs:
+    fact: "Shopify began rolling out \u201Cmarket-driven shipping\u201D on 1 October 2026. Eligible merchants can opt in now,\
+      \ and the update lets you set shipping options by market (country/region) instead of by shipping profiles\u2014aimed\
+      \ at clearer rates and delivery promises at checkout during peak season."
+    source: https://www.shopify.com/blog/fulfillment-on-shopify-2026
+    published: '2026-10-01'
+    topic: 'a change on a platform brands buy or build on: Meta, Google, TikTok, Pinterest, Shopify, Klaviyo'
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P5D
+  inputs:
+    fact: "True Crime is rebounding in 2026: The Bookseller reports the genre has placed 41 titles in the UK Top 50 this year,\
+      \ with London Falling helping drive the surge\u2014marking a notable comeback from its peak 5\u201310 years ago when\
+      \ it regularly topped \xA310m through BookScan\u2019s TCM."
+    source: https://www.thebookseller.com/bestsellers/london-falling-drives-true-crimes-resurgence
+    published: '2026-10-15'
+    topic: 'go-to-market news: what consumer brands are doing, a shift in how people buy, a season''s numbers'
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P8D
+  inputs:
+    fact: "The Bookseller\u2019s FutureBook Conference will run its first international edition at ExCeL London on 15 March\
+      \ 2027, the day before London Book Fair (16\u201318 March 2027)\u2014a consolidated UK industry meet-up for retail,\
+      \ marketing and digital teams."
+    source: https://publishingperspectives.com/2026/09/in-latest-move-the-london-book-fair-will-partner-with-the-childrens-media-conference-in-2027/
+    published: '2026-09-15'
+    topic: 'an event a brand''s founder or marketer could go to: a conference, meetup, workshop or webinar'
+- kind: uses
+  person: ruth
+  inbox: site
+  use: views
+  inputs:
+    page: /
+    title: Home
+  after: PT0S
+- kind: uses
+  person: ruth
+  inbox: site
+  use: picks
+  inputs:
+    page: /
+    question: biggest headache
+    answer: Traffic but no sales
+  gap:
+    min: PT3S
+    max: PT12S
+- kind: uses
+  person: ruth
+  inbox: site
+  use: reads
+  inputs:
+    page: /journal/landing-pages-not-homepages
+    how: about two minutes, scrolled 80%
+  gap:
+    min: PT64S
+    max: PT256S
+- kind: uses
+  person: ruth
+  inbox: site
+  use: views
+  inputs:
+    page: /work
+    title: Work
+  gap:
+    min: PT1S
+    max: PT6S
+- kind: uses
+  person: ruth
+  inbox: site
+  use: picks
+  inputs:
+    page: /work
+    question: show me work for
+    answer: Retail
+  gap:
+    min: PT3S
+    max: PT14S
+- kind: uses
+  person: ruth
+  inbox: site
+  use: reads
+  inputs:
+    page: /work/tallow-and-thyme
+    how: about one minute, skimmed the creative and the before/after numbers
+  gap:
+    min: PT34S
+    max: PT136S
+- kind: uses
+  person: ruth
+  inbox: site
+  use: views
+  inputs:
+    page: /pricing
+    title: Pricing
+  gap:
+    min: PT2S
+    max: PT10S
+- kind: uses
+  person: ruth
+  inbox: site
+  use: picks
+  inputs:
+    page: /pricing
+    question: pricing toggle
+    answer: Project
+  gap:
+    min: PT3S
+    max: PT12S
+- kind: uses
+  person: ruth
+  inbox: site
+  use: asks
+  inputs:
+    page: /
+    label: Roast my site
+    text: threeoaksbooks.example
+  gap:
+    min: PT11S
+    max: PT44S
+- kind: uses
+  person: ruth
+  inbox: site
+  use: leaves
+  inputs:
+    page: /
+  gap:
+    min: PT1S
+    max: PT4S

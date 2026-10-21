@@ -1,0 +1,126 @@
+To: Lena Duarte (Solo founder and maker at Salt & Strand Jewellery in Brighton. Splits time between the bench and packing orders; checks marketing on her phone between tasks and on a laptop at night. Careful with cash, blunt, a bit burned by a previous freelancer. Pragmatic, quick skimmer, screenshots things to revisit.)
+Judge: 25/25 (specific 5, useful 5, voice 5, fits 5, reply 5)
+Worst: It doesn’t tie the tactics to a simple 90‑day target or expected lifts (e.g., PDP CVR, CPA), so there’s no quick way to see impact or prioritise beyond “do all ten.”
+
+Subject: Salt & Strand: 10 quick wins you can paste today (Seafoam landing + UGC plan)
+
+Lena —
+
+Thanks for introducing yourself. You’ve got the right instincts: Salt & Strand’s product and cart templates mirror the homepage, so paid clicks miss crucial persuaders in the first view. Here’s a 10‑point teardown with copy you can paste and the exact ad/UGC plan to stop costs creeping up.
+
+1) Seafoam first screen: make the case before the scroll
+- Put these four persuaders above the fold, together: 
+  - 4.8★ from 180+ reviews
+  - Free resizing within 30 days
+  - “Find Your Ring Size” link by the CTA
+  - Dispatch promise (3–5 days; rings made‑to‑order 7–10)
+- Pasteable hero copy:
+  Seafoam Stacking Ring — £38
+  Handmade in Brighton from 100% recycled sterling silver.
+  4.8★ from 180+ reviews • Free resizing within 30 days
+  Not sure of your size? Find your ring size →
+  [Add to bag]
+
+2) Put the size guide where the decision happens
+- Add a persistent “Find your ring size” link right next to the size selector and the Add to Bag on ring PDPs and in the sticky bar.
+
+3) Lead with proof on every PDP and in cart
+- Show the star rating and total reviews above the title or price. Repeat a small proof line in cart: “4.8★ from 180+ reviews • Free resizing in 30 days.”
+
+4) Ship/return/re-size promise in the first view
+- On PDPs and cart drawer: “Free UK shipping over £75 • Dispatches in 3–5 days • Rings made‑to‑order: 7–10 • Free resizing in 30 days.”
+
+5) UGC that stops the scroll: hands/scale/stacking (3 variants + three‑week rule)
+- Concept: Seafoam on real hands, clear scale, natural light. Record in 9:16 and 1:1.
+  - V1: Solo Seafoam on index finger, slow hand movement; end card: “Recycled silver • Hand‑finished in Brighton.”
+  - V2: Stack of 3 (Seafoam + Pebble Band), before/after: single → stack.
+  - V3: Mixed metals (silver Seafoam + gold vermeil piece), quick tilt to show shine; overlay: “Free resizing in 30 days.”
+- Three‑week rule: launch all three; every Monday check 7‑day CTR. If a variant declines two Mondays in a row and the third Monday declines again, pause it and replace with a fresh cut. Don’t rescue tired ads with more budget.
+
+6) Send paid clicks to single‑offer pages
+- Create a Seafoam‑only landing page (no collection grid). Keep nav minimal, focus on the offer, add UGC rail, and repeat the size guide by the primary CTA. Use the same above‑the‑fold proof block from point 1.
+
+7) Tracking sanity‑check (20‑minute sweep)
+- Meta pixel + CAPI dedupe on ViewContent, AddToCart, InitiateCheckout, Purchase with GBP values.
+- UTMs on every ad with campaign/adset/ad/variant labels so you can see which creative drove which sale.
+- Test a ring add‑to‑bag and a purchase in Events Manager’s Test Events to confirm signals and value pass through.
+
+8) Quick wins using Shopify Canvas
+- Clone your product template, then with Canvas:
+  - Add a hero block with review badge + resize promise + size‑guide link by CTA.
+  - Insert a UGC strip (hands/stacking) above the fold on mobile.
+  - Add a reassurance block: “Hand‑finished by Lena in Brighton • 100% recycled sterling silver and gold vermeil.”
+  - Duplicate this template for Pebble Band next.
+
+9) Meta GEM: give the model range, not guesses
+- GEM rewards variety and clear conversion signals. For Seafoam, prep a small but distinct asset pack:
+  - 3 square photos (solo on hand; stack with Pebble Band; macro texture).
+  - 2 short 9:16 clips (hand movement; stacking).
+  - 3 primary texts (e.g., “Handmade in Brighton from recycled silver,” “Stackable everyday ring,” “Free resizing in 30 days”).
+  - Headlines (e.g., “Seafoam Stacking Ring,” “Find your ring size, buy with confidence”).
+- Run Advantage+ placements; keep one offer per ad set so performance maps cleanly to the landing page.
+- Meta’s unified Generative Ads Model (GEM) rollout in Oct ’26 reports up to 18.9% more conversions and 12% higher CTR when it can optimize creative across placements—feed it variations, then cull with the three‑week rule.
+
+10) Q4 gifting angle (Brighton, maker, personalized)
+- Your local peers lean hard into the solo‑maker story, behind‑the‑scenes, and bespoke/personalized gifting. Bring that into paid and the Seafoam page:
+  - “Hand‑finished by Lena in Brighton.”
+  - “Gift‑ready packaging • Free resizing within 30 days.”
+  - Optional bundle block: “Stack it with Pebble Band.”
+
+If you do just two things today: add the proof + resize + size‑guide block above the fold on Seafoam, and point your top ad set to a Seafoam‑only page. That alone typically lifts paid conversion on jewellery PDPs where these cues are currently below the fold.
+
+One question for you: which piece is getting most of your paid budget this week—Seafoam, Pebble Band, or Tide Hoops?
+
+PS: If “ads got expensive” is top of mind, IMK London has a half‑day influencer marketing workshop on Wed 28 Oct in Central London. Worth it if you’re exploring creator UGC at scale.
+
+Fieldwork Studio
+
+==== Sent before (25/25 (specific 5, useful 5, voice 5, fits 5, reply 5) PROMISES 1)
+Subject: Salt & Strand: 10 quick wins for conversion and paid
+
+Lena—
+
+Short: Your product pages bury three trust boosts you already have: 180+ reviews (4.8/5), free resizing within 30 days, and Find Your Ring Size. When paid clicks land there, those persuaders are off‑screen in the moments that decide the sale.
+
+10 quick wins:
+
+1) Seafoam landing first screen (one ad, one promise):
+- Hero: Seafoam on hand for scale.
+- Price and Add to Bag.
+- Stars + “180+ reviews, 4.8/5” (link to all).
+- “Free resizing within 30 days” next to the CTA.
+- “Find your ring size” link by the size selector and CTA.
+- “Hand‑finished in Brighton · 100% recycled silver” line.
+- “Ships in 3–5 days · Free UK shipping £75+”.
+
+2) Route paid clicks off the homepage:
+- Stacking angle → Seafoam offer page built for stacking.
+- Sustainability/maker angle → short “Made in Brighton from recycled silver” offer page.
+- Gifting/confidence angle → ring sizing + free resize page.
+Each ad → its own page. One promise per page.
+
+3) Creative test plan (3x3):
+- Hands (movement, natural light).
+- Scale (on-hand close-up; next to everyday objects).
+- Stacking (three rings together; price callout).
+Ship three variants for each; retire anything after three weeks of falling click‑through.
+
+4) Show scale early on product pages: first gallery image “on hand”, not just macro.
+
+5) Pull reviews into the first screen: stars + count + one-line summary; full reviews lower.
+
+6) Surface dispatch and threshold by price/CTA: “Ships in 3–5 days · Free UK shipping £75+”.
+
+7) Ring-size UX: repeat “Find your ring size” under the selector, by the CTA, and again in cart.
+
+8) Tracking sanity check: pick one source of truth; count purchases (ideally first orders) as the KPI; make sure add-to-cart, begin checkout, and purchase fire once each.
+
+9) Cart reassurance: near the subtotal, restate “Free resizing within 30 days” and returns/shipping basics to prevent last‑minute drop‑off.
+
+10) Q4 gift routes: create a simple “Gifts under £50” offer page and a “Giftable rings (resize‑friendly)” page; send gifting ads to those, not to the grid.
+
+PS: When Meta’s new unified Generative Ads Model (GEM) appears in your account this month, keep copy minimal and feed it clean assets from the three concepts above; Meta’s team reports up to 18.9% more conversions and 12% higher CTR with GEM: https://engineering.fb.com/2026/10/13/ml-applications/generative-ads-model-gem-scaling-frontier-ads-ai/
+
+If useful, I can sketch the Seafoam and “Gifts under £50” layouts you can paste straight into a page builder.
+
+Fieldwork Studio

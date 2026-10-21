@@ -1,0 +1,97 @@
+To: Lena Duarte (Solo founder and maker at Salt & Strand Jewellery in Brighton. Splits time between the bench and packing orders; checks marketing on her phone between tasks and on a laptop at night. Careful with cash, blunt, a bit burned by a previous freelancer. Pragmatic, quick skimmer, screenshots things to revisit.)
+Judge: 19/25 (specific 5, useful 4, voice 4, fits 3, reply 3) INVENTED 1
+Worst: Strong, specific teardown but it skips how you’ll prove which ad/page worked and, paired with the from-£8k/£6.5k pricing that’s above what you can spend, it’s unlikely to earn a reply today.
+! Suggests copy "Add to bag — ships in 3–5 days" for the Seafoam ring page; ring lead times are often 7–10 days on the site and this exact shipping claim isn’t supported.
+
+Subject: Lena — three fast wins to stop paid clicks bouncing at Salt & Strand
+
+Hi Lena,
+
+You flagged “Ads got expensive.” Here’s a tight teardown you can act on today, built around one idea: every paid click lands on one promise, not your homepage.
+
+1) Ad-to-offer mapping (ship one, measure, then the next)
+- Size certainty path
+  • Ad angle: “Not sure of her ring size? Free resizing in 30 days.”
+  • Landing: Your best-selling ring as an offer page with the size guide embedded inline, plus a one-line reassurance under price: “Free resizing within 30 days.”
+  • Proof in-view: “Over 180 reviews, 4.8/5.”
+- Giftable stack to free shipping
+  • Ad angle: “Stack two, ship free.” (Two £38–£45 rings cross the £75 free-shipping threshold.)
+  • Landing: Pre-built 2‑ring stack on a simple offer page. Auto-select two complementary sizes and show a shipping threshold progress bar.
+  • Proof: “Handmade in Brighton. 100% recycled silver.” + star rating beside price.
+- Material/story first
+  • Ad angle: “Handmade in Brighton from recycled silver.”
+  • Landing: A single hero product (not About). Keep reviews and shipping/resize promises above the first CTA.
+
+2) Creative test grid (keeps costs honest)
+- Concepts ship in threes: Product-only, process (hand-finishing), and social proof (UGC/review). Same headline, different first frames.
+- Three-week rule: If CTR falls three weeks in a row, retire the concept, not just the asset.
+- CTAs to rotate: “Find your size,” “Build your stack,” “Handmade in Brighton.”
+
+3) Trust placement (where it earns its keep)
+- Put “Over 180 reviews, 4.8/5” and “Free resizing within 30 days” directly under the price, above Add to Cart.
+- Keep “Free UK shipping over £75” visible near the CTA and mirror it in cart as a threshold bar.
+- Repeat the size guide link inside the offer page, not just in the nav.
+
+4) Quick fixes (low lift, measurable gain)
+- Encoding: Your site is showing garbled characters (Â£, â€“). Fixing UTF‑8/double-encoding will clean up trust copy and pricing wherever cold traffic lands.
+- Welcome incentive: For ad landings only, pre-apply the 10% first-order discount and reflect the savings next to price (no code hunting).
+- PDP focus: On ad landings, minimise header/nav to reduce leaks until after first scroll.
+
+Why this now
+- When we diverted gifting ads to a three‑question gift finder for Tallow & Thyme, conversion doubled; the win came from “one promise per click,” not more traffic.
+- UK high-street footfall fell 2.9% in September. Q4 pressure will move online; make your landings do the heavy lifting before you buy reach.
+
+About working style (since you’re on Pricing)
+- Project (from £8,000): best for a tightly defined sprint to pressure‑test the above in a fixed window.
+- Retainer (from £6,500/month + spend): best when you want ongoing creative + testing cycles and compounding learnings.
+- Contract details are in the FAQ there. Either model works for a test‑driven, results‑first approach; it’s about cadence.
+
+Copy you can paste this afternoon (for the ring offer page)
+- Headline: “Seafoam Stacking Ring — handmade in Brighton from recycled silver.”
+- Subhead (under price): “Over 180 reviews, 4.8/5 • Free resizing within 30 days • Free UK shipping over £75.”
+- Size CTA: “Find your size →” (anchors to the embedded size guide)
+- Primary CTA: “Add to bag — ships in 3–5 days.”
+
+One question to reply with today
+If you could launch just one landing before November, would you pick: A) Size certainty, B) Giftable stack to £75, or C) Material/story first?
+
+If someone else owns paid social, please forward this to them.
+
+Fieldwork Studio
+
+
+==== Sent before (23/25 (specific 5, useful 5, voice 5, fits 4, reply 4) INVENTED 1)
+Subject: Salt & Strand teardown: 3 fast fixes for paid ads and landing pages
+
+Lena,
+
+You said ads got expensive. Here’s the short teardown and three changes we’d make this week.
+
+Where clicks leak now
+- Paid traffic lands on the homepage; in our audits, homepages lose about half of paid clicks in the first five seconds.
+- Currency/symbol encoding is broken (“Â£”, “â€“”, “â€¢”) in banners and price tiles—hurts trust at the decision point.
+- The ring size guide lives on a separate page; shoppers leave product pages to find it and don’t always return.
+- Free UK shipping starts at £75; many single-SKU orders (£38–£70) need a nudge to reach it.
+
+Three fast fixes
+1) One offer page per ad (start with your best-selling ring).
+- Above the fold: clear promise (recycled silver, fits first time), price, size selector, “Find your size” popover (not a separate page), 4.8★ (180+ reviews) with 2–3 short quotes, “Free resizing in 30 days” and “Dispatches in 3–5 days,” one Add to Cart.
+- Point ring ads to this page, not Home or a grid.
+
+2) Lift AOV to the £75 threshold.
+- On PDP and cart: live progress bar (“£X to free UK shipping”).
+- “Stack this look” block with 1‑click add of a curated pair/trio that takes common single items to ≥£75.
+- Prebuild a “Stacks & Gifts” collection to catch paid gifting clicks.
+
+3) Fix trust placement and encoding.
+- Declare UTF‑8 sitewide and remove double‑encoded characters so £, dashes and bullets render correctly everywhere.
+- Surface “Free resizing,” “Dispatch in 3–5 days” and review stars within the first screen on PDPs and key collection tiles.
+- If you run a first‑order discount, auto‑apply it on landing so the discounted price shows in cart without a code.
+
+Creative to power the test
+- Ship concepts in threes (e.g. stack-in-hand, “Made in Brighton,” recycled silver + free resizing). Three variants each. Retire any ad after three weeks of falling click‑through; keep climbers. Each concept points to its matching offer page.
+
+What to count
+- Count first orders and AOV per ad→page pair. Move budget to the pairs that produce the cheapest first orders; ignore clicks that don’t convert.
+
+Fieldwork Studio

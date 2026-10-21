@@ -1,0 +1,172 @@
+name: gen_milo
+starts_at: '2026-10-12T09:00:00Z'
+runs_for: P21D
+max_wakes: 200
+people:
+- key: milo
+  name: Milo
+  email: milo@warmcurrent.example
+  profile: "Founder of Warm Current, a 6-person paid social + creative studio. Reads on a MacBook Pro between client calls,\
+    \ lots of tab-hopping. Dry sense of humor, competitive, skeptical; today he\u2019s pretending to be a DTC brand marketer\
+    \ to see how the studio\u2019s agent behaves."
+  facts:
+  - "Warm Current sells Meta/TikTok buying plus performance creative and light landing-page tweaks for DTC brands doing \xA3\
+    1m\u2013\xA312m."
+  - "~\xA385k/mo in retainers; two recent churns and rising CAC have pinched margins. Pipeline visibility \u2248 4 weeks."
+  - "In his words: \u201COur inbound went soft after we added a budget qualifier on the contact form. I think the form is\
+    \ scaring off good leads.\u201D"
+  - "If he were actually buying help, he\u2019d only try a discrete project (\xA38\u201312k) to learn a playbook\u2014no long\
+    \ retainers."
+  - "He\u2019ll trade an email for a pointed teardown of a real URL within 24 hours. He won\u2019t hand it over for a newsletter\
+    \ or generic \u2018ultimate guide.\u2019"
+  - Their business's website is warmcurrent.example; whenever asked for it they give exactly warmcurrent.example.
+  working_hours:
+    timezone: Europe/London
+    opens: 08:00
+    closes: '22:00'
+  reply_within:
+    min: PT3H
+    max: P2D
+  reply:
+    kind: answers
+- key: newsroom
+  name: The trade press
+  email: newsroom@press.example
+  profile: Not a visitor. Reports what happens in marketing; never on the site and never writes to the agent.
+happenings:
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P2D
+  inputs:
+    fact: TikTok announced AI-powered ad updates at Advertising Week New York, including agentic solutions like Shopping Assistant,
+      Buy Direct and Lead Agent, plus Smart+ updates such as Search Ads and creative selection to automate audience, budget
+      and creative decisions.
+    source: https://newsroom.tiktok.com/tiktok-unveils-ai-powered-updates-for-advertisers-driving-discovery-action-and-measurable-business-outcomes-EU?lang=en-150
+    published: '2026-10-06'
+    topic: 'a change on a platform brands buy or build on: Meta, Google, TikTok, Pinterest, Shopify, Klaviyo'
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P5D
+  inputs:
+    fact: Meta detailed new AI capabilities for advertisers, rolling out tools that turn catalog and static images into product
+      videos via Advantage+ creative, expand Ads Creative Studio access, add AI-driven audience discovery to Detailed Targeting,
+      and surface product recommendations; Customer Lifecycle Strategy is now available to all advertisers.
+    source: https://about.fb.com/br/news/2026/10/advertising-week-new-york-2026-novas-capacidades-de-ia-para-guiar-campanhas-e-alcancar-clientes/amp/
+    published: '2026-10-06'
+    topic: 'a change on a platform brands buy or build on: Meta, Google, TikTok, Pinterest, Shopify, Klaviyo'
+- kind: uses
+  person: newsroom
+  inbox: world
+  use: publishes
+  after: P8D
+  inputs:
+    fact: "Shopify advised merchants to use Rollouts to pre-schedule coordinated Black Friday/Cyber Monday campaigns\u2014\
+      automating theme changes, discounts and catalog updates across markets\u2014so promotions go live automatically during\
+      \ BFCM."
+    source: https://www.shopify.com/ie/blog/plan-a-bfcm-campaign-that-runs-itself-with-rollouts
+    published: '2026-10-06'
+    topic: 'a change on a platform brands buy or build on: Meta, Google, TikTok, Pinterest, Shopify, Klaviyo'
+- kind: uses
+  person: milo
+  inbox: site
+  use: views
+  inputs:
+    page: /
+    title: Home
+  after: PT0S
+- kind: uses
+  person: milo
+  inbox: site
+  use: picks
+  inputs:
+    page: /
+    question: biggest headache
+    answer: Big launch coming
+  gap:
+    min: PT2S
+    max: PT10S
+- kind: uses
+  person: milo
+  inbox: site
+  use: asks
+  inputs:
+    page: /
+    label: Roast my site
+    text: sundriftdrinks.example
+  gap:
+    min: PT5S
+    max: PT20S
+- kind: uses
+  person: milo
+  inbox: site
+  use: writes
+  inputs:
+    text: "Quick one: do you guarantee ROAS? Launching in January, ~\xA3120k/mo spend."
+  gap:
+    min: PT3S
+    max: PT12S
+- kind: uses
+  person: milo
+  inbox: site
+  use: views
+  inputs:
+    page: /work
+    title: Work
+  gap:
+    min: PT7S
+    max: PT30S
+- kind: uses
+  person: milo
+  inbox: site
+  use: picks
+  inputs:
+    page: /work
+    question: show me work for
+    answer: DTC
+  gap:
+    min: PT3S
+    max: PT12S
+- kind: uses
+  person: milo
+  inbox: site
+  use: views
+  inputs:
+    page: /work/glow-theory
+    title: Glow Theory case study
+  gap:
+    min: PT5S
+    max: PT20S
+- kind: uses
+  person: milo
+  inbox: site
+  use: views
+  inputs:
+    page: /pricing
+    title: Pricing
+  gap:
+    min: PT7S
+    max: PT28S
+- kind: uses
+  person: milo
+  inbox: site
+  use: picks
+  inputs:
+    page: /pricing
+    question: pricing toggle
+    answer: Project
+  gap:
+    min: PT2S
+    max: PT10S
+- kind: uses
+  person: milo
+  inbox: site
+  use: leaves
+  inputs:
+    page: /pricing
+  gap:
+    min: PT11S
+    max: PT44S
